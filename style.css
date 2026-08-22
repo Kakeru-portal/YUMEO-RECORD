@@ -413,3 +413,36 @@ footer {
        flex-direction: column;
    }
 }
+/* 検索・絞り込み開閉ボタン */
+#searchToggle {
+  display: none;
+}
+/* スマートフォン */
+@media (max-width: 600px) {
+  #searchToggle {
+     display: flex;
+     width: 100%;
+     padding: 16px 18px;
+     margin-bottom: 10px;
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid #cccccc;
+     border-radius: 8px;
+     background-color: #ffffff;
+     color: #333333;
+     font-size: 17px;
+     font-weight: bold;
+     cursor: pointer;
+     box-sizing: border-box;
+  }
+  #searchToggleIcon {
+     font-size: 22px;
+     line-height: 1;
+  }
+  .search-area {
+     display: none;
+  }
+  .search-area.open {
+     display: block;
+  }
+}
