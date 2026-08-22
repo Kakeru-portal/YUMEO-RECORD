@@ -105,22 +105,22 @@ popup.id = 'musicPopup';
        });
    }
    function playSong(song) {
-       const playButton = song.querySelector('.play-button');
-       if (!playButton) return;
-       const title = song.querySelector('h3').textContent.trim();
-       const videoId = playButton.dataset.video;
-       const startTime = Number(playButton.dataset.start || 0);
-       currentSong = song;
-       miniPlayerTitle.textContent = title;
-       miniPlayerImage.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-       miniPlayerImage.alt = title;
-       popupSongTitle.textContent = title;
-       document.getElementById('popupOriginal').href =
-           `https://www.youtube.com/watch?v=${videoId}`;
-       popup.classList.add('active');
-       updatePlayButtons(-1);
-       createYouTubePlayer(videoId, startTime);
-   }
+   const playButton = song.querySelector('.play-button');
+   if (!playButton) return;
+   const title = song.querySelector('h3').textContent.trim();
+   const videoId = playButton.dataset.video;
+   const startTime = Number(playButton.dataset.start || 0);
+   currentSong = song;
+   miniPlayerTitle.textContent = title;
+   miniPlayerImage.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+   miniPlayerImage.alt = title;
+   popupSongTitle.textContent = title;
+   document.getElementById('popupOriginal').href =
+       `https://www.youtube.com/watch?v=${videoId}`;
+   popup.classList.add('active');
+   updatePlayButtons(-1);
+   createYouTubePlayer(videoId, startTime);
+}
    document.querySelectorAll('.play-button').forEach(button => {
        button.addEventListener('click', event => {
            event.stopPropagation();
