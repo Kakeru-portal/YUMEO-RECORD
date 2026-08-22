@@ -84,16 +84,14 @@ function playSong(song) {
    currentSong = song;
    miniPlayerTitle.textContent = title;
 
-   /*
-    * 以前のYouTubeプレイヤーを一度削除して、
-    * 新しい曲専用のプレイヤーを作る
-    */
+   /* 古いYouTubeプレイヤーを削除 */
    const oldPlayer =
        document.getElementById('youtubePlayer');
    if (oldPlayer) {
        oldPlayer.remove();
    }
 
+   /* 新しいYouTubeプレイヤーを作成 */
    const player =
        document.createElement('iframe');
 player.id = 'youtubePlayer';
@@ -104,6 +102,7 @@ player.id = 'youtubePlayer';
        'autoplay; encrypted-media';
    player.allowFullscreen = true;
 
+   /* YouTubeを読み込む */
    player.src =
        'https://www.youtube.com/embed/' +
        videoId +
@@ -116,58 +115,11 @@ player.id = 'youtubePlayer';
    miniPlayer.appendChild(player);
 
    /*
-    * 新しい曲を読み込んだので、
-    * プレイヤーの状態を「再生中」にする
+    * ここではまだ「再生中」と決めない
     */
-   isPlaying = true;
-   playPauseButton.textContent = '⏸';
+   isPlaying = false;
+   playPauseButton.textContent = '▶';
 }
-   
-   /* 曲カードの再生ボタン */
-   document
-       .querySelectorAll('.play-button')
-       .forEach(button => {
-           button.addEventListener('click', function () {
-               const song =
-                   this.closest('.song');
-               playSong(song);
-           });
-       });
-
-   /* 再生 / 一時停止 */
-   playPauseButton.addEventListener(
-       'click',
-       function () {
-           const player =
-               document.getElementById('youtubePlayer');
-
-           if (!player || !currentSong) {
-               return;
-           }
-
-           if (isPlaying) {
-               player.contentWindow.postMessage(
-                   JSON.stringify({
-                       event: 'command',
-                       func: 'pauseVideo',
-                       args: []
-                   }),
-                   '*'
-               );
-               isPlaying = false;
-               playPauseButton.textContent = '▶';
-           } else {
-               player.contentWindow.postMessage(
-                   JSON.stringify({
-                       event: 'command',
-                       func: 'playVideo',
-                       args: []
-                   }),
-                   '*'
-               );
-               isPlaying = true;
-               playPauseButton.textContent = '⏸';
-           }
        }
    );
 });
