@@ -174,12 +174,12 @@ footer {
    flex-shrink: 0;
 }
 #miniPlayerControls button {
-   width: 46px;
-   height: 46px;
+   width: 52px;
+   height: 52px;
    border: none;
    border-radius: 50%;
    background-color: #eeeeee;
-   font-size: 20px;
+   font-size: 23px;
    cursor: pointer;
    transition: background-color 0.15s ease, transform 0.1s ease;
 }
@@ -215,8 +215,8 @@ footer {
    position: relative;
    z-index: 1;
    width: 100%;
-   max-width: 800px;
-   max-height: 90vh;
+   max-width: 900px;
+   max-height: 95vh;
    overflow-y: auto;
    background-color: #ffffff;
    border-radius: 12px;
@@ -270,12 +270,12 @@ footer {
    text-align: center;
 }
 #popupPlayPause {
-   width: 58px;
-   height: 58px;
+   width: 70px;
+   height: 70px;
    border: none;
    border-radius: 50%;
    background-color: #eeeeee;
-   font-size: 25px;
+   font-size: 30px;
    cursor: pointer;
 }
 #popupActions {
@@ -359,9 +359,9 @@ footer {
        gap: 4px;
    }
    #miniPlayerControls button {
-       width: 40px;
-       height: 40px;
-       font-size: 17px;
+       width: 48px;
+       height: 48px;
+       font-size: 21px;
    }
    #playPauseButton {
        font-size: 16px !important;
@@ -370,10 +370,13 @@ footer {
        padding: 10px;
    }
    #musicPopupContent {
-       padding: 60px 12px 12px;
-       border-radius: 10px;
-       max-height: 95vh;
-   }
+   width: 100%;
+   max-width: none;
+   height: 100vh;
+   max-height: 100vh;
+   border-radius: 0;
+   padding: 60px 10px 15px;
+}
    #musicPopupClose {
        top: 8px;
        right: 8px;
