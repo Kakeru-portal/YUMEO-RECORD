@@ -3,6 +3,7 @@ body {
    font-family: sans-serif;
    background-color: #f7f7f7;
    color: #333;
+   font-size: 16px;
 }
 header {
    background-color: #333;
@@ -51,27 +52,28 @@ section > h2:first-child {
    box-sizing: border-box;
    width: 100%;
    max-width: 500px;
-   padding: 10px;
+   padding: 12px;
    font-size: 16px;
    border: 1px solid #ccc;
    border-radius: 6px;
 }
 #searchButton {
    margin-top: 10px;
-   padding: 9px 20px;
-   font-size: 16px;
+   padding: 11px 24px;
+   font-size: 17px;
    border: none;
-   border-radius: 6px;
+   border-radius: 7px;
    cursor: pointer;
 }
 .search-box label {
    display: inline-block;
-   margin: 5px 12px 5px 0;
+   margin: 7px 14px 7px 0;
    cursor: pointer;
+   font-size: 17px;
 }
 .search-box input[type="checkbox"] {
-   width: 16px;
-   height: 16px;
+   width: 18px;
+   height: 18px;
    vertical-align: middle;
 }
 section > h2:nth-of-type(2) {
@@ -98,17 +100,20 @@ section > h2:nth-of-type(2) {
 .song-card h3 {
    margin-top: 0;
    margin-bottom: 15px;
+   font-size: 21px;
 }
 .song-card p {
-   margin: 8px 0;
+   margin: 9px 0;
+   font-size: 16px;
+   line-height: 1.6;
 }
 .play-button {
-   margin-top: 10px;
-   padding: 9px 18px;
+   margin-top: 12px;
+   padding: 11px 22px;
    border: none;
-   border-radius: 6px;
+   border-radius: 7px;
    cursor: pointer;
-   font-size: 15px;
+   font-size: 17px;
 }
 footer {
    text-align: center;
@@ -155,7 +160,7 @@ footer {
    justify-content: space-between;
 }
 #miniPlayerTitle {
-   font-size: 16px;
+   font-size: 18px;
    font-weight: bold;
    white-space: nowrap;
    overflow: hidden;
@@ -169,12 +174,12 @@ footer {
    flex-shrink: 0;
 }
 #miniPlayerControls button {
-   width: 42px;
-   height: 42px;
+   width: 46px;
+   height: 46px;
    border: none;
    border-radius: 50%;
    background-color: #eeeeee;
-   font-size: 18px;
+   font-size: 20px;
    cursor: pointer;
    transition: background-color 0.15s ease, transform 0.1s ease;
 }
@@ -257,7 +262,7 @@ footer {
 }
 #popupSongTitle {
    margin-top: 15px;
-   font-size: 20px;
+   font-size: 22px;
    font-weight: bold;
 }
 #popupControls {
@@ -265,12 +270,12 @@ footer {
    text-align: center;
 }
 #popupPlayPause {
-   width: 50px;
-   height: 50px;
+   width: 58px;
+   height: 58px;
    border: none;
    border-radius: 50%;
    background-color: #eeeeee;
-   font-size: 22px;
+   font-size: 25px;
    cursor: pointer;
 }
 #popupActions {
@@ -281,12 +286,12 @@ footer {
 #popupFavorite,
 #popupOriginal {
    flex: 1;
-   padding: 10px;
+   padding: 13px;
    border: 1px solid #cccccc;
-   border-radius: 6px;
+   border-radius: 7px;
    background-color: #ffffff;
    text-align: center;
-   font-size: 14px;
+   font-size: 16px;
    cursor: pointer;
    text-decoration: none;
    color: #333333;
@@ -346,17 +351,17 @@ footer {
    }
    #miniPlayerTitle {
        display: block;
-       font-size: 13px;
+       font-size: 15px;
        margin-right: 0;
-       margin-bottom: 7px;
+       margin-bottom: 8px;
    }
    #miniPlayerControls {
        gap: 4px;
    }
    #miniPlayerControls button {
-       width: 34px;
-       height: 34px;
-       font-size: 14px;
+       width: 40px;
+       height: 40px;
+       font-size: 17px;
    }
    #playPauseButton {
        font-size: 16px !important;
@@ -378,7 +383,7 @@ footer {
        font-size: 30px;
    }
    #popupSongTitle {
-       font-size: 17px;
+       font-size: 20px;
    }
    #popupActions {
        flex-direction: column;
