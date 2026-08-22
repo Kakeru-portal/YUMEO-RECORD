@@ -446,3 +446,9 @@ footer {
      display: block;
   }
 }
+/* 検索結果の件数表示 */
+#searchResultCount {
+  margin: 15px 5px 8px;
+  color: #666666;
+  font-size: 15px;
+}
