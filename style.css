@@ -581,3 +581,12 @@ footer {
 #infoPopupContent a:hover {
   text-decoration: underline;
 }
+#infoPopupContent h3 {
+  margin: 28px 0 10px;
+  font-size: 19px;
+  border-left: 4px solid #AC324B;
+  padding-left: 10px;
+}
+#infoPopupContent section > h3:first-child {
+  margin-top: 0;
+}
