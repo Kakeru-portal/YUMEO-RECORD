@@ -207,6 +207,7 @@ filterSongs();
 const infoButton = document.getElementById('infoButton');
 const infoPopup = document.getElementById('infoPopup');
 const infoPopupClose = document.getElementById('infoPopupClose');
+const infoPopupCloseBottom = document.getElementById('infoPopupCloseBottom');
 const infoPopupOverlay = document.getElementById('infoPopupOverlay');
 if (infoButton && infoPopup) {
   infoButton.addEventListener('click', () => {
@@ -215,6 +216,11 @@ if (infoButton && infoPopup) {
 }
 if (infoPopupClose && infoPopup) {
   infoPopupClose.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
+}
+if (infoPopupCloseBottom && infoPopup) {
+  infoPopupCloseBottom.addEventListener('click', () => {
      infoPopup.classList.remove('active');
   });
 }
