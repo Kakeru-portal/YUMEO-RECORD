@@ -11,6 +11,31 @@ header {
   padding: 38px 20px 30px;
   text-align: center;
   border-bottom: 4px solid #AC324B;
+   position: relative;
+}
+#infoButton {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #AC324B;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+#infoButton:hover {
+  background-color: #AC324B;
+  color: white;
+}
+#infoButton:active {
+  transform: scale(0.94);
 }
 header h1 {
   margin: 0 0 6px;
