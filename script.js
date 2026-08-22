@@ -122,11 +122,17 @@ popup.id = 'musicPopup';
    createYouTubePlayer(videoId, startTime);
 }
    document.querySelectorAll('.play-button').forEach(button => {
-       button.addEventListener('click', event => {
-           event.stopPropagation();
-           playSong(button.closest('.song'));
-       });
+   button.addEventListener('click', event => {
+       event.stopPropagation();
+       const song = button.closest('.song');
+       playSong(song);
+       setTimeout(() => {
+           if (youtubePlayer) {
+               youtubePlayer.playVideo();
+           }
+       }, 500);
    });
+});
    function togglePlayPause() {
        if (!youtubePlayer) return;
        const state = youtubePlayer.getPlayerState();
