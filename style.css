@@ -8,21 +8,36 @@ body {
 header {
   background-color: #222222;
   color: white;
-  padding: 38px 20px 32px;
+  padding: 38px 20px 30px;
   text-align: center;
   border-bottom: 4px solid #AC324B;
 }
 header h1 {
- margin: 0 0 8px;
- font-family: "Bebas Neue", sans-serif;
- font-size: 48px;
- font-weight: normal;
- letter-spacing: 2px;
+  margin: 0 0 6px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+header h2 {
+  margin: 0 0 14px;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
 }
 header p {
   margin: 0;
+}
+.site-description {
   color: #dddddd;
   font-size: 15px;
+  line-height: 1.6;
+}
+.site-notice {
+  margin-top: 6px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 1.5;
 }
 main {
    max-width: 900px;
