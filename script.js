@@ -71,45 +71,58 @@ document.addEventListener('DOMContentLoaded', () => {
    let isPlaying = false;
 
    /* 曲を再生する */
-   function playSong(song) {
-       const title =
-           song.querySelector('h3').textContent.trim();
-       const playButton =
-           song.querySelector('.play-button');
-       const videoId =
-           playButton.dataset.video;
-       const startTime =
-           playButton.dataset.start || 0;
+function playSong(song) {
+   const title =
+       song.querySelector('h3').textContent.trim();
+   const playButton =
+       song.querySelector('.play-button');
+   const videoId =
+       playButton.dataset.video;
+   const startTime =
+       playButton.dataset.start || 0;
 
-       currentSong = song;
-       miniPlayerTitle.textContent = title;
-       isPlaying = true;
-       playPauseButton.textContent = '⏸';
+   currentSong = song;
+   miniPlayerTitle.textContent = title;
 
-       let player =
-           document.getElementById('youtubePlayer');
-
-       if (!player) {
-           player =
-               document.createElement('iframe');
-player.id = 'youtubePlayer';
-           player.width = '1';
-           player.height = '1';
-           player.frameBorder = '0';
-           player.allow =
-               'autoplay; encrypted-media';
-           player.allowFullscreen = true;
-           miniPlayer.appendChild(player);
-       }
-
-       player.src =
-           'https://www.youtube.com/embed/' +
-           videoId +
-           '?autoplay=1&start=' +
-           startTime +
-           '&enablejsapi=1';
+   /*
+    * 以前のYouTubeプレイヤーを一度削除して、
+    * 新しい曲専用のプレイヤーを作る
+    */
+   const oldPlayer =
+       document.getElementById('youtubePlayer');
+   if (oldPlayer) {
+       oldPlayer.remove();
    }
 
+   const player =
+       document.createElement('iframe');
+player.id = 'youtubePlayer';
+   player.width = '1';
+   player.height = '1';
+   player.frameBorder = '0';
+   player.allow =
+       'autoplay; encrypted-media';
+   player.allowFullscreen = true;
+
+   player.src =
+       'https://www.youtube.com/embed/' +
+       videoId +
+       '?autoplay=1' +
+       '&start=' +
+       startTime +
+       '&enablejsapi=1' +
+       '&playsinline=1';
+
+   miniPlayer.appendChild(player);
+
+   /*
+    * 新しい曲を読み込んだので、
+    * プレイヤーの状態を「再生中」にする
+    */
+   isPlaying = true;
+   playPauseButton.textContent = '⏸';
+}
+   
    /* 曲カードの再生ボタン */
    document
        .querySelectorAll('.play-button')
