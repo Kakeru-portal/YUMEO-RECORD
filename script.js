@@ -201,3 +201,4 @@ popup.id = 'musicPopup';
        popup.classList.add('active');
    });
 });
+filterSongs();
