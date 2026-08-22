@@ -202,3 +202,24 @@ popup.id = 'musicPopup';
    });
 });
 filterSongs();
+
+// インフォメーションポップアップ
+const infoButton = document.getElementById('infoButton');
+const infoPopup = document.getElementById('infoPopup');
+const infoPopupClose = document.getElementById('infoPopupClose');
+const infoPopupOverlay = document.getElementById('infoPopupOverlay');
+if (infoButton && infoPopup) {
+  infoButton.addEventListener('click', () => {
+     infoPopup.classList.add('active');
+  });
+}
+if (infoPopupClose && infoPopup) {
+  infoPopupClose.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
+}
+if (infoPopupOverlay && infoPopup) {
+  infoPopupOverlay.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
+}
