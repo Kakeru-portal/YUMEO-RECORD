@@ -499,3 +499,85 @@ footer {
   color: #666666;
   font-size: 15px;
 }
+/* インフォメーションポップアップ */
+#infoPopup {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#infoPopup.active {
+  display: flex;
+}
+#infoPopupOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#infoPopupContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-top: 5px solid #AC324B;
+  border-radius: 12px;
+  padding: 50px 25px 25px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+#infoPopupClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #AC324B;
+  color: white;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+#infoPopupClose:hover {
+  background-color: #c43d58;
+}
+#infoPopupContent h2 {
+  margin: 0 0 25px;
+  color: #AC324B;
+  font-size: 26px;
+}
+#infoPopupContent section {
+  margin-bottom: 25px;
+}
+#infoPopupContent section:last-child {
+  margin-bottom: 0;
+}
+#infoPopupContent h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  border-left: 4px solid #AC324B;
+  padding-left: 10px;
+}
+#infoPopupContent p {
+  margin: 7px 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+#infoPopupContent a {
+  color: #AC324B;
+  font-weight: bold;
+  text-decoration: none;
+}
+#infoPopupContent a:hover {
+  text-decoration: underline;
+}
