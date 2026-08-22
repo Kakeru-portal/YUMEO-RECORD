@@ -17,22 +17,23 @@ header {
   position: absolute;
   top: 18px;
   right: 18px;
-  width: 42px;
-  height: 42px;
-  border: 1px solid #AC324B;
+  width: 44px;
+  height: 44px;
+  border: none;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #AC324B;
   color: white;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 #infoButton:hover {
-  background-color: #AC324B;
-  color: white;
+  background-color: #c43d58;
 }
 #infoButton:active {
   transform: scale(0.94);
