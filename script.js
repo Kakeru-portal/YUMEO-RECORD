@@ -149,7 +149,6 @@ let currentStartTime = 0;
 
 
 /* YouTube APIを読み込む */
-
 function loadYouTubeAPI() {
 
     if (
