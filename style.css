@@ -590,3 +590,24 @@ footer {
 #infoPopupContent section > h3:first-child {
   margin-top: 0;
 }
+.infoPopupBottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+#infoPopupCloseBottom {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #AC324B;
+  color: white;
+  font-size: 28px;
+  line-height: 44px;
+  padding: 0;
+  cursor: pointer;
+}
+#infoPopupCloseBottom:hover {
+  background-color: #c43d58;
+}
