@@ -36,6 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
    if (searchButton) {
        searchButton.addEventListener('click', filterSongs);
    }
+   const searchToggle = document.getElementById('searchToggle');
+const searchArea = document.querySelector('.search-area');
+const searchToggleIcon = document.getElementById('searchToggleIcon');
+if (searchToggle && searchArea && searchToggleIcon) {
+  searchToggle.addEventListener('click', () => {
+     searchArea.classList.toggle('open');
+     if (searchArea.classList.contains('open')) {
+        searchToggleIcon.textContent = '−';
+     } else {
+        searchToggleIcon.textContent = '＋';
+     }
+  });
+}
    const miniPlayer = document.getElementById('miniPlayer');
    const miniPlayerTitle = document.getElementById('miniPlayerTitle');
    const miniPlayerImage = document.getElementById('miniPlayerImage');
