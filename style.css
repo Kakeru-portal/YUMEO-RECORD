@@ -23,14 +23,19 @@ main {
    padding: 0 15px;
 }
 section {
+   padding: 0;
+   margin-bottom: 20px;
+}
+section > h2:first-child {
    background-color: white;
    padding: 20px;
-   margin-bottom: 20px;
-   border-radius: 10px;
+   margin: 0;
+   border-radius: 10px 10px 0 0;
 }
-h2 {
-   border-bottom: 2px solid #333;
-   padding-bottom: 10px;
+.search-area {
+   background-color: white;
+   padding: 20px;
+   border-radius: 0 0 10px 10px;
 }
 .search-box {
    background-color: #f7f7f7;
@@ -69,17 +74,30 @@ h2 {
    height: 16px;
    vertical-align: middle;
 }
+section > h2:nth-of-type(2) {
+   background-color: transparent;
+   padding: 25px 5px 10px;
+   margin: 0;
+   border: none;
+}
+#songList {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
 .song {
-   margin: 20px 0;
+   margin: 0;
 }
 .song-card {
-   border: 1px solid #ddd;
-   border-radius: 10px;
+   border: 1px solid #ccc;
+   border-radius: 12px;
    padding: 20px;
    background-color: white;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .song-card h3 {
    margin-top: 0;
+   margin-bottom: 15px;
 }
 .song-card p {
    margin: 8px 0;
@@ -109,8 +127,11 @@ footer {
        padding: 0 10px;
        margin-top: 20px;
    }
-   section {
-       padding: 15px;
+   section > h2:first-child {
+       padding: 18px 15px;
+   }
+   .search-area {
+       padding: 10px 15px;
    }
    .search-box {
        padding: 15px;
@@ -121,6 +142,9 @@ footer {
    }
    #searchButton {
        width: 100%;
+   }
+   section > h2:nth-of-type(2) {
+       padding: 25px 5px 10px;
    }
    .song-card {
        padding: 15px;
