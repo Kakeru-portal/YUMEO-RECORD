@@ -19,6 +19,12 @@ function filterSongs() {
        const textMatch = searchText === '' || songText.includes(searchText);
        song.style.display = countMatch && typeMatch && unitMatch && yearMatch && textMatch ? '' : 'none';
    });
+   const allSongs = document.querySelectorAll('.song');
+const visibleSongs = Array.from(allSongs).filter(song => song.style.display !== 'none');
+const resultCount = document.getElementById('searchResultCount');
+if (resultCount) {
+  resultCount.textContent = `全${allSongs.length}曲中 ${visibleSongs.length}曲ヒットしました`;
+}
 }
 let youtubePlayer = null;
 let currentSong = null;
