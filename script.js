@@ -57,3 +57,76 @@ document.addEventListener('DOMContentLoaded', () => {
        .getElementById('searchButton')
        .addEventListener('click', filterSongs);
 });
+/* ミニプレイヤー */
+const miniPlayer = document.getElementById('miniPlayer');
+const miniPlayerTitle = document.getElementById('miniPlayerTitle');
+const playPauseButton = document.getElementById('playPauseButton');
+let currentSong = null;
+let isPlaying = false;
+
+/* 曲を再生する */
+function playSong(song) {
+   const title = song.querySelector('h3').textContent.trim();
+   const videoId = song.querySelector('.play-button').dataset.video;
+   const startTime = song.querySelector('.play-button').dataset.start || 0;
+   currentSong = song;
+   miniPlayerTitle.textContent = title;
+   isPlaying = true;
+   playPauseButton.textContent = '⏸';
+   let player = document.getElementById('youtubePlayer');
+   if (!player) {
+       player = document.createElement('iframe');
+player.id = 'youtubePlayer';
+       player.width = '1';
+       player.height = '1';
+       player.allow =
+           'autoplay; encrypted-media';
+       player.allowFullscreen = true;
+       miniPlayer.appendChild(player);
+   }
+   player.src =
+       'https://www.youtube.com/embed/' +
+       videoId +
+       '?autoplay=1&start=' +
+       startTime +
+       '&enablejsapi=1';
+}
+
+/* 曲カードの再生ボタン */
+document.querySelectorAll('.play-button').forEach(button => {
+   button.addEventListener('click', function () {
+       const song = this.closest('.song');
+       playSong(song);
+   });
+});
+
+/* 再生 / 一時停止 */
+playPauseButton.addEventListener('click', function () {
+   const player = document.getElementById('youtubePlayer');
+   if (!player || !currentSong) {
+       return;
+   }
+   if (isPlaying) {
+       player.contentWindow.postMessage(
+           JSON.stringify({
+               event: 'command',
+               func: 'pauseVideo',
+               args: []
+           }),
+           '*'
+       );
+       isPlaying = false;
+       playPauseButton.textContent = '▶';
+   } else {
+       player.contentWindow.postMessage(
+           JSON.stringify({
+               event: 'command',
+               func: 'playVideo',
+               args: []
+           }),
+           '*'
+       );
+       isPlaying = true;
+       playPauseButton.textContent = '⏸';
+   }
+});
