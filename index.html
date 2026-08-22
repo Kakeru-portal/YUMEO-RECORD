@@ -13,12 +13,13 @@
 <main>
 <section>
 <h2>歌唱曲一覧</h2>
+<div class="search-area">
 <div class="search-box">
 <h3>曲を検索</h3>
 <input
-           type="text"
-           id="songSearch"
-           placeholder="曲名・アーティスト名・歌唱者名など"
+               type="text"
+               id="songSearch"
+               placeholder="曲名・アーティスト名・歌唱者名など"
 >
 <button type="button" id="searchButton">検索</button>
 </div>
@@ -26,82 +27,84 @@
 <h3>歌唱人数</h3>
 <label>
 <input type="checkbox" name="memberCount" value="1">
-           ソロ
+               ソロ
 </label>
 <label>
 <input type="checkbox" name="memberCount" value="2">
-           2人
+               2人
 </label>
 <label>
 <input type="checkbox" name="memberCount" value="3">
-           3人
+               3人
 </label>
 <label>
 <input type="checkbox" name="memberCount" value="4">
-           4人
+               4人
 </label>
 <label>
 <input type="checkbox" name="memberCount" value="5">
-           5人以上
+               5人以上
 </label>
 </div>
 <div class="search-box">
 <h3>楽曲形態</h3>
 <label>
 <input type="checkbox" name="songType" value="original">
-           オリジナル
+               オリジナル
 </label>
 <label>
 <input type="checkbox" name="songType" value="cover">
-           カバー
+               カバー
 </label>
 </div>
 <div class="search-box">
 <h3>ユニット</h3>
 <label>
 <input type="checkbox" name="unit" value="VACHSS">
-           VACHSS
+               VACHSS
 </label>
 </div>
 <div class="search-box">
 <h3>年代</h3>
 <label>
 <input type="checkbox" name="year" value="2018">
-           2018年
+               2018年
 </label>
 <label>
 <input type="checkbox" name="year" value="2019">
-           2019年
+               2019年
 </label>
 <label>
 <input type="checkbox" name="year" value="2020">
-           2020年
+               2020年
 </label>
 <label>
 <input type="checkbox" name="year" value="2021">
-           2021年
+               2021年
 </label>
 <label>
 <input type="checkbox" name="year" value="2022">
-           2022年
+               2022年
 </label>
 <label>
 <input type="checkbox" name="year" value="2023">
-           2023年
+               2023年
 </label>
 <label>
 <input type="checkbox" name="year" value="2024">
-           2024年
+               2024年
 </label>
 <label>
 <input type="checkbox" name="year" value="2025">
-           2025年
+               2025年
 </label>
 <label>
 <input type="checkbox" name="year" value="2026">
-           2026年
+               2026年
 </label>
 </div>
+</div>
+<h2>検索結果</h2>
 <div id="songList">
 <div
            class="song"
