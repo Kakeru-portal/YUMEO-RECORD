@@ -158,4 +158,3 @@ player.id = 'youtubePlayer';
        }
    );
 });
-alert('JavaScriptは動いています！');
