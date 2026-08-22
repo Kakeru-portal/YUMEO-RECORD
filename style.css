@@ -339,51 +339,54 @@ footer {
        width: 100%;
    }
    #miniPlayer {
-       padding: 10px;
-   display: grid;
-   grid-template-columns: 110px 1fr;
-   grid-template-rows: auto auto;
-   column-gap: 12px;
-   row-gap: 8px;
-   }
-   #miniPlayerThumbnail {
-   grid-column: 1;
-   grid-row: 1;
-   width: 110px;
-   height: 62px;
-   flex: none;
+   min-height: 78px;
+   padding: 10px 12px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   box-sizing: border-box;
 }
-   #miniPlayerInfo {
-   grid-column: 2;
-   grid-row: 1;
+#miniPlayerThumbnail {
+   flex: 0 0 90px;
+   width: 90px;
+   height: 51px;
+}
+#miniPlayerInfo {
+   flex: 1;
    min-width: 0;
    margin-left: 0;
    display: flex;
    align-items: center;
+   justify-content: space-between;
+   gap: 8px;
 }
-   #miniPlayerTitle {
-   grid-column: 2;
-   grid-row: 1;
-   align-self: center;
+#miniPlayerTitle {
+   flex: 1;
    min-width: 0;
-   font-size: 15px;
+   font-size: 16px;
    margin: 0;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
-   #miniPlayerControls {
-   grid-column: 1 / -1;
-   grid-row: 2;
-   justify-content: center;
-   gap: 10px;
-   width: 100%;
+#miniPlayerControls {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   flex-shrink: 0;
 }
-   #miniPlayerControls button {
-       width: 48px;
-       height: 48px;
-       font-size: 21px;
-   }
-   #playPauseButton {
-       font-size: 16px !important;
-   }
+#miniPlayerControls button {
+   width: 44px;
+   height: 44px;
+   border: none;
+   border-radius: 50%;
+   background-color: #eeeeee;
+   font-size: 20px;
+   cursor: pointer;
+}
+#playPauseButton {
+   font-size: 21px !important;
+}
    #musicPopup {
        padding: 10px;
    }
