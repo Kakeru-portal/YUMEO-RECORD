@@ -263,6 +263,7 @@ document.getElementById('popupNext').addEventListener('click', event => {
    // 曲一覧タブ
 const allSongsTab = document.getElementById('allSongsTab');
 const favoriteSongsTab = document.getElementById('favoriteSongsTab');
+   const pageShuffleButton = document.getElementById('pageShuffleButton');
 if (allSongsTab && favoriteSongsTab) {
    allSongsTab.addEventListener('click', () => {
        allSongsTab.classList.add('active');
@@ -292,6 +293,19 @@ if (allSongsTab && favoriteSongsTab) {
            resultCount.textContent =
                `お気に入り ${visibleSongs.length}曲`;
        }
+   });
+}
+   if (pageShuffleButton) {
+   pageShuffleButton.addEventListener('click', event => {
+       event.stopPropagation();
+       const visibleSongs = Array.from(document.querySelectorAll('.song'))
+           .filter(song => song.style.display !== 'none');
+       if (visibleSongs.length === 0) {
+           return;
+       }
+       const randomIndex = Math.floor(Math.random() * visibleSongs.length);
+       const randomSong = visibleSongs[randomIndex];
+       playSong(randomSong);
    });
 }
 });
