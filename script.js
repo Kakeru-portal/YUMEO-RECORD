@@ -356,6 +356,15 @@ if (allSongsTab && favoriteSongsTab) {
            resultCount.textContent =
                `お気に入り ${visibleSongs.length}曲`;
        }
+      const favoriteEmptyMessage = document.getElementById('favoriteEmptyMessage');
+const searchEmptyMessage = document.getElementById('searchEmptyMessage');
+if (favoriteEmptyMessage) {
+   favoriteEmptyMessage.style.display =
+       visibleSongs.length === 0 ? 'block' : 'none';
+}
+if (searchEmptyMessage) {
+   searchEmptyMessage.style.display = 'none';
+}
    });
 }
    if (pageShuffleButton) {
