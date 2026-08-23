@@ -551,14 +551,23 @@ footer {
   border-left: 7px solid #333333;
   transform: skewY(25deg);
 }
-#popupPlayPause {
-   width: 70px;
-   height: 70px;
-   border: none;
-   border-radius: 50%;
-   background-color: #eeeeee;
-   font-size: 30px;
-   cursor: pointer;
+#popupPlayPause,
+#popupLoop,
+#popupPrevious,
+#popupNext,
+#popupShuffle {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 #popupActions {
    display: flex;
