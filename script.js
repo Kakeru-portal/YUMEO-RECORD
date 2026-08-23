@@ -289,3 +289,37 @@ if (infoPopupOverlay && infoPopup) {
      infoPopup.classList.remove('active');
   });
 }
+// 曲一覧タブ
+const allSongsTab = document.getElementById('allSongsTab');
+const favoriteSongsTab = document.getElementById('favoriteSongsTab');
+if (allSongsTab && favoriteSongsTab) {
+   allSongsTab.addEventListener('click', () => {
+       allSongsTab.classList.add('active');
+       favoriteSongsTab.classList.remove('active');
+       document.querySelectorAll('.song').forEach(song => {
+           song.style.display = '';
+       });
+       filterSongs();
+   });
+   favoriteSongsTab.addEventListener('click', () => {
+       favoriteSongsTab.classList.add('active');
+       allSongsTab.classList.remove('active');
+       const favorites = getFavorites();
+       document.querySelectorAll('.song').forEach(song => {
+           const title = song.querySelector('h3').textContent.trim();
+           if (favorites.includes(title)) {
+               song.style.display = '';
+           } else {
+               song.style.display = 'none';
+           }
+       });
+       const allSongs = document.querySelectorAll('.song');
+       const visibleSongs = Array.from(allSongs)
+           .filter(song => song.style.display !== 'none');
+       const resultCount = document.getElementById('searchResultCount');
+       if (resultCount) {
+           resultCount.textContent =
+               `お気に入り ${visibleSongs.length}曲`;
+       }
+   });
+}
