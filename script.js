@@ -242,8 +242,13 @@ function updateSeekBar() {
            },
            events: {
                onReady: event => {
-                   event.target.playVideo();
-               },
+   event.target.playVideo();
+   setTimeout(() => {
+       if (youtubePlayer) {
+           youtubePlayer.playVideo();
+       }
+   }, 1000);
+},
                onStateChange: event => {
   updatePlayButtons(event.data);
   if (event.data === YT.PlayerState.PLAYING) {
