@@ -380,8 +380,52 @@ footer {
    font-weight: bold;
 }
 #popupControls {
-  margin-top: 15px;
-  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+#popupControls button {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+#popupControls button:hover {
+  background-color: #dddddd;
+}
+#popupControls button:active {
+  transform: scale(0.94);
+}
+#popupControls svg {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: #333333;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#popupControls button:nth-child(2) svg,
+#popupControls button:nth-child(3) svg,
+#popupControls button:nth-child(4) svg {
+  fill: #333333;
+  stroke: none;
+}
+#popupControls .popupPlayIcon {
+  display: block;
+}
+#popupControls .popupPauseIcon {
+  display: none;
 }
 #popupControls button {
   width: 52px;
