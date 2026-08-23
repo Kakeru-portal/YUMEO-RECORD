@@ -617,6 +617,21 @@ if (originalText) {
 }
 });
 // =========================
+// お気に入りボタンを自動追加
+// =========================
+document.querySelectorAll('.song').forEach(song => {
+  const card = song.querySelector('.song-card');
+  if (!card) return;
+  // すでにボタンがある場合は追加しない
+  if (card.querySelector('.favorite-button')) return;
+  const favoriteButton = document.createElement('button');
+  favoriteButton.type = 'button';
+  favoriteButton.className = 'favorite-button';
+  favoriteButton.textContent = '♡';
+  favoriteButton.setAttribute('aria-label', 'お気に入り登録');
+  card.appendChild(favoriteButton);
+});
+// =========================
 // 楽曲を年代順に自動並べ替え
 // =========================
 document.addEventListener('DOMContentLoaded', () => {
