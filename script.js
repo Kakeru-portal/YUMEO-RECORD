@@ -103,11 +103,11 @@ popup.id = 'musicPopup';
 </button>
 <button type="button" id="popupShuffle" aria-label="シャッフル再生">
 <svg viewBox="0 0 64 48" aria-hidden="true">
-<path d="M7 12h7c10 0 13 24 25 24h10"/>
-<path d="M42 30l7 6-7 6"/>
-<path d="M7 36h7c4 0 7-4 10-9"/>
-<path d="M31 12c3-4 6-6 10-6h8"/>
-<path d="M42 1l7 5-7 6"/>
+<path d="M7 12h6c10 0 14 24 26 24h11"/>
+<path d="M43 30l7 6-7 6"/>
+<path d="M7 36h6c5 0 8-5 11-10"/>
+<path d="M31 12c3-4 6-6 11-6h8"/>
+<path d="M43 1l7 5-7 6"/>
 </svg>
 </button>
 </div>
