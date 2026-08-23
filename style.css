@@ -994,3 +994,26 @@ color: white !important;
  background-color: #AC324B;
  cursor: pointer;
 }
+/* =========================
+  曲カードの操作ボタン
+  ========================= */
+.song-card .play-button,
+.song-card .favorite-button {
+   height: 38px;
+   box-sizing: border-box;
+   vertical-align: middle;
+}
+.song-card .play-button {
+   width: auto;
+   min-width: 100px;
+   margin-right: 6px;
+}
+.song-card .favorite-button {
+   width: 38px;
+   padding: 0;
+   font-size: 22px;
+   line-height: 38px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+}
