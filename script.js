@@ -149,14 +149,6 @@ popup.id = 'musicPopup';
       } else {
           popupShuffle.classList.remove('shuffle-active');
       }
-      const visibleSongs = Array.from(document.querySelectorAll('.song'))
-          .filter(song => song.style.display !== 'none');
-      if (visibleSongs.length === 0) {
-          return;
-      }
-      const randomIndex = Math.floor(Math.random() * visibleSongs.length);
-      const randomSong = visibleSongs[randomIndex];
-      playSong(randomSong, true);
   });
 }
    const popupFavorite = document.getElementById('popupFavorite');
