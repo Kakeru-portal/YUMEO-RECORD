@@ -624,12 +624,18 @@ document.querySelectorAll('.song').forEach(song => {
   if (!card) return;
   // すでにボタンがある場合は追加しない
   if (card.querySelector('.favorite-button')) return;
+  const playButton = card.querySelector('.play-button');
   const favoriteButton = document.createElement('button');
   favoriteButton.type = 'button';
   favoriteButton.className = 'favorite-button';
   favoriteButton.textContent = '♡';
   favoriteButton.setAttribute('aria-label', 'お気に入り登録');
-  card.appendChild(favoriteButton);
+  // 再生ボタンがあれば、そのすぐ隣に追加
+  if (playButton) {
+     playButton.insertAdjacentElement('afterend', favoriteButton);
+  } else {
+     card.appendChild(favoriteButton);
+  }
 });
 // =========================
 // 楽曲を年代順に自動並べ替え
