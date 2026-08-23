@@ -887,3 +887,37 @@ footer {
      justify-content: center;
   }
 }
+/* 曲一覧タブ */
+#songTabs {
+ display: flex;
+ gap: 0;
+ margin-top: 15px;
+ border-bottom: 2px solid #eeeeee;
+}
+#songTabs button {
+ flex: 1;
+ padding: 13px 10px;
+ border: none;
+ background-color: #f3f3f3;
+ color: #666666;
+ font-size: 16px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.15s ease, color 0.15s ease;
+}
+#songTabs button:first-child {
+ border-radius: 8px 0 0 0;
+}
+#songTabs button:last-child {
+ border-radius: 0 8px 0 0;
+}
+#songTabs button.active {
+ background-color: #AC324B;
+ color: white;
+}
+#songTabs button:hover {
+ background-color: #dddddd;
+}
+#songTabs button.active:hover {
+ background-color: #c43d58;
+}
