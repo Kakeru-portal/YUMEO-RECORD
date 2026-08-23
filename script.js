@@ -42,6 +42,9 @@ let loopMode = 0;
 // 0 = OFF
 // 1 = 1曲リピート
 // 2 = 全体リピート
+let shuffleMode = false;
+// false = OFF
+// true = ON
 window.onYouTubeIframeAPIReady = function() {
    youtubeReady = true;
 };
@@ -368,17 +371,23 @@ if (searchEmptyMessage) {
    });
 }
    if (pageShuffleButton) {
-   pageShuffleButton.addEventListener('click', event => {
-       event.stopPropagation();
-       const visibleSongs = Array.from(document.querySelectorAll('.song'))
-           .filter(song => song.style.display !== 'none');
-       if (visibleSongs.length === 0) {
-           return;
-       }
-       const randomIndex = Math.floor(Math.random() * visibleSongs.length);
-       const randomSong = visibleSongs[randomIndex];
-       playSong(randomSong);
-   });
+  pageShuffleButton.addEventListener('click', event => {
+      event.stopPropagation();
+      shuffleMode = !shuffleMode;
+      if (shuffleMode) {
+          pageShuffleButton.classList.add('shuffle-active');
+      } else {
+          pageShuffleButton.classList.remove('shuffle-active');
+      }
+      const visibleSongs = Array.from(document.querySelectorAll('.song'))
+          .filter(song => song.style.display !== 'none');
+      if (visibleSongs.length === 0) {
+          return;
+      }
+      const randomIndex = Math.floor(Math.random() * visibleSongs.length);
+      const randomSong = visibleSongs[randomIndex];
+      playSong(randomSong);
+  });
 }
 });
 filterSongs();
