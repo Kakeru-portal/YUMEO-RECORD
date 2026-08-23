@@ -123,7 +123,7 @@ popup.id = 'musicPopup';
            }
        });
    }
-   function playSong(song) {
+   function playSong(song, openPopup = true) {
    const playButton = song.querySelector('.play-button');
    if (!playButton) return;
    const title = song.querySelector('h3').textContent.trim();
@@ -136,7 +136,9 @@ popup.id = 'musicPopup';
    popupSongTitle.textContent = title;
    document.getElementById('popupOriginal').href =
        `https://www.youtube.com/watch?v=${videoId}`;
-   popup.classList.add('active');
+   if (openPopup) {
+  popup.classList.add('active');
+}
    updatePlayButtons(-1);
    createYouTubePlayer(videoId, startTime);
 }
@@ -176,8 +178,9 @@ popup.id = 'musicPopup';
            .filter(song => song.style.display !== 'none');
        const index = songs.indexOf(currentSong);
        if (index > 0) {
-           playSong(songs[index - 1]);
-       }
+   const wasPopupOpen = popup.classList.contains('active');
+   playSong(songs[index - 1], wasPopupOpen);
+}
    });
    nextButton.addEventListener('click', event => {
        event.stopPropagation();
@@ -186,8 +189,9 @@ popup.id = 'musicPopup';
            .filter(song => song.style.display !== 'none');
        const index = songs.indexOf(currentSong);
        if (index >= 0 && index < songs.length - 1) {
-           playSong(songs[index + 1]);
-       }
+   const wasPopupOpen = popup.classList.contains('active');
+   playSong(songs[index + 1], wasPopupOpen);
+}
    });
    document.getElementById('musicPopupClose').addEventListener('click', () => {
        popup.classList.remove('active');
