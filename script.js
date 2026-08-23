@@ -260,36 +260,7 @@ document.getElementById('popupNext').addEventListener('click', event => {
        if (!currentSong) return;
        popup.classList.add('active');
    });
-});
-filterSongs();
-
-// インフォメーションポップアップ
-const infoButton = document.getElementById('infoButton');
-const infoPopup = document.getElementById('infoPopup');
-const infoPopupClose = document.getElementById('infoPopupClose');
-const infoPopupCloseBottom = document.getElementById('infoPopupCloseBottom');
-const infoPopupOverlay = document.getElementById('infoPopupOverlay');
-if (infoButton && infoPopup) {
-  infoButton.addEventListener('click', () => {
-     infoPopup.classList.add('active');
-  });
-}
-if (infoPopupClose && infoPopup) {
-  infoPopupClose.addEventListener('click', () => {
-     infoPopup.classList.remove('active');
-  });
-}
-if (infoPopupCloseBottom && infoPopup) {
-  infoPopupCloseBottom.addEventListener('click', () => {
-     infoPopup.classList.remove('active');
-  });
-}
-if (infoPopupOverlay && infoPopup) {
-  infoPopupOverlay.addEventListener('click', () => {
-     infoPopup.classList.remove('active');
-  });
-}
-// 曲一覧タブ
+   // 曲一覧タブ
 const allSongsTab = document.getElementById('allSongsTab');
 const favoriteSongsTab = document.getElementById('favoriteSongsTab');
 if (allSongsTab && favoriteSongsTab) {
@@ -322,4 +293,33 @@ if (allSongsTab && favoriteSongsTab) {
                `お気に入り ${visibleSongs.length}曲`;
        }
    });
+}
+});
+filterSongs();
+
+// インフォメーションポップアップ
+const infoButton = document.getElementById('infoButton');
+const infoPopup = document.getElementById('infoPopup');
+const infoPopupClose = document.getElementById('infoPopupClose');
+const infoPopupCloseBottom = document.getElementById('infoPopupCloseBottom');
+const infoPopupOverlay = document.getElementById('infoPopupOverlay');
+if (infoButton && infoPopup) {
+  infoButton.addEventListener('click', () => {
+     infoPopup.classList.add('active');
+  });
+}
+if (infoPopupClose && infoPopup) {
+  infoPopupClose.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
+}
+if (infoPopupCloseBottom && infoPopup) {
+  infoPopupCloseBottom.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
+}
+if (infoPopupOverlay && infoPopup) {
+  infoPopupOverlay.addEventListener('click', () => {
+     infoPopup.classList.remove('active');
+  });
 }
