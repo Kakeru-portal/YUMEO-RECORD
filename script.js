@@ -224,42 +224,44 @@ popupFavorite.addEventListener('click', event => {
    return `${minutes}:${String(remainingSeconds).padStart(2, '0')}`;
 }
 function updateSeekBar() {
-   if (!youtubePlayer) return;
-   const currentTime = youtubePlayer.getCurrentTime() || 0;
-   const duration = youtubePlayer.getDuration() || 0;
-   const seekBar = document.getElementById('popupSeekBar');
-   const currentTimeDisplay = document.getElementById('popupCurrentTime');
-   const durationDisplay = document.getElementById('popupDuration');
-   if (duration > 0) {
-       seekBar.max = duration;
-       seekBar.value = currentTime;
-       durationDisplay.textContent = formatTime(duration);
-   }
-   currentTimeDisplay.textContent = formatTime(currentTime);
-   if (
-   currentSong &&
-   currentSong.querySelector('.play-button') &&
-   Number(currentSong.querySelector('.play-button').dataset.end || 0) > 0 &&
-   currentTime >= Number(currentSong.querySelector('.play-button').dataset.end)
-) {
-   youtubePlayer.pauseVideo();
-   youtubePlayer.seekTo(
-       Number(currentSong.querySelector('.play-button').dataset.start || 0),
-       true
-   );
-   return;
-}
-   if (currentSong) {
-   const currentPlayButton = currentSong.querySelector('.play-button');
-   const endTime = Number(currentPlayButton?.dataset.end || 0);
-   if (endTime > 0 && currentTime >= endTime - 0.5) {
-       youtubePlayer.pauseVideo();
-       return;
-   }
-}
-   if (youtubePlayer.getPlayerState() === YT.PlayerState.PLAYING) {
-       requestAnimationFrame(updateSeekBar);
-   }
+  if (!youtubePlayer || !currentSong) return;
+  const currentPlayButton = currentSong.querySelector('.play-button');
+  const startTime = Number(currentPlayButton?.dataset.start || 0);
+  const endTime = Number(currentPlayButton?.dataset.end || 0);
+  const currentTime = youtubePlayer.getCurrentTime() || 0;
+  const seekBar = document.getElementById('popupSeekBar');
+  const currentTimeDisplay = document.getElementById('popupCurrentTime');
+  const durationDisplay = document.getElementById('popupDuration');
+  if (!seekBar || !currentTimeDisplay || !durationDisplay) return;
+  // 歌枠など、開始時間・終了時間が指定されている曲
+  if (endTime > startTime) {
+      const songDuration = endTime - startTime;
+      const songCurrentTime = Math.max(0, currentTime - startTime);
+      seekBar.min = 0;
+      seekBar.max = songDuration;
+      seekBar.value = Math.min(songCurrentTime, songDuration);
+      currentTimeDisplay.textContent = formatTime(songCurrentTime);
+      durationDisplay.textContent = formatTime(songDuration);
+      // 曲の終了地点に来たら停止
+      if (currentTime >= endTime - 0.5) {
+          youtubePlayer.pauseVideo();
+          youtubePlayer.seekTo(startTime, true);
+          return;
+      }
+  } else {
+      // 通常の歌ってみた・MVなど
+      const duration = youtubePlayer.getDuration() || 0;
+      if (duration > 0) {
+          seekBar.min = 0;
+          seekBar.max = duration;
+          seekBar.value = currentTime;
+          durationDisplay.textContent = formatTime(duration);
+      }
+      currentTimeDisplay.textContent = formatTime(currentTime);
+  }
+  if (youtubePlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+      requestAnimationFrame(updateSeekBar);
+  }
 }
    function createYouTubePlayer(videoId, startTime) {
        if (!youtubeReady || typeof YT === 'undefined') {
@@ -359,11 +361,21 @@ if (shuffleMode) {
    }
    const popupSeekBar = document.getElementById('popupSeekBar');
 if (popupSeekBar) {
-   popupSeekBar.addEventListener('input', event => {
-       event.stopPropagation();
-       if (!youtubePlayer) return;
-       youtubePlayer.seekTo(Number(event.target.value), true);
-   });
+  popupSeekBar.addEventListener('input', event => {
+      event.stopPropagation();
+      if (!youtubePlayer || !currentSong) return;
+      const currentPlayButton = currentSong.querySelector('.play-button');
+      const startTime = Number(currentPlayButton?.dataset.start || 0);
+      const endTime = Number(currentPlayButton?.dataset.end || 0);
+      if (endTime > startTime) {
+          youtubePlayer.seekTo(
+              startTime + Number(event.target.value),
+              true
+          );
+      } else {
+          youtubePlayer.seekTo(Number(event.target.value), true);
+      }
+  });
 }
    function playSong(song, openPopup = true) {
    const playButton = song.querySelector('.play-button');
