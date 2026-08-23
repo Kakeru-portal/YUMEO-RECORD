@@ -556,3 +556,18 @@ document.querySelectorAll('.song').forEach(song => {
        originalText.before(yearText);
    }
 });
+// =========================
+// 楽曲を年代順に自動並べ替え
+// =========================
+document.addEventListener('DOMContentLoaded', () => {
+   const songList = document.getElementById('songList');
+   if (songList) {
+       const songs = Array.from(songList.querySelectorAll('.song'));
+       songs.sort((a, b) => {
+           return a.dataset.date.localeCompare(b.dataset.date);
+       });
+       songs.forEach(song => {
+           songList.appendChild(song);
+       });
+   }
+});
