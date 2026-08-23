@@ -944,6 +944,6 @@ footer {
 }
 /* ループ再生中 */
 #popupLoop.loop-active {
- background-color: #AC324B;
- color: white;
+ background-color: #AC324B !important;
+ color: white !important;
 }
