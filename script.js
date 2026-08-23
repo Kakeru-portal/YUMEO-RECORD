@@ -72,44 +72,11 @@ popup.id = 'musicPopup';
 </div>
 <div id="popupSongTitle"></div>
 <div id="popupControls">
-<button type="button" id="popupLoop" aria-label="ループ再生">
-<svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M10 18a14 14 0 0 1 23-6l4 4"/>
-<path d="M36 12v7h-7"/>
-<path d="M38 30a14 14 0 0 1-23 6l-4-4"/>
-<path d="M11 36v-7h7"/>
-</svg>
-</button>
-<button type="button" id="popupPrevious" aria-label="前の曲">
-<svg viewBox="0 0 48 48" aria-hidden="true">
-<rect x="8" y="10" width="4" height="28" fill="#333333"/>
-<path d="M36 10L18 24l18 14z" fill="#333333"/>
-</svg>
-</button>
-<button type="button" id="popupPlayPause" aria-label="再生">
-<svg class="popupPlayIcon" viewBox="0 0 48 48" aria-hidden="true">
-<path d="M18 10l20 14-20 14z"/>
-</svg>
-<svg class="popupPauseIcon" viewBox="0 0 48 48" aria-hidden="true">
-<path d="M16 10h6v28h-6z"/>
-<path d="M26 10h6v28h-6z"/>
-</svg>
-</button>
-<button type="button" id="popupNext" aria-label="次の曲">
-<svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M12 10l18 14-18 14z" fill="#333333"/>
-<rect x="36" y="10" width="4" height="28" fill="#333333"/>
-</svg>
-</button>
-<button type="button" id="popupShuffle" aria-label="シャッフル再生">
-<svg viewBox="0 0 64 48" aria-hidden="true">
-<path d="M7 12h6c10 0 14 24 26 24h11"/>
-<path d="M43 30l7 6-7 6"/>
-<path d="M7 36h6c5 0 8-5 11-10"/>
-<path d="M31 12c3-4 6-6 11-6h8"/>
-<path d="M43 1l7 5-7 6"/>
-</svg>
-</button>
+<button type="button" id="popupLoop" aria-label="ループ再生">🔁</button>
+<button type="button" id="popupPrevious" aria-label="前の曲">⏮️</button>
+<button type="button" id="popupPlayPause" aria-label="再生">▶️</button>
+<button type="button" id="popupNext" aria-label="次の曲">⏭️</button>
+<button type="button" id="popupShuffle" aria-label="シャッフル再生">🔀</button>
 </div>
 <div id="popupActions">
 <button type="button" id="popupFavorite">♡ お気に入り登録</button>
