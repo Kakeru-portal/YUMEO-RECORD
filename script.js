@@ -228,8 +228,11 @@ function updateSeekBar() {
                    event.target.playVideo();
                },
                onStateChange: event => {
-   updatePlayButtons(event.data);
-   // 曲が終了したとき
+  updatePlayButtons(event.data);
+  if (event.data === YT.PlayerState.PLAYING) {
+      updateSeekBar();
+  }
+  // 曲が終了したとき
    if (event.data === YT.PlayerState.ENDED) {
        // ① 1曲リピート
        if (loopMode === 1) {
