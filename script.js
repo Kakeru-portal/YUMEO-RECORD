@@ -140,7 +140,18 @@ popup.id = 'musicPopup';
    `;
    document.body.appendChild(popup);
    const popupSongTitle = document.getElementById('popupSongTitle');
-   const popupPlayPause = document.getElementById('popupPlayPause');
+const popupSongYear = document.createElement('div');
+const popupOriginalArtist = document.createElement('div');
+const popupSinger = document.createElement('div');
+popupSongYear.id = 'popupSongYear';
+popupOriginalArtist.id = 'popupOriginalArtist';
+popupSinger.id = 'popupSinger';
+popupSongTitle.after(
+   popupSongYear,
+   popupOriginalArtist,
+   popupSinger
+);
+const popupPlayPause = document.getElementById('popupPlayPause');
    const popupLoop = document.getElementById('popupLoop');
    const popupShuffle = document.getElementById('popupShuffle');
    function updateLoopButton() {
@@ -393,7 +404,14 @@ if (popupSeekBar) {
    miniPlayerImage.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
    miniPlayerImage.alt = title;
    popupSongTitle.textContent = title;
-      updateFavoriteButton(song);
+const songDate = song.dataset.date || '';
+const songYear = songDate ? songDate.substring(0, 4) + '年' : '';
+const originalArtist = song.querySelector('p:nth-of-type(2)')?.textContent.trim() || '';
+const singer = song.querySelector('p:nth-of-type(3)')?.textContent.trim() || '';
+popupSongYear.textContent = songYear;
+popupOriginalArtist.textContent = originalArtist;
+popupSinger.textContent = singer;
+updateFavoriteButton(song);
    document.getElementById('popupOriginal').href =
        `https://www.youtube.com/watch?v=${videoId}`;
    if (openPopup) {
