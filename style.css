@@ -995,14 +995,3 @@ color: white !important;
  background-color: #AC324B;
  cursor: pointer;
 }
-.song-vocal {
-   display: flex;
-   align-items: flex-start;
-}
-.song-vocal span {
-   flex-shrink: 0;
-   margin-right: 4px;
-}
-.song-vocal {
-   overflow-wrap: anywhere;
-}
