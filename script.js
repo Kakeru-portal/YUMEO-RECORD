@@ -91,6 +91,30 @@ popup.id = 'musicPopup';
    document.body.appendChild(popup);
    const popupSongTitle = document.getElementById('popupSongTitle');
    const popupPlayPause = document.getElementById('popupPlayPause');
+   const popupLoop = document.getElementById('popupLoop');
+   unction updateLoopButton() {
+   if (!popupLoop) return;
+   if (loopMode === 1) {
+       popupLoop.textContent = '🔂';
+       popupLoop.classList.add('loop-active');
+   } else if (loopMode === 2) {
+       popupLoop.textContent = '🔁';
+       popupLoop.classList.add('loop-active');
+   } else {
+       popupLoop.textContent = '🔁';
+       popupLoop.classList.remove('loop-active');
+   }
+}
+   if (popupLoop) {
+   popupLoop.addEventListener('click', event => {
+       event.stopPropagation();
+       loopMode++;
+       if (loopMode > 2) {
+           loopMode = 0;
+       }
+       updateLoopButton();
+   });
+}
    const popupFavorite = document.getElementById('popupFavorite');
 function getFavorites() {
    return JSON.parse(localStorage.getItem('favoriteSongs') || '[]');
