@@ -87,6 +87,13 @@ popup.id = 'musicPopup';
    document.body.appendChild(popup);
    const popupSongTitle = document.getElementById('popupSongTitle');
    const popupPlayPause = document.getElementById('popupPlayPause');
+   const popupFavorite = document.getElementById('popupFavorite');
+function getFavorites() {
+   return JSON.parse(localStorage.getItem('favoriteSongs') || '[]');
+}
+function saveFavorites(favorites) {
+   localStorage.setItem('favoriteSongs', JSON.stringify(favorites));
+}
    function updatePlayButtons(state) {
   if (state === 1) {
       playPauseButton.classList.add('playing');
