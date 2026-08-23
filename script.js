@@ -25,6 +25,15 @@ const resultCount = document.getElementById('searchResultCount');
 if (resultCount) {
   resultCount.textContent = `全${allSongs.length}曲中 ${visibleSongs.length}曲ヒットしました`;
 }
+   const searchEmptyMessage = document.getElementById('searchEmptyMessage');
+const favoriteEmptyMessage = document.getElementById('favoriteEmptyMessage');
+if (searchEmptyMessage) {
+   searchEmptyMessage.style.display =
+       visibleSongs.length === 0 ? 'block' : 'none';
+}
+if (favoriteEmptyMessage) {
+   favoriteEmptyMessage.style.display = 'none';
+}
 }
 let youtubePlayer = null;
 let currentSong = null;
