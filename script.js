@@ -84,14 +84,14 @@ popup.id = 'musicPopup';
    const popupSongTitle = document.getElementById('popupSongTitle');
    const popupPlayPause = document.getElementById('popupPlayPause');
    function updatePlayButtons(state) {
-       if (state === 1) {
-           playPauseButton.textContent = '⏸️';
-           popupPlayPause.textContent = '⏸️';
-       } else {
-           playPauseButton.textContent = '▶️';
-           popupPlayPause.textContent = '▶️';
-       }
-   }
+  if (state === 1) {
+      playPauseButton.classList.add('playing');
+      popupPlayPause.textContent = '⏸️';
+  } else {
+      playPauseButton.classList.remove('playing');
+      popupPlayPause.textContent = '▶️';
+  }
+}
    function createYouTubePlayer(videoId, startTime) {
        if (!youtubeReady || typeof YT === 'undefined') {
            setTimeout(() => createYouTubePlayer(videoId, startTime), 100);
