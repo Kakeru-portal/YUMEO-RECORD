@@ -29,6 +29,10 @@ if (resultCount) {
 let youtubePlayer = null;
 let currentSong = null;
 let youtubeReady = false;
+let loopMode = 0;
+// 0 = OFF
+// 1 = 1曲リピート
+// 2 = 全体リピート
 window.onYouTubeIframeAPIReady = function() {
    youtubeReady = true;
 };
