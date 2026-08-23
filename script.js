@@ -92,7 +92,7 @@ popup.id = 'musicPopup';
    const popupSongTitle = document.getElementById('popupSongTitle');
    const popupPlayPause = document.getElementById('popupPlayPause');
    const popupLoop = document.getElementById('popupLoop');
-   unction updateLoopButton() {
+   function updateLoopButton() {
    if (!popupLoop) return;
    if (loopMode === 1) {
        popupLoop.textContent = '🔂';
