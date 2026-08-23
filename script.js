@@ -87,6 +87,18 @@ popup.id = 'musicPopup';
 <div id="youtubePlayer"></div>
 </div>
 <div id="popupSongTitle"></div>
+<div id="popupSeekArea">
+<span id="popupCurrentTime">0:00</span>
+<input
+       type="range"
+       id="popupSeekBar"
+       min="0"
+       max="100"
+       value="0"
+       step="0.1"
+>
+<span id="popupDuration">0:00</span>
+</div>
 <div id="popupControls">
 <button type="button" id="popupLoop" aria-label="ループ再生">🔁</button>
 <button type="button" id="popupPrevious" aria-label="前の曲">⏮️</button>
