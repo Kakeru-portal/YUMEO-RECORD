@@ -108,7 +108,6 @@ popup.id = 'musicPopup';
    popup.innerHTML = `
 <div id="musicPopupOverlay"></div>
 <div id="musicPopupContent">
-<button type="button" id="musicPopupClose">×</button>
 <div id="popupVideoContainer">
 <div id="youtubePlayer"></div>
 </div>
@@ -135,6 +134,7 @@ popup.id = 'musicPopup';
 <div id="popupActions">
 <button type="button" id="popupFavorite">♡ お気に入り登録</button>
 <a id="popupOriginal" href="#" target="_blank" rel="noopener">↗ 元動画を見る</a>
+<button type="button" id="musicPopupClose">× 閉じる</button>
 </div>
 </div>
    `;
