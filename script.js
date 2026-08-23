@@ -8,7 +8,7 @@ function filterSongs() {
    const selectedTypes = Array.from(document.querySelectorAll('input[name="songType"]:checked')).map(item => item.value);
    const selectedUnits = Array.from(document.querySelectorAll('input[name="unit"]:checked')).map(item => item.value);
    const selectedYears = Array.from(document.querySelectorAll('input[name="year"]:checked')).map(item => item.value);
-   const searchText = document.getElementById('songSearch').value.toLowerCase().trim();
+   const searchText = document.getElementById('spongSearch').value.toLowerCase().trim();
    document.querySelectorAll('.song').forEach(song => {
        const countMatch = selectedCounts.length === 0 || selectedCounts.includes(song.dataset.count);
        const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(song.dataset.type);
@@ -74,16 +74,14 @@ popup.id = 'musicPopup';
 <div id="popupControls">
 <button type="button" id="popupLoop" aria-label="ループ再生">
 <svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M10 20
-        A14 14 0 0 1 34 10
-        L38 14"/>
-<path d="M38 14L29 14"/>
-<path d="M38 14L38 23"/>
-<path d="M38 28
-        A14 14 0 0 1 14 38
-        L10 34"/>
-<path d="M10 34L19 34"/>
-<path d="M10 34L10 25"/>
+<path d="M10 24
+        A14 14 0 0 1 34 12
+        A14 14 0 0 1 38 24"/>
+<path d="M38 24
+        A14 14 0 0 1 14 36
+        A14 14 0 0 1 10 24"/>
+<path d="M34 12l7 1-3 7"/>
+<path d="M14 36l-7-1 3-7"/>
 </svg>
 </button>
 <button type="button" id="popupPrevious" aria-label="前の曲">
