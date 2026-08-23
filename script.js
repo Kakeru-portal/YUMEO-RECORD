@@ -181,8 +181,34 @@ popupFavorite.addEventListener('click', event => {
                    event.target.playVideo();
                },
                onStateChange: event => {
-                   updatePlayButtons(event.data);
-               }
+   updatePlayButtons(event.data);
+   // 曲が終了したとき
+   if (event.data === YT.PlayerState.ENDED) {
+       // ① 1曲リピート
+       if (loopMode === 1) {
+           youtubePlayer.seekTo(Number(startTime) || 0, true);
+           youtubePlayer.playVideo();
+           return;
+       }
+       // ② プレイリスト全体をループ
+       if (loopMode === 2 && currentSong) {
+           const songs = Array.from(document.querySelectorAll('.song'))
+               .filter(song => song.style.display !== 'none');
+           const index = songs.indexOf(currentSong);
+           if (songs.length > 0) {
+               const nextIndex = index >= 0 && index < songs.length - 1
+                   ? index + 1
+                   : 0;
+               playSong(songs[nextIndex], false);
+               setTimeout(() => {
+                   if (youtubePlayer) {
+                       youtubePlayer.playVideo();
+                   }
+               }, 500);
+           }
+       }
+   }
+}
            }
        });
    }
