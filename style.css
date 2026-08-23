@@ -942,3 +942,8 @@ footer {
 #pageShuffleButton:active {
  transform: scale(0.98);
 }
+/* ループ再生中 */
+#popupLoop.loop-active {
+ background-color: #AC324B;
+ color: white;
+}
