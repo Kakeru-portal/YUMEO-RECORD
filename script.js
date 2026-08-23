@@ -243,6 +243,9 @@ function updateSeekBar() {
            events: {
                onReady: event => {
    event.target.playVideo();
+   setTimeout(() => {
+       tryPlayYouTube();
+   }, 1000);
 },
                onStateChange: event => {
   updatePlayButtons(event.data);
@@ -301,6 +304,13 @@ if (shuffleMode) {
 }
            }
        });
+   }
+   function tryPlayYouTube() {
+       if (!youtubePlayer) return;
+       const state = youtubePlayer.getPlayerState();
+       if (state !== YT.PlayerState.PLAYING) {
+           youtubePlayer.playVideo();
+       }
    }
    const popupSeekBar = document.getElementById('popupSeekBar');
 if (popupSeekBar) {
