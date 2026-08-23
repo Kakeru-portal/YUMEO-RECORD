@@ -380,11 +380,8 @@ footer {
    font-weight: bold;
 }
 #popupControls {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
+  margin-top: 15px;
+  text-align: center;
 }
 #popupControls button {
   width: 52px;
