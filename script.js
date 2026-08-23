@@ -236,6 +236,19 @@ function updateSeekBar() {
        durationDisplay.textContent = formatTime(duration);
    }
    currentTimeDisplay.textContent = formatTime(currentTime);
+   if (
+   currentSong &&
+   currentSong.querySelector('.play-button') &&
+   Number(currentSong.querySelector('.play-button').dataset.end || 0) > 0 &&
+   currentTime >= Number(currentSong.querySelector('.play-button').dataset.end)
+) {
+   youtubePlayer.pauseVideo();
+   youtubePlayer.seekTo(
+       Number(currentSong.querySelector('.play-button').dataset.start || 0),
+       true
+   );
+   return;
+}
    if (youtubePlayer.getPlayerState() === YT.PlayerState.PLAYING) {
        requestAnimationFrame(updateSeekBar);
    }
