@@ -921,3 +921,24 @@ footer {
 #songTabs button.active:hover {
  background-color: #c43d58;
 }
+/* ページ上のシャッフル再生ボタン */
+#pageShuffleButton {
+ display: block;
+ width: 100%;
+ margin: 12px 0 20px;
+ padding: 14px 20px;
+ border: none;
+ border-radius: 8px;
+ background-color: #AC324B;
+ color: white;
+ font-size: 17px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.15s ease, transform 0.1s ease;
+}
+#pageShuffleButton:hover {
+ background-color: #c43d58;
+}
+#pageShuffleButton:active {
+ transform: scale(0.98);
+}
