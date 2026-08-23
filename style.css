@@ -419,6 +419,10 @@ footer {
   width: 34px;
   height: 28px;
 }
+#popupLoop svg {
+  width: 34px;
+  height: 28px;
+}
 #popupControls button:nth-child(2) svg,
 #popupControls button:nth-child(3) svg,
 #popupControls button:nth-child(4) svg {
