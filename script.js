@@ -94,6 +94,30 @@ function getFavorites() {
 function saveFavorites(favorites) {
    localStorage.setItem('favoriteSongs', JSON.stringify(favorites));
 }
+   function updateFavoriteButton(song) {
+   if (!popupFavorite || !song) return;
+   const title = song.querySelector('h3').textContent.trim();
+   const favorites = getFavorites();
+   if (favorites.includes(title)) {
+       popupFavorite.textContent = '♥ お気に入り解除';
+   } else {
+       popupFavorite.textContent = '♡ お気に入り登録';
+   }
+}
+popupFavorite.addEventListener('click', event => {
+   event.stopPropagation();
+   if (!currentSong) return;
+   const title = currentSong.querySelector('h3').textContent.trim();
+   const favorites = getFavorites();
+   if (favorites.includes(title)) {
+       const updatedFavorites = favorites.filter(item => item !== title);
+       saveFavorites(updatedFavorites);
+   } else {
+       favorites.push(title);
+       saveFavorites(favorites);
+   }
+   updateFavoriteButton(currentSong);
+});
    function updatePlayButtons(state) {
   if (state === 1) {
       playPauseButton.classList.add('playing');
@@ -145,6 +169,7 @@ function saveFavorites(favorites) {
    miniPlayerImage.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
    miniPlayerImage.alt = title;
    popupSongTitle.textContent = title;
+      updateFavoriteButton(song);
    document.getElementById('popupOriginal').href =
        `https://www.youtube.com/watch?v=${videoId}`;
    if (openPopup) {
