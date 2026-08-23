@@ -952,6 +952,10 @@ color: white !important;
 background-color: #AC324B !important;
 color: white !important;
 }
+#popupShuffle.shuffle-active {
+   background-color: #AC324B !important;
+   color: white !important;
+}
 /* シークバー */
 #popupSeekArea {
  display: flex;
