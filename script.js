@@ -8,7 +8,7 @@ function filterSongs() {
    const selectedTypes = Array.from(document.querySelectorAll('input[name="songType"]:checked')).map(item => item.value);
    const selectedUnits = Array.from(document.querySelectorAll('input[name="unit"]:checked')).map(item => item.value);
    const selectedYears = Array.from(document.querySelectorAll('input[name="year"]:checked')).map(item => item.value);
-   const searchText = document.getElementById('spongSearch').value.toLowerCase().trim();
+   const searchText = document.getElementById('songSearch').value.toLowerCase().trim();
    document.querySelectorAll('.song').forEach(song => {
        const countMatch = selectedCounts.length === 0 || selectedCounts.includes(song.dataset.count);
        const typeMatch = selectedTypes.length === 0 || selectedTypes.includes(song.dataset.type);
