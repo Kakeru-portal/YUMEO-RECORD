@@ -491,14 +491,16 @@ if (searchEmptyMessage) {
    });
 }
    if (pageShuffleButton) {
-  pageShuffleButton.addEventListener('click', event => {
-      event.stopPropagation();
-      shuffleMode = !shuffleMode;
-      if (shuffleMode) {
-          pageShuffleButton.classList.add('shuffle-active');
-      } else {
-          pageShuffleButton.classList.remove('shuffle-active');
-      }
+ pageShuffleButton.addEventListener('click', event => {
+     event.stopPropagation();
+     shuffleMode = !shuffleMode;
+     if (shuffleMode) {
+         pageShuffleButton.classList.add('shuffle-active');
+         popupShuffle.classList.add('shuffle-active');
+     } else {
+         pageShuffleButton.classList.remove('shuffle-active');
+         popupShuffle.classList.remove('shuffle-active');
+     }
       const visibleSongs = Array.from(document.querySelectorAll('.song'))
           .filter(song => song.style.display !== 'none');
       if (visibleSongs.length === 0) {
