@@ -234,14 +234,61 @@ footer {
    cursor: pointer;
    transition: background-color 0.15s ease, transform 0.1s ease;
 }
+#previousButton::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 12px solid #333333;
+}
+#previousButton::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 18px;
+  background-color: #333333;
+  margin-left: -15px;
+}
+#nextButton::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 12px solid #333333;
+}
+#nextButton::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 18px;
+  background-color: #333333;
+  margin-left: 12px;
+}
+#playPauseButton::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 14px solid #333333;
+}
+#playPauseButton.playing::before {
+  width: 5px;
+  height: 20px;
+  border: none;
+  background-color: #333333;
+  box-shadow: 8px 0 0 #333333;
+}
 #miniPlayerControls button:hover {
    background-color: #dddddd;
 }
 #miniPlayerControls button:active {
    transform: scale(0.95);
-}
-#playPauseButton {
-   font-size: 20px !important;
 }
 /* ポップアップ */
 #musicPopup {
