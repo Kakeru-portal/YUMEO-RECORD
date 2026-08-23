@@ -541,3 +541,16 @@ if (infoPopupOverlay && infoPopup) {
      infoPopup.classList.remove('active');
   });
 }
+document.querySelectorAll('.song').forEach(song => {
+   const date = song.dataset.date;
+   const card = song.querySelector('.song-card');
+   if (!date || !card) return;
+   const year = date.substring(0, 4);
+   const yearText = document.createElement('p');
+   yearText.className = 'song-year';
+   yearText.textContent = `${year}年`;
+   const originalText = card.querySelector('p');
+   if (originalText) {
+       originalText.before(yearText);
+   }
+});
