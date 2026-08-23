@@ -75,11 +75,9 @@ popup.id = 'musicPopup';
 <button type="button" id="popupLoop" aria-label="ループ再生">
 <svg viewBox="0 0 48 48" aria-hidden="true">
 <path d="M10 24
-        A14 14 0 0 1 34 12
-        A14 14 0 0 1 38 24"/>
+        A14 14 0 0 1 34 12"/>
 <path d="M38 24
-        A14 14 0 0 1 14 36
-        A14 14 0 0 1 10 24"/>
+        A14 14 0 0 1 14 36"/>
 <path d="M34 12l7 1-3 7"/>
 <path d="M14 36l-7-1 3-7"/>
 </svg>
