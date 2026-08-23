@@ -947,3 +947,7 @@ footer {
  background-color: #AC324B !important;
  color: white !important;
 }
+#pageShuffleButton.shuffle-active {
+background-color: #AC324B;
+color: white;
+}
