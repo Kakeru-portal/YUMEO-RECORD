@@ -82,7 +82,7 @@ popup.id = 'musicPopup';
 </button>
 <button type="button" id="popupPrevious" aria-label="前の曲">
 <svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M12 10v28"/>
+<path d="M10 10v28"/>
 <path d="M36 10L19 24l17 14z"/>
 </svg>
 </button>
@@ -97,17 +97,17 @@ popup.id = 'musicPopup';
 </button>
 <button type="button" id="popupNext" aria-label="次の曲">
 <svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M36 10v28"/>
+<path d="M38 10v28"/>
 <path d="M12 10l17 14-17 14z"/>
 </svg>
 </button>
 <button type="button" id="popupShuffle" aria-label="シャッフル再生">
-<svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M8 14h5c8 0 11 20 20 20h7"/>
-<path d="M34 29l6 5-6 5"/>
-<path d="M8 34h5c3 0 5-3 7-7"/>
-<path d="M28 14c2-3 4-5 7-5h5"/>
-<path d="M34 5l6 4-6 5"/>
+<svg viewBox="0 0 64 48" aria-hidden="true">
+<path d="M7 12h7c10 0 13 24 25 24h10"/>
+<path d="M42 30l7 6-7 6"/>
+<path d="M7 36h7c4 0 7-4 10-9"/>
+<path d="M31 12c3-4 6-6 10-6h8"/>
+<path d="M42 1l7 5-7 6"/>
 </svg>
 </button>
 </div>
