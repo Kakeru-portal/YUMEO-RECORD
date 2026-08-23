@@ -72,7 +72,22 @@ popup.id = 'musicPopup';
 </div>
 <div id="popupSongTitle"></div>
 <div id="popupControls">
-<button type="button" id="popupPlayPause">▶️</button>
+<button type="button" id="popupLoop" aria-label="ループ再生">
+<span class="icon-loop"></span>
+</button>
+<button type="button" id="popupPrevious" aria-label="前の曲">
+<span class="icon-previous"></span>
+</button>
+<button type="button" id="popupPlayPause" aria-label="再生">
+<span class="icon-play"></span>
+<span class="icon-pause"></span>
+</button>
+<button type="button" id="popupNext" aria-label="次の曲">
+<span class="icon-next"></span>
+</button>
+<button type="button" id="popupShuffle" aria-label="シャッフル再生">
+<span class="icon-shuffle"></span>
+</button>
 </div>
 <div id="popupActions">
 <button type="button" id="popupFavorite">♡ お気に入り登録</button>
