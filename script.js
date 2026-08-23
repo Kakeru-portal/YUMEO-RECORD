@@ -604,13 +604,17 @@ document.querySelectorAll('.song').forEach(song => {
    const card = song.querySelector('.song-card');
    if (!date || !card) return;
    const year = date.substring(0, 4);
-   const yearText = document.createElement('p');
-   yearText.className = 'song-year';
-   yearText.textContent = `${year}年`;
-   const originalText = card.querySelector('p');
-   if (originalText) {
-       originalText.before(yearText);
-   }
+   const oldYear = card.querySelector('.song-year');
+if (oldYear) {
+   oldYear.remove();
+}
+const yearText = document.createElement('p');
+yearText.className = 'song-year';
+yearText.textContent = `${year}年`;
+const originalText = card.querySelector('p');
+if (originalText) {
+   originalText.before(yearText);
+}
 });
 // =========================
 // 楽曲を年代順に自動並べ替え
