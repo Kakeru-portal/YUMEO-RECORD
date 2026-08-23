@@ -249,6 +249,14 @@ function updateSeekBar() {
    );
    return;
 }
+   if (currentSong) {
+   const currentPlayButton = currentSong.querySelector('.play-button');
+   const endTime = Number(currentPlayButton?.dataset.end || 0);
+   if (endTime > 0 && currentTime >= endTime - 0.5) {
+       youtubePlayer.pauseVideo();
+       return;
+   }
+}
    if (youtubePlayer.getPlayerState() === YT.PlayerState.PLAYING) {
        requestAnimationFrame(updateSeekBar);
    }
