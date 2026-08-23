@@ -82,8 +82,8 @@ popup.id = 'musicPopup';
 </button>
 <button type="button" id="popupPrevious" aria-label="前の曲">
 <svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M10 10v28"/>
-<path d="M36 10L19 24l17 14z"/>
+<rect x="8" y="10" width="4" height="28" fill="#333333"/>
+<path d="M36 10L18 24l18 14z" fill="#333333"/>
 </svg>
 </button>
 <button type="button" id="popupPlayPause" aria-label="再生">
@@ -97,8 +97,8 @@ popup.id = 'musicPopup';
 </button>
 <button type="button" id="popupNext" aria-label="次の曲">
 <svg viewBox="0 0 48 48" aria-hidden="true">
-<path d="M38 10v28"/>
-<path d="M12 10l17 14-17 14z"/>
+<path d="M12 10l18 14-18 14z" fill="#333333"/>
+<rect x="36" y="10" width="4" height="28" fill="#333333"/>
 </svg>
 </button>
 <button type="button" id="popupShuffle" aria-label="シャッフル再生">
