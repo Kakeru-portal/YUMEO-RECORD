@@ -220,12 +220,17 @@ function updateSeekBar() {
            return;
        }
        if (youtubePlayer) {
-           youtubePlayer.loadVideoById({
-               videoId: videoId,
-               startSeconds: Number(startTime) || 0
-           });
-           return;
+   youtubePlayer.loadVideoById({
+       videoId: videoId,
+       startSeconds: Number(startTime) || 0
+   });
+   setTimeout(() => {
+       if (youtubePlayer) {
+           youtubePlayer.playVideo();
        }
+   }, 1000);
+   return;
+}
        youtubePlayer = new YT.Player('youtubePlayer', {
            width: '100%',
            height: '100%',
@@ -258,26 +263,27 @@ if (event.data === YT.PlayerState.ENDED) {
        .filter(song => song.style.display !== 'none');
    if (songs.length === 0) return;
    // ② シャッフル再生
-   if (shuffleMode) {
-       let randomSong;
-       // 曲が1曲しかない場合は、その曲をもう一度再生
-       if (songs.length === 1) {
-           randomSong = songs[0];
-       } else {
-           // 現在の曲とは違う曲をランダムに選ぶ
-           do {
-               const randomIndex = Math.floor(Math.random() * songs.length);
-               randomSong = songs[randomIndex];
-           } while (randomSong === currentSong);
-       }
-       playSong(randomSong, false);
-       setTimeout(() => {
-           if (youtubePlayer) {
-               youtubePlayer.playVideo();
-           }
-       }, 500);
-       return;
-   }
+if (shuffleMode) {
+  let randomSong;
+  // 曲が1曲しかない場合は、その曲をもう一度再生
+  if (songs.length === 1) {
+      randomSong = songs[0];
+  } else {
+      // 現在の曲とは違う曲をランダムに選ぶ
+      do {
+          const randomIndex = Math.floor(Math.random() * songs.length);
+          randomSong = songs[randomIndex];
+      } while (randomSong === currentSong);
+  }
+  playSong(randomSong, false);
+  // 新しい動画を読み込んだあと、自動再生する
+  setTimeout(() => {
+      if (youtubePlayer) {
+          youtubePlayer.playVideo();
+      }
+  }, 1000);
+  return;
+}
    // ③ プレイリスト全体をループ
    if (loopMode === 2) {
        const index = songs.indexOf(currentSong);
