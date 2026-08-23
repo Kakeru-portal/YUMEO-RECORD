@@ -350,6 +350,7 @@ if (popupSeekBar) {
    const title = song.querySelector('h3').textContent.trim();
    const videoId = playButton.dataset.video;
    const startTime = Number(playButton.dataset.start || 0);
+      const endTime = Number(playButton.dataset.end || 0);
    currentSong = song;
    miniPlayerTitle.textContent = title;
    miniPlayerImage.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
