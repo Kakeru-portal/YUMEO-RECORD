@@ -246,16 +246,14 @@ function updateSeekBar() {
            return;
        }
        if (youtubePlayer) {
-   youtubePlayer.loadVideoById({
-       videoId: videoId,
-       startSeconds: Number(startTime) || 0
-   });
-   setTimeout(() => {
-       if (youtubePlayer) {
-           youtubePlayer.playVideo();
-       }
-   }, 1000);
-   return;
+  youtubePlayer.loadVideoById({
+      videoId: videoId,
+      startSeconds: Number(startTime) || 0
+  });
+  setTimeout(() => {
+      tryPlayYouTube();
+  }, 1000);
+  return;
 }
        youtubePlayer = new YT.Player('youtubePlayer', {
            width: '100%',
@@ -509,6 +507,9 @@ if (searchEmptyMessage) {
       const randomIndex = Math.floor(Math.random() * visibleSongs.length);
       const randomSong = visibleSongs[randomIndex];
       playSong(randomSong);
+     setTimeout(() => {
+   tryPlayYouTube();
+}, 1500);
   });
 }
 });
