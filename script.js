@@ -48,6 +48,32 @@ let shuffleMode = false;
 window.onYouTubeIframeAPIReady = function() {
    youtubeReady = true;
 };
+function prepareYouTubePlayer() {
+  if (!youtubeReady || typeof YT === 'undefined') {
+      setTimeout(prepareYouTubePlayer, 100);
+      return;
+  }
+  if (youtubePlayer) return;
+  youtubePlayer = new YT.Player('youtubePlayer', {
+      width: '100%',
+      height: '100%',
+      playerVars: {
+          playsinline: 1,
+          rel: 0
+      },
+      events: {
+          onReady: event => {
+              event.target.pauseVideo();
+          },
+          onStateChange: event => {
+              updatePlayButtons(event.data);
+              if (event.data === YT.PlayerState.PLAYING) {
+                  updateSeekBar();
+              }
+          }
+      }
+  });
+}
 document.addEventListener('DOMContentLoaded', () => {
    document.querySelectorAll(
        'input[name="memberCount"], input[name="songType"], input[name="unit"], input[name="year"]'
