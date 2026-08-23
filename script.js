@@ -245,31 +245,53 @@ function updateSeekBar() {
       updateSeekBar();
   }
   // 曲が終了したとき
-   if (event.data === YT.PlayerState.ENDED) {
-       // ① 1曲リピート
-       if (loopMode === 1) {
-           youtubePlayer.seekTo(Number(startTime) || 0, true);
-           youtubePlayer.playVideo();
-           return;
-       }
-       // ② プレイリスト全体をループ
-       if (loopMode === 2 && currentSong) {
-           const songs = Array.from(document.querySelectorAll('.song'))
-               .filter(song => song.style.display !== 'none');
-           const index = songs.indexOf(currentSong);
-           if (songs.length > 0) {
-               const nextIndex = index >= 0 && index < songs.length - 1
-                   ? index + 1
-                   : 0;
-               playSong(songs[nextIndex], false);
-               setTimeout(() => {
-                   if (youtubePlayer) {
-                       youtubePlayer.playVideo();
-                   }
-               }, 500);
-           }
-       }
+if (event.data === YT.PlayerState.ENDED) {
+   // ① 1曲リピート
+   if (loopMode === 1) {
+       youtubePlayer.seekTo(Number(startTime) || 0, true);
+       youtubePlayer.playVideo();
+       return;
    }
+   if (!currentSong) return;
+   // 現在表示されている楽曲だけを取得
+   const songs = Array.from(document.querySelectorAll('.song'))
+       .filter(song => song.style.display !== 'none');
+   if (songs.length === 0) return;
+   // ② シャッフル再生
+   if (shuffleMode) {
+       let randomSong;
+       // 曲が1曲しかない場合は、その曲をもう一度再生
+       if (songs.length === 1) {
+           randomSong = songs[0];
+       } else {
+           // 現在の曲とは違う曲をランダムに選ぶ
+           do {
+               const randomIndex = Math.floor(Math.random() * songs.length);
+               randomSong = songs[randomIndex];
+           } while (randomSong === currentSong);
+       }
+       playSong(randomSong, false);
+       setTimeout(() => {
+           if (youtubePlayer) {
+               youtubePlayer.playVideo();
+           }
+       }, 500);
+       return;
+   }
+   // ③ プレイリスト全体をループ
+   if (loopMode === 2) {
+       const index = songs.indexOf(currentSong);
+       const nextIndex = index >= 0 && index < songs.length - 1
+           ? index + 1
+           : 0;
+       playSong(songs[nextIndex], false);
+       setTimeout(() => {
+           if (youtubePlayer) {
+               youtubePlayer.playVideo();
+           }
+       }, 500);
+   }
+}
 }
            }
        });
