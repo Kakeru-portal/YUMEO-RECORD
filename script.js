@@ -175,6 +175,26 @@ popup.id = 'musicPopup';
        event.stopPropagation();
        togglePlayPause();
    });
+   document.getElementById('popupPrevious').addEventListener('click', event => {
+  event.stopPropagation();
+  if (!currentSong) return;
+  const songs = Array.from(document.querySelectorAll('.song'))
+      .filter(song => song.style.display !== 'none');
+  const index = songs.indexOf(currentSong);
+  if (index > 0) {
+      playSong(songs[index - 1], true);
+  }
+});
+document.getElementById('popupNext').addEventListener('click', event => {
+  event.stopPropagation();
+  if (!currentSong) return;
+  const songs = Array.from(document.querySelectorAll('.song'))
+      .filter(song => song.style.display !== 'none');
+  const index = songs.indexOf(currentSong);
+  if (index >= 0 && index < songs.length - 1) {
+      playSong(songs[index + 1], true);
+  }
+});
    previousButton.addEventListener('click', event => {
        event.stopPropagation();
        if (!currentSong) return;
