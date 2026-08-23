@@ -116,6 +116,7 @@ popup.id = 'musicPopup';
    const popupSongTitle = document.getElementById('popupSongTitle');
    const popupPlayPause = document.getElementById('popupPlayPause');
    const popupLoop = document.getElementById('popupLoop');
+   const popupShuffle = document.getElementById('popupShuffle');
    function updateLoopButton() {
    if (!popupLoop) return;
    if (loopMode === 1) {
@@ -138,6 +139,25 @@ popup.id = 'musicPopup';
        }
        updateLoopButton();
    });
+}
+   if (popupShuffle) {
+  popupShuffle.addEventListener('click', event => {
+      event.stopPropagation();
+      shuffleMode = !shuffleMode;
+      if (shuffleMode) {
+          popupShuffle.classList.add('shuffle-active');
+      } else {
+          popupShuffle.classList.remove('shuffle-active');
+      }
+      const visibleSongs = Array.from(document.querySelectorAll('.song'))
+          .filter(song => song.style.display !== 'none');
+      if (visibleSongs.length === 0) {
+          return;
+      }
+      const randomIndex = Math.floor(Math.random() * visibleSongs.length);
+      const randomSong = visibleSongs[randomIndex];
+      playSong(randomSong, true);
+  });
 }
    const popupFavorite = document.getElementById('popupFavorite');
 function getFavorites() {
