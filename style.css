@@ -415,6 +415,10 @@ footer {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+#popupShuffle svg {
+  width: 34px;
+  height: 28px;
+}
 #popupControls button:nth-child(2) svg,
 #popupControls button:nth-child(3) svg,
 #popupControls button:nth-child(4) svg {
