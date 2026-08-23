@@ -618,3 +618,31 @@ footer {
 #infoPopupContent section > h3:first-child {
   margin-top: 0;
 }
+@media (max-width: 600px) {
+  #miniPlayer {
+     padding: 10px 12px;
+     flex-wrap: wrap;
+  }
+  #miniPlayerThumbnail {
+     flex: 0 0 100px;
+     width: 100px;
+  }
+  #miniPlayerInfo {
+     margin-left: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     justify-content: center;
+  }
+  #miniPlayerTitle {
+     white-space: normal;
+     overflow: visible;
+     text-overflow: clip;
+     margin-right: 0;
+     margin-bottom: 8px;
+     line-height: 1.4;
+  }
+  #miniPlayerControls {
+     justify-content: center;
+  }
+}
