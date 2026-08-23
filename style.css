@@ -225,63 +225,79 @@ footer {
    flex-shrink: 0;
 }
 #miniPlayerControls button {
-   width: 52px;
-   height: 52px;
-   border: none;
-   border-radius: 50%;
-   background-color: #eeeeee;
-   font-size: 23px;
-   cursor: pointer;
-   transition: background-color 0.15s ease, transform 0.1s ease;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#previousButton {
+  position: relative;
 }
 #previousButton::before {
   content: "";
-  display: block;
   width: 0;
   height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-right: 12px solid #333333;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 11px solid #333333;
+  position: absolute;
+  left: 21px;
 }
 #previousButton::after {
   content: "";
-  display: block;
   width: 3px;
-  height: 18px;
+  height: 16px;
   background-color: #333333;
-  margin-left: -15px;
+  position: absolute;
+  left: 17px;
+}
+#nextButton {
+  position: relative;
 }
 #nextButton::before {
   content: "";
-  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 11px solid #333333;
+  position: absolute;
+  left: 20px;
+}
+#nextButton::after {
+  content: "";
+  width: 3px;
+  height: 16px;
+  background-color: #333333;
+  position: absolute;
+  left: 32px;
+}
+#playPauseButton {
+  position: relative;
+}
+#playPauseButton::before {
+  content: "";
   width: 0;
   height: 0;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 12px solid #333333;
-}
-#nextButton::after {
-  content: "";
-  display: block;
-  width: 3px;
-  height: 18px;
-  background-color: #333333;
-  margin-left: 12px;
-}
-#playPauseButton::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 14px solid #333333;
+  border-left: 13px solid #333333;
+  position: absolute;
+  left: 21px;
 }
 #playPauseButton.playing::before {
-  width: 5px;
-  height: 20px;
+  width: 4px;
+  height: 18px;
   border: none;
   background-color: #333333;
+  left: 19px;
   box-shadow: 8px 0 0 #333333;
 }
 #miniPlayerControls button:hover {
@@ -481,9 +497,6 @@ footer {
    background-color: #eeeeee;
    font-size: 23px;
    cursor: pointer;
-}
-#playPauseButton {
-   font-size: 21px !important;
 }
    #musicPopup {
        padding: 10px;
