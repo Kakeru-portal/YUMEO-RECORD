@@ -940,16 +940,17 @@ transition: background-color 0.15s ease, transform 0.1s ease;
 background-color: #dddddd;
 }
 #pageShuffleButton:active {
- transform: scale(0.98);
+transform: scale(0.98);
+}
+/* シャッフル再生中 */
+#pageShuffleButton.shuffle-active {
+background-color: #AC324B !important;
+color: white !important;
 }
 /* ループ再生中 */
 #popupLoop.loop-active {
- background-color: #AC324B !important;
- color: white !important;
-}
-#pageShuffleButton.shuffle-active {
-background-color: #AC324B;
-color: white;
+background-color: #AC324B !important;
+color: white !important;
 }
 /* シークバー */
 #popupSeekArea {
