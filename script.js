@@ -609,6 +609,54 @@ if (searchEmptyMessage) {
   });
 }
 });
+// =========================
+// 楽曲データ
+// =========================
+const songData = [
+   {
+ title: "この街で生きている",
+ count: "1",
+ type: "cover",
+ date: "2018-10-04",
+ unit: "",
+ artist: "amazarashi",
+ singer: "夢追翔",
+ video: "ssh61KTPksk",
+ start: 3422,
+ end: 3789
+}
+];
+function createSongCard(song) {
+ const songElement = document.createElement('div');
+ songElement.className = 'song';
+ songElement.dataset.count = song.count;
+ songElement.dataset.type = song.type;
+ songElement.dataset.date = song.date;
+ songElement.dataset.unit = song.unit;
+ songElement.innerHTML = `
+<div class="song-card">
+<h3>${song.title}</h3>
+<p>原曲：${song.artist}</p>
+<p>歌唱：${song.singer}</p>
+<button
+       type="button"
+       class="play-button"
+       data-title="${song.title}"
+       data-video="${song.video}"
+       data-start="${song.start || ''}"
+       data-end="${song.end || ''}"
+>
+       ▶ 再生
+</button>
+</div>
+ `;
+ return songElement;
+}
+const songList = document.getElementById('songList');
+if (songList && songData.length > 0) {
+ const testSong = createSongCard(songData[0]);
+ songList.appendChild(testSong);
+}
 filterSongs();
 
 // インフォメーションポップアップ
