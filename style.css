@@ -109,12 +109,22 @@ section > h2:first-child {
    border-radius: 6px;
 }
 #searchButton {
-   margin-top: 10px;
-   padding: 11px 24px;
-   font-size: 17px;
-   border: none;
-   border-radius: 7px;
-   cursor: pointer;
+  margin-top: 10px;
+  padding: 11px 24px;
+  font-size: 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  min-width: 180px;
+}
+#clearSearchButton {
+  margin-top: 10px;
+  padding: 11px 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  min-width: 60px;
 }
 .search-box label {
    display: inline-block;
