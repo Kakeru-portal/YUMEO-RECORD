@@ -212,24 +212,41 @@ function saveFavorites(favorites) {
 }
 }
    document.querySelectorAll('.favorite-button').forEach(button => {
-  button.addEventListener('click', event => {
-     event.stopPropagation();
-     const song = button.closest('.song');
-     if (!song) return;
-     const title = song.querySelector('h3').textContent.trim();
-     const favorites = getFavorites();
-     if (favorites.includes(title)) {
-        const updatedFavorites = favorites.filter(item => item !== title);
-        saveFavorites(updatedFavorites);
-     } else {
-        favorites.push(title);
-        saveFavorites(favorites);
-     }
-     updateCardFavoriteButton(song);
-     if (currentSong === song) {
-  updateFavoriteButton(song);
-}
-  });
+   button.addEventListener('click', event => {
+       event.stopPropagation();
+       const song = button.closest('.song');
+       if (!song) return;
+       const title = song.querySelector('h3').textContent.trim();
+       const favorites = getFavorites();
+       if (favorites.includes(title)) {
+           const updatedFavorites = favorites.filter(item => item !== title);
+           saveFavorites(updatedFavorites);
+           // お気に入りタブを開いている場合は、その場で曲を非表示
+           if (favoriteSongsTab?.classList.contains('active')) {
+               song.style.display = 'none';
+               const visibleSongs = Array.from(
+                   document.querySelectorAll('.song')
+               ).filter(song => song.style.display !== 'none');
+               const resultCount = document.getElementById('searchResultCount');
+               if (resultCount) {
+                   resultCount.textContent = `お気に入り ${visibleSongs.length}曲`;
+               }
+               const favoriteEmptyMessage =
+                   document.getElementById('favoriteEmptyMessage');
+               if (favoriteEmptyMessage) {
+                   favoriteEmptyMessage.style.display =
+                       visibleSongs.length === 0 ? 'block' : 'none';
+               }
+           }
+       } else {
+           favorites.push(title);
+           saveFavorites(favorites);
+       }
+       updateCardFavoriteButton(song);
+       if (currentSong === song) {
+           updateFavoriteButton(song);
+       }
+   });
 });
    function updateFavoriteButton(song) {
   if (!popupFavorite || !song) return;
