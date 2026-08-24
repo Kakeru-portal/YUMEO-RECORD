@@ -610,6 +610,7 @@ if (searchEmptyMessage) {
  pageShuffleButton.addEventListener('click', event => {
      event.stopPropagation();
      shuffleMode = !shuffleMode;
+    shufflePlayedSongs = [];
      if (shuffleMode) {
          pageShuffleButton.classList.add('shuffle-active');
          popupShuffle.classList.add('shuffle-active');
