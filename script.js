@@ -925,30 +925,35 @@ end: 2520
 }
 ];
 function createSongCard(song) {
- const songElement = document.createElement('div');
- songElement.className = 'song';
- songElement.dataset.count = song.count;
- songElement.dataset.type = song.type;
- songElement.dataset.date = song.date;
- songElement.dataset.unit = song.unit;
- songElement.innerHTML = `
+const songElement = document.createElement('div');
+songElement.className = 'song';
+songElement.dataset.count = song.count;
+songElement.dataset.type = song.type;
+songElement.dataset.date = song.date;
+songElement.dataset.unit = song.unit;
+const year = song.date ? song.date.substring(0, 4) : '';
+songElement.innerHTML = `
 <div class="song-card">
 <h3>${song.title}</h3>
+<div class="song-tags">
+<span class="song-tag">${year}年</span>
+<span class="song-tag">${song.type === 'original' ? 'オリジナル' : 'カバー'}</span>
+</div>
 <p>原曲：${song.artist}</p>
 <p>歌唱：${song.singer}</p>
 <button
-       type="button"
-       class="play-button"
-       data-title="${song.title}"
-       data-video="${song.video}"
-       data-start="${song.start || ''}"
-       data-end="${song.end || ''}"
+      type="button"
+      class="play-button"
+      data-title="${song.title}"
+      data-video="${song.video}"
+      data-start="${song.start || ''}"
+      data-end="${song.end || ''}"
 >
-       ▶ 再生
+      ▶ 再生
 </button>
 </div>
- `;
- return songElement;
+`;
+return songElement;
 }
 const songList = document.getElementById('songList');
 if (songList) {
@@ -984,23 +989,6 @@ if (infoPopupOverlay && infoPopup) {
      infoPopup.classList.remove('active');
   });
 }
-document.querySelectorAll('.song').forEach(song => {
-   const date = song.dataset.date;
-   const card = song.querySelector('.song-card');
-   if (!date || !card) return;
-   const year = date.substring(0, 4);
-   const oldYear = card.querySelector('.song-year');
-if (oldYear) {
-   oldYear.remove();
-}
-const yearText = document.createElement('p');
-yearText.className = 'song-year';
-yearText.textContent = `${year}年`;
-const originalText = card.querySelector('p');
-if (originalText) {
-   originalText.before(yearText);
-}
-});
 // =========================
 // お気に入りボタンを自動追加
 // =========================
