@@ -340,6 +340,10 @@ function handleSongEnded() {
    const songs = Array.from(document.querySelectorAll('.song'))
        .filter(song => song.style.display !== 'none');
    if (songs.length === 0) return;
+   console.log(
+   'シャッフル対象:',
+   songs.map(song => song.querySelector('h3')?.textContent.trim())
+);
    // ② シャッフル再生
    if (shuffleMode) {
        let randomSong;
