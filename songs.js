@@ -447,7 +447,7 @@ start: 3449,
 end: 3702
 },
 {
-title: "ray",
+title: "ray(2018.10.1)",
 count: "1",
 type: "cover",
 date: "2018-10-01",
