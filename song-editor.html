@@ -386,7 +386,12 @@ const video = getYouTubeVideoId(videoInput);
 return lines.join('\n');
 }).join('\n');
 
- const copyButton = document.getElementById('copyButton');
+   output.value = formatted;
+});
+      // =========================
+// データをコピー
+// =========================
+const copyButton = document.getElementById('copyButton');
 const copyMessage = document.getElementById('copyMessage');
 copyButton.addEventListener('click', async () => {
  if (!output.value) {
@@ -408,8 +413,7 @@ copyButton.addEventListener('click', async () => {
    }, 2000);
  }
 });
-   output.value = formatted;
-});
+</script>
 </script>
 </body>
 </html>
