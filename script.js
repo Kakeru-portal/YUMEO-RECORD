@@ -195,6 +195,36 @@ function getFavorites() {
 function saveFavorites(favorites) {
    localStorage.setItem('favoriteSongs', JSON.stringify(favorites));
 }
+   function updateCardFavoriteButton(song) {
+  const favoriteButton = song.querySelector('.favorite-button');
+  if (!favoriteButton) return;
+  const title = song.querySelector('h3').textContent.trim();
+  const favorites = getFavorites();
+  if (favorites.includes(title)) {
+      favoriteButton.textContent = '♥';
+      favoriteButton.setAttribute('aria-label', 'お気に入り解除');
+  } else {
+      favoriteButton.textContent = '♡';
+      favoriteButton.setAttribute('aria-label', 'お気に入り登録');
+  }
+}
+   document.querySelectorAll('.favorite-button').forEach(button => {
+  button.addEventListener('click', event => {
+     event.stopPropagation();
+     const song = button.closest('.song');
+     if (!song) return;
+     const title = song.querySelector('h3').textContent.trim();
+     const favorites = getFavorites();
+     if (favorites.includes(title)) {
+        const updatedFavorites = favorites.filter(item => item !== title);
+        saveFavorites(updatedFavorites);
+     } else {
+        favorites.push(title);
+        saveFavorites(favorites);
+     }
+     updateCardFavoriteButton(song);
+  });
+});
    function updateFavoriteButton(song) {
    if (!popupFavorite || !song) return;
    const title = song.querySelector('h3').textContent.trim();
@@ -651,4 +681,7 @@ document.addEventListener('DOMContentLoaded', () => {
            songList.appendChild(song);
        });
    }
+});
+document.querySelectorAll('.song').forEach(song => {
+  updateCardFavoriteButton(song);
 });
