@@ -1034,3 +1034,7 @@ color: white !important;
 .song-card .favorite-button.is-favorite {
   color: #AC324B;
 }
+#popupFavorite.is-favorite {
+  color: #AC324B;
+  border-color: #AC324B;
+}
