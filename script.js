@@ -252,6 +252,7 @@ popupFavorite.addEventListener('click', event => {
        saveFavorites(favorites);
    }
    updateFavoriteButton(currentSong);
+   updateCardFavoriteButton(currentSong);
 });
    function updatePlayButtons(state) {
   if (state === 1) {
