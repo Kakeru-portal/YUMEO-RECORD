@@ -3,6 +3,18 @@
 // =========================
 const songData = [
    {
+   title: "シャルル",
+   count: "1",
+   type: "cover",
+   date: "2018-10-07",
+   unit: "",
+   artist: "バルーン",
+   singer: "夢追翔",
+   video: "GohYP5pjg5Q",
+   start: 722,
+   end: 740
+ },
+   {
  title: "この街で生きている",
  count: "1",
  type: "cover",
