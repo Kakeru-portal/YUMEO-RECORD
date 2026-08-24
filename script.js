@@ -105,6 +105,27 @@ if (clearSearchButton) {
        filterSongs();
    });
 }
+   const backToSearchButton = document.getElementById('backToSearchButton');
+if (backToSearchButton) {
+   backToSearchButton.addEventListener('click', event => {
+       event.stopPropagation();
+       const searchArea = document.querySelector('.search-area');
+       const searchToggle = document.getElementById('searchToggle');
+       const searchToggleIcon = document.getElementById('searchToggleIcon');
+       if (searchArea && !searchArea.classList.contains('open')) {
+           searchArea.classList.add('open');
+           if (searchToggleIcon) {
+               searchToggleIcon.textContent = '−';
+           }
+       }
+       if (searchToggle) {
+           searchToggle.scrollIntoView({
+               behavior: 'smooth',
+               block: 'start'
+           });
+       }
+   });
+}
    const searchToggle = document.getElementById('searchToggle');
 const searchArea = document.querySelector('.search-area');
 const searchToggleIcon = document.getElementById('searchToggleIcon');
