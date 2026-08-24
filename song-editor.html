@@ -80,7 +80,7 @@ textarea {
 <h1>YUMEO-RECORD 曲登録ツール</h1>
 <h2>歌枠情報</h2>
 <label>
-   動画ID
+   YouTube動画リンク
 <input type="text" id="videoId" placeholder="例：ssh61KTPksk">
 </label>
 <br><br>
@@ -262,11 +262,53 @@ addSongButton.addEventListener('click', () => {
 });
 
 // =========================
+// YouTubeリンクから動画IDを取得
+// =========================
+function getYouTubeVideoId(input) {
+ if (!input) return '';
+ // 動画IDだけ入力された場合
+ if (/^[a-zA-Z0-9_-]{11}$/.test(input)) {
+   return input;
+ }
+ try {
+   const url = new URL(input);
+   const hostname = url.hostname;
+   // https://www.youtube.com/watch?v=XXXXXXXXXXX
+   if (hostname === 'www.youtube.com' || hostname === 'youtube.com') {
+     const videoId = url.searchParams.get('v');
+     if (videoId) {
+       return videoId;
+     }
+     // https://www.youtube.com/shorts/XXXXXXXXXXX
+     const shortsMatch = url.pathname.match(/^\/shorts\/([^/]+)/);
+     if (shortsMatch) {
+       return shortsMatch[1];
+     }
+     // https://www.youtube.com/live/XXXXXXXXXXX
+     const liveMatch = url.pathname.match(/^\/live\/([^/]+)/);
+     if (liveMatch) {
+       return liveMatch[1];
+     }
+   }
+   // https://youtu.be/XXXXXXXXXXX
+   if (hostname === 'youtu.be') {
+     const videoId = url.pathname.substring(1).split('/')[0];
+     if (videoId) {
+       return videoId;
+     }
+   }
+ } catch (error) {
+   // URLとして解析できない場合
+ }
+ return input;
+}
+      // =========================
 // データ生成
 // =========================
 generateButton.addEventListener('click', () => {
  const date = document.getElementById('date').value;
- const video = document.getElementById('videoId').value.trim();
+ const videoInput = document.getElementById('videoId').value.trim();
+const video = getYouTubeVideoId(videoInput);
  const singer = document.getElementById('singer').value.trim();
  const songs = document.querySelectorAll('.song-input');
  const result = [];
