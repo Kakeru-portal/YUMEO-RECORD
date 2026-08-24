@@ -1074,3 +1074,18 @@ color: white !important;
   background-color: #DCEEF8;
   color: #126CA8;
 }
+#activeSearchConditions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+.active-search-tag {
+  display: inline-block;
+  padding: 3px 9px;
+  font-size: 12px;
+  line-height: 1.4;
+  border-radius: 10px;
+  background-color: #DCEEF8;
+  color: #126CA8;
+}
