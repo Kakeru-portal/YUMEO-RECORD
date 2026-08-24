@@ -449,7 +449,7 @@ if (popupSeekBar) {
    if (!playButton) return;
    const title = song.querySelector('h3').textContent.trim();
    const videoId = playButton.dataset.video;
-   const startTime = Number(playButton.dataset.start || 0);
+   const startTime = parseTime(playButton.dataset.start || 0);
       const endTime = Number(playButton.dataset.end || 0);
    currentSong = song;
    miniPlayerTitle.textContent = title;
