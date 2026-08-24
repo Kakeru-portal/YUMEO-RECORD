@@ -2,6 +2,114 @@
 // 楽曲データ
 // =========================
 const songData = [
+       {
+    title: "君の知らない物語",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "supercell",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 297,
+    end: 665
+  },
+  {
+    title: "いぬのおまわりさん",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 737,
+    end: 831
+  },
+  {
+    title: "ちくわパフェだよ☆CKP",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "日向美ビタースイーツ",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 968,
+    end: 1088
+  },
+  {
+    title: "打上花火",
+    count: "5",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "DAOKO × 米津玄師",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる、町田ちま",
+    video: "V7LegYTNQwQ",
+    start: 1810,
+    end: 2090
+  },
+  {
+    title: "ハム太郎とっとこうた",
+    count: "5",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "ハムちゃんず",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる、町田ちま",
+    video: "V7LegYTNQwQ",
+    start: 2172,
+    end: 2274
+  },
+  {
+    title: "じょいふる",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "いきものがかり",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 2408,
+    end: 2568
+  },
+  {
+    title: "おら東京さ行ぐだ",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "吉幾三",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 2716,
+    end: 2752
+  },
+  {
+    title: "ウィーアー!",
+    count: "4",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "きただにひろし",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
+    video: "V7LegYTNQwQ",
+    start: 2829,
+    end: 2946
+  },
+  {
+    title: "ようこそジャパリパークへ",
+    count: "5",
+    type: "cover",
+    date: "2018-10-27",
+    unit: "",
+    artist: "どうぶつビスケッツ×PPP",
+    singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる、町田ちま",
+    video: "V7LegYTNQwQ",
+    start: 3406,
+    end: 3648
+  },
      {
     title: "Mrs.Pumpkinの滑稽な夢",
     count: "1",
