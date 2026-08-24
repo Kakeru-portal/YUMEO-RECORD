@@ -151,6 +151,9 @@ textarea {
 </button>
 <h2>生成されたデータ</h2>
 <textarea id="output" rows="20" cols="80" readonly></textarea>
+   <br>
+<button type="button" id="copyButton">📋 データをコピー</button>
+<span id="copyMessage"></span>
    <script>
 let songNumber = 1;
 const addSongButton = document.getElementById('addSongButton');
@@ -334,7 +337,29 @@ generateButton.addEventListener('click', () => {
    return lines.join('\n');
  }).join(',\n');
 
- output.value = formatted;
+ const copyButton = document.getElementById('copyButton');
+const copyMessage = document.getElementById('copyMessage');
+copyButton.addEventListener('click', async () => {
+ if (!output.value) {
+   copyMessage.textContent = 'コピーするデータがありません';
+   return;
+ }
+ try {
+   await navigator.clipboard.writeText(output.value);
+   copyMessage.textContent = '✓ コピーしました！';
+   setTimeout(() => {
+     copyMessage.textContent = '';
+   }, 2000);
+ } catch (error) {
+   output.select();
+   document.execCommand('copy');
+   copyMessage.textContent = '✓ コピーしました！';
+   setTimeout(() => {
+     copyMessage.textContent = '';
+   }, 2000);
+ }
+});
+   output.value = formatted;
 });
 </script>
 </body>
