@@ -3,6 +3,18 @@
 // =========================
 const songData = [
    {
+   title: "Lemon(2018.10.14)",
+   count: "5",
+   type: "cover",
+   date: "2018-10-14",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔、名伽尾アズマ、花畑チャイカ、社築、緑仙",
+   video: "pSO224C09sA",
+   start: 1069,
+   end: 1163
+ },
+   {
    title: "RAGE OF DUST",
    count: "1",
    type: "cover",
