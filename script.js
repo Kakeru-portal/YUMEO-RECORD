@@ -225,6 +225,9 @@ function saveFavorites(favorites) {
         saveFavorites(favorites);
      }
      updateCardFavoriteButton(song);
+     if (currentSong === song) {
+  updateFavoriteButton(song);
+}
   });
 });
    function updateFavoriteButton(song) {
