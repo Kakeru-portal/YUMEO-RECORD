@@ -375,9 +375,9 @@ const video = getYouTubeVideoId(videoInput);
      lines[lines.length - 1] += ',';
      lines.push(`    end: ${song.end}`);
    }
-   lines.push(`  }`);
-   return lines.join('\n');
- }).join(',\n');
+   lines.push(`  },`);
+return lines.join('\n');
+}).join('\n');
 
  const copyButton = document.getElementById('copyButton');
 const copyMessage = document.getElementById('copyMessage');
