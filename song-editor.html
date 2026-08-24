@@ -315,14 +315,15 @@ generateButton.addEventListener('click', () => {
  const date = document.getElementById('date').value;
  const videoInput = document.getElementById('videoId').value.trim();
 const video = getYouTubeVideoId(videoInput);
- const singer = document.getElementById('singer').value.trim();
  const songs = document.querySelectorAll('.song-input');
  const result = [];
  songs.forEach(song => {
    const title =
      song.querySelector('.title')?.value.trim() || '';
    const artist =
-     song.querySelector('.artist')?.value.trim() || '';
+      song.querySelector('.artist')?.value.trim() || '';
+      const singer =
+  song.querySelector('.singer')?.value.trim() || '';
    const start =
      song.querySelector('.start')?.value.trim() || '';
    const end =
