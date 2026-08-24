@@ -698,6 +698,67 @@ video: "ssh61KTPksk",
 start: 850,
 end: 1135
 }
+   ,
+{
+title: "風に流離い",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 473,
+end: 668
+},
+{
+title: "デビルマンのうた",
+count: "1",
+type: "cover",
+date: "2018-10-01",
+unit: "",
+artist: "十田敬三",
+singer: "夢追翔",
+video: "pZ7MEw0bqEw",
+start: 2,
+end: 41
+},
+{
+title: "Lemon(2018.10.1)",
+count: "1",
+type: "cover",
+date: "2018-10-01",
+unit: "",
+artist: "米津玄師",
+singer: "夢追翔",
+video: "58hvRtSPcGg",
+start: 3449,
+end: 3702
+},
+{
+title: "ray",
+count: "1",
+type: "cover",
+date: "2018-10-01",
+unit: "",
+artist: "BUMP OF CHICKEN",
+singer: "夢追翔",
+video: "58hvRtSPcGg",
+start: 3037,
+end: 3272
+},
+{
+title: "ベンチとコーヒー",
+count: "1",
+type: "cover",
+date: "2018-10-01",
+unit: "",
+artist: "BUMP OF CHICKEN",
+singer: "夢追翔",
+video: "58hvRtSPcGg",
+start: 2611,
+end: 2920
+}
 ];
 function createSongCard(song) {
  const songElement = document.createElement('div');
