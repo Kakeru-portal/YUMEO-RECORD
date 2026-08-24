@@ -201,12 +201,14 @@ function saveFavorites(favorites) {
   const title = song.querySelector('h3').textContent.trim();
   const favorites = getFavorites();
   if (favorites.includes(title)) {
-      favoriteButton.textContent = '♥';
-      favoriteButton.setAttribute('aria-label', 'お気に入り解除');
-  } else {
-      favoriteButton.textContent = '♡';
-      favoriteButton.setAttribute('aria-label', 'お気に入り登録');
-  }
+  favoriteButton.textContent = '♥';
+  favoriteButton.classList.add('is-favorite');
+  favoriteButton.setAttribute('aria-label', 'お気に入り解除');
+} else {
+  favoriteButton.textContent = '♡';
+  favoriteButton.classList.remove('is-favorite');
+  favoriteButton.setAttribute('aria-label', 'お気に入り登録');
+}
 }
    document.querySelectorAll('.favorite-button').forEach(button => {
   button.addEventListener('click', event => {
