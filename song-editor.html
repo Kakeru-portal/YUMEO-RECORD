@@ -84,6 +84,8 @@
 let songNumber = 1;
 const addSongButton = document.getElementById('addSongButton');
 const songInputs = document.getElementById('songInputs');
+const generateButton = document.getElementById('generateButton');
+const output = document.getElementById('output');
 
 // =========================
 // 時間を秒数に変換
@@ -183,6 +185,85 @@ addSongButton.addEventListener('click', () => {
 </label>
  `;
  songInputs.appendChild(songInput);
+});
+
+// =========================
+// データ生成
+// =========================
+generateButton.addEventListener('click', () => {
+ const date = document.getElementById('songDate').value;
+ const video = document.getElementById('videoId').value.trim();
+ const singer = document.getElementById('singer').value.trim();
+ const songs = document.querySelectorAll('.song-input');
+ const result = [];
+ songs.forEach(song => {
+   const title =
+     song.querySelector('.title')?.value.trim() || '';
+   const artist =
+     song.querySelector('.artist')?.value.trim() || '';
+   const start =
+     song.querySelector('.start')?.value.trim() || '';
+   const end =
+     song.querySelector('.end')?.value.trim() || '';
+   const type =
+     song.querySelector('.type')?.value || 'cover';
+   const count =
+     song.querySelector('.count')?.value || '1';
+   const unit =
+     song.querySelector('.unit')?.value.trim() || '';
+   // 曲名が空欄ならスキップ
+   if (!title) {
+     return;
+   }
+   let songData = {
+     title: title,
+     count: count,
+     type: type,
+     date: date,
+     unit: unit,
+     artist: artist,
+     singer: singer,
+     video: video
+   };
+   // 開始時間が入力されている場合
+   if (start !== '') {
+     songData.start = parseTime(start);
+   }
+   // 終了時間が入力されている場合
+   if (end !== '') {
+     songData.end = parseTime(end);
+   }
+   result.push(songData);
+ });
+
+ // =========================
+ // JavaScript形式に変換
+ // =========================
+ const formatted = result.map(song => {
+   const lines = [
+     `  {`,
+     `    title: ${JSON.stringify(song.title)},`,
+     `    count: ${JSON.stringify(song.count)},`,
+     `    type: ${JSON.stringify(song.type)},`,
+     `    date: ${JSON.stringify(song.date)},`,
+     `    unit: ${JSON.stringify(song.unit)},`,
+     `    artist: ${JSON.stringify(song.artist)},`,
+     `    singer: ${JSON.stringify(song.singer)},`,
+     `    video: ${JSON.stringify(song.video)}`
+   ];
+   if (song.start !== undefined) {
+     lines[lines.length - 1] += ',';
+     lines.push(`    start: ${song.start}`);
+   }
+   if (song.end !== undefined) {
+     lines[lines.length - 1] += ',';
+     lines.push(`    end: ${song.end}`);
+   }
+   lines.push(`  }`);
+   return lines.join('\n');
+ }).join(',\n');
+
+ output.value = formatted;
 });
 </script>
 </body>
