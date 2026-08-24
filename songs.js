@@ -2,6 +2,16 @@
 // 楽曲データ
 // =========================
 const songData = [
+     {
+    title: "Mrs.Pumpkinの滑稽な夢",
+    count: "1",
+    type: "cover",
+    date: "2018-10-25",
+    unit: "",
+    artist: "ハチ",
+    singer: "夢追翔",
+    video: "bTwUWwDlVgM"
+  },
    {
    title: "ラフメイカー",
    count: "5",
