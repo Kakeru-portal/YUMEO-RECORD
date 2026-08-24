@@ -41,21 +41,23 @@ activeSearchConditions.id = 'activeSearchConditions';
      const countLabels = selectedCounts.map(count => {
         return count === '1' ? 'ソロ' : `${count}人`;
      });
-     conditions.push(countLabels.join('・'));
+     conditions.push(...countLabels);
   }
   if (selectedTypes.length > 0) {
      const typeLabels = selectedTypes.map(type => {
         return type === 'original' ? 'オリジナル' : 'カバー';
      });
-     conditions.push(typeLabels.join('・'));
+     conditions.push(...typeLabels);
   }
   if (selectedUnits.length > 0) {
-     conditions.push(selectedUnits.join('・'));
+     conditions.push(...selectedUnits);
   }
   if (selectedYears.length > 0) {
-     conditions.push(selectedYears.map(year => `${year}年`).join('・'));
+     conditions.push(...selectedYears.map(year => `${year}年`));
   }
-  activeSearchConditions.textContent = conditions.join('　・　');
+  activeSearchConditions.innerHTML = conditions
+     .map(condition => `<span class="active-search-tag">${condition}</span>`)
+     .join('');
 }
    const searchEmptyMessage = document.getElementById('searchEmptyMessage');
 const favoriteEmptyMessage = document.getElementById('favoriteEmptyMessage');
