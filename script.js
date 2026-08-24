@@ -561,16 +561,36 @@ document.getElementById('popupNext').addEventListener('click', event => {
 }
    });
    nextButton.addEventListener('click', event => {
-       event.stopPropagation();
-       if (!currentSong) return;
-       const songs = Array.from(document.querySelectorAll('.song'))
-           .filter(song => song.style.display !== 'none');
-       const index = songs.indexOf(currentSong);
-       if (index >= 0 && index < songs.length - 1) {
-   const wasPopupOpen = popup.classList.contains('active');
-   playSong(songs[index + 1], wasPopupOpen);
-}
-   });
+   event.stopPropagation();
+   if (!currentSong) return;
+   const songs = Array.from(document.querySelectorAll('.song'))
+       .filter(song => song.style.display !== 'none');
+   if (songs.length === 0) return;
+   // シャッフルONなら、未再生曲からランダムに選ぶ
+   if (shuffleMode) {
+       let unplayedSongs = songs.filter(
+           song => !shufflePlayedSongs.includes(song)
+       );
+       // 未再生曲がなくなったら、新しい一周を開始
+       if (unplayedSongs.length === 0) {
+           shufflePlayedSongs = [];
+           unplayedSongs = songs.filter(song => song !== currentSong);
+       }
+       const randomIndex =
+           Math.floor(Math.random() * unplayedSongs.length);
+       const randomSong = unplayedSongs[randomIndex];
+       shufflePlayedSongs.push(randomSong);
+       const wasPopupOpen = popup.classList.contains('active');
+       playSong(randomSong, wasPopupOpen);
+       return;
+   }
+   // シャッフルOFFなら、今まで通り一覧順
+   const index = songs.indexOf(currentSong);
+   if (index >= 0 && index < songs.length - 1) {
+       const wasPopupOpen = popup.classList.contains('active');
+       playSong(songs[index + 1], wasPopupOpen);
+   }
+});
    document.getElementById('musicPopupClose').addEventListener('click', () => {
        popup.classList.remove('active');
    });
