@@ -203,7 +203,7 @@ function saveFavorites(favorites) {
   if (favorites.includes(title)) {
   favoriteButton.textContent = '♥';
   favoriteButton.classList.add('is-favorite');
-  favoriteButton.setAttribute('aria-label', 'お気に入り解除');
+  favoriteButton.setAttribute('aria-label', '');
 } else {
   favoriteButton.textContent = '♡';
   favoriteButton.classList.remove('is-favorite');
@@ -228,14 +228,16 @@ function saveFavorites(favorites) {
   });
 });
    function updateFavoriteButton(song) {
-   if (!popupFavorite || !song) return;
-   const title = song.querySelector('h3').textContent.trim();
-   const favorites = getFavorites();
-   if (favorites.includes(title)) {
-       popupFavorite.textContent = '♥ お気に入り解除';
-   } else {
-       popupFavorite.textContent = '♡ お気に入り登録';
-   }
+  if (!popupFavorite || !song) return;
+  const title = song.querySelector('h3').textContent.trim();
+  const favorites = getFavorites();
+  if (favorites.includes(title)) {
+      popupFavorite.textContent = '♥ お気に入り解除';
+      popupFavorite.classList.add('is-favorite');
+  } else {
+      popupFavorite.textContent = '♡ お気に入り登録';
+      popupFavorite.classList.remove('is-favorite');
+  }
 }
 popupFavorite.addEventListener('click', event => {
    event.stopPropagation();
