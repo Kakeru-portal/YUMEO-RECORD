@@ -346,24 +346,27 @@ function handleSongEnded() {
    songs.map(song => song.querySelector('h3')?.textContent.trim())
 );
    // ② シャッフル再生
-   if (shuffleMode) {
-       let randomSong;
-       if (songs.length === 1) {
-           randomSong = songs[0];
-       } else {
-           do {
-               const randomIndex = Math.floor(Math.random() * songs.length);
-               randomSong = songs[randomIndex];
-           } while (randomSong === currentSong);
-       }
-       playSong(randomSong, false);
-       setTimeout(() => {
-           if (youtubePlayer) {
-               youtubePlayer.playVideo();
-           }
-       }, 1000);
-       return;
+if (shuffleMode) {
+   // まだ再生していない曲だけを候補にする
+   let unplayedSongs = songs.filter(song => !shufflePlayedSongs.includes(song));
+   // まだ再生していない曲がなくなったら、全曲を新しい一周として再スタート
+   if (unplayedSongs.length === 0) {
+       shufflePlayedSongs = [];
+       unplayedSongs = songs.filter(song => song !== currentSong);
    }
+   // 未再生曲の中からランダムに選ぶ
+   const randomIndex = Math.floor(Math.random() * unplayedSongs.length);
+   const randomSong = unplayedSongs[randomIndex];
+   // 今回選んだ曲を「再生済み」に記録
+   shufflePlayedSongs.push(randomSong);
+   playSong(randomSong, false);
+   setTimeout(() => {
+       if (youtubePlayer) {
+           youtubePlayer.playVideo();
+       }
+   }, 1000);
+   return;
+}
    // ③ プレイリスト全体をループ
    if (loopMode === 2) {
        const index = songs.indexOf(currentSong);
