@@ -624,6 +624,18 @@ const songData = [
  video: "ssh61KTPksk",
  start: 3422,
  end: 3789
+},
+   {
+ title: "僕が死のうと思ったのは",
+ count: "1",
+ type: "cover",
+ date: "2018-10-04",
+ unit: "",
+ artist: "amazarashi",
+ singer: "夢追翔",
+ video: "ssh61KTPksk",
+ start: 2982,
+ end: 3278
 }
 ];
 function createSongCard(song) {
