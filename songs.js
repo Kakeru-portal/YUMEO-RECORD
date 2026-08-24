@@ -2,15 +2,15 @@
 // 楽曲データ
 // =========================
 const songData = [
-         {
+           {
     title: "燃やし尽くしてナポリタン",
     count: "2",
     type: "original",
-    date: "",
+    date: "2018-11-02",
     unit: "",
     artist: "夢追翔、ぴろぱる",
     singer: "夢追翔、ぴろぱる",
-    video: "",
+    video: "9TBGaPwP8fs",
     start: 1209,
     end: 1294
   },
@@ -18,11 +18,11 @@ const songData = [
     title: "振り返るな黒毛和牛",
     count: "2",
     type: "original",
-    date: "",
+    date: "2018-11-02",
     unit: "",
     artist: "夢追翔、ぴろぱる",
     singer: "夢追翔、ぴろぱる",
-    video: "",
+    video: "9TBGaPwP8fs",
     start: 2354,
     end: 2446
   },
@@ -30,11 +30,11 @@ const songData = [
     title: "来来来世まで",
     count: "1",
     type: "original",
-    date: "",
+    date: "2018-11-02",
     unit: "",
     artist: "夢追翔、ぴろぱる",
     singer: "夢追翔",
-    video: "",
+    video: "9TBGaPwP8fs",
     start: 3444,
     end: 3517
   },
@@ -42,11 +42,11 @@ const songData = [
     title: "振り向くな黒毛和牛",
     count: "2",
     type: "original",
-    date: "",
+    date: "2018-11-02",
     unit: "",
     artist: "夢追翔、ぴろぱる",
     singer: "夢追翔、ぴろぱる",
-    video: "",
+    video: "9TBGaPwP8fs",
     start: 3824,
     end: 3918
   },
