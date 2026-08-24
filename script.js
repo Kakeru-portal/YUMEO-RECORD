@@ -45,6 +45,7 @@ let loopMode = 0;
 let shuffleMode = false;
 // false = OFF
 // true = ON
+let shufflePlayedSongs = [];
 window.onYouTubeIframeAPIReady = function() {
    youtubeReady = true;
 };
