@@ -759,6 +759,49 @@ video: "58hvRtSPcGg",
 start: 2611,
 end: 2920
 }
+   ,
+{
+title: "死にたくないから生きている",
+count: "1",
+type: "original",
+date: "2018-09-25",
+unit: "",
+artist: "夢追翔",
+singer: "夢追翔",
+video: "XVVXrJQQuNs"
+},
+{
+title: "Lemon(2018.9.29)",
+count: "1",
+type: "cover",
+date: "2018-09-29",
+unit: "",
+artist: "米津玄師",
+singer: "夢追翔",
+video: "RUJEeuX_Ac0"
+},
+{
+title: "Replace to be",
+count: "5",
+type: "original",
+date: "2026-05-08",
+unit: "VACHSS",
+artist: "VACHSS",
+singer: "VACHSS (夢追翔、加賀美ハヤト、叶、葛葉、剣持刀也、不破湊)",
+video: "7qGbqQTn6og"
+},
+{
+title: "vivi",
+count: "1",
+type: "cover",
+date: "2018-10-01",
+unit: "",
+artist: "米津玄師",
+singer: "夢追翔",
+video: "58hvRtSPcGg",
+start: 2327,
+end: 2520
+}
 ];
 function createSongCard(song) {
  const songElement = document.createElement('div');
