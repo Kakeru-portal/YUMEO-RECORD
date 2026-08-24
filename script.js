@@ -94,6 +94,17 @@ if (searchButton) {
        }
    });
 }
+   const clearSearchButton = document.getElementById('clearSearchButton');
+if (clearSearchButton) {
+   clearSearchButton.addEventListener('click', event => {
+       event.stopPropagation();
+       const searchInput = document.getElementById('songSearch');
+       if (searchInput) {
+           searchInput.value = '';
+       }
+       filterSongs();
+   });
+}
    const searchToggle = document.getElementById('searchToggle');
 const searchArea = document.querySelector('.search-area');
 const searchToggleIcon = document.getElementById('searchToggleIcon');
