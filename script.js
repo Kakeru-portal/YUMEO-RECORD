@@ -624,8 +624,9 @@ if (searchEmptyMessage) {
           return;
       }
       const randomIndex = Math.floor(Math.random() * visibleSongs.length);
-      const randomSong = visibleSongs[randomIndex];
-      playSong(randomSong);
+const randomSong = visibleSongs[randomIndex];
+shufflePlayedSongs.push(randomSong);
+playSong(randomSong);
      setTimeout(() => {
    tryPlayYouTube();
 }, 1500);
