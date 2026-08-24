@@ -39,8 +39,10 @@ activeSearchConditions.id = 'activeSearchConditions';
   }
   if (selectedCounts.length > 0) {
      const countLabels = selectedCounts.map(count => {
-        return count === '1' ? 'ソロ' : `${count}人`;
-     });
+  if (count === '1') return 'ソロ';
+  if (count === '5') return '5人以上';
+  return `${count}人`;
+});
      conditions.push(...countLabels);
   }
   if (selectedTypes.length > 0) {
