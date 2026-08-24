@@ -84,6 +84,41 @@
 let songNumber = 1;
 const addSongButton = document.getElementById('addSongButton');
 const songInputs = document.getElementById('songInputs');
+
+// =========================
+// 時間を秒数に変換
+// =========================
+function parseTime(time) {
+ if (typeof time === 'number') {
+   return time;
+ }
+ if (!time) {
+   return 0;
+ }
+ const parts = String(time)
+   .trim()
+   .split(':')
+   .map(Number);
+ if (parts.some(Number.isNaN)) {
+   return 0;
+ }
+ if (parts.length === 1) {
+   return parts[0];
+ }
+ if (parts.length === 2) {
+   // 分:秒
+   return parts[0] * 60 + parts[1];
+ }
+ if (parts.length === 3) {
+   // 時:分:秒
+   return parts[0] * 3600 + parts[1] * 60 + parts[2];
+ }
+ return 0;
+}
+
+// =========================
+// 曲入力欄を追加
+// =========================
 addSongButton.addEventListener('click', () => {
  songNumber++;
  const songInput = document.createElement('div');
@@ -103,12 +138,20 @@ addSongButton.addEventListener('click', () => {
 <br><br>
 <label>
      開始時間
-<input type="text" class="start" placeholder="例：57:02">
+<input
+       type="text"
+       class="start"
+       placeholder="例：57:02"
+>
 </label>
 <br><br>
 <label>
      終了時間
-<input type="text" class="end" placeholder="例：1:03:09">
+<input
+       type="text"
+       class="end"
+       placeholder="例：1:03:09"
+>
 </label>
 <br><br>
 <label>
@@ -132,7 +175,11 @@ addSongButton.addEventListener('click', () => {
 <br><br>
 <label>
      ユニット
-<input type="text" class="unit" placeholder="例：VACHSS">
+<input
+       type="text"
+       class="unit"
+       placeholder="例：VACHSS"
+>
 </label>
  `;
  songInputs.appendChild(songInput);
