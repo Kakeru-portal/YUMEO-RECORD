@@ -20,6 +20,7 @@ const songData = [
     type: "cover",
     date: "2018-10-27",
     unit: "",
+         artist: "-",
     singer: "夢追翔、朝霞しお、黒井しば、ぴろぱる",
     video: "V7LegYTNQwQ",
     start: 737,
