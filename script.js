@@ -653,9 +653,10 @@ function createSongCard(song) {
  return songElement;
 }
 const songList = document.getElementById('songList');
-if (songList && songData.length > 0) {
- const testSong = createSongCard(songData[0]);
- songList.appendChild(testSong);
+if (songList) {
+ songData.forEach(song => {
+   songList.appendChild(createSongCard(song));
+ });
 }
 filterSongs();
 
