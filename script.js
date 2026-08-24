@@ -637,6 +637,67 @@ const songData = [
  start: 2982,
  end: 3278
 }
+   ,
+{
+title: "ナモナキヒト",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 2535,
+end: 2798
+},
+{
+title: "パーフェクトライフ",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 2080,
+end: 2318
+},
+{
+title: "ジュブナイル",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 1713,
+end: 1929
+},
+{
+title: "スターライト",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 1278,
+end: 1520
+},
+{
+title: "名前",
+count: "1",
+type: "cover",
+date: "2018-10-04",
+unit: "",
+artist: "amazarashi",
+singer: "夢追翔",
+video: "ssh61KTPksk",
+start: 850,
+end: 1135
+}
 ];
 function createSongCard(song) {
  const songElement = document.createElement('div');
