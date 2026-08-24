@@ -25,6 +25,38 @@ const resultCount = document.getElementById('searchResultCount');
 if (resultCount) {
   resultCount.textContent = `全${allSongs.length}曲中 ${visibleSongs.length}曲ヒットしました`;
 }
+   let activeSearchConditions =
+ document.getElementById('activeSearchConditions');
+if (!activeSearchConditions && resultCount) {
+ activeSearchConditions = document.createElement('div');
+activeSearchConditions.id = 'activeSearchConditions';
+ resultCount.after(activeSearchConditions);
+}
+   if (activeSearchConditions) {
+  const conditions = [];
+  if (searchText !== '') {
+     conditions.push(`検索：${searchText}`);
+  }
+  if (selectedCounts.length > 0) {
+     const countLabels = selectedCounts.map(count => {
+        return count === '1' ? 'ソロ' : `${count}人`;
+     });
+     conditions.push(countLabels.join('・'));
+  }
+  if (selectedTypes.length > 0) {
+     const typeLabels = selectedTypes.map(type => {
+        return type === 'original' ? 'オリジナル' : 'カバー';
+     });
+     conditions.push(typeLabels.join('・'));
+  }
+  if (selectedUnits.length > 0) {
+     conditions.push(selectedUnits.join('・'));
+  }
+  if (selectedYears.length > 0) {
+     conditions.push(selectedYears.map(year => `${year}年`).join('・'));
+  }
+  activeSearchConditions.textContent = conditions.join('　・　');
+}
    const searchEmptyMessage = document.getElementById('searchEmptyMessage');
 const favoriteEmptyMessage = document.getElementById('favoriteEmptyMessage');
 if (searchEmptyMessage) {
