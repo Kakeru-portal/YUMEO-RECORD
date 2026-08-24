@@ -179,15 +179,19 @@ const popupPlayPause = document.getElementById('popupPlayPause');
    });
 }
    if (popupShuffle) {
-  popupShuffle.addEventListener('click', event => {
-      event.stopPropagation();
-      shuffleMode = !shuffleMode;
-      if (shuffleMode) {
-          popupShuffle.classList.add('shuffle-active');
-      } else {
-          popupShuffle.classList.remove('shuffle-active');
-      }
-  });
+   popupShuffle.addEventListener('click', event => {
+       event.stopPropagation();
+       shuffleMode = !shuffleMode;
+       if (shuffleMode) {
+           popupShuffle.classList.add('shuffle-active');
+           // 現在再生中の曲を「再生済み」にする
+           if (currentSong && !shufflePlayedSongs.includes(currentSong)) {
+               shufflePlayedSongs.push(currentSong);
+           }
+       } else {
+           popupShuffle.classList.remove('shuffle-active');
+       }
+   });
 }
    const popupFavorite = document.getElementById('popupFavorite');
 function getFavorites() {
