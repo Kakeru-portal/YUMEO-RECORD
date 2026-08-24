@@ -266,6 +266,20 @@ popupFavorite.addEventListener('click', event => {
       popupPlayPause.textContent = '▶️';
   }
 }
+   function parseTime(time) {
+   if (typeof time === 'number') return time;
+   if (!time) return 0;
+   const parts = String(time).split(':').map(Number);
+   if (parts.length === 2) {
+       // 分:秒
+       return parts[0] * 60 + parts[1];
+   }
+   if (parts.length === 3) {
+       // 時:分:秒
+       return parts[0] * 3600 + parts[1] * 60 + parts[2];
+   }
+   return Number(time) || 0;
+}
    function formatTime(seconds) {
    seconds = Math.floor(seconds || 0);
    const minutes = Math.floor(seconds / 60);
