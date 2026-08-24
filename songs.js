@@ -2,6 +2,54 @@
 // 楽曲データ
 // =========================
 const songData = [
+         {
+    title: "燃やし尽くしてナポリタン",
+    count: "2",
+    type: "original",
+    date: "",
+    unit: "",
+    artist: "夢追翔、ぴろぱる",
+    singer: "夢追翔、ぴろぱる",
+    video: "",
+    start: 1209,
+    end: 1294
+  },
+  {
+    title: "振り返るな黒毛和牛",
+    count: "2",
+    type: "original",
+    date: "",
+    unit: "",
+    artist: "夢追翔、ぴろぱる",
+    singer: "夢追翔、ぴろぱる",
+    video: "",
+    start: 2354,
+    end: 2446
+  },
+  {
+    title: "来来来世まで",
+    count: "1",
+    type: "original",
+    date: "",
+    unit: "",
+    artist: "夢追翔、ぴろぱる",
+    singer: "夢追翔",
+    video: "",
+    start: 3444,
+    end: 3517
+  },
+  {
+    title: "振り向くな黒毛和牛",
+    count: "2",
+    type: "original",
+    date: "",
+    unit: "",
+    artist: "夢追翔、ぴろぱる",
+    singer: "夢追翔、ぴろぱる",
+    video: "",
+    start: 3824,
+    end: 3918
+  },
        {
     title: "君の知らない物語",
     count: "4",
