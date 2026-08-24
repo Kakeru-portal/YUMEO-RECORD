@@ -1028,3 +1028,9 @@ color: white !important;
   margin-top: 12px;
   vertical-align: middle;
 }
+.song-card .favorite-button {
+  color: #333333;
+}
+.song-card .favorite-button.is-favorite {
+  color: #AC324B;
+}
