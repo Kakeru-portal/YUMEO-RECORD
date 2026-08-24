@@ -1059,3 +1059,18 @@ color: white !important;
    cursor: pointer;
    z-index: 9999;
 }
+.song-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 10px;
+}
+.song-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  border-radius: 12px;
+  background-color: #DCEEF8;
+  color: #126CA8;
+}
