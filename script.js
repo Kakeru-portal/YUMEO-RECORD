@@ -548,7 +548,6 @@ document.getElementById('popupNext').addEventListener('click', event => {
        playSong(songs[index + 1], true);
    }
 });
-});
    previousButton.addEventListener('click', event => {
        event.stopPropagation();
        if (!currentSong) return;
