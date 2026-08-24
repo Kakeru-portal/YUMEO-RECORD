@@ -3,6 +3,16 @@
 // =========================
 const songData = [
    {
+   title: "RAGE OF DUST",
+   count: "1",
+   type: "cover",
+   date: "2018-10-14",
+   unit: "",
+   artist: "SPYAIR",
+   singer: "夢追翔",
+   video: "iXBBkDQ12YY"
+ },
+   {
    title: "アイネクライネ",
    count: "1",
    type: "cover",
