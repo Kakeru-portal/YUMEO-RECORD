@@ -3,6 +3,54 @@
 // =========================
 const songData = [
    {
+   title: "さくら(独唱)",
+   count: "1",
+   type: "cover",
+   date: "2018-10-08",
+   unit: "",
+   artist: "森山直太朗",
+   singer: "夢追翔",
+   video: "Af6bpFjvDZI",
+   start: 1523,
+   end: 1729
+ },
+ {
+   title: "pride",
+   count: "1",
+   type: "cover",
+   date: "2018-10-08",
+   unit: "",
+   artist: "速水ヒロ(前野智昭)",
+   singer: "夢追翔",
+   video: "Af6bpFjvDZI",
+   start: 2596,
+   end: 2671
+ },
+ {
+   title: "StarDust",
+   count: "1",
+   type: "cover",
+   date: "2018-10-08",
+   unit: "",
+   artist: "Sound Horizon",
+   singer: "夢追翔",
+   video: "Af6bpFjvDZI",
+   start: 3137,
+   end: 3373
+ },
+ {
+   title: "EZ DO DANCE -K.O.P. RIMIX-",
+   count: "1",
+   type: "cover",
+   date: "2018-10-08",
+   unit: "",
+   artist: "仁科カヅキ(増田俊樹) VS 大和アレクサンダー(武内駿輔)",
+   singer: "夢追翔",
+   video: "Af6bpFjvDZI",
+   start: 3489,
+   end: 3670
+ },
+   {
    title: "シャルル",
    count: "1",
    type: "cover",
