@@ -1057,7 +1057,7 @@ color: white !important;
    border: none;
    border-radius: 20px;
    cursor: pointer;
-   z-index: 9999;
+   z-index: 1500;
 }
 .song-tags {
   display: flex;
