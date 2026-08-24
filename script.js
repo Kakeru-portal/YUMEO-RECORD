@@ -82,9 +82,18 @@ document.addEventListener('DOMContentLoaded', () => {
        checkbox.addEventListener('change', filterSongs);
    });
    const searchButton = document.getElementById('searchButton');
-   if (searchButton) {
-       searchButton.addEventListener('click', filterSongs);
-   }
+const searchResultCount = document.getElementById('searchResultCount');
+if (searchButton) {
+   searchButton.addEventListener('click', () => {
+       filterSongs();
+       if (searchResultCount) {
+           searchResultCount.scrollIntoView({
+               behavior: 'smooth',
+               block: 'start'
+           });
+       }
+   });
+}
    const searchToggle = document.getElementById('searchToggle');
 const searchArea = document.querySelector('.search-area');
 const searchToggleIcon = document.getElementById('searchToggleIcon');
