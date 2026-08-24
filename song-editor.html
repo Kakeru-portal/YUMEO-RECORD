@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YUMEO-RECORD 曲登録ツール</title>
+</head>
+<body>
+<h1>YUMEO-RECORD 曲登録ツール</h1>
+<h2>歌枠情報</h2>
+<label>
+   動画ID
+<input type="text" id="videoId" placeholder="例：ssh61KTPksk">
+</label>
+<br><br>
+<label>
+   配信日
+<input type="date" id="date">
+</label>
+<br><br>
+<label>
+   歌唱者
+<input type="text" id="singer" value="夢追翔">
+</label>
+<h2>曲情報</h2>
+<div id="songInputs">
+<div class="song-input">
+<h3>曲 1</h3>
+<label>
+       曲名
+<input type="text" class="title">
+</label>
+<br><br>
+<label>
+       原曲アーティスト
+<input type="text" class="artist">
+</label>
+<br><br>
+<label>
+       開始時間
+<input type="text" class="start" placeholder="例：57:02">
+</label>
+<br><br>
+<label>
+       終了時間
+<input type="text" class="end" placeholder="例：1:03:09">
+</label>
+<br><br>
+<label>
+       種類
+<select class="type">
+<option value="cover">カバー</option>
+<option value="original">オリジナル</option>
+</select>
+</label>
+<br><br>
+<label>
+       歌唱人数
+<select class="count">
+<option value="1">ソロ</option>
+<option value="2">2人</option>
+<option value="3">3人</option>
+<option value="4">4人</option>
+<option value="5">5人以上</option>
+</select>
+</label>
+<br><br>
+<label>
+       ユニット
+<input type="text" class="unit" placeholder="例：VACHSS">
+</label>
+</div>
+</div>
+<br>
+<button type="button" id="addSongButton">
+   ＋ 曲を追加
+</button>
+<button type="button" id="generateButton">
+   データを生成
+</button>
+<h2>生成されたデータ</h2>
+<textarea id="output" rows="20" cols="80" readonly></textarea>
+</body>
+</html>
