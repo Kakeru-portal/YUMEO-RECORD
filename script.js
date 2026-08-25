@@ -338,19 +338,40 @@ function saveFavorites(favorites) {
   }
 }
 popupFavorite.addEventListener('click', event => {
-   event.stopPropagation();
-   if (!currentSong) return;
-   const title = currentSong.querySelector('h3').textContent.trim();
-   const favorites = getFavorites();
-   if (favorites.includes(title)) {
-       const updatedFavorites = favorites.filter(item => item !== title);
-       saveFavorites(updatedFavorites);
-   } else {
-       favorites.push(title);
-       saveFavorites(favorites);
-   }
-   updateFavoriteButton(currentSong);
-   updateCardFavoriteButton(currentSong);
+  event.stopPropagation();
+  if (!currentSong) return;
+  const title = currentSong.querySelector('h3').textContent.trim();
+  const favorites = getFavorites();
+  if (favorites.includes(title)) {
+      // お気に入り解除
+      const updatedFavorites = favorites.filter(item => item !== title);
+      saveFavorites(updatedFavorites);
+      // お気に入りタブを開いている場合は、画面からも即時削除
+      if (favoriteSongsTab?.classList.contains('active')) {
+          currentSong.style.display = 'none';
+          const visibleSongs = Array.from(
+              document.querySelectorAll('.song')
+          ).filter(song => song.style.display !== 'none');
+          const resultCount =
+              document.getElementById('searchResultCount');
+          if (resultCount) {
+              resultCount.textContent =
+                  `お気に入り ${visibleSongs.length}曲`;
+          }
+          const favoriteEmptyMessage =
+              document.getElementById('favoriteEmptyMessage');
+          if (favoriteEmptyMessage) {
+              favoriteEmptyMessage.style.display =
+                  visibleSongs.length === 0 ? 'block' : 'none';
+          }
+      }
+  } else {
+      // お気に入り登録
+      favorites.push(title);
+      saveFavorites(favorites);
+  }
+  updateFavoriteButton(currentSong);
+  updateCardFavoriteButton(currentSong);
 });
    function updatePlayButtons(state) {
   if (state === 1) {
