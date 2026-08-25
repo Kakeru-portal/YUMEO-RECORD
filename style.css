@@ -1292,3 +1292,13 @@ color: white !important;
   font-size: 14px;
   cursor: pointer;
 }
+/* =========================
+  テーマカラー
+  ========================= */
+:root {
+  --theme-main: #AC324B;
+  --theme-sub: #136DA8;
+  --theme-white: #FFFFFF;
+  --theme-black: #333333;
+  --theme-accent: #AC324B;
+}
