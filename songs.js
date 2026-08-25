@@ -2,6 +2,16 @@
 // 楽曲データ
 // =========================
 const songData = [
+             {
+    title: "高嶺の花子さん",
+    count: "1",
+    type: "cover",
+    date: "2018-11-10",
+    unit: "",
+    artist: "back number",
+    singer: "夢追翔",
+    video: "7lYjfAgaTXw"
+  },
            {
     title: "燃やし尽くしてナポリタン",
     count: "2",
