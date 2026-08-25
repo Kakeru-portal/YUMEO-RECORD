@@ -1285,10 +1285,10 @@ color: white !important;
 }
 #themeSelect {
   padding: 8px 12px;
-  border: 1px solid #AC324B;
+  border: 1px solid var(--theme-main);
   border-radius: 6px;
-  background: #fff;
-  color: #333;
+  background: var(--theme-white);
+  color: var(--theme-black);
   font-size: 14px;
   cursor: pointer;
 }
@@ -1301,4 +1301,24 @@ color: white !important;
   --theme-white: #FFFFFF;
   --theme-black: #333333;
   --theme-accent: #AC324B;
+}
+/* =========================
+  貴族テーマ
+  ========================= */
+body[data-theme="noble"] {
+  --theme-main: #564D6A;
+  --theme-sub: #39383D;
+  --theme-white: #E9E2DA;
+  --theme-black: #39383D;
+  --theme-accent: #564D6A;
+}
+/* =========================
+  カジュアルライブテーマ
+  ========================= */
+body[data-theme="casual"] {
+  --theme-main: #871126;
+  --theme-sub: #274730;
+  --theme-white: #FFFFFF;
+  --theme-black: #102851;
+  --theme-accent: #B7802D;
 }
