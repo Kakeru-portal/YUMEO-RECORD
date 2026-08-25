@@ -272,15 +272,23 @@ const popupPlayPause = document.getElementById('popupPlayPause');
    });
 }
    if (popupShuffle) {
-   popupShuffle.addEventListener('click', event => {
-       event.stopPropagation();
-       shuffleMode = !shuffleMode;
-       if (shuffleMode) {
-           popupShuffle.classList.add('shuffle-active');
-       } else {
-           popupShuffle.classList.remove('shuffle-active');
-       }
-   });
+  popupShuffle.addEventListener('click', event => {
+      event.stopPropagation();
+      shuffleMode = !shuffleMode;
+      if (shuffleMode) {
+          popupShuffle.classList.add('shuffle-active');
+      } else {
+          popupShuffle.classList.remove('shuffle-active');
+      }
+      const pageShuffleButton = document.getElementById('pageShuffleButton');
+      if (pageShuffleButton) {
+          if (shuffleMode) {
+              pageShuffleButton.classList.add('shuffle-active');
+          } else {
+              pageShuffleButton.classList.remove('shuffle-active');
+          }
+      }
+  });
 }
    const popupFavorite = document.getElementById('popupFavorite');
 function getFavorites() {
@@ -783,12 +791,16 @@ if (searchEmptyMessage) {
      shuffleMode = !shuffleMode;
     shufflePlayedSongs = [];
      if (shuffleMode) {
-         pageShuffleButton.classList.add('shuffle-active');
-         popupShuffle.classList.add('shuffle-active');
-     } else {
-         pageShuffleButton.classList.remove('shuffle-active');
-         popupShuffle.classList.remove('shuffle-active');
-     }
+   pageShuffleButton.classList.add('shuffle-active');
+   if (popupShuffle) {
+       popupShuffle.classList.add('shuffle-active');
+   }
+} else {
+   pageShuffleButton.classList.remove('shuffle-active');
+   if (popupShuffle) {
+       popupShuffle.classList.remove('shuffle-active');
+   }
+}
       const visibleSongs = Array.from(document.querySelectorAll('.song'))
           .filter(song => song.style.display !== 'none');
       if (visibleSongs.length === 0) {
