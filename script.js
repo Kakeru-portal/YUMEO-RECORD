@@ -944,3 +944,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('.song').forEach(song => {
   updateCardFavoriteButton(song);
 });
+// =========================
+// テーマ切り替え
+// =========================
+const themeSelect = document.getElementById('themeSelect');
+if (themeSelect) {
+  themeSelect.addEventListener('change', () => {
+     document.body.dataset.theme = themeSelect.value;
+  });
+}
