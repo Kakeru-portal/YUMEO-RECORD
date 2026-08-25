@@ -950,6 +950,12 @@ document.querySelectorAll('.song').forEach(song => {
 const themeSelect = document.getElementById('themeSelect');
 if (themeSelect) {
   themeSelect.addEventListener('change', () => {
-     document.body.dataset.theme = themeSelect.value;
+     document.body.classList.remove('theme-noble', 'theme-casual');
+     if (themeSelect.value === 'noble') {
+        document.body.classList.add('theme-noble');
+     }
+     if (themeSelect.value === 'casual') {
+        document.body.classList.add('theme-casual');
+     }
   });
 }
