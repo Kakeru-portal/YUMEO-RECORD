@@ -1108,3 +1108,44 @@ color: white !important;
    background: #AC324B;
    color: #fff;
 }
+/* =========================
+  タッチ端末では hover 表現を無効化
+  ========================= */
+@media (hover: none) {
+ #infoButton:hover {
+   background-color: #AC324B;
+ }
+ #miniPlayerControls button:hover {
+   background-color: #eeeeee;
+ }
+ #musicPopupClose:hover {
+   background-color: #333333;
+ }
+ #popupControls button:hover {
+   background-color: #eeeeee;
+ }
+ #popupFavorite:hover,
+ #popupOriginal:hover {
+   background-color: #ffffff;
+ }
+ #infoPopupClose:hover,
+ #infoPopupCloseBottom:hover {
+   background-color: #AC324B;
+ }
+ #infoPopupContent a:hover {
+   text-decoration: none;
+ }
+ #songTabs button:hover {
+   background-color: #f3f3f3;
+ }
+ #songTabs button.active:hover {
+   background-color: #AC324B;
+ }
+ #pageShuffleButton:hover {
+   background-color: #eeeeee;
+ }
+ .clear-filter-button:hover {
+   background: transparent;
+   color: #AC324B;
+ }
+}
