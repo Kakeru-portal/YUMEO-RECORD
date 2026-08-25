@@ -2,6 +2,54 @@
 // 楽曲データ
 // =========================
 const songData = [
+  {
+   title: "雪の華",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "中島美嘉",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 474,
+   end: 754
+ },
+ {
+   title: "カサブタ",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "千綿ヒデノリ",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 1066,
+   end: 1261
+ },
+ {
+   title: "ヒプノシスマイク -Division Battle Anthem-",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "Division All Stars",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 1495,
+   end: 1816
+ },
+ {
+   title: "瞳をとじて",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "平井堅",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 2045,
+   end: 2382
+ },
              {
     title: "高嶺の花子さん",
     count: "1",
