@@ -874,18 +874,42 @@ document.querySelectorAll('.song').forEach(song => {
   }
 });
 // =========================
-// 楽曲を年代順に自動並べ替え
+// 楽曲の並べ替え
 // =========================
-document.addEventListener('DOMContentLoaded', () => {
+function sortSongs() {
    const songList = document.getElementById('songList');
-   if (songList) {
-       const songs = Array.from(songList.querySelectorAll('.song'));
-       songs.sort((a, b) => {
+   const sortSelect = document.getElementById('sortSelect');
+   if (!songList || !sortSelect) return;
+   const songs = Array.from(songList.querySelectorAll('.song'));
+   const sortType = sortSelect.value;
+   songs.sort((a, b) => {
+       if (sortType === 'date-asc') {
            return a.dataset.date.localeCompare(b.dataset.date);
-       });
-       songs.forEach(song => {
-           songList.appendChild(song);
-       });
+       }
+       if (sortType === 'date-desc') {
+           return b.dataset.date.localeCompare(a.dataset.date);
+       }
+       if (sortType === 'title-asc') {
+           const titleA = a.querySelector('h3')?.textContent.trim() || '';
+           const titleB = b.querySelector('h3')?.textContent.trim() || '';
+           return titleA.localeCompare(titleB, 'ja');
+       }
+       if (sortType === 'title-desc') {
+           const titleA = a.querySelector('h3')?.textContent.trim() || '';
+           const titleB = b.querySelector('h3')?.textContent.trim() || '';
+           return titleB.localeCompare(titleA, 'ja');
+       }
+       return 0;
+   });
+   songs.forEach(song => {
+       songList.appendChild(song);
+   });
+}
+document.addEventListener('DOMContentLoaded', () => {
+   const sortSelect = document.getElementById('sortSelect');
+   if (sortSelect) {
+       sortSelect.addEventListener('change', sortSongs);
+       sortSongs();
    }
 });
 document.querySelectorAll('.song').forEach(song => {
