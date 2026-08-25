@@ -695,14 +695,6 @@ footer {
    border-radius: 0;
    padding: 60px 10px 15px;
 }
-   #musicPopupClose {
-       top: 8px;
-       right: 8px;
-       width: 48px;
-       height: 48px;
-       line-height: 48px;
-       font-size: 30px;
-   }
    #popupSongTitle {
        font-size: 20px;
    }
@@ -1147,5 +1139,102 @@ color: white !important;
  .clear-filter-button:hover {
    background: transparent;
    color: #AC324B;
+ }
+}
+@media (max-width: 600px) {
+ .clear-filter-button {
+   padding: 7px 12px;
+   font-size: 13px;
+   min-height: 36px;
+ }
+}
+@media (max-width: 600px) {
+ .song-card .play-button {
+   width: calc(100% - 48px);
+   min-width: 0;
+ }
+ .song-card .favorite-button {
+   width: 42px;
+   height: 42px;
+   font-size: 23px;
+ }
+}
+@media (max-width: 600px) {
+ #miniPlayerControls {
+   gap: 4px;
+ }
+ #miniPlayerControls button {
+   width: 44px;
+   height: 44px;
+ }
+}
+@media (max-width: 600px) {
+ #popupControls {
+   gap: 8px;
+ }
+ #popupLoop,
+ #popupPrevious,
+ #popupPlayPause,
+ #popupNext,
+ #popupShuffle {
+   width: 56px;
+   height: 56px;
+   font-size: 25px;
+ }
+}
+@media (max-width: 600px) {
+ #backToSearchButton {
+   right: 12px;
+   bottom: 115px;
+   padding: 9px 14px;
+   font-size: 14px;
+ }
+}
+@media (max-width: 600px) {
+ #infoButton {
+   top: 10px;
+   right: 10px;
+   width: 42px;
+   height: 42px;
+   font-size: 23px;
+ }
+}
+@media (max-width: 600px) {
+   #clearSearchButton {
+       width: 100%;
+   }
+}
+@media (max-width: 600px) {
+ .search-box input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+ }
+ .search-box label {
+   padding: 4px 0;
+ }
+}
+@media (max-width: 600px) {
+ #songTabs button {
+   padding: 15px 10px;
+   font-size: 17px;
+   min-height: 50px;
+ }
+}
+@media (max-width: 600px) {
+ #pageShuffleButton {
+   min-height: 50px;
+   padding: 15px 20px;
+   font-size: 17px;
+ }
+}
+@media (max-width: 600px) {
+ .song-card .play-button {
+   min-height: 44px;
+   font-size: 17px;
+ }
+ .song-card .favorite-button {
+   width: 44px;
+   height: 44px;
+   font-size: 24px;
  }
 }
