@@ -70,6 +70,7 @@ if (searchEmptyMessage) {
 if (favoriteEmptyMessage) {
    favoriteEmptyMessage.style.display = 'none';
 }
+   sortSongs();
 }
 let youtubePlayer = null;
 let currentSong = null;
@@ -758,6 +759,7 @@ if (favoriteEmptyMessage) {
 if (searchEmptyMessage) {
    searchEmptyMessage.style.display = 'none';
 }
+      sortSongs();
    });
 }
    if (pageShuffleButton) {
