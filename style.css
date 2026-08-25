@@ -1263,3 +1263,11 @@ color: white !important;
      flex: 1;
   }
 }
+/* 曲カードのボタン間隔とサイズ調整 */
+.song-card .play-button {
+  margin-right: 8px;
+}
+.song-card .favorite-button {
+  flex: 0 0 50px;
+  width: 50px;
+}
