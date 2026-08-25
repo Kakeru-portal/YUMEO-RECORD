@@ -1271,3 +1271,24 @@ color: white !important;
   flex: 0 0 50px;
   width: 50px;
 }
+/* =========================
+  テーマ選択
+  ========================= */
+#themeSelector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 15px;
+}
+#themeSelector label {
+  font-weight: bold;
+}
+#themeSelect {
+  padding: 8px 12px;
+  border: 1px solid #AC324B;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
