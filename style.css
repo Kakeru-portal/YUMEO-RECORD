@@ -1089,3 +1089,22 @@ color: white !important;
   background-color: #DCEEF8;
   color: #126CA8;
 }
+/* =========================
+  フィルター解除ボタン
+  ========================= */
+.clear-filter-button {
+   display: block;
+   margin: 0 0 10px auto;
+   padding: 4px 10px;
+   border: 1px solid #AC324B;
+   border-radius: 4px;
+   background: transparent;
+   color: #AC324B;
+   font-size: 12px;
+   cursor: pointer;
+   transition: 0.2s;
+}
+.clear-filter-button:hover {
+   background: #AC324B;
+   color: #fff;
+}
