@@ -1296,11 +1296,25 @@ color: white !important;
   テーマカラー
   ========================= */
 :root {
-  --theme-main: #AC324B;
-  --theme-sub: #136DA8;
-  --theme-white: #FFFFFF;
-  --theme-black: #333333;
-  --theme-accent: #AC324B;
+ --theme-main: #AC324B;
+ --theme-sub: #136DA8;
+ --theme-white: #FFFFFF;
+ --theme-black: #333333;
+ --theme-accent: #AC324B;
+}
+body.theme-noble {
+ --theme-main: #564D6A;
+ --theme-sub: #39383D;
+ --theme-white: #E9E2DA;
+ --theme-black: #39383D;
+ --theme-accent: #564D6A;
+}
+body.theme-casual {
+ --theme-main: #871126;
+ --theme-sub: #274730;
+ --theme-white: #B7802D;
+ --theme-black: #102851;
+ --theme-accent: #871126;
 }
 /* =========================
   貴族テーマ
