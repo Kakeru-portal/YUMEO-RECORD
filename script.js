@@ -118,6 +118,21 @@ document.addEventListener('DOMContentLoaded', () => {
    ).forEach(checkbox => {
        checkbox.addEventListener('change', filterSongs);
    });
+   // =========================
+// フィルターの一括解除
+// =========================
+document.querySelectorAll('.clear-filter-button').forEach(button => {
+   button.addEventListener('click', event => {
+       event.stopPropagation();
+       const filterName = button.dataset.filter;
+       document.querySelectorAll(
+           `input[name="${filterName}"]`
+       ).forEach(checkbox => {
+           checkbox.checked = false;
+       });
+       filterSongs();
+   });
+});
    const searchButton = document.getElementById('searchButton');
 const searchResultCount = document.getElementById('searchResultCount');
 if (searchButton) {
