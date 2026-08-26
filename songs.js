@@ -3,6 +3,54 @@
 // =========================
 const songData = [
   {
+   title: "空も飛べるはず",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "スピッツ",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 2546,
+   end: 2816
+ },
+ {
+   title: "青いベンチ",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "サスケ",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 2941,
+   end: 3220
+ },
+ {
+   title: "高嶺の花子さん(2018.11.12)",
+   count: "1",
+   type: "cover",
+   date: "2018-11-12",
+   unit: "",
+   artist: "back number",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 3324,
+   end: 3617
+ },
+ {
+   title: "死にたくないから生きている(2018.11.12)",
+   count: "1",
+   type: "original",
+   date: "2018-11-12",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "N7KnEH8mC-Q",
+   start: 3623,
+   end: 3894
+ },
+  {
    title: "雪の華",
    count: "1",
    type: "cover",
@@ -51,7 +99,7 @@ const songData = [
    end: 2382
  },
              {
-    title: "高嶺の花子さん",
+    title: "高嶺の花子さん(2018.11.10)",
     count: "1",
     type: "cover",
     date: "2018-11-10",
@@ -696,7 +744,7 @@ end: 2920
 }
    ,
 {
-title: "死にたくないから生きている",
+title: "死にたくないから生きている(2018.9.25)",
 count: "1",
 type: "original",
 date: "2018-09-25",
