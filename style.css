@@ -66,17 +66,16 @@ header p {
  margin: 0;
 }
 .site-description {
- color: var(--theme-black);
- font-size: 15px;
- line-height: 1.6;
+color: var(--theme-white);
+font-size: 15px;
+line-height: 1.6;
 }
 .site-notice {
- margin-top: 6px;
- color: var(--theme-black);
- font-size: 12px;
- line-height: 1.5;
+margin-top: 6px;
+color: var(--theme-white);
+font-size: 12px;
+line-height: 1.5;
 }
-
 /* =========================
   インフォメーションボタン
   ========================= */
