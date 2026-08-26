@@ -10,7 +10,7 @@ header {
  color: var(--theme-white);
   padding: 38px 20px 30px;
   text-align: center;
-  border-bottom: 4px solid #AC324B;
+  border-bottom: 4px solid var(--theme-main);
    position: relative;
 }
 #infoButton {
@@ -185,7 +185,7 @@ color: var(--theme-white);
 footer {
    text-align: center;
    padding: 30px 20px;
-   color: #777;
+   color: var(--theme-black);
    font-size: 14px;
 }
 /* ミニプレイヤー */
@@ -210,7 +210,7 @@ footer {
    aspect-ratio: 16 / 9;
    overflow: hidden;
    border-radius: 6px;
-   background-color: #eeeeee;
+   background-color: var(--theme-sub);
 }
 #miniPlayerImage {
    width: 100%;
@@ -317,7 +317,7 @@ footer {
   box-shadow: 8px 0 0 var(--theme-black);
 }
 #miniPlayerControls button:hover {
-   background-color: #dddddd;
+   background-color: var(--theme-sub);
 }
 #miniPlayerControls button:active {
    transform: scale(0.95);
