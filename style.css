@@ -1270,33 +1270,52 @@ background-color: var(--theme-main);
 }
 }
 /* =========================
-  貴族テーマ：濃い背景の文字色
+  貴族テーマ：文字・ボタン調整
   ========================= */
+/* インフォボタン */
 body[data-theme="noble"] #infoButton {
-   color: #FFFFFF;
+   color: #F2EEE8;
 }
+/* 曲カードのタグ */
 body[data-theme="noble"] .song-tag {
-   color: #FFFFFF;
+   color: #F2EEE8;
 }
+/* 曲一覧タブ */
 body[data-theme="noble"] #songTabs button {
-   color: #FFFFFF;
+   color: #F2EEE8;
 }
-body[data-theme="noble"] #pageShuffleButton {
-   color: #FFFFFF;
-}
+/* 選択中の曲一覧タブ */
 body[data-theme="noble"] #songTabs button.active {
-   color: #FFFFFF;
+   color: #F2EEE8;
 }
+/* 大きいシャッフル再生ボタン */
 body[data-theme="noble"] #pageShuffleButton {
-
-    background-color: var(--theme-main);
-
-    color: #FFFFFF;
-
+   background-color: var(--theme-main);
+   color: #F2EEE8;
 }
-/* =========================
-  貴族テーマ：セレクト矢印
-  ========================= */
+/* 曲カードの再生ボタン */
+body[data-theme="noble"] .song-card .play-button {
+   color: #F2EEE8;
+}
+/* 検索欄のクリアボタン */
+body[data-theme="noble"] #clearSearchButton {
+   color: #F2EEE8;
+}
+/* 「↑ 検索欄へ」ボタン */
+body[data-theme="noble"] #backToSearchButton {
+   color: #F2EEE8;
+}
+/* フィルター「全て解除」ボタン */
+body[data-theme="noble"] .clear-filter-button {
+   background-color: var(--theme-main);
+   color: #F2EEE8;
+   border-color: var(--theme-main);
+}
+body[data-theme="noble"] .clear-filter-button:hover {
+   background-color: var(--theme-sub);
+   color: #F2EEE8;
+}
+/* テーマ・並べ替えのセレクト */
 body[data-theme="noble"] #themeSelect,
 body[data-theme="noble"] #sortSelect {
    appearance: none;
@@ -1304,11 +1323,11 @@ body[data-theme="noble"] #sortSelect {
    -moz-appearance: none;
    padding-right: 32px;
    background-color: #1E1E22;
-   color: #FFFFFF;
+   color: #F2EEE8;
    border: 1px solid #564D6A;
    background-image:
-       linear-gradient(45deg, transparent 50%, #FFFFFF 50%),
-       linear-gradient(135deg, #FFFFFF 50%, transparent 50%);
+       linear-gradient(45deg, transparent 50%, #F2EEE8 50%),
+       linear-gradient(135deg, #F2EEE8 50%, transparent 50%);
    background-position:
        calc(100% - 15px) 50%,
        calc(100% - 10px) 50%;
@@ -1316,9 +1335,4 @@ body[data-theme="noble"] #sortSelect {
        5px 5px,
        5px 5px;
    background-repeat: no-repeat;
-}
-/* 貴族テーマ：ボタン文字色 */
-body[data-theme="noble"] .song-card .play-button,
-body[data-theme="noble"] #clearSearchButton {
-   color: #FFFFFF;
 }
