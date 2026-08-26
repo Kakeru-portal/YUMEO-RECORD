@@ -3,6 +3,16 @@
 // =========================
 const songData = [
   {
+   title: "いつかのメリークリスマス",
+   count: "1",
+   type: "cover",
+   date: "2018-12-24",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "Lvuq_Vcdz_U"
+ },
+  {
    title: "砂の惑星",
    count: "1",
    type: "cover",
