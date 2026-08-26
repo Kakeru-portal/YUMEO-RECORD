@@ -948,14 +948,32 @@ document.querySelectorAll('.song').forEach(song => {
 // テーマ切り替え
 // =========================
 const themeSelect = document.getElementById('themeSelect');
+function applyTheme(theme) {
+   // 既存のテーマをすべて解除
+   document.body.classList.remove(
+       'theme-noble',
+       'theme-casual'
+   );
+   // 選択されたテーマを適用
+   if (theme === 'noble') {
+       document.body.classList.add('theme-noble');
+   }
+   if (theme === 'casual') {
+       document.body.classList.add('theme-casual');
+   }
+   // 選択したテーマを保存
+   localStorage.setItem('siteTheme', theme);
+}
 if (themeSelect) {
-  themeSelect.addEventListener('change', () => {
-     document.body.classList.remove('theme-noble', 'theme-casual');
-     if (themeSelect.value === 'noble') {
-        document.body.classList.add('theme-noble');
-     }
-     if (themeSelect.value === 'casual') {
-        document.body.classList.add('theme-casual');
-     }
-  });
+   // 保存されているテーマを取得
+   const savedTheme =
+       localStorage.getItem('siteTheme') || 'normal';
+   // セレクトボックスにも反映
+   themeSelect.value = savedTheme;
+   // ページ読み込み時にテーマを適用
+   applyTheme(savedTheme);
+   // テーマ変更時
+   themeSelect.addEventListener('change', () => {
+       applyTheme(themeSelect.value);
+   });
 }
