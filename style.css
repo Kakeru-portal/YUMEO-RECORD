@@ -1278,3 +1278,12 @@ body[data-theme="noble"] #infoButton {
 body[data-theme="noble"] .song-tag {
    color: #FFFFFF;
 }
+body[data-theme="noble"] #songTabs button {
+   color: #FFFFFF;
+}
+body[data-theme="noble"] #pageShuffleButton {
+   color: #FFFFFF;
+}
+body[data-theme="noble"] #songTabs button.active {
+   color: #FFFFFF;
+}
