@@ -1369,3 +1369,7 @@ body[data-theme="noble"] #infoPopupContent h3 {
 body[data-theme="noble"] #infoPopupContent a {
    color: #F2EEE8;
 }
+/* 貴族テーマ：インフォメーション見出し */
+body[data-theme="noble"] #infoPopupContent h2 {
+   color: #F2EEE8;
+}
