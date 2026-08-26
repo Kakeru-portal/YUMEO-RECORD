@@ -3,6 +3,90 @@
 // =========================
 const songData = [
   {
+   title: "RAGE OF DUST (2018.12.12)",
+   count: "2",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "SPYAIR",
+   singer: "夢追翔、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 365,
+   end: 546
+ },
+ {
+   title: "ピースサイン(2018.12.12)",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 679,
+   end: 962
+ },
+ {
+   title: "カサブタ(2018.12.12)",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "千綿ヒデノリ",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 1192,
+   end: 1384
+ },
+ {
+   title: "GO!!!",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "FLOW",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 1613,
+   end: 1890
+ },
+ {
+   title: "ロキ",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "みきとP",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 1969,
+   end: 2239
+ },
+ {
+   title: "おしゃかしゃま(2018.12.12)",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "RADWIMPS",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 2399,
+   end: 2672
+ },
+ {
+   title: "Butter-Fly",
+   count: "3",
+   type: "cover",
+   date: "2018-12-12",
+   unit: "",
+   artist: "和田光司",
+   singer: "夢追翔、あくまのゴート、ぴろぱる",
+   video: "NwrAAnw0nrg",
+   start: 2870,
+   end: 3118
+ },
+  {
    title: "瞳をとじて(2018.12.8)",
    count: "1",
    type: "cover",
@@ -227,7 +311,7 @@ const songData = [
    end: 1946
  },
  {
-   title: "おしゃかしゃま",
+   title: "おしゃかしゃま(2018.11.16)",
    count: "3",
    type: "cover",
    date: "2018-11-16",
@@ -335,7 +419,7 @@ const songData = [
    end: 754
  },
  {
-   title: "カサブタ",
+   title: "カサブタ(2018.11.12)",
    count: "1",
    type: "cover",
    date: "2018-11-12",
@@ -679,7 +763,7 @@ const songData = [
    end: 1163
  },
    {
-   title: "RAGE OF DUST",
+   title: "RAGE OF DUST(2018.10.14)",
    count: "1",
    type: "cover",
    date: "2018-10-14",
@@ -761,7 +845,7 @@ const songData = [
    end: 2299
  },
  {
-   title: "ピースサイン",
+   title: "ピースサイン(2018.10.10)",
    count: "1",
    type: "cover",
    date: "2018-10-10",
