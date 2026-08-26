@@ -37,6 +37,10 @@ body.theme-casual {
  --theme-black: #102851;
  --theme-accent: #B7802D;
 }
+body[data-theme="casual"],
+body.theme-casual {
+background-color: #AF7828;
+}
 
 /* =========================
   ヘッダー
