@@ -1317,3 +1317,8 @@ body[data-theme="noble"] #sortSelect {
        5px 5px;
    background-repeat: no-repeat;
 }
+/* 貴族テーマ：ボタン文字色 */
+body[data-theme="noble"] .song-card .play-button,
+body[data-theme="noble"] #clearSearchButton {
+   color: #FFFFFF;
+}
