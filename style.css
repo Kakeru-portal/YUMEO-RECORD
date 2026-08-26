@@ -1,900 +1,245 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: var(--theme-white);
-  color: var(--theme-black);
-  font-size: 16px;
+/* =========================
+  基本設定
+  ========================= */
+:root {
+ --theme-main: #AC324B;
+ --theme-sub: #136DA8;
+ --theme-white: #FFFFFF;
+ --theme-black: #333333;
+ --theme-accent: #AC324B;
 }
+body {
+ margin: 0;
+ font-family: sans-serif;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
+ font-size: 16px;
+}
+
+/* =========================
+  テーマカラー
+  ========================= */
+/* 貴族テーマ */
+body[data-theme="noble"],
+body.theme-noble {
+ --theme-main: #564D6A;
+ --theme-sub: #39383D;
+ --theme-white: #E9E2DA;
+ --theme-black: #39383D;
+ --theme-accent: #564D6A;
+}
+/* カジュアルライブテーマ */
+body[data-theme="casual"],
+body.theme-casual {
+ --theme-main: #871126;
+ --theme-sub: #274730;
+ --theme-white: #FFFFFF;
+ --theme-black: #102851;
+ --theme-accent: #B7802D;
+}
+
+/* =========================
+  ヘッダー
+  ========================= */
 header {
+ position: relative;
+ padding: 38px 20px 30px;
+ text-align: center;
  background-color: var(--theme-black);
  color: var(--theme-white);
-  padding: 38px 20px 30px;
-  text-align: center;
-  border-bottom: 4px solid var(--theme-main);
-   position: relative;
+ border-bottom: 4px solid var(--theme-main);
 }
+header h1 {
+ margin: 0 0 6px;
+ font-family: "Bebas Neue", sans-serif;
+ font-size: 80px;
+ font-weight: normal;
+ letter-spacing: 2px;
+}
+header h2 {
+ margin: 0 0 14px;
+ font-size: 21px;
+ font-weight: normal;
+ letter-spacing: 0.5px;
+}
+header p {
+ margin: 0;
+}
+.site-description {
+ color: var(--theme-black);
+ font-size: 15px;
+ line-height: 1.6;
+}
+.site-notice {
+ margin-top: 6px;
+ color: var(--theme-black);
+ font-size: 12px;
+ line-height: 1.5;
+}
+
+/* =========================
+  インフォメーションボタン
+  ========================= */
 #infoButton {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-main);
-color: var(--theme-white);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 25px;
-  font-weight: normal;
-  font-style: italic;
-  line-height: 1;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.2s ease, transform 0.1s ease;
+ position: absolute;
+ top: 18px;
+ right: 18px;
+ width: 44px;
+ height: 44px;
+ padding: 0;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
+ font-family: Georgia, "Times New Roman", serif;
+ font-size: 25px;
+ font-weight: normal;
+ font-style: italic;
+ line-height: 1;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+ transition: background-color 0.2s ease, transform 0.1s ease;
 }
 #infoButton:hover {
  background-color: var(--theme-main);
 }
 #infoButton:active {
-  transform: scale(0.94);
+ transform: scale(0.94);
 }
-header h1 {
-  margin: 0 0 6px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
-  font-weight: normal;
-  letter-spacing: 2px;
-}
-header h2 {
-  margin: 0 0 14px;
-  font-size: 21px;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-}
-header p {
-  margin: 0;
-}
-.site-description {
-  color: var(--theme-black);
-  font-size: 15px;
-  line-height: 1.6;
-}
-.site-notice {
-  margin-top: 6px;
-  color: var(--theme-black);
-  font-size: 12px;
-  line-height: 1.5;
-}
+
+/* =========================
+  メイン
+  ========================= */
 main {
-   max-width: 900px;
-   margin: 30px auto;
-   padding: 0 15px;
+ max-width: 900px;
+ margin: 30px auto;
+ padding: 0 15px;
 }
 section {
-   padding: 0;
-   margin-bottom: 20px;
+ padding: 0;
+ margin-bottom: 20px;
 }
 section > h2:first-child {
-   background-color: var(--theme-white);
-   padding: 20px;
-   margin: 0;
-   border-radius: 10px 10px 0 0;
-}
-.search-area {
-   background-color: var(--theme-white);
-   padding: 20px;
-   border-radius: 0 0 10px 10px;
-}
-.search-box {
-   background-color: var(--theme-white);
-   padding: 18px;
-   margin: 15px 0;
-   border-radius: 8px;
-}
-.search-box h3 {
-   margin-top: 0;
-   margin-bottom: 12px;
-}
-#songSearch {
-   box-sizing: border-box;
-   width: 100%;
-   max-width: 500px;
-   padding: 12px;
-   font-size: 16px;
-   border: 1px solid var(--theme-main);
-   border-radius: 6px;
-}
-#searchButton {
-  margin-top: 10px;
-  padding: 11px 24px;
-  font-size: 17px;
-  border: none;
-  background-color: var(--theme-main);
-color: var(--theme-white);
-  border-radius: 7px;
-  cursor: pointer;
-  min-width: 180px;
-}
-#clearSearchButton {
-  margin-top: 10px;
-  padding: 11px 10px;
-  font-size: 17px;
-  border: none;
-  background-color: var(--theme-sub);
-color: var(--theme-white);
-  border-radius: 7px;
-  cursor: pointer;
-  min-width: 60px;
-}
-.search-box label {
-   display: inline-block;
-   margin: 7px 14px 7px 0;
-   cursor: pointer;
-   font-size: 17px;
-}
-.search-box input[type="checkbox"] {
-   width: 18px;
-   height: 18px;
-   vertical-align: middle;
+ margin: 0;
+ padding: 20px;
+ background-color: var(--theme-white);
+ border-radius: 10px 10px 0 0;
 }
 section > h2:nth-of-type(2) {
-   background-color: transparent;
-   padding: 25px 5px 10px;
-   margin: 0;
-   border: none;
-}
-#songList {
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
-}
-.song {
-   margin: 0;
-}
-.song-card {
-   border: 1px solid var(--theme-main);
-   border-radius: 12px;
-   padding: 20px;
-   background-color: var(--theme-white);
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.song-card h3 {
-   margin-top: 0;
-   margin-bottom: 15px;
-   font-size: 21px;
-}
-.song-card p {
-   margin: 9px 0;
-   font-size: 16px;
-   line-height: 1.6;
-}
-.play-button {
-   margin-top: 12px;
-   padding: 11px 22px;
-   border: none;
-   border-radius: 7px;
-   cursor: pointer;
-   font-size: 17px;
-  background-color: var(--theme-main);
-color: var(--theme-white);
-}
-footer {
-   text-align: center;
-   padding: 30px 20px;
-   color: var(--theme-black);
-   font-size: 14px;
-}
-/* ミニプレイヤー */
-#miniPlayer {
-   position: fixed;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   z-index: 1000;
-   background-color: var(--theme-white);
-   border-top: 1px solid var(--theme-main);
-   box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.12);
-   padding: 10px 20px;
-   display: flex;
-   align-items: center;
-   box-sizing: border-box;
-   cursor: pointer;
-}
-#miniPlayerThumbnail {
-   flex: 0 0 140px;
-   width: 140px;
-   aspect-ratio: 16 / 9;
-   overflow: hidden;
-   border-radius: 6px;
-   background-color: var(--theme-sub);
-}
-#miniPlayerImage {
-   width: 100%;
-   height: 100%;
-   display: block;
-   object-fit: cover;
-}
-#miniPlayerInfo {
-   flex: 1;
-   min-width: 0;
-   margin-left: 15px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-#miniPlayerTitle {
-   font-size: 18px;
-   font-weight: bold;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   margin-right: 20px;
-}
-#miniPlayerControls {
-   display: flex;
-   align-items: center;
-   gap: 8px;
-   flex-shrink: 0;
-}
-#miniPlayerControls button {
-  width: 52px;
-  height: 52px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-white);
-  cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-#previousButton {
-  position: relative;
-}
-#previousButton::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-right: 11px solid var(--theme-black);
-  position: absolute;
-  left: 21px;
-}
-#previousButton::after {
-  content: "";
-  width: 3px;
-  height: 16px;
-  background-color: var(--theme-black);
-  position: absolute;
-  left: 17px;
-}
-#nextButton {
-  position: relative;
-}
-#nextButton::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 11px solid var(--theme-black);
-  position: absolute;
-  left: 20px;
-}
-#nextButton::after {
-  content: "";
-  width: 3px;
-  height: 16px;
-  background-color: var(--theme-black);
-  position: absolute;
-  left: 32px;
-}
-#playPauseButton {
-  position: relative;
-}
-#playPauseButton::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-left: 13px solid var(--theme-black);
-  position: absolute;
-  left: 21px;
-}
-#playPauseButton.playing::before {
-  width: 4px;
-  height: 18px;
-  border: none;
-  background-color: var(--theme-black);
-  left: 19px;
-  box-shadow: 8px 0 0 var(--theme-black);
-}
-#miniPlayerControls button:hover {
-   background-color: var(--theme-sub);
-}
-#miniPlayerControls button:active {
-   transform: scale(0.95);
-}
-/* ポップアップ */
-#musicPopup {
-   position: fixed;
-   inset: 0;
-   z-index: 2000;
-   display: none;
-   align-items: center;
-   justify-content: center;
-   padding: 20px;
-   box-sizing: border-box;
-}
-#musicPopup.active {
-   display: flex;
-}
-#musicPopupOverlay {
-   position: absolute;
-   inset: 0;
-   background-color: rgba(0, 0, 0, 0.7);
-}
-#musicPopupContent {
-   position: relative;
-   z-index: 1;
-   width: 100%;
-   max-width: 900px;
-   max-height: 95vh;
-   overflow-y: auto;
-   background-color: var(--theme-white);
-   border-radius: 12px;
-   padding: 64px 20px 20px;
-   box-sizing: border-box;
-   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
-}
-#musicPopupClose {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  height: 44px;
-  margin: 10px auto 0;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--theme-black);
-  color: var(--theme-white);
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  padding: 0;
-  cursor: pointer;
-}
-#musicPopupClose:hover {
-   background-color: var(--theme-sub);
-}
-#musicPopupClose:active {
-   transform: scale(0.94);
-}
-#popupVideoContainer {
-   width: 100%;
-   aspect-ratio: 16 / 9;
-   background-color: #000000;
-   overflow: hidden;
-   border-radius: 8px;
-}
-#popupVideoContainer iframe {
-   width: 100%;
-   height: 100%;
-   display: block;
-   border: none;
-}
-#popupSongTitle {
-   margin-top: 15px;
-   font-size: 22px;
-   font-weight: bold;
-}
-#popupControls {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-#popupControls button {
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-white);
-  color: var(--theme-black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.15s ease, transform 0.1s ease;
-}
-#popupControls button:hover {
-  background-color: var(--theme-sub);
-}
-#popupControls button:active {
-  transform: scale(0.94);
-}
-#popupControls svg {
-  width: 28px;
-  height: 28px;
-  fill: none;
-  stroke: var(--theme-black);
-  stroke-width: 3.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-#popupShuffle svg {
-  width: 34px;
-  height: 28px;
-}
-#popupLoop svg {
-  width: 34px;
-  height: 28px;
-}
-#popupControls button:nth-child(2) svg,
-#popupControls button:nth-child(3) svg,
-#popupControls button:nth-child(4) svg {
-  fill: var(--theme-black);
-  stroke: none;
-}
-#popupControls .popupPlayIcon {
-  display: block;
-}
-#popupControls .popupPauseIcon {
-  display: none;
-}
-#popupControls button {
-  width: 56px;
-  height: 56px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-white);
-  color: var(--theme-black);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  transition: background-color 0.15s ease, transform 0.1s ease;
-}
-#popupControls button:hover {
- background-color: var(--theme-sub);
-}
-#popupControls button:active {
-  transform: scale(0.94);
-}
-/* ループ */
-.icon-loop {
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--theme-black);
-  border-top-color: transparent;
-  border-radius: 50%;
-  position: relative;
-}
-.icon-loop::after {
-  content: "";
-  position: absolute;
-  right: -4px;
-  top: -3px;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid var(--theme-black);
-}
-/* 前の曲 */
-.icon-previous {
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-right: 12px solid var(--theme-black);
-  position: relative;
-}
-.icon-previous::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 18px;
-  background-color: var(--theme-black);
-  right: 0;
-  top: -9px;
-  transform: translateX(4px);
-}
-/* 再生 */
-.icon-play {
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 14px solid var(--theme-black);
-  margin-left: 3px;
-}
-/* 一時停止 */
-.icon-pause {
-  display: none;
-  width: 5px;
-  height: 20px;
-  background-color: var(--theme-black);
-  box-shadow: 8px 0 0 var(--theme-black);
-}
-/* 次の曲 */
-.icon-next {
-  width: 0;
-  height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-left: 12px solid var(--theme-black);
-  position: relative;
-}
-.icon-next::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 18px;
-  background-color: var(--theme-black);
-  left: 0;
-  top: -9px;
-  transform: translateX(-4px);
-}
-/* シャッフル */
-.icon-shuffle {
-  width: 22px;
-  height: 18px;
-  position: relative;
-  border-top: 3px solid var(--theme-black);
-  border-bottom: 3px solid var(--theme-black);
-  transform: skewY(-25deg);
-}
-.icon-shuffle::after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  top: 5px;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid var(--theme-black);
-  transform: skewY(25deg);
-}
-#popupPlayPause,
-#popupLoop,
-#popupPrevious,
-#popupNext,
-#popupShuffle {
-  width: 70px;
-  height: 70px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-white);
-  font-size: 30px;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-#popupActions {
-   display: flex;
-   gap: 10px;
-   margin-top: 15px;
-}
-#popupFavorite,
-#popupOriginal {
-   flex: 1;
-   padding: 13px;
-   border: 1px solid var(--theme-main);
-   border-radius: 7px;
-   background-color: var(--theme-white);
-   text-align: center;
-   font-size: 16px;
-   cursor: pointer;
-   text-decoration: none;
-   color: var(--theme-black);
-   box-sizing: border-box;
-}
-#popupFavorite:hover,
-#popupOriginal:hover {
-   background-color: var(--theme-sub);
-}
-/* スマートフォン */
-@media (max-width: 600px) {
-   header {
-       padding: 25px 15px;
-   }
-   header h1 {
-       font-size: 48px;
-   }
-   main {
-       padding: 0 10px;
-       margin-top: 20px;
-   }
-   section > h2:first-child {
-       padding: 18px 15px;
-   }
-   .search-area {
-       padding: 10px 15px;
-   }
-   .search-box {
-       padding: 15px;
-   }
-   .search-box label {
-       display: block;
-       margin: 10px 0;
-   }
-   #searchButton {
-       width: 100%;
-   }
-   section > h2:nth-of-type(2) {
-       padding: 25px 5px 10px;
-   }
-   .song-card {
-       padding: 15px;
-   }
-   .play-button {
-       width: 100%;
-   }
-   #miniPlayer {
-   min-height: 82px;
-   padding: 10px 12px;
-   display: flex;
-   align-items: center;
-   gap: 10px;
-   box-sizing: border-box;
-}
-#miniPlayerThumbnail {
-   flex: 0 0 100px;
-   width: 100px;
-   height: 56px;
-}
-#miniPlayerInfo {
-   flex: 1;
-   min-width: 0;
-   margin-left: 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 8px;
-}
-#miniPlayerTitle {
-   flex: 1;
-   min-width: 0;
-   font-size: 17px;
-   margin: 0;
-   white-space: nowrap;
-   overflow: hidden;
-   text-overflow: ellipsis;
-}
-#miniPlayerControls {
-   display: flex;
-   align-items: center;
-   gap: 6px;
-   flex-shrink: 0;
-}
-#miniPlayerControls button {
-   width: 50px;
-   height: 50px;
-   border: none;
-   border-radius: 50%;
-   background-color: var(--theme-white);
-   font-size: 23px;
-   cursor: pointer;
-}
-   #musicPopup {
-       padding: 10px;
-   }
-   #musicPopupContent {
-   width: 100%;
-   max-width: none;
-   height: 100vh;
-   max-height: 100vh;
-   border-radius: 0;
-   padding: 60px 10px 15px;
-}
-   #popupSongTitle {
-       font-size: 20px;
-   }
-   #popupActions {
-       flex-direction: column;
-   }
-}
-/* 検索・絞り込み開閉ボタン */
+ margin: 0;
+ padding: 25px 5px 10px;
+ background-color: transparent;
+ border: none;
+}
+
+/* =========================
+  検索・絞り込み
+  ========================= */
 #searchToggle {
-  display: none;
+ display: none;
 }
-/* スマートフォン */
-@media (max-width: 600px) {
-  #searchToggle {
- display: flex;
- width: 100%;
- padding: 16px 18px;
- margin-bottom: 10px;
- align-items: center;
- justify-content: space-between;
- border: 1px solid var(--theme-main);
- border-radius: 8px;
+.search-area {
+ padding: 20px;
  background-color: var(--theme-white);
- color: var(--theme-black);
- font-size: 17px;
- font-weight: bold;
- cursor: pointer;
+ border-radius: 0 0 10px 10px;
+}
+.search-box {
+ padding: 18px;
+ margin: 15px 0;
+ background-color: var(--theme-white);
+ border-radius: 8px;
+}
+.search-box h3 {
+ margin-top: 0;
+ margin-bottom: 12px;
+}
+#songSearch {
  box-sizing: border-box;
+ width: 100%;
+ max-width: 500px;
+ padding: 12px;
+ font-size: 16px;
+ border: 1px solid var(--theme-main);
+ border-radius: 6px;
 }
-  #searchToggleIcon {
-     font-size: 22px;
-     line-height: 1;
-  }
-  .search-area {
-     display: none;
-  }
-  .search-area.open {
-     display: block;
-  }
+#searchButton,
+#clearSearchButton {
+ margin-top: 10px;
+ padding: 11px 24px;
+ font-size: 17px;
+ border: none;
+ border-radius: 7px;
+ cursor: pointer;
 }
-/* 検索結果の件数表示 */
+#searchButton {
+ min-width: 180px;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
+}
+#clearSearchButton {
+ min-width: 60px;
+ padding: 11px 10px;
+ background-color: var(--theme-sub);
+ color: var(--theme-white);
+}
+.search-box label {
+ display: inline-block;
+ margin: 7px 14px 7px 0;
+ cursor: pointer;
+ font-size: 17px;
+}
+.search-box input[type="checkbox"] {
+ width: 18px;
+ height: 18px;
+ vertical-align: middle;
+}
 #searchResultCount {
-  margin: 15px 5px 8px;
-  color: var(--theme-black);
-  font-size: 15px;
+ margin: 15px 5px 8px;
+ color: var(--theme-black);
+ font-size: 15px;
 }
-/* インフォメーションポップアップ */
-#infoPopup {
-  position: fixed;
-  inset: 0;
-  z-index: 10000;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
+#activeSearchConditions {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 5px;
+ margin-top: 6px;
 }
-#infoPopup.active {
-  display: flex;
+.active-search-tag {
+ display: inline-block;
+ padding: 3px 9px;
+ font-size: 12px;
+ line-height: 1.4;
+ border-radius: 10px;
+ background-color: var(--theme-sub);
+ color: var(--theme-white);
 }
-#infoPopupOverlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+
+/* =========================
+  フィルター解除ボタン
+  ========================= */
+.clear-filter-button {
+ display: block;
+ margin: 0 0 10px auto;
+ padding: 4px 10px;
+ border: 1px solid var(--theme-main);
+ border-radius: 4px;
+ background: transparent;
+ color: var(--theme-main);
+ font-size: 12px;
+ cursor: pointer;
+ transition: 0.2s;
 }
-#infoPopupContent {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  max-width: 700px;
-  max-height: 85vh;
-  overflow-y: auto;
-  background-color: var(--theme-white);
-  border-top: 5px solid var(--theme-main);
-  border-radius: 12px;
-  padding: 50px 25px 25px;
-  box-sizing: border-box;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+.clear-filter-button:hover {
+ background: var(--theme-main);
+ color: var(--theme-white);
 }
-#infoPopupClose {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-main);
-color: var(--theme-white);
-  font-size: 28px;
-  line-height: 44px;
-  text-align: center;
-  padding: 0;
-  cursor: pointer;
-}
-#infoPopupClose:hover {
-  background-color: var(--theme-accent);
-}
-#infoPopupContent h2 {
-  margin: 0 0 25px;
-  color: var(--theme-main);
-  font-size: 26px;
-}
-#infoPopupContent section {
-  margin-bottom: 25px;
-}
-#infoPopupContent section:last-child {
-  margin-bottom: 0;
-}
-#infoPopupContent h3 {
-  margin: 0 0 8px;
-  font-size: 19px;
-  border-left: 4px solid var(--theme-main);
-  padding-left: 10px;
-}
-#infoPopupContent p {
-  margin: 7px 0;
-  font-size: 15px;
-  line-height: 1.7;
-}
-#infoPopupContent a {
-  color: var(--theme-main);
-  font-weight: bold;
-  text-decoration: none;
-}
-#infoPopupContent a:hover {
-  text-decoration: underline;
-}
-#infoPopupContent h3 {
-  margin: 28px 0 10px;
-  font-size: 19px;
-  border-left: 4px solid var(--theme-main);
-  padding-left: 10px;
-}
-#infoPopupContent section > h3:first-child {
-  margin-top: 0;
-}
-.infoPopupBottom {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid var(--theme-sub);
-}
-#infoPopupCloseBottom {
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--theme-main);
-color: var(--theme-white);
-  font-size: 28px;
-  line-height: 44px;
-  padding: 0;
-  cursor: pointer;
-}
-#infoPopupCloseBottom:hover {
-  background-color: var(--theme-accent);
-}
-#infoPopupContent h3 {
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
-#infoPopupContent section > h3:first-child {
-  margin-top: 0;
-}
-@media (max-width: 600px) {
-  #miniPlayer {
-     padding: 10px 12px;
-     flex-wrap: wrap;
-  }
-  #miniPlayerThumbnail {
-     flex: 0 0 100px;
-     width: 100px;
-  }
-  #miniPlayerInfo {
-     margin-left: 10px;
-     display: flex;
-     flex-direction: column;
-     align-items: stretch;
-     justify-content: center;
-  }
-  #miniPlayerTitle {
-     white-space: normal;
-     overflow: visible;
-     text-overflow: clip;
-     margin-right: 0;
-     margin-bottom: 8px;
-     line-height: 1.4;
-  }
-  #miniPlayerControls {
-     justify-content: center;
-  }
-}
-/* 曲一覧タブ */
+
+/* =========================
+  曲一覧タブ
+  ========================= */
 #songTabs {
  display: flex;
  gap: 0;
@@ -928,42 +273,534 @@ color: var(--theme-white);
 #songTabs button.active:hover {
  background-color: var(--theme-accent);
 }
-/* ページ上のシャッフル再生ボタン */
+
+/* =========================
+  ページ上のシャッフル再生
+  ========================= */
 #pageShuffleButton {
-display: block;
-width: 100%;
-margin: 12px 0 20px;
-padding: 14px 20px;
-border: none;
-border-radius: 8px;
-background-color: var(--theme-white);
-color: var(--theme-black);
-font-size: 17px;
-font-weight: bold;
-cursor: pointer;
-transition: background-color 0.15s ease, transform 0.1s ease;
+ display: block;
+ width: 100%;
+ margin: 12px 0 20px;
+ padding: 14px 20px;
+ border: none;
+ border-radius: 8px;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
+ font-size: 17px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.15s ease, transform 0.1s ease;
 }
 #pageShuffleButton:hover {
  background-color: var(--theme-sub);
 }
 #pageShuffleButton:active {
-transform: scale(0.98);
+ transform: scale(0.98);
 }
-/* シャッフル再生中 */
 #pageShuffleButton.shuffle-active {
-background-color: var(--theme-main) !important;
-color: var(--theme-white) !important;
+ background-color: var(--theme-main) !important;
+ color: var(--theme-white) !important;
 }
-/* ループ再生中 */
-#popupLoop.loop-active {
-background-color: var(--theme-main) !important;
-color: var(--theme-white) !important;
+
+/* =========================
+  曲一覧
+  ========================= */
+#songList {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
 }
+.song {
+ margin: 0;
+}
+.song-card {
+ position: relative;
+ padding: 20px;
+ margin: 0;
+ background-color: var(--theme-white);
+ border: 1px solid var(--theme-main);
+ border-radius: 12px;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.song-card h3 {
+ margin-top: 0;
+ margin-bottom: 15px;
+ font-size: 21px;
+}
+.song-card p {
+ margin: 9px 0;
+ font-size: 16px;
+ line-height: 1.6;
+}
+
+/* =========================
+  曲カードのタグ
+  ========================= */
+.song-tags {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 6px;
+ margin: 8px 0 10px;
+}
+.song-tag {
+ display: inline-block;
+ padding: 4px 10px;
+ font-size: 13px;
+ line-height: 1.4;
+ border-radius: 12px;
+ background-color: var(--theme-sub);
+ color: var(--theme-white);
+}
+
+/* =========================
+  曲カードの操作ボタン
+  ========================= */
+.song-card .play-button,
+.song-card .favorite-button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ height: 38px;
+ box-sizing: border-box;
+ margin-top: 12px;
+ vertical-align: middle;
+}
+.song-card .play-button {
+ flex: 3;
+ width: auto;
+ min-width: 0;
+ margin-right: 8px;
+ padding: 11px 22px;
+ border: none;
+ border-radius: 7px;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
+ font-size: 17px;
+ cursor: pointer;
+}
+.song-card .favorite-button {
+ flex: 0 0 50px;
+ width: 50px;
+ padding: 0;
+ border: none;
+ border-radius: 6px;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
+ font-size: 22px;
+ line-height: 1;
+ cursor: pointer;
+}
+.song-card .favorite-button.is-favorite {
+ color: var(--theme-main);
+}
+
+/* =========================
+  戻るボタン
+  ========================= */
+#backToSearchButton {
+ position: fixed;
+ right: 20px;
+ bottom: 140px;
+ padding: 10px 16px;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
+ z-index: 1500;
+ font-size: 15px;
+}
+
+/* =========================
+  ミニプレイヤー
+  ========================= */
+#miniPlayer {
+ position: fixed;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 1000;
+ display: flex;
+ align-items: center;
+ box-sizing: border-box;
+ padding: 10px 20px;
+ background-color: var(--theme-white);
+ border-top: 1px solid var(--theme-main);
+ box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.12);
+ cursor: pointer;
+}
+#miniPlayerThumbnail {
+ flex: 0 0 140px;
+ width: 140px;
+ aspect-ratio: 16 / 9;
+ overflow: hidden;
+ border-radius: 6px;
+ background-color: var(--theme-sub);
+}
+#miniPlayerImage {
+ display: block;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+#miniPlayerInfo {
+ flex: 1;
+ min-width: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-left: 15px;
+}
+#miniPlayerTitle {
+ margin-right: 20px;
+ font-size: 18px;
+ font-weight: bold;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+#miniPlayerControls {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ flex-shrink: 0;
+}
+#miniPlayerControls button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 52px;
+ height: 52px;
+ padding: 0;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--theme-white);
+ cursor: pointer;
+ transition: background-color 0.15s ease, transform 0.1s ease;
+}
+#miniPlayerControls button:hover {
+ background-color: var(--theme-sub);
+}
+#miniPlayerControls button:active {
+ transform: scale(0.95);
+}
+
+/* =========================
+  ミニプレイヤーの前後・再生アイコン
+  ========================= */
+#previousButton,
+#nextButton,
+#playPauseButton {
+ position: relative;
+}
+#previousButton::before {
+ content: "";
+ position: absolute;
+ left: 21px;
+ width: 0;
+ height: 0;
+ border-top: 8px solid transparent;
+ border-bottom: 8px solid transparent;
+ border-right: 11px solid var(--theme-black);
+}
+#previousButton::after {
+ content: "";
+ position: absolute;
+ left: 17px;
+ width: 3px;
+ height: 16px;
+ background-color: var(--theme-black);
+}
+#nextButton::before {
+ content: "";
+ position: absolute;
+ left: 20px;
+ width: 0;
+ height: 0;
+ border-top: 8px solid transparent;
+ border-bottom: 8px solid transparent;
+ border-left: 11px solid var(--theme-black);
+}
+#nextButton::after {
+ content: "";
+ position: absolute;
+ left: 32px;
+ width: 3px;
+ height: 16px;
+ background-color: var(--theme-black);
+}
+#playPauseButton::before {
+ content: "";
+ position: absolute;
+ left: 21px;
+ width: 0;
+ height: 0;
+ border-top: 9px solid transparent;
+ border-bottom: 9px solid transparent;
+ border-left: 13px solid var(--theme-black);
+}
+#playPauseButton.playing::before {
+ left: 19px;
+ width: 4px;
+ height: 18px;
+ border: none;
+ background-color: var(--theme-black);
+ box-shadow: 8px 0 0 var(--theme-black);
+}
+
+/* =========================
+  音楽ポップアップ
+  ========================= */
+#musicPopup {
+ position: fixed;
+ inset: 0;
+ z-index: 2000;
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+ box-sizing: border-box;
+}
+#musicPopup.active {
+ display: flex;
+}
+#musicPopupOverlay {
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+#musicPopupContent {
+ position: relative;
+ z-index: 1;
+ width: 100%;
+ max-width: 900px;
+ max-height: 95vh;
+ overflow-y: auto;
+ box-sizing: border-box;
+ padding: 64px 20px 20px;
+ background-color: var(--theme-white);
+ border-radius: 12px;
+ box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+#musicPopupClose {
+ display: block;
+ width: 100%;
+ max-width: 300px;
+ height: 44px;
+ margin: 10px auto 0;
+ padding: 0;
+ border: none;
+ border-radius: 8px;
+ background-color: var(--theme-black);
+ color: var(--theme-white);
+ font-size: 16px;
+ line-height: 44px;
+ text-align: center;
+ cursor: pointer;
+}
+#musicPopupClose:hover {
+ background-color: var(--theme-sub);
+}
+#musicPopupClose:active {
+ transform: scale(0.94);
+}
+
+/* =========================
+  ポップアップ動画
+  ========================= */
+#popupVideoContainer {
+ width: 100%;
+ aspect-ratio: 16 / 9;
+ overflow: hidden;
+ background-color: #000000;
+ border-radius: 8px;
+}
+#popupVideoContainer iframe {
+ display: block;
+ width: 100%;
+ height: 100%;
+ border: none;
+}
+#popupSongTitle {
+ margin-top: 15px;
+ font-size: 22px;
+ font-weight: bold;
+}
+
+/* =========================
+  ポップアップ操作ボタン
+  ========================= */
+#popupControls {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 14px;
+ margin-top: 20px;
+}
+#popupControls button,
+#popupLoop,
+#popupPrevious,
+#popupPlayPause,
+#popupNext,
+#popupShuffle {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-sizing: border-box;
+ width: 70px;
+ height: 70px;
+ padding: 0;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
+ font-size: 30px;
+ cursor: pointer;
+ transition: background-color 0.15s ease, transform 0.1s ease;
+}
+#popupControls button:hover {
+ background-color: var(--theme-sub);
+}
+#popupControls button:active {
+ transform: scale(0.94);
+}
+#popupControls svg {
+ width: 28px;
+ height: 28px;
+ fill: none;
+ stroke: var(--theme-black);
+ stroke-width: 3.5;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+}
+#popupShuffle svg,
+#popupLoop svg {
+ width: 34px;
+ height: 28px;
+}
+#popupControls button:nth-child(2) svg,
+#popupControls button:nth-child(3) svg,
+#popupControls button:nth-child(4) svg {
+ fill: var(--theme-black);
+ stroke: none;
+}
+#popupControls .popupPlayIcon {
+ display: block;
+}
+#popupControls .popupPauseIcon {
+ display: none;
+}
+
+/* =========================
+  ポップアップ用CSSアイコン
+  ========================= */
+/* ループ */
+.icon-loop {
+ position: relative;
+ width: 20px;
+ height: 20px;
+ border: 3px solid var(--theme-black);
+ border-top-color: transparent;
+ border-radius: 50%;
+}
+.icon-loop::after {
+ content: "";
+ position: absolute;
+ right: -4px;
+ top: -3px;
+ width: 0;
+ height: 0;
+ border-top: 5px solid transparent;
+ border-bottom: 5px solid transparent;
+ border-left: 7px solid var(--theme-black);
+}
+/* 前の曲 */
+.icon-previous {
+ position: relative;
+ width: 0;
+ height: 0;
+ border-top: 9px solid transparent;
+ border-bottom: 9px solid transparent;
+ border-right: 12px solid var(--theme-black);
+}
+.icon-previous::after {
+ content: "";
+ position: absolute;
+ right: 0;
+ top: -9px;
+ width: 3px;
+ height: 18px;
+ background-color: var(--theme-black);
+ transform: translateX(4px);
+}
+/* 再生 */
+.icon-play {
+ width: 0;
+ height: 0;
+ margin-left: 3px;
+ border-top: 10px solid transparent;
+ border-bottom: 10px solid transparent;
+ border-left: 14px solid var(--theme-black);
+}
+/* 一時停止 */
+.icon-pause {
+ display: none;
+ width: 5px;
+ height: 20px;
+ background-color: var(--theme-black);
+ box-shadow: 8px 0 0 var(--theme-black);
+}
+/* 次の曲 */
+.icon-next {
+ position: relative;
+ width: 0;
+ height: 0;
+ border-top: 9px solid transparent;
+ border-bottom: 9px solid transparent;
+ border-left: 12px solid var(--theme-black);
+}
+.icon-next::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: -9px;
+ width: 3px;
+ height: 18px;
+ background-color: var(--theme-black);
+ transform: translateX(-4px);
+}
+/* シャッフル */
+.icon-shuffle {
+ position: relative;
+ width: 22px;
+ height: 18px;
+ border-top: 3px solid var(--theme-black);
+ border-bottom: 3px solid var(--theme-black);
+ transform: skewY(-25deg);
+}
+.icon-shuffle::after {
+ content: "";
+ position: absolute;
+ right: -2px;
+ top: 5px;
+ width: 0;
+ height: 0;
+ border-top: 5px solid transparent;
+ border-bottom: 5px solid transparent;
+ border-left: 7px solid var(--theme-black);
+ transform: skewY(25deg);
+}
+
+/* =========================
+  ポップアップ状態
+  ========================= */
+#popupLoop.loop-active,
 #popupShuffle.shuffle-active {
-  background-color: var(--theme-main) !important;
-  color: var(--theme-white) !important;
+ background-color: var(--theme-main) !important;
+ color: var(--theme-white) !important;
 }
-/* シークバー */
+
+/* =========================
+  シークバー
+  ========================= */
 #popupSeekArea {
  display: flex;
  align-items: center;
@@ -972,11 +809,11 @@ color: var(--theme-white) !important;
 }
 #popupCurrentTime,
 #popupDuration {
- width: 42px;
- font-size: 13px;
- color: var(--theme-black);
- text-align: center;
  flex-shrink: 0;
+ width: 42px;
+ color: var(--theme-black);
+ font-size: 13px;
+ text-align: center;
 }
 #popupSeekBar {
  flex: 1;
@@ -986,10 +823,10 @@ color: var(--theme-white) !important;
  cursor: pointer;
 }
 #popupSeekBar::-webkit-slider-thumb {
- -webkit-appearance: none;
- appearance: none;
  width: 16px;
  height: 16px;
+ appearance: none;
+ -webkit-appearance: none;
  border-radius: 50%;
  background-color: var(--theme-main);
  cursor: pointer;
@@ -1002,181 +839,324 @@ color: var(--theme-white) !important;
  background-color: var(--theme-main);
  cursor: pointer;
 }
+
 /* =========================
-  曲カードの操作ボタン
+  ポップアップ下部アクション
   ========================= */
-.song-card {
-   position: relative;
+#popupActions {
+ display: flex;
+ gap: 10px;
+ margin-top: 15px;
 }
-.song-card .play-button,
-.song-card .favorite-button {
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   height: 38px;
-   box-sizing: border-box;
-   vertical-align: middle;
+#popupFavorite,
+#popupOriginal {
+ flex: 1;
+ box-sizing: border-box;
+ padding: 13px;
+ border: 1px solid var(--theme-main);
+ border-radius: 7px;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
+ font-size: 16px;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
 }
-.song-card .play-button {
-  flex: 3;
-  width: auto;
-  min-width: 0;
-  margin-right: 0;
-}
-.song-card .favorite-button {
-  flex: 1;
-  width: auto;
-  padding: 0;
-  font-size: 22px;
-  line-height: 1;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.song-card .play-button,
-.song-card .favorite-button {
-  margin-top: 12px;
-  vertical-align: middle;
-}
-.song-card .favorite-button {
-  color: var(--theme-black);
-}
-.song-card .favorite-button.is-favorite {
-  color: var(--theme-main);
+#popupFavorite:hover,
+#popupOriginal:hover {
+ background-color: var(--theme-sub);
 }
 #popupFavorite.is-favorite {
-  color: var(--theme-main);
-  border-color: var(--theme-main);
-}
-#backToSearchButton {
-   position: fixed;
-   right: 20px;
-   bottom: 140px;
-   padding: 10px 16px;
-   font-size: 15px;
-   border: none;
-   border-radius: 20px;
-   cursor: pointer;
-   z-index: 1500;
-}
-.song-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0 10px;
-}
-.song-tag {
-  display: inline-block;
-  padding: 4px 10px;
-  font-size: 13px;
-  line-height: 1.4;
-  border-radius: 12px;
-  background-color: var(--theme-sub);
-color: var(--theme-white);
-}
-#activeSearchConditions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 6px;
-}
-.active-search-tag {
-  display: inline-block;
-  padding: 3px 9px;
-  font-size: 12px;
-  line-height: 1.4;
-  border-radius: 10px;
-  background-color: var(--theme-sub);
-color: var(--theme-white);
-}
-/* =========================
-  フィルター解除ボタン
-  ========================= */
-.clear-filter-button {
-   display: block;
-   margin: 0 0 10px auto;
-   padding: 4px 10px;
-   border: 1px solid var(--theme-main);
-   border-radius: 4px;
-   background: transparent;
-   color: var(--theme-main);
-   font-size: 12px;
-   cursor: pointer;
-   transition: 0.2s;
-}
-.clear-filter-button:hover {
-   background: var(--theme-main);
-   color: var(--theme-white);
-}
-/* =========================
-  タッチ端末では hover 表現を無効化
-  ========================= */
-@media (hover: none) {
- #infoButton:hover {
- background-color: var(--theme-main);
-}
- #miniPlayerControls button:hover {
- background-color: var(--theme-white);
-}
- #musicPopupClose:hover {
- background-color: var(--theme-black);
-}
- #popupControls button:hover {
- background-color: var(--theme-white);
-}
- #popupFavorite:hover,
-#popupOriginal:hover {
- background-color: var(--theme-white);
-}
- #infoPopupClose:hover,
-#infoPopupCloseBottom:hover {
- background-color: var(--theme-main);
-}
- #infoPopupContent a:hover {
-   text-decoration: none;
- }
- #songTabs button:hover {
- background-color: var(--theme-white);
-}
-#songTabs button.active:hover {
- background-color: var(--theme-main);
-}
-#pageShuffleButton:hover {
- background-color: var(--theme-white);
-}
-.clear-filter-button:hover {
- background: transparent;
  color: var(--theme-main);
+ border-color: var(--theme-main);
 }
+
+/* =========================
+  インフォメーションポップアップ
+  ========================= */
+#infoPopup {
+ position: fixed;
+ inset: 0;
+ z-index: 10000;
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+ box-sizing: border-box;
 }
+#infoPopup.active {
+ display: flex;
+}
+#infoPopupOverlay {
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+#infoPopupContent {
+ position: relative;
+ z-index: 1;
+ width: 100%;
+ max-width: 700px;
+ max-height: 85vh;
+ overflow-y: auto;
+ box-sizing: border-box;
+ padding: 50px 25px 25px;
+ background-color: var(--theme-white);
+ border-top: 5px solid var(--theme-main);
+ border-radius: 12px;
+ box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+#infoPopupClose {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ width: 44px;
+ height: 44px;
+ padding: 0;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
+ font-size: 28px;
+ line-height: 44px;
+ text-align: center;
+ cursor: pointer;
+}
+#infoPopupClose:hover {
+ background-color: var(--theme-accent);
+}
+#infoPopupCloseBottom {
+ width: 44px;
+ height: 44px;
+ padding: 0;
+ border: none;
+ border-radius: 50%;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
+ font-size: 28px;
+ line-height: 44px;
+ cursor: pointer;
+}
+#infoPopupCloseBottom:hover {
+ background-color: var(--theme-accent);
+}
+#infoPopupContent h2 {
+ margin: 0 0 25px;
+ color: var(--theme-main);
+ font-size: 26px;
+}
+#infoPopupContent section {
+ margin-bottom: 25px;
+}
+#infoPopupContent section:last-child {
+ margin-bottom: 0;
+}
+#infoPopupContent h3 {
+ margin: 40px 0 12px;
+ padding-left: 10px;
+ border-left: 4px solid var(--theme-main);
+ font-size: 19px;
+}
+#infoPopupContent section > h3:first-child {
+ margin-top: 0;
+}
+#infoPopupContent p {
+ margin: 7px 0;
+ font-size: 15px;
+ line-height: 1.7;
+}
+#infoPopupContent a {
+ color: var(--theme-main);
+ font-weight: bold;
+ text-decoration: none;
+}
+#infoPopupContent a:hover {
+ text-decoration: underline;
+}
+.infoPopupBottom {
+ margin-top: 30px;
+ padding-top: 20px;
+ border-top: 1px solid var(--theme-sub);
+ text-align: center;
+}
+
+/* =========================
+  スマートフォン
+  ========================= */
 @media (max-width: 600px) {
- .clear-filter-button {
-   padding: 7px 12px;
-   font-size: 13px;
-   min-height: 36px;
+ /* ヘッダー */
+ header {
+   padding: 25px 15px;
  }
-}
-@media (max-width: 600px) {
- .song-card .play-button {
-   width: calc(100% - 48px);
-   min-width: 0;
+ header h1 {
+   font-size: 48px;
  }
- .song-card .favorite-button {
+ #infoButton {
+   top: 10px;
+   right: 10px;
    width: 42px;
    height: 42px;
    font-size: 23px;
  }
-}
-@media (max-width: 600px) {
+
+ /* メイン */
+ main {
+   margin-top: 20px;
+   padding: 0 10px;
+ }
+ section > h2:first-child {
+   padding: 18px 15px;
+ }
+ section > h2:nth-of-type(2) {
+   padding: 25px 5px 10px;
+ }
+
+ /* 検索 */
+ #searchToggle {
+   display: flex;
+   width: 100%;
+   box-sizing: border-box;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px 18px;
+   margin-bottom: 10px;
+   border: 1px solid var(--theme-main);
+   border-radius: 8px;
+   background-color: var(--theme-white);
+   color: var(--theme-black);
+   font-size: 17px;
+   font-weight: bold;
+   cursor: pointer;
+ }
+ #searchToggleIcon {
+   font-size: 22px;
+   line-height: 1;
+ }
+ .search-area {
+   display: none;
+   padding: 10px 15px;
+ }
+ .search-area.open {
+   display: block;
+ }
+ .search-box {
+   padding: 15px;
+ }
+ .search-box label {
+   display: block;
+   margin: 10px 0;
+   padding: 4px 0;
+ }
+ .search-box input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+ }
+ #searchButton,
+ #clearSearchButton {
+   width: 100%;
+ }
+ #clearSearchButton {
+   min-height: 44px;
+ }
+
+ /* タブ */
+ #songTabs button {
+   min-height: 50px;
+   padding: 15px 10px;
+   font-size: 17px;
+ }
+
+ /* シャッフル */
+ #pageShuffleButton {
+   min-height: 50px;
+   padding: 15px 20px;
+   font-size: 17px;
+ }
+
+ /* 曲カード */
+ .song-card {
+   padding: 15px;
+ }
+ .song-card .play-button {
+   flex: 3;
+   width: auto;
+   min-width: 0;
+   min-height: 44px;
+   font-size: 17px;
+ }
+ .song-card .favorite-button {
+   flex: 0 0 44px;
+   width: 44px;
+   height: 44px;
+   font-size: 24px;
+ }
+
+ /* 戻るボタン */
+ #backToSearchButton {
+   right: 12px;
+   bottom: 115px;
+   padding: 9px 14px;
+   font-size: 14px;
+ }
+
+ /* ミニプレイヤー */
+ #miniPlayer {
+   min-height: 82px;
+   flex-wrap: wrap;
+   gap: 10px;
+   padding: 10px 12px;
+ }
+ #miniPlayerThumbnail {
+   flex: 0 0 100px;
+   width: 100px;
+   height: 56px;
+ }
+ #miniPlayerInfo {
+   flex: 1;
+   min-width: 0;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   margin-left: 10px;
+ }
+ #miniPlayerTitle {
+   flex: 1;
+   min-width: 0;
+   margin-right: 0;
+   margin-bottom: 8px;
+   font-size: 17px;
+   line-height: 1.4;
+   white-space: normal;
+   overflow: visible;
+   text-overflow: clip;
+ }
  #miniPlayerControls {
+   justify-content: center;
    gap: 4px;
  }
  #miniPlayerControls button {
    width: 44px;
    height: 44px;
  }
-}
-@media (max-width: 600px) {
+
+ /* 音楽ポップアップ */
+ #musicPopup {
+   padding: 10px;
+ }
+ #musicPopupContent {
+   width: 100%;
+   max-width: none;
+   height: 100vh;
+   max-height: 100vh;
+   padding: 60px 10px 15px;
+   border-radius: 0;
+ }
+ #popupSongTitle {
+   font-size: 20px;
+ }
+ #popupActions {
+   flex-direction: column;
+ }
  #popupControls {
    gap: 8px;
  }
@@ -1189,156 +1169,53 @@ color: var(--theme-white);
    height: 56px;
    font-size: 25px;
  }
-}
-@media (max-width: 600px) {
- #backToSearchButton {
-   right: 12px;
-   bottom: 115px;
-   padding: 9px 14px;
-   font-size: 14px;
+
+ /* フィルター解除 */
+ .clear-filter-button {
+   min-height: 36px;
+   padding: 7px 12px;
+   font-size: 13px;
  }
 }
-@media (max-width: 600px) {
- #infoButton {
-   top: 10px;
-   right: 10px;
-   width: 42px;
-   height: 42px;
-   font-size: 23px;
- }
-}
-@media (max-width: 600px) {
-   #clearSearchButton {
-       width: 100%;
-   }
-}
-@media (max-width: 600px) {
- .search-box input[type="checkbox"] {
-   width: 20px;
-   height: 20px;
- }
- .search-box label {
-   padding: 4px 0;
- }
-}
-@media (max-width: 600px) {
- #songTabs button {
-   padding: 15px 10px;
-   font-size: 17px;
-   min-height: 50px;
- }
-}
-@media (max-width: 600px) {
- #pageShuffleButton {
-   min-height: 50px;
-   padding: 15px 20px;
-   font-size: 17px;
- }
-}
-@media (max-width: 600px) {
- .song-card .play-button {
-   min-height: 44px;
-   font-size: 17px;
- }
- .song-card .favorite-button {
-   width: 44px;
-   height: 44px;
-   font-size: 24px;
- }
-}
-/* 曲カードの再生・お気に入りボタンを3:1で横並び */
-.song-card .play-button,
-.song-card .favorite-button {
-  width: auto;
-}
-.song-card .play-button {
-  flex: 3;
-}
-.song-card .favorite-button {
-  flex: 1;
-}
-@media (max-width: 600px) {
-  .song-card .play-button,
-  .song-card .favorite-button {
-     width: auto;
-  }
-  .song-card .play-button {
-     flex: 3;
-  }
-  .song-card .favorite-button {
-     flex: 1;
-  }
-}
-/* 曲カードのボタン間隔とサイズ調整 */
-.song-card .play-button {
-  margin-right: 8px;
-}
-.song-card .favorite-button {
-  flex: 0 0 50px;
-  width: 50px;
-}
+
 /* =========================
-  テーマ選択
+  タッチ端末では hover を無効化
   ========================= */
-#themeSelector {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0 15px;
-}
-#themeSelector label {
-  font-weight: bold;
-}
-#themeSelect {
-  padding: 8px 12px;
-  border: 1px solid var(--theme-main);
-  border-radius: 6px;
-  background: var(--theme-white);
-  color: var(--theme-black);
-  font-size: 14px;
-  cursor: pointer;
-}
-/* =========================
-  テーマカラー
-  ========================= */
-:root {
- --theme-main: #AC324B;
- --theme-sub: #136DA8;
- --theme-white: #FFFFFF;
- --theme-black: #333333;
- --theme-accent: #AC324B;
-}
-body.theme-noble {
---theme-main: #564D6A;
---theme-sub: #39383D;
---theme-white: #39383D;
---theme-black: #E9E2DA;
---theme-accent: #564D6A;
-}
-body.theme-casual {
- --theme-main: #871126;
- --theme-sub: #274730;
- --theme-white: #B7802D;
- --theme-black: #102851;
- --theme-accent: #871126;
-}
-/* =========================
-  貴族テーマ
-  ========================= */
-body[data-theme="noble"] {
-  --theme-main: #564D6A;
-  --theme-sub: #39383D;
-  --theme-white: #E9E2DA;
-  --theme-black: #39383D;
-  --theme-accent: #564D6A;
-}
-/* =========================
-  カジュアルライブテーマ
-  ========================= */
-body[data-theme="casual"] {
-  --theme-main: #871126;
-  --theme-sub: #274730;
-  --theme-white: #FFFFFF;
-  --theme-black: #102851;
-  --theme-accent: #B7802D;
+@media (hover: none) {
+ #infoButton:hover {
+   background-color: var(--theme-main);
+ }
+ #miniPlayerControls button:hover {
+   background-color: var(--theme-white);
+ }
+ #musicPopupClose:hover {
+   background-color: var(--theme-black);
+ }
+ #popupControls button:hover {
+   background-color: var(--theme-white);
+ }
+ #popupFavorite:hover,
+ #popupOriginal:hover {
+   background-color: var(--theme-white);
+ }
+ #infoPopupClose:hover,
+ #infoPopupCloseBottom:hover {
+   background-color: var(--theme-main);
+ }
+ #infoPopupContent a:hover {
+   text-decoration: none;
+ }
+ #songTabs button:hover {
+   background-color: var(--theme-white);
+ }
+ #songTabs button.active:hover {
+   background-color: var(--theme-main);
+ }
+ #pageShuffleButton:hover {
+   background-color: var(--theme-white);
+ }
+ .clear-filter-button:hover {
+   background: transparent;
+   color: var(--theme-main);
+ }
 }
