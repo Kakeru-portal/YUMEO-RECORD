@@ -3,6 +3,114 @@
 // =========================
 const songData = [
   {
+   title: "砂の惑星",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "ハチ",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 239,
+   end: 477
+ },
+ {
+   title: "プロトディスコ",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "ぬゆり",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 709,
+   end: 974
+ },
+ {
+   title: "エンヴィキャットウォーク",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "トーマ",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 1129,
+   end: 1352
+ },
+ {
+   title: "天ノ弱",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "164",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 1497,
+   end: 1683
+ },
+ {
+   title: "シャルル(2018.12.19)",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "バルーン",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 1824,
+   end: 2053
+ },
+ {
+   title: "花瓶に触れた",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "バルーン",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 2245,
+   end: 2465
+ },
+ {
+   title: "あっかんべーだ",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "瀬名航",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 2600,
+   end: 2774
+ },
+ {
+   title: "DOGS",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "yukkedoluce",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 2863,
+   end: 3097
+ },
+ {
+   title: "ジーニー",
+   count: "1",
+   type: "cover",
+   date: "2018-12-19",
+   unit: "",
+   artist: "164",
+   singer: "夢追翔",
+   video: "e8hfHiXRvuE",
+   start: 3121,
+   end: 3407
+ },
+  {
    title: "クリスマス・イブ",
    count: "1",
    type: "cover",
@@ -965,7 +1073,7 @@ const songData = [
    end: 3670
  },
    {
-   title: "シャルル",
+   title: "シャルル(2018.10.7)",
    count: "1",
    type: "cover",
    date: "2018-10-07",
