@@ -1347,3 +1347,8 @@ body {
        padding-bottom: 120px;
    }
 }
+.site-footer-notice {
+   text-align: center;
+   margin: 20px 0;
+   padding: 0 15px;
+}
