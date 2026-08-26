@@ -1377,3 +1377,8 @@ body[data-theme="noble"] #infoPopupContent h2 {
 body[data-theme="noble"] #popupFavorite.is-favorite {
    color: #F2EEE8;
 }
+/* 貴族テーマ：大きいシャッフル再生ボタンON */
+body[data-theme="noble"] #pageShuffleButton.shuffle-active {
+   background-color: var(--theme-main) !important;
+   color: #F2EEE8 !important;
+}
