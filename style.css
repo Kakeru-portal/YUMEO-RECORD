@@ -773,7 +773,7 @@ footer {
   max-width: 700px;
   max-height: 85vh;
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: var(--theme-white);
   border-top: 5px solid var(--theme-main);
   border-radius: 12px;
   padding: 50px 25px 25px;
@@ -797,11 +797,11 @@ color: var(--theme-white);
   cursor: pointer;
 }
 #infoPopupClose:hover {
-  background-color: #c43d58;
+  background-color: var(--theme-accent);
 }
 #infoPopupContent h2 {
   margin: 0 0 25px;
-  color: #AC324B;
+  color: var(--theme-main);
   font-size: 26px;
 }
 #infoPopupContent section {
@@ -813,7 +813,7 @@ color: var(--theme-white);
 #infoPopupContent h3 {
   margin: 0 0 8px;
   font-size: 19px;
-  border-left: 4px solid #AC324B;
+  border-left: 4px solid var(--theme-main);
   padding-left: 10px;
 }
 #infoPopupContent p {
@@ -822,7 +822,7 @@ color: var(--theme-white);
   line-height: 1.7;
 }
 #infoPopupContent a {
-  color: #AC324B;
+  color: var(--theme-main);
   font-weight: bold;
   text-decoration: none;
 }
@@ -832,7 +832,7 @@ color: var(--theme-white);
 #infoPopupContent h3 {
   margin: 28px 0 10px;
   font-size: 19px;
-  border-left: 4px solid #AC324B;
+  border-left: 4px solid var(--theme-main);
   padding-left: 10px;
 }
 #infoPopupContent section > h3:first-child {
@@ -842,22 +842,22 @@ color: var(--theme-white);
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid var(--theme-sub);
 }
 #infoPopupCloseBottom {
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
-  background-color: #AC324B;
-  color: white;
+  background-color: var(--theme-main);
+color: var(--theme-white);
   font-size: 28px;
   line-height: 44px;
   padding: 0;
   cursor: pointer;
 }
 #infoPopupCloseBottom:hover {
-  background-color: #c43d58;
+  background-color: var(--theme-accent);
 }
 #infoPopupContent h3 {
   margin-top: 40px;
