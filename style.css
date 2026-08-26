@@ -1373,3 +1373,7 @@ body[data-theme="noble"] #infoPopupContent a {
 body[data-theme="noble"] #infoPopupContent h2 {
    color: #F2EEE8;
 }
+/* 貴族テーマ：お気に入り登録済み */
+body[data-theme="noble"] #popupFavorite.is-favorite {
+   color: #F2EEE8;
+}
