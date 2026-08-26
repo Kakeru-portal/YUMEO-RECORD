@@ -935,11 +935,21 @@ function sortSongs() {
    });
 }
 document.addEventListener('DOMContentLoaded', () => {
-   const sortSelect = document.getElementById('sortSelect');
-   if (sortSelect) {
-       sortSelect.addEventListener('change', sortSongs);
-       sortSongs();
-   }
+  const sortSelect = document.getElementById('sortSelect');
+  if (sortSelect) {
+      // 保存されている並べ替え設定を取得
+      const savedSort =
+          localStorage.getItem('songSort') || 'date-asc';
+      // セレクトボックスに反映
+      sortSelect.value = savedSort;
+      // 並べ替え設定が変更されたら保存
+      sortSelect.addEventListener('change', () => {
+          localStorage.setItem('songSort', sortSelect.value);
+          sortSongs();
+      });
+      // ページ読み込み時に並べ替え
+      sortSongs();
+  }
 });
 // =========================
 // テーマ切り替え
