@@ -3,6 +3,78 @@
 // =========================
 const songData = [
   {
+   title: "雪の華(2018.12.29)",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "中島美嘉",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 397,
+   end: 689
+ },
+ {
+   title: "粉雪(2018.12.29)",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "レミオロメン",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 733,
+   end: 1045
+ },
+ {
+   title: "少年時代",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "井上陽水",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 1097,
+   end: 1327
+ },
+ {
+   title: "ホール・ニュー・ワールド",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "ピーボ・ブライソン、レジーナ・ベル",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 1389,
+   end: 1546
+ },
+ {
+   title: "白虎野の娘",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "平沢進",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 1637,
+   end: 1948
+ },
+ {
+   title: "いつかのメリークリスマス(2018.12.29)",
+   count: "5",
+   type: "cover",
+   date: "2018-12-29",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔、あくまのゴート、ジョー・力一、皆守ひいろ、レンチ",
+   video: "Vl45fbDBxBI",
+   start: 2062,
+   end: 2317
+ },
+  {
    title: "ROLL",
    count: "1",
    type: "cover",
@@ -133,7 +205,7 @@ const songData = [
    video: "0yeg4XkzrMI"
  },
   {
-   title: "いつかのメリークリスマス",
+   title: "いつかのメリークリスマス(2018.12.24)",
    count: "1",
    type: "cover",
    date: "2018-12-24",
@@ -383,7 +455,7 @@ const songData = [
    end: 76
  },
  {
-   title: "粉雪",
+   title: "粉雪(2018.12.8)",
    count: "1",
    type: "cover",
    date: "2018-12-08",
@@ -679,7 +751,7 @@ const songData = [
    end: 3894
  },
   {
-   title: "雪の華",
+   title: "雪の華(2018.11.12)",
    count: "1",
    type: "cover",
    date: "2018-11-12",
