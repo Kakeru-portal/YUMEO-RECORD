@@ -1392,3 +1392,7 @@ body[data-theme="normal"] #pageShuffleButton.shuffle-active {
    color: #FFFFFF !important;
    border: 1px solid #AC324B;
 }
+/* 貴族テーマ：テキスト検索の「検索」ボタン */
+body[data-theme="noble"] #searchButton {
+   color: #F2EEE8;
+}
