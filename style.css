@@ -1290,13 +1290,13 @@ body[data-theme="noble"] #songTabs button.active {
 }
 /* 大きいシャッフル再生ボタン */
 body[data-theme="noble"] #pageShuffleButton {
-   background-color: var(--theme-main);
-   color: #F2EEE8;
+   background-color: #F2EEE8;
+   color: var(--theme-main);
 }
 /* 大きいシャッフル再生ボタン：シャッフルON */
 body[data-theme="noble"] #pageShuffleButton.shuffle-active {
-   background-color: #F2EEE8;
-   color: var(--theme-main);
+   background-color: var(--theme-main);
+   color: #F2EEE8;
 }
 /* 曲カードの再生ボタン */
 body[data-theme="noble"] .song-card .play-button {
