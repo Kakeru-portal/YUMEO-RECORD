@@ -1269,3 +1269,12 @@ background-color: var(--theme-sub);
 background-color: var(--theme-main);
 }
 }
+/* =========================
+  貴族テーマ：濃い背景の文字色
+  ========================= */
+body[data-theme="noble"] #infoButton {
+   color: #FFFFFF;
+}
+body[data-theme="noble"] .song-tag {
+   color: #FFFFFF;
+}
