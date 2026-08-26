@@ -941,9 +941,6 @@ document.addEventListener('DOMContentLoaded', () => {
        sortSongs();
    }
 });
-document.querySelectorAll('.song').forEach(song => {
-  updateCardFavoriteButton(song);
-});
 // =========================
 // テーマ切り替え
 // =========================
