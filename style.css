@@ -1218,3 +1218,50 @@ section > h2:nth-of-type(2) {
    color: var(--theme-main);
  }
 }
+/* =========================
+  テーマ・並べ替えセレクト
+  ========================= */
+#themeSelector,
+#sortArea {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+#themeSelector {
+margin: 0 0 15px;
+}
+#sortArea {
+margin: 15px 0;
+}
+#themeSelector label,
+#sortArea label {
+color: var(--theme-black);
+font-size: 16px;
+font-weight: bold;
+}
+#themeSelect,
+#sortSelect {
+padding: 9px 34px 9px 12px;
+border: 1px solid var(--theme-main);
+border-radius: 7px;
+background-color: var(--theme-white);
+color: var(--theme-black);
+font-size: 15px;
+font-family: inherit;
+cursor: pointer;
+}
+/* =========================
+  検索欄へボタン
+  ========================= */
+#backToSearchButton {
+background-color: var(--theme-main);
+color: var(--theme-white);
+}
+#backToSearchButton:hover {
+background-color: var(--theme-sub);
+}
+@media (hover: none) {
+#backToSearchButton:hover {
+background-color: var(--theme-main);
+}
+}
