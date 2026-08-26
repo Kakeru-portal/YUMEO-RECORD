@@ -1352,3 +1352,15 @@ body {
    margin: 20px 0;
    padding: 0 15px;
 }
+/* 貴族テーマ：インフォメーションの閉じるボタン */
+body[data-theme="noble"] #infoPopupClose,
+body[data-theme="noble"] #infoPopupCloseBottom {
+   color: #F2EEE8;
+}
+/* 貴族テーマ：インフォメーション内の文字 */
+body[data-theme="noble"] #infoPopupContent h3 {
+   color: #F2EEE8;
+}
+body[data-theme="noble"] #infoPopupContent a {
+   color: #F2EEE8;
+}
