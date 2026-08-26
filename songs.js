@@ -3,6 +3,18 @@
 // =========================
 const songData = [
   {
+   title: "やさしくなりたい",
+   count: "1",
+   type: "cover",
+   date: "2018-12-13",
+   unit: "",
+   artist: "斉藤和義",
+   singer: "夢追翔",
+   video: "p1iRBF9ryrE",
+   start: 2135,
+   end: 2143
+ },
+  {
    title: "RAGE OF DUST (2018.12.12)",
    count: "2",
    type: "cover",
