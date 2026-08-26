@@ -1336,3 +1336,14 @@ body[data-theme="noble"] #sortSelect {
        5px 5px;
    background-repeat: no-repeat;
 }
+/* =========================
+  ミニプレイヤー下の余白
+  ========================= */
+body {
+   padding-bottom: 100px;
+}
+@media (max-width: 600px) {
+   body {
+       padding-bottom: 120px;
+   }
+}
