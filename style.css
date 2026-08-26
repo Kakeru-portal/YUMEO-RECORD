@@ -1287,3 +1287,10 @@ body[data-theme="noble"] #pageShuffleButton {
 body[data-theme="noble"] #songTabs button.active {
    color: #FFFFFF;
 }
+body[data-theme="noble"] #pageShuffleButton {
+
+    background-color: var(--theme-main);
+
+    color: #FFFFFF;
+
+}
