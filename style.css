@@ -8,6 +8,13 @@
  --theme-black: #333333;
  --theme-accent: #AC324B;
 }
+/* テーマ切り替えテスト */
+body.theme-noble {
+   background-color: #E9E2DA !important;
+}
+body.theme-casual {
+   background-color: #FFFF00 !important;
+}
 body {
  margin: 0;
  font-family: sans-serif;
