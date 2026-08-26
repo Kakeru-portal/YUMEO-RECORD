@@ -3,6 +3,16 @@
 // =========================
 const songData = [
   {
+   title: "新世界",
+   count: "5",
+   type: "cover",
+   date: "2018-12-25",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔、あくまのゴート、朝霞しお、飛鳥ひな、天城てん、黒井しば、さくらみこ、ジョー・力一、白上フブキ、でびでび・でびる、春崎エアル、ふくやマスター、星月せい、町田ちま、皆守ひいろ、レンチ",
+   video: "0yeg4XkzrMI"
+ },
+  {
    title: "いつかのメリークリスマス",
    count: "1",
    type: "cover",
