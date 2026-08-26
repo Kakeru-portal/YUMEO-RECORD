@@ -3,7 +3,17 @@
 // =========================
 const songData = [
   {
-   title: "隙間風に吹かれて",
+   title: "隙間風に吹かれて(2018.11.24)",
+   count: "1",
+   type: "original",
+   date: "2018-11-24",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "H4-PBeOFjLo"
+ },
+  {
+   title: "隙間風に吹かれて(2018.11.22)",
    count: "1",
    type: "original",
    date: "2018-11-22",
