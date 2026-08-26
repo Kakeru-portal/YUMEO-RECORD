@@ -451,12 +451,12 @@ footer {
   display: none;
 }
 #popupControls button {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border: none;
   border-radius: 50%;
-  background-color: #eeeeee;
-  color: #333333;
+  background-color: var(--theme-white);
+  color: var(--theme-black);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -465,7 +465,7 @@ footer {
   transition: background-color 0.15s ease, transform 0.1s ease;
 }
 #popupControls button:hover {
-  background-color: #dddddd;
+ background-color: var(--theme-sub);
 }
 #popupControls button:active {
   transform: scale(0.94);
