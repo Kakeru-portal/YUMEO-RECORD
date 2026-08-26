@@ -3,6 +3,16 @@
 // =========================
 const songData = [
   {
+   title: "弱きに寄り添う",
+   count: "1",
+   type: "original",
+   date: "2018-12-06",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Z2ZO4Ah95H0"
+ },
+  {
    title: "おねがいダーリン",
    count: "5",
    type: "cover",
