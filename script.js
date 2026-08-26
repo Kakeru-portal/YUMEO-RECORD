@@ -947,45 +947,35 @@ document.querySelectorAll('.song').forEach(song => {
 // =========================
 // テーマ切り替え
 // =========================
-const themeSelect = document.getElementById('themeSelect');
-function applyTheme(theme) {
-   // 通常テーマ
-   if (theme === 'normal') {
+document.addEventListener('DOMContentLoaded', () => {
+   const themeSelect = document.getElementById('themeSelect');
+   if (!themeSelect) return;
+   function applyTheme(theme) {
+       // いったん既存のテーマをすべて解除
        document.body.removeAttribute('data-theme');
        document.body.classList.remove(
            'theme-noble',
            'theme-casual'
        );
+       // 選択したテーマを適用
+       if (theme === 'noble') {
+           document.body.setAttribute('data-theme', 'noble');
+       }
+       if (theme === 'casual') {
+           document.body.setAttribute('data-theme', 'casual');
+       }
+       // 選択したテーマを保存
+       localStorage.setItem('siteTheme', theme);
    }
-   // 貴族テーマ
-   if (theme === 'noble') {
-       document.body.setAttribute('data-theme', 'noble');
-       document.body.classList.remove(
-           'theme-noble',
-           'theme-casual'
-       );
-   }
-   // カジュアルライブテーマ
-   if (theme === 'casual') {
-       document.body.setAttribute('data-theme', 'casual');
-       document.body.classList.remove(
-           'theme-noble',
-           'theme-casual'
-       );
-   }
-   // 選択したテーマを保存
-   localStorage.setItem('siteTheme', theme);
-}
-if (themeSelect) {
    // 保存されているテーマを取得
    const savedTheme =
        localStorage.getItem('siteTheme') || 'normal';
    // セレクトボックスに反映
    themeSelect.value = savedTheme;
-   // ページ読み込み時にテーマを適用
+   // ページ読み込み時に適用
    applyTheme(savedTheme);
    // テーマ変更時
-   themeSelect.addEventListener('change', function() {
-       applyTheme(this.value);
+   themeSelect.addEventListener('change', () => {
+       applyTheme(themeSelect.value);
    });
-}
+});
