@@ -1382,3 +1382,13 @@ body[data-theme="noble"] #pageShuffleButton.shuffle-active {
    background-color: var(--theme-main) !important;
    color: #F2EEE8 !important;
 }
+/* 通常テーマ：大きいシャッフル再生ボタンOFF */
+body[data-theme="normal"] #pageShuffleButton {
+   border: 1px solid #AC324B;
+}
+/* 通常テーマ：大きいシャッフル再生ボタンON */
+body[data-theme="normal"] #pageShuffleButton.shuffle-active {
+   background-color: #AC324B !important;
+   color: #FFFFFF !important;
+   border: 1px solid #AC324B;
+}
