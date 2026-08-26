@@ -3,6 +3,126 @@
 // =========================
 const songData = [
   {
+   title: "瞳をとじて(2018.12.8)",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "平井堅",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 1,
+   end: 37
+ },
+ {
+   title: "青いベンチ(2018.12.8)",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "サスケ",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 37,
+   end: 76
+ },
+ {
+   title: "粉雪",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "レミオロメン",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 76,
+   end: 111
+ },
+ {
+   title: "箒星",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "Mr.Children",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 111,
+   end: 151
+ },
+ {
+   title: "キセキ",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "GReeeeN",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 151,
+   end: 182
+ },
+ {
+   title: "恋",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "星野源",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 182,
+   end: 215
+ },
+ {
+   title: "アイネクライネ(2018.12.8)",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 215,
+   end: 251
+ },
+ {
+   title: "メリッサ",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "ポルノグラフィティ",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 251,
+   end: 287
+ },
+ {
+   title: "3月9日",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "レミオロメン",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 287,
+   end: 326
+ },
+ {
+   title: "天体観測(2018.12.8)",
+   count: "1",
+   type: "cover",
+   date: "2018-12-08",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "cZp1bB-GU10",
+   start: 326,
+   end: 361
+ },
+  {
    title: "弱きに寄り添う",
    count: "1",
    type: "original",
@@ -167,7 +287,7 @@ const songData = [
    end: 2816
  },
  {
-   title: "青いベンチ",
+   title: "青いベンチ(2018.11.12)",
    count: "1",
    type: "cover",
    date: "2018-11-12",
@@ -239,7 +359,7 @@ const songData = [
    end: 1816
  },
  {
-   title: "瞳をとじて",
+   title: "瞳をとじて(2018.11.12)",
    count: "1",
    type: "cover",
    date: "2018-11-12",
@@ -487,7 +607,7 @@ const songData = [
    end: 2053
  },
  {
-   title: "天体観測",
+   title: "天体観測(2018.10.24)",
    count: "5",
    type: "cover",
    date: "2018-10-24",
@@ -569,7 +689,7 @@ const songData = [
    video: "iXBBkDQ12YY"
  },
    {
-   title: "アイネクライネ",
+   title: "アイネクライネ(2018.10.10)",
    count: "1",
    type: "cover",
    date: "2018-10-10",
