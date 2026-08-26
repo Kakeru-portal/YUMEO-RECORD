@@ -6,8 +6,8 @@ body {
   font-size: 16px;
 }
 header {
-  background-color: #222222;
-  color: white;
+ background-color: var(--theme-black);
+ color: var(--theme-white);
   padding: 38px 20px 30px;
   text-align: center;
   border-bottom: 4px solid #AC324B;
@@ -21,8 +21,8 @@ header {
   height: 44px;
   border: none;
   border-radius: 50%;
-  background-color: #AC324B;
-  color: white;
+  background-color: var(--theme-main);
+color: var(--theme-white);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 25px;
   font-weight: normal;
@@ -37,7 +37,7 @@ header {
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 #infoButton:hover {
-  background-color: #c43d58;
+ background-color: var(--theme-main);
 }
 #infoButton:active {
   transform: scale(0.94);
@@ -59,13 +59,13 @@ header p {
   margin: 0;
 }
 .site-description {
-  color: #dddddd;
+  color: var(--theme-black);
   font-size: 15px;
   line-height: 1.6;
 }
 .site-notice {
   margin-top: 6px;
-  color: #999999;
+  color: var(--theme-black);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -79,18 +79,18 @@ section {
    margin-bottom: 20px;
 }
 section > h2:first-child {
-   background-color: white;
+   background-color: var(--theme-white);
    padding: 20px;
    margin: 0;
    border-radius: 10px 10px 0 0;
 }
 .search-area {
-   background-color: white;
+   background-color: var(--theme-white);
    padding: 20px;
    border-radius: 0 0 10px 10px;
 }
 .search-box {
-   background-color: #f7f7f7;
+   background-color: var(--theme-white);
    padding: 18px;
    margin: 15px 0;
    border-radius: 8px;
@@ -105,7 +105,7 @@ section > h2:first-child {
    max-width: 500px;
    padding: 12px;
    font-size: 16px;
-   border: 1px solid #ccc;
+   border: 1px solid var(--theme-main);
    border-radius: 6px;
 }
 #searchButton {
@@ -113,6 +113,8 @@ section > h2:first-child {
   padding: 11px 24px;
   font-size: 17px;
   border: none;
+  background-color: var(--theme-main);
+color: var(--theme-white);
   border-radius: 7px;
   cursor: pointer;
   min-width: 180px;
@@ -122,6 +124,8 @@ section > h2:first-child {
   padding: 11px 10px;
   font-size: 17px;
   border: none;
+  background-color: var(--theme-sub);
+color: var(--theme-white);
   border-radius: 7px;
   cursor: pointer;
   min-width: 60px;
@@ -152,10 +156,10 @@ section > h2:nth-of-type(2) {
    margin: 0;
 }
 .song-card {
-   border: 1px solid #ccc;
+   border: 1px solid var(--theme-main);
    border-radius: 12px;
    padding: 20px;
-   background-color: white;
+   background-color: var(--theme-white);
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .song-card h3 {
@@ -175,6 +179,8 @@ section > h2:nth-of-type(2) {
    border-radius: 7px;
    cursor: pointer;
    font-size: 17px;
+  background-color: var(--theme-main);
+color: var(--theme-white);
 }
 footer {
    text-align: center;
@@ -189,8 +195,8 @@ footer {
    right: 0;
    bottom: 0;
    z-index: 1000;
-   background-color: #ffffff;
-   border-top: 1px solid #cccccc;
+   background-color: var(--theme-white);
+   border-top: 1px solid var(--theme-main);
    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.12);
    padding: 10px 20px;
    display: flex;
@@ -239,7 +245,7 @@ footer {
   height: 52px;
   border: none;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: var(--theme-white);
   cursor: pointer;
   transition: background-color 0.15s ease, transform 0.1s ease;
   display: flex;
@@ -256,7 +262,7 @@ footer {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-right: 11px solid #333333;
+  border-right: 11px solid var(--theme-black);
   position: absolute;
   left: 21px;
 }
@@ -264,7 +270,7 @@ footer {
   content: "";
   width: 3px;
   height: 16px;
-  background-color: #333333;
+  background-color: var(--theme-black);
   position: absolute;
   left: 17px;
 }
@@ -277,7 +283,7 @@ footer {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 11px solid #333333;
+  border-left: 11px solid var(--theme-black);
   position: absolute;
   left: 20px;
 }
@@ -285,7 +291,7 @@ footer {
   content: "";
   width: 3px;
   height: 16px;
-  background-color: #333333;
+  background-color: var(--theme-black);
   position: absolute;
   left: 32px;
 }
@@ -298,7 +304,7 @@ footer {
   height: 0;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 13px solid #333333;
+  border-left: 13px solid var(--theme-black);
   position: absolute;
   left: 21px;
 }
@@ -306,9 +312,9 @@ footer {
   width: 4px;
   height: 18px;
   border: none;
-  background-color: #333333;
+  background-color: var(--theme-black);
   left: 19px;
-  box-shadow: 8px 0 0 #333333;
+  box-shadow: 8px 0 0 var(--theme-black);
 }
 #miniPlayerControls button:hover {
    background-color: #dddddd;
@@ -342,7 +348,7 @@ footer {
    max-width: 900px;
    max-height: 95vh;
    overflow-y: auto;
-   background-color: #ffffff;
+   background-color: var(--theme-white);
    border-radius: 12px;
    padding: 64px 20px 20px;
    box-sizing: border-box;
@@ -356,8 +362,8 @@ footer {
   margin: 10px auto 0;
   border: none;
   border-radius: 8px;
-  background-color: #333333;
-  color: white;
+  background-color: var(--theme-black);
+  color: var(--theme-white);
   font-size: 16px;
   line-height: 44px;
   text-align: center;
@@ -365,7 +371,7 @@ footer {
   cursor: pointer;
 }
 #musicPopupClose:hover {
-   background-color: #555555;
+   background-color: var(--theme-sub);
 }
 #musicPopupClose:active {
    transform: scale(0.94);
@@ -401,8 +407,8 @@ footer {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: #eeeeee;
-  color: #333333;
+  background-color: var(--theme-white);
+  color: var(--theme-black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,7 +416,7 @@ footer {
   transition: background-color 0.15s ease, transform 0.1s ease;
 }
 #popupControls button:hover {
-  background-color: #dddddd;
+  background-color: var(--theme-sub);
 }
 #popupControls button:active {
   transform: scale(0.94);
@@ -419,7 +425,7 @@ footer {
   width: 28px;
   height: 28px;
   fill: none;
-  stroke: #333333;
+  stroke: var(--theme-black);
   stroke-width: 3.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -435,7 +441,7 @@ footer {
 #popupControls button:nth-child(2) svg,
 #popupControls button:nth-child(3) svg,
 #popupControls button:nth-child(4) svg {
-  fill: #333333;
+  fill: var(--theme-black);
   stroke: none;
 }
 #popupControls .popupPlayIcon {
@@ -468,7 +474,7 @@ footer {
 .icon-loop {
   width: 20px;
   height: 20px;
-  border: 3px solid #333333;
+  border: 3px solid var(--theme-black);
   border-top-color: transparent;
   border-radius: 50%;
   position: relative;
@@ -482,7 +488,7 @@ footer {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 7px solid #333333;
+  border-left: 7px solid var(--theme-black);
 }
 /* 前の曲 */
 .icon-previous {
@@ -490,7 +496,7 @@ footer {
   height: 0;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-right: 12px solid #333333;
+  border-right: 12px solid var(--theme-black);
   position: relative;
 }
 .icon-previous::after {
@@ -498,7 +504,7 @@ footer {
   position: absolute;
   width: 3px;
   height: 18px;
-  background-color: #333333;
+  background-color: var(--theme-black);
   right: 0;
   top: -9px;
   transform: translateX(4px);
@@ -509,7 +515,7 @@ footer {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 14px solid #333333;
+  border-left: 14px solid var(--theme-black);
   margin-left: 3px;
 }
 /* 一時停止 */
@@ -517,8 +523,8 @@ footer {
   display: none;
   width: 5px;
   height: 20px;
-  background-color: #333333;
-  box-shadow: 8px 0 0 #333333;
+  background-color: var(--theme-black);
+  box-shadow: 8px 0 0 var(--theme-black);
 }
 /* 次の曲 */
 .icon-next {
@@ -526,7 +532,7 @@ footer {
   height: 0;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 12px solid #333333;
+  border-left: 12px solid var(--theme-black);
   position: relative;
 }
 .icon-next::after {
@@ -534,7 +540,7 @@ footer {
   position: absolute;
   width: 3px;
   height: 18px;
-  background-color: #333333;
+  background-color: var(--theme-black);
   left: 0;
   top: -9px;
   transform: translateX(-4px);
@@ -544,8 +550,8 @@ footer {
   width: 22px;
   height: 18px;
   position: relative;
-  border-top: 3px solid #333333;
-  border-bottom: 3px solid #333333;
+  border-top: 3px solid var(--theme-black);
+  border-bottom: 3px solid var(--theme-black);
   transform: skewY(-25deg);
 }
 .icon-shuffle::after {
@@ -557,7 +563,7 @@ footer {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 7px solid #333333;
+  border-left: 7px solid var(--theme-black);
   transform: skewY(25deg);
 }
 #popupPlayPause,
@@ -569,7 +575,7 @@ footer {
   height: 70px;
   border: none;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: var(--theme-white);
   font-size: 30px;
   cursor: pointer;
   padding: 0;
@@ -587,19 +593,19 @@ footer {
 #popupOriginal {
    flex: 1;
    padding: 13px;
-   border: 1px solid #cccccc;
+   border: 1px solid var(--theme-main);
    border-radius: 7px;
-   background-color: #ffffff;
+   background-color: var(--theme-white);
    text-align: center;
    font-size: 16px;
    cursor: pointer;
    text-decoration: none;
-   color: #333333;
+   color: var(--theme-black);
    box-sizing: border-box;
 }
 #popupFavorite:hover,
 #popupOriginal:hover {
-   background-color: #f3f3f3;
+   background-color: var(--theme-sub);
 }
 /* スマートフォン */
 @media (max-width: 600px) {
@@ -738,7 +744,7 @@ footer {
 /* 検索結果の件数表示 */
 #searchResultCount {
   margin: 15px 5px 8px;
-  color: #666666;
+  color: var(--theme-black);
   font-size: 15px;
 }
 /* インフォメーションポップアップ */
@@ -768,7 +774,7 @@ footer {
   max-height: 85vh;
   overflow-y: auto;
   background-color: #ffffff;
-  border-top: 5px solid #AC324B;
+  border-top: 5px solid var(--theme-main);
   border-radius: 12px;
   padding: 50px 25px 25px;
   box-sizing: border-box;
@@ -782,8 +788,8 @@ footer {
   height: 44px;
   border: none;
   border-radius: 50%;
-  background-color: #AC324B;
-  color: white;
+  background-color: var(--theme-main);
+color: var(--theme-white);
   font-size: 28px;
   line-height: 44px;
   text-align: center;
@@ -899,8 +905,8 @@ footer {
  flex: 1;
  padding: 13px 10px;
  border: none;
- background-color: #f3f3f3;
- color: #666666;
+ background-color: var(--theme-white);
+ color: var(--theme-black);
  font-size: 16px;
  font-weight: bold;
  cursor: pointer;
@@ -913,14 +919,14 @@ footer {
  border-radius: 0 8px 0 0;
 }
 #songTabs button.active {
- background-color: #AC324B;
- color: white;
+ background-color: var(--theme-main);
+ color: var(--theme-white);
 }
 #songTabs button:hover {
- background-color: #dddddd;
+ background-color: var(--theme-sub);
 }
 #songTabs button.active:hover {
- background-color: #c43d58;
+ background-color: var(--theme-accent);
 }
 /* ページ上のシャッフル再生ボタン */
 #pageShuffleButton {
@@ -930,8 +936,8 @@ margin: 12px 0 20px;
 padding: 14px 20px;
 border: none;
 border-radius: 8px;
-background-color: #eeeeee;
-color: #333333;
+background-color: var(--theme-white);
+color: var(--theme-black);
 font-size: 17px;
 font-weight: bold;
 cursor: pointer;
@@ -945,17 +951,17 @@ transform: scale(0.98);
 }
 /* シャッフル再生中 */
 #pageShuffleButton.shuffle-active {
-background-color: #AC324B !important;
-color: white !important;
+background-color: var(--theme-main) !important;
+color: var(--theme-white) !important;
 }
 /* ループ再生中 */
 #popupLoop.loop-active {
-background-color: #AC324B !important;
-color: white !important;
+background-color: var(--theme-main) !important;
+color: var(--theme-white) !important;
 }
 #popupShuffle.shuffle-active {
-   background-color: #AC324B !important;
-   color: white !important;
+  background-color: var(--theme-main) !important;
+  color: var(--theme-white) !important;
 }
 /* シークバー */
 #popupSeekArea {
@@ -968,7 +974,7 @@ color: white !important;
 #popupDuration {
  width: 42px;
  font-size: 13px;
- color: #666666;
+ color: var(--theme-black);
  text-align: center;
  flex-shrink: 0;
 }
@@ -976,7 +982,7 @@ color: white !important;
  flex: 1;
  width: 100%;
  height: 6px;
- accent-color: #AC324B;
+ accent-color: var(--theme-main);
  cursor: pointer;
 }
 #popupSeekBar::-webkit-slider-thumb {
@@ -985,7 +991,7 @@ color: white !important;
  width: 16px;
  height: 16px;
  border-radius: 50%;
- background-color: #AC324B;
+ background-color: var(--theme-main);
  cursor: pointer;
 }
 #popupSeekBar::-moz-range-thumb {
@@ -993,7 +999,7 @@ color: white !important;
  height: 16px;
  border: none;
  border-radius: 50%;
- background-color: #AC324B;
+ background-color: var(--theme-main);
  cursor: pointer;
 }
 /* =========================
@@ -1033,14 +1039,14 @@ color: white !important;
   vertical-align: middle;
 }
 .song-card .favorite-button {
-  color: #333333;
+  color: var(--theme-black);
 }
 .song-card .favorite-button.is-favorite {
-  color: #AC324B;
+  color: var(--theme-main);
 }
 #popupFavorite.is-favorite {
-  color: #AC324B;
-  border-color: #AC324B;
+  color: var(--theme-main);
+  border-color: var(--theme-main);
 }
 #backToSearchButton {
    position: fixed;
@@ -1065,8 +1071,8 @@ color: white !important;
   font-size: 13px;
   line-height: 1.4;
   border-radius: 12px;
-  background-color: #DCEEF8;
-  color: #126CA8;
+  background-color: var(--theme-sub);
+color: var(--theme-white);
 }
 #activeSearchConditions {
   display: flex;
@@ -1080,8 +1086,8 @@ color: white !important;
   font-size: 12px;
   line-height: 1.4;
   border-radius: 10px;
-  background-color: #DCEEF8;
-  color: #126CA8;
+  background-color: var(--theme-sub);
+color: var(--theme-white);
 }
 /* =========================
   フィルター解除ボタン
@@ -1090,16 +1096,16 @@ color: white !important;
    display: block;
    margin: 0 0 10px auto;
    padding: 4px 10px;
-   border: 1px solid #AC324B;
+   border: 1px solid var(--theme-main);
    border-radius: 4px;
    background: transparent;
-   color: #AC324B;
+   color: var(--theme-main);
    font-size: 12px;
    cursor: pointer;
    transition: 0.2s;
 }
 .clear-filter-button:hover {
-   background: #AC324B;
+   background: var(--theme-main);
    color: #fff;
 }
 /* =========================
@@ -1303,11 +1309,11 @@ color: white !important;
  --theme-accent: #AC324B;
 }
 body.theme-noble {
- --theme-main: #564D6A;
- --theme-sub: #39383D;
- --theme-white: #E9E2DA;
- --theme-black: #39383D;
- --theme-accent: #564D6A;
+--theme-main: #564D6A;
+--theme-sub: #39383D;
+--theme-white: #39383D;
+--theme-black: #E9E2DA;
+--theme-accent: #564D6A;
 }
 body.theme-casual {
  --theme-main: #871126;
