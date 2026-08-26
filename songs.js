@@ -3,6 +3,18 @@
 // =========================
 const songData = [
   {
+   title: "おねがいダーリン",
+   count: "5",
+   type: "cover",
+   date: "2018-11-29",
+   unit: "",
+   artist: "ナナホシ管弦楽団",
+   singer: "夢追翔、あくまのゴート、七面タキ、ぴろぱる、美影ルクス",
+   video: "8ZOCLuXcktk",
+   start: 3638,
+   end: 3722
+ },
+  {
    title: "隙間風に吹かれて(2018.11.24)",
    count: "1",
    type: "original",
