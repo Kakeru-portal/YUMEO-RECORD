@@ -22,11 +22,11 @@ body {
 /* 貴族テーマ */
 body[data-theme="noble"],
 body.theme-noble {
- --theme-main: #564D6A;
- --theme-sub: #39383D;
- --theme-white: #E9E2DA;
- --theme-black: #39383D;
- --theme-accent: #564D6A;
+--theme-main: #564D6A;
+--theme-sub: #39383D;
+--theme-white: #1E1E22;
+--theme-black: #F2EEE8;
+--theme-accent: #564D6A;
 }
 /* カジュアルライブテーマ */
 body[data-theme="casual"],
