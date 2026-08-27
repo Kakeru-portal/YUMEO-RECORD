@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "白日",
+   count: "1",
+   type: "cover",
+   date: "2019-08-31",
+   unit: "",
+   artist: "King Gnu",
+   singer: "夢追翔",
+   video: "ai59f32SMEA"
+ },
+      {
    title: "違う、そうじゃない",
    count: "1",
    type: "cover",
