@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "エロティカ・セブン",
+   count: "1",
+   type: "cover",
+   date: "2019-03-11",
+   unit: "",
+   artist: "サザンオールスターズ",
+   singer: "夢追翔",
+   video: "SGj-9M4TrG8",
+   start: 252,
+   end: 493
+ },
+ {
+   title: "波乗りジョニー",
+   count: "1",
+   type: "cover",
+   date: "2019-03-11",
+   unit: "",
+   artist: "桑田佳祐",
+   singer: "夢追翔",
+   video: "SGj-9M4TrG8",
+   start: 646,
+   end: 915
+ },
+ {
+   title: "白い恋人達",
+   count: "1",
+   type: "cover",
+   date: "2019-03-11",
+   unit: "",
+   artist: "桑田佳祐",
+   singer: "夢追翔",
+   video: "SGj-9M4TrG8",
+   start: 1065,
+   end: 1340
+ },
+ {
+   title: "愛と欲望の日々",
+   count: "1",
+   type: "cover",
+   date: "2019-03-11",
+   unit: "",
+   artist: "サザンオールスターズ",
+   singer: "夢追翔",
+   video: "SGj-9M4TrG8",
+   start: 1554,
+   end: 1818
+ },
+      {
    title: "BELIEVE",
    count: "1",
    type: "cover",
