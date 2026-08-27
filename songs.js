@@ -3,6 +3,90 @@
 // =========================
 const songData = [
   {
+   title: "ラプラスにのって",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "カスミ(飯塚雅弓)・ラプラス(愛河里花子)",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 1159,
+   end: 1343
+ },
+ {
+   title: "ピカチュウのうた",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "ピカチュウ(大谷育江)",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 1384,
+   end: 1607
+ },
+ {
+   title: "ライバル！",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "松本梨香",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 1667,
+   end: 1878
+ },
+ {
+   title: "Together",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "あきよしふみえ",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 2090,
+   end: 2181
+ },
+ {
+   title: "ポケットにファンタジー",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "さち＆じゅり",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 2268,
+   end: 2519
+ },
+ {
+   title: "ぼくのベストフレンドへ",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "岩崎宏美",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 2653,
+   end: 2859
+ },
+ {
+   title: "ポケモン言えるかな？",
+   count: "5",
+   type: "cover",
+   date: "",
+   unit: "",
+   artist: "イマクニ？",
+   singer: "夢追翔、天城てん、夏色まつり、ぴろぱる、星月せい",
+   video: "m-Z4demACxc",
+   start: 2926,
+   end: 3199
+ },
+  {
    title: "めざせポケモンマスター",
    count: "5",
    type: "cover",
