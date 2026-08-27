@@ -15,18 +15,6 @@ const songData = [
     end: 692
   },
   {
-   title: "竜宮ラップ",
-   count: "1",
-   type: "original",
-   date: "2019-01-28",
-   unit: "",
-   artist: "夢追翔",
-   singer: "夢追翔",
-   video: "CfzC1l-Qz1Y",
-   start: 693,
-   end: 718
- },
-  {
    title: "ラプラスにのって",
    count: "5",
    type: "cover",
