@@ -3,6 +3,78 @@
 // =========================
 const songData = [
       {
+   title: "sailing day (2019.8.2)",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 86,
+   end: 321
+ },
+ {
+   title: "天体観測(2019.8.2)",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 430,
+   end: 691
+ },
+ {
+   title: "ロストマン",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 760,
+   end: 1062
+ },
+ {
+   title: "遥か彼方",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "ASIAN KUNG-FU GENERATION",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 1104,
+   end: 1344
+ },
+ {
+   title: "リライト",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "ASIAN KUNG-FU GENERATION",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 1399,
+   end: 1624
+ },
+ {
+   title: "ソラニン(夢追ソロ)",
+   count: "1",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "ASIAN KUNG-FU GENERATION",
+   singer: "夢追翔",
+   video: "W6UL-ttimj4",
+   start: 1708,
+   end: 1980
+ },
+      {
    title: "HONEY",
    count: "1",
    type: "cover",
@@ -2421,7 +2493,7 @@ const songData = [
    end: 2366
  },
  {
-   title: "sailing day",
+   title: "sailing day(2018.10.24)",
    count: "5",
    type: "cover",
    date: "2018-10-24",
