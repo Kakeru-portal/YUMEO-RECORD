@@ -4,84 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YUMEO-RECORD 曲登録ツール</title>
-   <title>YUMEO-RECORD 曲登録ツール</title>
 <style>
 /* =========================
   曲登録ツール 全体
   ========================= */
 body {
- font-family: sans-serif;
- font-size: 17px;
- line-height: 1.6;
- padding: 20px;
- box-sizing: border-box;
+   font-family: sans-serif;
+   font-size: 17px;
+   line-height: 1.6;
+   padding: 20px;
+   box-sizing: border-box;
 }
 h1 {
- font-size: 28px;
- margin-bottom: 30px;
+   font-size: 28px;
+   margin-bottom: 30px;
 }
 h2 {
- font-size: 23px;
- margin-top: 30px;
- margin-bottom: 18px;
+   font-size: 23px;
+   margin-top: 30px;
+   margin-bottom: 18px;
 }
 h3 {
- font-size: 20px;
- margin-bottom: 15px;
+   font-size: 20px;
+   margin-bottom: 15px;
 }
 label {
- font-size: 17px;
+   font-size: 17px;
 }
 input,
 select,
 button,
 textarea {
- font-family: inherit;
- font-size: 17px;
- box-sizing: border-box;
+   font-family: inherit;
+   font-size: 17px;
+   box-sizing: border-box;
 }
 input,
 select {
- min-height: 44px;
- padding: 8px 10px;
+   min-height: 44px;
+   padding: 8px 10px;
 }
 input[type="text"],
 input[type="date"] {
- width: 100%;
- max-width: 500px;
+   width: 100%;
+   max-width: 500px;
 }
 button {
- min-height: 46px;
- padding: 8px 18px;
- margin: 5px 5px 5px 0;
- cursor: pointer;
+   min-height: 46px;
+   padding: 8px 18px;
+   margin: 5px 5px 5px 0;
+   cursor: pointer;
 }
 #addSongButton,
 #generateButton {
- font-weight: bold;
+   font-weight: bold;
 }
 textarea {
- width: 100%;
- min-height: 400px;
- padding: 12px;
- line-height: 1.5;
- font-family: monospace;
+   width: 100%;
+   min-height: 400px;
+   padding: 12px;
+   line-height: 1.5;
+   font-family: monospace;
 }
 .song-input {
- padding: 15px 0;
+   padding: 15px 0;
 }
 .song-input hr {
- margin: 25px 0;
+   margin: 25px 0;
+}
+/* =========================
+  自動保存関連
+  ========================= */
+#saveStatus {
+   margin: 10px 0 20px;
+   font-size: 15px;
+}
+#clearDraftButton {
+   margin-top: 10px;
 }
 </style>
-</head>
 </head>
 <body>
 <h1>YUMEO-RECORD 曲登録ツール</h1>
 <h2>歌枠情報</h2>
 <label>
    YouTube動画リンク
-<input type="text" id="videoId" placeholder="例：ssh61KTPksk">
+<input
+       type="text"
+       id="videoId"
+       placeholder="例：ssh61KTPksk"
+>
 </label>
 <br><br>
 <label>
@@ -94,32 +106,44 @@ textarea {
 <div class="song-input">
 <h3>曲 1</h3>
 <label>
-       曲名
+           曲名
 <input type="text" class="title">
 </label>
 <br><br>
 <label>
-       原曲アーティスト
+           原曲アーティスト
 <input type="text" class="artist">
 </label>
 <br><br>
-   <label>
-      歌唱者
-<input type="text" class="singer" placeholder="例：夢追翔、天城てん">
+<label>
+           歌唱者
+<input
+               type="text"
+               class="singer"
+               placeholder="例：夢追翔、天城てん"
+>
 </label>
 <br><br>
 <label>
-       開始時間
-<input type="text" class="start" placeholder="例：57:02">
+           開始時間
+<input
+               type="text"
+               class="start"
+               placeholder="例：57:02"
+>
 </label>
 <br><br>
 <label>
-       終了時間
-<input type="text" class="end" placeholder="例：1:03:09">
+           終了時間
+<input
+               type="text"
+               class="end"
+               placeholder="例：1:03:09"
+>
 </label>
 <br><br>
 <label>
-       種類
+           種類
 <select class="type">
 <option value="cover">カバー</option>
 <option value="original">オリジナル</option>
@@ -127,7 +151,7 @@ textarea {
 </label>
 <br><br>
 <label>
-       歌唱人数
+           歌唱人数
 <select class="count">
 <option value="1">ソロ</option>
 <option value="2">2人</option>
@@ -138,8 +162,12 @@ textarea {
 </label>
 <br><br>
 <label>
-       ユニット
-<input type="text" class="unit" placeholder="例：VACHSS">
+           ユニット
+<input
+               type="text"
+               class="unit"
+               placeholder="例：VACHSS"
+>
 </label>
 </div>
 </div>
@@ -150,270 +178,678 @@ textarea {
 <button type="button" id="generateButton">
    データを生成
 </button>
+<button type="button" id="clearDraftButton">
+   🗑 下書きを消去
+</button>
+<div id="saveStatus"></div>
 <h2>生成されたデータ</h2>
-<textarea id="output" rows="20" cols="80" readonly></textarea>
-   <br>
-<button type="button" id="copyButton">📋 データをコピー</button>
+<textarea
+   id="output"
+   rows="20"
+   cols="80"
+   readonly
+></textarea>
+<br>
+<button type="button" id="copyButton">
+   📋 データをコピー
+</button>
 <span id="copyMessage"></span>
-   <script>
+
+<script>
+/* =========================
+  基本設定
+  ========================= */
 let songNumber = 1;
+const DRAFT_KEY = 'yumeoRecordSongToolDraft';
 const addSongButton = document.getElementById('addSongButton');
 const songInputs = document.getElementById('songInputs');
 const generateButton = document.getElementById('generateButton');
 const output = document.getElementById('output');
+const copyButton = document.getElementById('copyButton');
+const copyMessage = document.getElementById('copyMessage');
+const saveStatus = document.getElementById('saveStatus');
+const clearDraftButton = document.getElementById('clearDraftButton');
 
-// =========================
-// 時間を秒数に変換
-// =========================
+/* =========================
+  時間を秒数に変換
+  ========================= */
 function parseTime(time) {
- if (typeof time === 'number') {
-   return time;
- }
- if (!time) {
+   if (typeof time === 'number') {
+       return time;
+   }
+   if (!time) {
+       return 0;
+   }
+   const parts = String(time)
+       .trim()
+       .split(':')
+       .map(Number);
+   if (parts.some(Number.isNaN)) {
+       return 0;
+   }
+   if (parts.length === 1) {
+       return parts[0];
+   }
+   if (parts.length === 2) {
+       // 分:秒
+       return parts[0] * 60 + parts[1];
+   }
+   if (parts.length === 3) {
+       // 時:分:秒
+       return parts[0] * 3600 + parts[1] * 60 + parts[2];
+   }
    return 0;
- }
- const parts = String(time)
-   .trim()
-   .split(':')
-   .map(Number);
- if (parts.some(Number.isNaN)) {
-   return 0;
- }
- if (parts.length === 1) {
-   return parts[0];
- }
- if (parts.length === 2) {
-   // 分:秒
-   return parts[0] * 60 + parts[1];
- }
- if (parts.length === 3) {
-   // 時:分:秒
-   return parts[0] * 3600 + parts[1] * 60 + parts[2];
- }
- return 0;
 }
 
-// =========================
-// 曲入力欄を追加
-// =========================
-addSongButton.addEventListener('click', () => {
- songNumber++;
- const songInput = document.createElement('div');
- songInput.className = 'song-input';
- songInput.innerHTML = `
+/* =========================
+  YouTubeリンクから動画IDを取得
+  ========================= */
+function getYouTubeVideoId(input) {
+   if (!input) {
+       return '';
+   }
+   // 動画IDだけ入力された場合
+   if (/^[a-zA-Z0-9_-]{11}$/.test(input)) {
+       return input;
+   }
+   try {
+       const url = new URL(input);
+       const hostname = url.hostname;
+       // youtube.com
+       if (
+           hostname === 'www.youtube.com' ||
+           hostname === 'youtube.com'
+       ) {
+           const videoId = url.searchParams.get('v');
+           if (videoId) {
+               return videoId;
+           }
+           // /shorts/XXXXXXXXXXX
+           const shortsMatch =
+               url.pathname.match(/^\/shorts\/([^/]+)/);
+           if (shortsMatch) {
+               return shortsMatch[1];
+           }
+           // /live/XXXXXXXXXXX
+           const liveMatch =
+               url.pathname.match(/^\/live\/([^/]+)/);
+           if (liveMatch) {
+               return liveMatch[1];
+           }
+       }
+       // youtu.be
+       if (hostname === 'youtu.be') {
+           const videoId =
+               url.pathname.substring(1).split('/')[0];
+           if (videoId) {
+               return videoId;
+           }
+       }
+   } catch (error) {
+       // URLとして解析できない場合
+   }
+   return input;
+}
+
+/* =========================
+  曲入力欄を作成
+  ========================= */
+function createSongInput(number, data = {}) {
+   const songInput = document.createElement('div');
+   songInput.className = 'song-input';
+   songInput.innerHTML = `
 <hr>
-<h3>曲 ${songNumber}</h3>
+<h3>曲 ${number}</h3>
 <label>
-     曲名
+           曲名
+<input
+               type="text"
+               class="title"
+               value="${escapeHtml(data.title || '')}"
+>
+</label>
+<br><br>
+<label>
+           原曲アーティスト
+<input
+               type="text"
+               class="artist"
+               value="${escapeHtml(data.artist || '')}"
+>
+</label>
+<br><br>
+<label>
+           歌唱者
+<input
+               type="text"
+               class="singer"
+               placeholder="例：夢追翔、天城てん"
+               value="${escapeHtml(data.singer || '')}"
+>
+</label>
+<br><br>
+<label>
+           開始時間
+<input
+               type="text"
+               class="start"
+               placeholder="例：57:02"
+               value="${escapeHtml(data.start || '')}"
+>
+</label>
+<br><br>
+<label>
+           終了時間
+<input
+               type="text"
+               class="end"
+               placeholder="例：1:03:09"
+               value="${escapeHtml(data.end || '')}"
+>
+</label>
+<br><br>
+<label>
+           種類
+<select class="type">
+<option value="cover"
+                   ${data.type === 'cover' ? 'selected' : ''}>
+                   カバー
+</option>
+<option value="original"
+                   ${data.type === 'original' ? 'selected' : ''}>
+                   オリジナル
+</option>
+</select>
+</label>
+<br><br>
+<label>
+           歌唱人数
+<select class="count">
+<option value="1"
+                   ${data.count === '1' ? 'selected' : ''}>
+                   ソロ
+</option>
+<option value="2"
+                   ${data.count === '2' ? 'selected' : ''}>
+                   2人
+</option>
+<option value="3"
+                   ${data.count === '3' ? 'selected' : ''}>
+                   3人
+</option>
+<option value="4"
+                   ${data.count === '4' ? 'selected' : ''}>
+                   4人
+</option>
+<option value="5"
+                   ${data.count === '5' ? 'selected' : ''}>
+                   5人以上
+</option>
+</select>
+</label>
+<br><br>
+<label>
+           ユニット
+<input
+               type="text"
+               class="unit"
+               placeholder="例：VACHSS"
+               value="${escapeHtml(data.unit || '')}"
+>
+</label>
+   `;
+   songInputs.appendChild(songInput);
+   return songInput;
+}
+
+/* =========================
+  HTMLエスケープ
+  ========================= */
+function escapeHtml(value) {
+   return String(value)
+       .replace(/&/g, '&amp;')
+       .replace(/</g, '&lt;')
+       .replace(/>/g, '&gt;')
+       .replace(/"/g, '&quot;')
+       .replace(/'/g, '&#039;');
+}
+
+/* =========================
+  現在の入力内容を取得
+  ========================= */
+function collectDraftData() {
+   const songs = [];
+   document.querySelectorAll('.song-input').forEach(song => {
+       songs.push({
+           title:
+               song.querySelector('.title')?.value || '',
+           artist:
+               song.querySelector('.artist')?.value || '',
+           singer:
+               song.querySelector('.singer')?.value || '',
+           start:
+               song.querySelector('.start')?.value || '',
+           end:
+               song.querySelector('.end')?.value || '',
+           type:
+               song.querySelector('.type')?.value || 'cover',
+           count:
+               song.querySelector('.count')?.value || '1',
+           unit:
+               song.querySelector('.unit')?.value || ''
+       });
+   });
+   return {
+       videoId:
+           document.getElementById('videoId')?.value || '',
+       date:
+           document.getElementById('date')?.value || '',
+       songs: songs,
+       output:
+           output?.value || '',
+       songNumber: songNumber
+   };
+}
+
+/* =========================
+  下書きを保存
+  ========================= */
+function saveDraft() {
+   try {
+       const draft = collectDraftData();
+       localStorage.setItem(
+           DRAFT_KEY,
+           JSON.stringify(draft)
+       );
+       if (saveStatus) {
+           const now = new Date();
+           saveStatus.textContent =
+               `✓ 入力内容を自動保存しました（${now.toLocaleTimeString('ja-JP')}）`;
+       }
+   } catch (error) {
+       console.error(
+           '下書きの保存に失敗しました。',
+           error
+       );
+   }
+}
+
+/* =========================
+  下書きが存在するか確認
+  ========================= */
+function hasDraft() {
+   return !!localStorage.getItem(DRAFT_KEY);
+}
+
+/* =========================
+  下書きを復元
+  ========================= */
+function restoreDraft() {
+   try {
+       const saved =
+           localStorage.getItem(DRAFT_KEY);
+       if (!saved) {
+           return false;
+       }
+       const draft = JSON.parse(saved);
+       // 歌枠情報
+       document.getElementById('videoId').value =
+           draft.videoId || '';
+       document.getElementById('date').value =
+           draft.date || '';
+       // 曲入力欄をいったんクリア
+       songInputs.innerHTML = '';
+       // 保存されていた曲を復元
+       if (Array.isArray(draft.songs) && draft.songs.length > 0) {
+           draft.songs.forEach((song, index) => {
+               const number = index + 1;
+               createSongInput(number, song);
+           });
+           songNumber = draft.songs.length;
+       } else {
+           createFirstSongInput();
+       }
+       // 生成済みデータ
+       output.value =
+           draft.output || '';
+       if (saveStatus) {
+           saveStatus.textContent =
+               '✓ 前回の入力内容を復元しました';
+       }
+       return true;
+   } catch (error) {
+       console.error(
+           '下書きの復元に失敗しました。',
+           error
+       );
+       return false;
+   }
+}
+
+/* =========================
+  最初の曲入力欄を作成
+  ========================= */
+function createFirstSongInput() {
+   songInputs.innerHTML = `
+<div class="song-input">
+<h3>曲 1</h3>
+<label>
+               曲名
 <input type="text" class="title">
 </label>
 <br><br>
 <label>
-     原曲アーティスト
+               原曲アーティスト
 <input type="text" class="artist">
 </label>
 <br><br>
 <label>
-    歌唱者
-<input type="text" class="singer" placeholder="例：夢追翔、天城てん">
-</label>
-<br><br>
-<label>
-     開始時間
+               歌唱者
 <input
-       type="text"
-       class="start"
-       placeholder="例：57:02"
+                   type="text"
+                   class="singer"
+                   placeholder="例：夢追翔、天城てん"
 >
 </label>
 <br><br>
 <label>
-     終了時間
+               開始時間
 <input
-       type="text"
-       class="end"
-       placeholder="例：1:03:09"
+                   type="text"
+                   class="start"
+                   placeholder="例：57:02"
 >
 </label>
 <br><br>
 <label>
-     種類
+               終了時間
+<input
+                   type="text"
+                   class="end"
+                   placeholder="例：1:03:09"
+>
+</label>
+<br><br>
+<label>
+               種類
 <select class="type">
-<option value="cover">カバー</option>
-<option value="original">オリジナル</option>
+<option value="cover">
+                       カバー
+</option>
+<option value="original">
+                       オリジナル
+</option>
 </select>
 </label>
 <br><br>
 <label>
-     歌唱人数
+               歌唱人数
 <select class="count">
-<option value="1">ソロ</option>
-<option value="2">2人</option>
-<option value="3">3人</option>
-<option value="4">4人</option>
-<option value="5">5人以上</option>
+<option value="1">
+                       ソロ
+</option>
+<option value="2">
+                       2人
+</option>
+<option value="3">
+                       3人
+</option>
+<option value="4">
+                       4人
+</option>
+<option value="5">
+                       5人以上
+</option>
 </select>
 </label>
 <br><br>
 <label>
-     ユニット
+               ユニット
 <input
-       type="text"
-       class="unit"
-       placeholder="例：VACHSS"
+                   type="text"
+                   class="unit"
+                   placeholder="例：VACHSS"
 >
 </label>
- `;
- songInputs.appendChild(songInput);
+</div>
+   `;
+   songNumber = 1;
+}
+
+/* =========================
+  「＋ 曲を追加」
+  ========================= */
+addSongButton.addEventListener('click', () => {
+   songNumber++;
+   createSongInput(songNumber);
+   saveDraft();
 });
 
-// =========================
-// YouTubeリンクから動画IDを取得
-// =========================
-function getYouTubeVideoId(input) {
- if (!input) return '';
- // 動画IDだけ入力された場合
- if (/^[a-zA-Z0-9_-]{11}$/.test(input)) {
-   return input;
- }
- try {
-   const url = new URL(input);
-   const hostname = url.hostname;
-   // https://www.youtube.com/watch?v=XXXXXXXXXXX
-   if (hostname === 'www.youtube.com' || hostname === 'youtube.com') {
-     const videoId = url.searchParams.get('v');
-     if (videoId) {
-       return videoId;
-     }
-     // https://www.youtube.com/shorts/XXXXXXXXXXX
-     const shortsMatch = url.pathname.match(/^\/shorts\/([^/]+)/);
-     if (shortsMatch) {
-       return shortsMatch[1];
-     }
-     // https://www.youtube.com/live/XXXXXXXXXXX
-     const liveMatch = url.pathname.match(/^\/live\/([^/]+)/);
-     if (liveMatch) {
-       return liveMatch[1];
-     }
-   }
-   // https://youtu.be/XXXXXXXXXXX
-   if (hostname === 'youtu.be') {
-     const videoId = url.pathname.substring(1).split('/')[0];
-     if (videoId) {
-       return videoId;
-     }
-   }
- } catch (error) {
-   // URLとして解析できない場合
- }
- return input;
-}
-      // =========================
-// データ生成
-// =========================
+/* =========================
+  データ生成
+  ========================= */
 generateButton.addEventListener('click', () => {
- const date = document.getElementById('date').value;
- const videoInput = document.getElementById('videoId').value.trim();
-const video = getYouTubeVideoId(videoInput);
- const songs = document.querySelectorAll('.song-input');
- const result = [];
- songs.forEach(song => {
-   const title =
-     song.querySelector('.title')?.value.trim() || '';
-   const artist =
-      song.querySelector('.artist')?.value.trim() || '';
-      const singer =
-  song.querySelector('.singer')?.value.trim() || '';
-   const start =
-     song.querySelector('.start')?.value.trim() || '';
-   const end =
-     song.querySelector('.end')?.value.trim() || '';
-   const type =
-     song.querySelector('.type')?.value || 'cover';
-   const count =
-     song.querySelector('.count')?.value || '1';
-   const unit =
-     song.querySelector('.unit')?.value.trim() || '';
-   // 曲名が空欄ならスキップ
-   if (!title) {
-     return;
-   }
-   let songData = {
-     title: title,
-     count: count,
-     type: type,
-     date: date,
-     unit: unit,
-     artist: artist,
-     singer: singer,
-     video: video
-   };
-   // 開始時間が入力されている場合
-   if (start !== '') {
-     songData.start = parseTime(start);
-   }
-   // 終了時間が入力されている場合
-   if (end !== '') {
-     songData.end = parseTime(end);
-   }
-   result.push(songData);
- });
+   const date =
+       document.getElementById('date').value;
+   const videoInput =
+       document.getElementById('videoId')
+           .value
+           .trim();
+   const video =
+       getYouTubeVideoId(videoInput);
+   const songs =
+       document.querySelectorAll('.song-input');
+   const result = [];
 
- // =========================
- // JavaScript形式に変換
- // =========================
- const formatted = result.map(song => {
-   const lines = [
-     `  {`,
-     `    title: ${JSON.stringify(song.title)},`,
-     `    count: ${JSON.stringify(song.count)},`,
-     `    type: ${JSON.stringify(song.type)},`,
-     `    date: ${JSON.stringify(song.date)},`,
-     `    unit: ${JSON.stringify(song.unit)},`,
-     `    artist: ${JSON.stringify(song.artist)},`,
-     `    singer: ${JSON.stringify(song.singer)},`,
-     `    video: ${JSON.stringify(song.video)}`
-   ];
-   if (song.start !== undefined) {
-     lines[lines.length - 1] += ',';
-     lines.push(`    start: ${song.start}`);
-   }
-   if (song.end !== undefined) {
-     lines[lines.length - 1] += ',';
-     lines.push(`    end: ${song.end}`);
-   }
-   lines.push(`  },`);
-return lines.join('\n');
-}).join('\n');
+   songs.forEach(song => {
+       const title =
+           song.querySelector('.title')
+               ?.value
+               .trim() || '';
+       const artist =
+           song.querySelector('.artist')
+               ?.value
+               .trim() || '';
+       const singer =
+           song.querySelector('.singer')
+               ?.value
+               .trim() || '';
+       const start =
+           song.querySelector('.start')
+               ?.value
+               .trim() || '';
+       const end =
+           song.querySelector('.end')
+               ?.value
+               .trim() || '';
+       const type =
+           song.querySelector('.type')
+               ?.value || 'cover';
+       const count =
+           song.querySelector('.count')
+               ?.value || '1';
+       const unit =
+           song.querySelector('.unit')
+               ?.value
+               .trim() || '';
+
+       // 曲名が空欄ならスキップ
+       if (!title) {
+           return;
+       }
+
+       const songData = {
+           title: title,
+           count: count,
+           type: type,
+           date: date,
+           unit: unit,
+           artist: artist,
+           singer: singer,
+           video: video
+       };
+
+       // 開始時間
+       if (start !== '') {
+           songData.start =
+               parseTime(start);
+       }
+
+       // 終了時間
+       if (end !== '') {
+           songData.end =
+               parseTime(end);
+       }
+
+       result.push(songData);
+   });
+
+   /* =========================
+      JavaScript形式に変換
+      ========================= */
+   const formatted =
+       result.map(song => {
+           const lines = [
+               `  {`,
+               `    title: ${JSON.stringify(song.title)},`,
+               `    count: ${JSON.stringify(song.count)},`,
+               `    type: ${JSON.stringify(song.type)},`,
+               `    date: ${JSON.stringify(song.date)},`,
+               `    unit: ${JSON.stringify(song.unit)},`,
+               `    artist: ${JSON.stringify(song.artist)},`,
+               `    singer: ${JSON.stringify(song.singer)},`,
+               `    video: ${JSON.stringify(song.video)}`
+           ];
+
+           if (song.start !== undefined) {
+               lines[lines.length - 1] += ',';
+               lines.push(
+                   `    start: ${song.start}`
+               );
+           }
+
+           if (song.end !== undefined) {
+               lines[lines.length - 1] += ',';
+               lines.push(
+                   `    end: ${song.end}`
+               );
+           }
+
+           lines.push(`  },`);
+           return lines.join('\n');
+       }).join('\n');
 
    output.value = formatted;
+   saveDraft();
 });
-      // =========================
-// データをコピー
-// =========================
-const copyButton = document.getElementById('copyButton');
-const copyMessage = document.getElementById('copyMessage');
+
+/* =========================
+  データをコピー
+  ========================= */
 copyButton.addEventListener('click', async () => {
- if (!output.value) {
-   copyMessage.textContent = 'コピーするデータがありません';
-   return;
- }
- try {
-   await navigator.clipboard.writeText(output.value);
-   copyMessage.textContent = '✓ コピーしました！';
-   setTimeout(() => {
-     copyMessage.textContent = '';
-   }, 2000);
- } catch (error) {
-   output.select();
-   document.execCommand('copy');
-   copyMessage.textContent = '✓ コピーしました！';
-   setTimeout(() => {
-     copyMessage.textContent = '';
-   }, 2000);
- }
+   if (!output.value) {
+       copyMessage.textContent =
+           'コピーするデータがありません';
+       return;
+   }
+
+   try {
+       await navigator.clipboard.writeText(
+           output.value
+       );
+       copyMessage.textContent =
+           '✓ コピーしました！';
+       setTimeout(() => {
+           copyMessage.textContent = '';
+       }, 2000);
+   } catch (error) {
+       output.select();
+       document.execCommand('copy');
+       copyMessage.textContent =
+           '✓ コピーしました！';
+       setTimeout(() => {
+           copyMessage.textContent = '';
+       }, 2000);
+   }
 });
-</script>
+
+/* =========================
+  入力時の自動保存
+  ========================= */
+document.addEventListener(
+   'input',
+   event => {
+       if (
+           event.target.matches(
+               '#videoId, #date, .title, .artist, .singer, .start, .end, .unit'
+           )
+       ) {
+           saveDraft();
+       }
+   }
+);
+
+/* =========================
+  選択変更時の自動保存
+  ========================= */
+document.addEventListener(
+   'change',
+   event => {
+       if (
+           event.target.matches(
+               '#date, .type, .count'
+           )
+       ) {
+           saveDraft();
+       }
+   }
+);
+
+/* =========================
+  下書きを消去
+  ========================= */
+clearDraftButton.addEventListener('click', () => {
+   const confirmed =
+       confirm(
+           '保存されている下書きを消去しますか？\n\nこの操作は元に戻せません。'
+       );
+   if (!confirmed) {
+       return;
+   }
+   localStorage.removeItem(DRAFT_KEY);
+   // 入力欄を初期状態に戻す
+   document.getElementById('videoId').value = '';
+   document.getElementById('date').value = '';
+   output.value = '';
+   createFirstSongInput();
+   if (saveStatus) {
+       saveStatus.textContent =
+           '下書きを消去しました';
+   }
+});
+
+/* =========================
+  ページ読み込み時
+  ========================= */
+window.addEventListener('DOMContentLoaded', () => {
+   if (!hasDraft()) {
+       return;
+   }
+
+   const shouldRestore =
+       confirm(
+           '前回の入力内容が保存されています。\n\n入力途中の内容を復元しますか？'
+       );
+
+   if (shouldRestore) {
+       restoreDraft();
+   } else {
+       if (saveStatus) {
+           saveStatus.textContent =
+               '前回の下書きは復元しませんでした';
+       }
+   }
+});
 </script>
 </body>
 </html>
