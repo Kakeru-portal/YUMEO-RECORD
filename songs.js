@@ -3,6 +3,42 @@
 // =========================
 const songData = [
       {
+   title: "WAR WAR WAR",
+   count: "1",
+   type: "cover",
+   date: "2019-01-29",
+   unit: "",
+   artist: "Buster Bros!!!・MAD TRIGGER CREW",
+   singer: "夢追翔",
+   video: "f6yy4ir0nBY",
+   start: 867,
+   end: 1134
+ },
+ {
+   title: "BATTLE BATTLE BATTLE",
+   count: "1",
+   type: "cover",
+   date: "2019-01-29",
+   unit: "",
+   artist: "Fling Posse・麻天狼",
+   singer: "夢追翔",
+   video: "f6yy4ir0nBY",
+   start: 1218,
+   end: 1496
+ },
+ {
+   title: "Shibuya Marble Texture -PCCS-",
+   count: "1",
+   type: "cover",
+   date: "2019-01-29",
+   unit: "",
+   artist: "Fling Posse",
+   singer: "夢追翔",
+   video: "f6yy4ir0nBY",
+   start: 1562,
+   end: 1785
+ },
+      {
     title: "ヒプノシスマイク -Division Rap Battle-",
     count: "1",
     type: "cover",
