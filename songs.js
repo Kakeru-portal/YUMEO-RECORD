@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "翼をください(2019.3.17)",
+   count: "5",
+   type: "cover",
+   date: "2019-03-17",
+   unit: "",
+   artist: "赤い鳥",
+   singer: "夢追翔、飛鳥ひな、遠北千南、出雲霞、宇志海いちご、神田笑一、渋谷ハジメ、ドーラ、町田ちま、童田明治",
+   video: "i2-3Icboojw",
+   start: 173,
+   end: 349
+ },
+ {
+   title: "Get Wild",
+   count: "1",
+   type: "cover",
+   date: "2019-03-17",
+   unit: "",
+   artist: "TM NETWORK",
+   singer: "夢追翔",
+   video: "i2-3Icboojw",
+   start: 991,
+   end: 1097
+ },
+      {
    title: "SAVIOR OF SONG",
    count: "2",
    type: "cover",
