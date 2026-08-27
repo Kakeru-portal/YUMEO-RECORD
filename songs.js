@@ -3,6 +3,78 @@
 // =========================
 const songData = [
       {
+   title: "ギリギリchop",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 67,
+   end: 303
+ },
+ {
+   title: "OCEAN",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 497,
+   end: 821
+ },
+ {
+   title: "愛のバクダン",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 1000,
+   end: 1263
+ },
+ {
+   title: "今夜月の見える丘に(2019.5.9)",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 1428,
+   end: 1660
+ },
+ {
+   title: "イチブトゼンブ",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 1839,
+   end: 2088
+ },
+ {
+   title: "ultra soul (2019.5.9)",
+   count: "1",
+   type: "cover",
+   date: "2019-05-09",
+   unit: "",
+   artist: "B’z",
+   singer: "夢追翔",
+   video: "e_VEeqTIo2M",
+   start: 2298,
+   end: 2518
+ },
+      {
    title: "完全感覚Dreamer",
    count: "1",
    type: "cover",
@@ -489,7 +561,7 @@ const songData = [
    end: 503
  },
  {
-   title: "今夜月の見える丘に",
+   title: "今夜月の見える丘に(2019.2.17)",
    count: "2",
    type: "cover",
    date: "2019-02-17",
@@ -999,7 +1071,7 @@ const songData = [
    end: 3487
  },
  {
-   title: "ultra soul",
+   title: "ultra soul(2018.12.29)",
    count: "5",
    type: "cover",
    date: "2018-12-29",
