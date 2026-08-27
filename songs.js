@@ -1985,7 +1985,7 @@ const songData = [
    end: 1430
  },
  {
-   title: "ホリデイ",
+   title: "ホリデイ(2018.10.24)",
    count: "4",
    type: "cover",
    date: "2018-10-24",
