@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "VS 剣持ラップ",
+   count: "1",
+   type: "original",
+   date: "2019-02-03",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "NHE1BAFwS6M",
+   start: 9044,
+   end: 9066
+ },
+      {
    title: "One more time, One more chance",
    count: "3",
    type: "cover",
