@@ -897,12 +897,10 @@ document.querySelectorAll('.song').forEach(song => {
  favoriteButton.setAttribute('aria-label', 'お気に入り登録');
  // 再生ボタンがあれば、そのすぐ隣に追加
  if (playButton) {
-   playButton.insertAdjacentElement('afterend', favoriteButton);
+    playButton.insertAdjacentElement('afterend', favoriteButton);
  } else {
-   card.appendChild(favoriteButton);
+    card.appendChild(favoriteButton);
  }
- // 保存されているお気に入り状態を見た目に反映
- updateCardFavoriteButton(song);
 });
 // =========================
 // 楽曲の並べ替え
