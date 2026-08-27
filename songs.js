@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "朝と夜の物語",
+   count: "5",
+   type: "cover",
+   date: "2019-02-16",
+   unit: "",
+   artist: "Sound Horizon",
+   singer: "夢追翔、出雲霞、鈴木勝、ドーラ、ベルモンド・バンデラス",
+   video: "Y7TPE56hV2M",
+   start: 22268,
+   end: 22680
+ },
+ {
+   title: "Ark",
+   count: "5",
+   type: "original",
+   date: "2019-02-16",
+   unit: "",
+   artist: "Sound Horizon",
+   singer: "夢追翔、出雲霞、鈴木勝、ドーラ、ベルモンド・バンデラス",
+   video: "Y7TPE56hV2M",
+   start: 22834,
+   end: 23167
+ },
+ {
+   title: "StarDust (2019.2.16)",
+   count: "5",
+   type: "cover",
+   date: "2019-02-16",
+   unit: "",
+   artist: "Sound Horizon",
+   singer: "夢追翔、出雲霞、鈴木勝、ドーラ、ベルモンド・バンデラス",
+   video: "Y7TPE56hV2M",
+   start: 23242,
+   end: 23513
+ },
+ {
+   title: "紅蓮の弓矢",
+   count: "5",
+   type: "cover",
+   date: "2019-02-16",
+   unit: "",
+   artist: "Linked Horizon",
+   singer: "夢追翔、出雲霞、鈴木勝、ドーラ、ベルモンド・バンデラス",
+   video: "Y7TPE56hV2M",
+   start: 23687,
+   end: 23994
+ },
+ {
+   title: "光と闇の童話",
+   count: "5",
+   type: "cover",
+   date: "2019-02-16",
+   unit: "",
+   artist: "Sound Horizon",
+   singer: "夢追翔、出雲霞、鈴木勝、ドーラ、ベルモンド・バンデラス",
+   video: "Y7TPE56hV2M",
+   start: 24207,
+   end: 24661
+ },
+      {
    title: "ミルクティー",
    count: "5",
    type: "original",
@@ -1627,7 +1687,7 @@ const songData = [
    end: 2671
  },
  {
-   title: "StarDust",
+   title: "StarDust(2018.10.8)",
    count: "1",
    type: "cover",
    date: "2018-10-08",
