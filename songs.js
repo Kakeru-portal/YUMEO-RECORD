@@ -735,7 +735,7 @@ const songData = [
    end: 3042
  },
  {
-   title: "Rising Hope",
+   title: "Rising Hope(2019.5.28)",
    count: "1",
    type: "cover",
    date: "2019-05-28",
@@ -2765,7 +2765,7 @@ const songData = [
     end: 2752
   },
   {
-    title: "ウィーアー!",
+    title: "ウィーアー!(2018.10.27)",
     count: "4",
     type: "cover",
     date: "2018-10-27",
@@ -2799,7 +2799,7 @@ const songData = [
     video: "bTwUWwDlVgM"
   },
    {
-   title: "ラフメイカー",
+   title: "ラフメイカー(2018.10.24)",
    count: "5",
    type: "cover",
    date: "2018-10-24",
@@ -2823,7 +2823,7 @@ const songData = [
    end: 1053
  },
  {
-   title: "車輪の唄",
+   title: "車輪の唄(2018.10.24)",
    count: "5",
    type: "cover",
    date: "2018-10-24",
