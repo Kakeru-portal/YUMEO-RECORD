@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "にじのむこうに(2019.10.18)",
+   count: "2",
+   type: "cover",
+   date: "2019-10-18",
+   unit: "",
+   artist: "速水けんたろう、茂森あゆみ",
+   singer: "夢追翔、緑仙",
+   video: "ME8sm0f1CmI",
+   start: 1484,
+   end: 1638
+ },
+ {
+   title: "Go my green days (2019.10.18)",
+   count: "1",
+   type: "original",
+   date: "2019-10-18",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "ME8sm0f1CmI",
+   start: 1765,
+   end: 1824
+ },
+      {
    title: "PONPONPON",
    count: "1",
    type: "cover",
@@ -67,7 +91,7 @@ const songData = [
    end: 1435
  },
       {
-   title: "にじのむこうに",
+   title: "にじのむこうに(2019.9.2)",
    count: "2",
    type: "cover",
    date: "2019-09-02",
