@@ -2,15 +2,15 @@
 // 楽曲データ
 // =========================
 const songData = [
-    {
+      {
     title: "ヒプノシスマイク -Division Rap Battle-",
     count: "1",
     type: "cover",
-    date: "",
+    date: "2019-01-29",
     unit: "",
     artist: "Division All Stars",
     singer: "夢追翔",
-    video: "",
+    video: "f6yy4ir0nBY",
     start: 384,
     end: 692
   },
