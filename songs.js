@@ -3,18 +3,6 @@
 // =========================
 const songData = [
       {
-   title: "あ",
-   count: "5",
-   type: "cover",
-   date: "2026-08-27",
-   unit: "",
-   artist: "あ",
-   singer: "夢追翔",
-   video: "i2-3Icboojw",
-   start: 173,
-   end: 273
- },
-      {
    title: "SAVIOR OF SONG",
    count: "2",
    type: "cover",
@@ -97,7 +85,7 @@ const songData = [
    end: 991
  },
  {
-   title: "翼をください",
+   title: "翼をください(2019.3.8)",
    count: "1",
    type: "cover",
    date: "2019-03-08",
