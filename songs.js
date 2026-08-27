@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "生きてることが辛いなら",
+   count: "1",
+   type: "cover",
+   date: "2019-11-20",
+   unit: "",
+   artist: "森山直太朗",
+   singer: "夢追翔",
+   video: "V6bRBi15d4A",
+   start: 1267,
+   end: 1284
+ },
+ {
+   title: "未来予想図II",
+   count: "1",
+   type: "cover",
+   date: "2019-11-20",
+   unit: "",
+   artist: "DREAMS COME TRUE",
+   singer: "夢追翔",
+   video: "V6bRBi15d4A",
+   start: 1824,
+   end: 1841
+ },
+      {
    title: "IMITATION BLACK",
    count: "3",
    type: "cover",
