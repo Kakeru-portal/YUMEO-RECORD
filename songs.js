@@ -19,7 +19,7 @@ const songData = [
    date: "2019-09-13",
    unit: "NZMN",
    artist: "NZMN",
-   singer: "NZMN (夢追翔、卯月コウ、春崎エアル、成瀬鳴)",
+   singer: "NZMN (夢追翔、卯月コウ、成瀬鳴、春崎エアル)",
    video: "1XM1bSDefkM"
  },
       {
