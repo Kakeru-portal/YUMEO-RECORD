@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "前前キセキ",
+   count: "1",
+   type: "cover",
+   date: "2019-02-06",
+   unit: "",
+   artist: "RADWIMPS、GReeeeN",
+   singer: "夢追翔",
+   video: "W3QgEKTd4wU",
+   start: 245,
+   end: 506
+ },
+ {
+   title: "ナチュラルにROCK",
+   count: "1",
+   type: "cover",
+   date: "2019-02-06",
+   unit: "",
+   artist: "Perfume、ONE OK ROCK",
+   singer: "夢追翔",
+   video: "W3QgEKTd4wU",
+   start: 632,
+   end: 819
+ },
+ {
+   title: "Dragonさくら(独唱)",
+   count: "1",
+   type: "cover",
+   date: "2019-02-06",
+   unit: "",
+   artist: "SEKAI NO OWARI、森山直太朗",
+   singer: "夢追翔",
+   video: "W3QgEKTd4wU",
+   start: 933,
+   end: 1156
+ },
+ {
+   title: "bin’t say “lazy”",
+   count: "1",
+   type: "cover",
+   date: "2019-02-06",
+   unit: "",
+   artist: "猫アレルギー、桜高軽音部",
+   singer: "夢追翔",
+   video: "W3QgEKTd4wU",
+   start: 1310,
+   end: 1521
+ },
+      {
    title: "VS 剣持ラップ",
    count: "1",
    type: "original",
