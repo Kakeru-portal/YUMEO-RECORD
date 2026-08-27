@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ソラニン(にじロック ver. )",
+   count: "5",
+   type: "cover",
+   date: "2019-08-02",
+   unit: "",
+   artist: "ASIAN KUNG-FU GENERATION",
+   singer: "にじロック(夢追翔、雨森小夜、加賀美ハヤト、三枝明那、ジョー・力一、轟京子、緑仙)",
+   video: "nrFKOk4TObg"
+ },
+      {
    title: "sailing day (2019.8.2)",
    count: "1",
    type: "cover",
@@ -63,7 +73,7 @@ const songData = [
    end: 1624
  },
  {
-   title: "ソラニン(夢追ソロ)",
+   title: "ソラニン(夢追ソロ ver.)",
    count: "1",
    type: "cover",
    date: "2019-08-02",
