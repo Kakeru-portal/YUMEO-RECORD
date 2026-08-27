@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に",
+   count: "1",
+   type: "original",
+   date: "2019-06-12",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "1u9ESQRXTMo"
+ },
+      {
    title: "創聖のアクエリオン",
    count: "1",
    type: "cover",
