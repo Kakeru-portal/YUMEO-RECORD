@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "One more time, One more chance",
+   count: "3",
+   type: "cover",
+   date: "2019-01-31",
+   unit: "",
+   artist: "山崎まさよし",
+   singer: "夢追翔、黒井しば、成瀬鳴",
+   video: "K4BVcRFNYgk",
+   start: 1514,
+   end: 1535
+ },
+ {
+   title: "おじゃま虫",
+   count: "4",
+   type: "cover",
+   date: "2019-01-31",
+   unit: "",
+   artist: "DECO*27",
+   singer: "夢追翔、黒井しば、成瀬鳴、春崎エアル",
+   video: "K4BVcRFNYgk",
+   start: 1944,
+   end: 1958
+ },
+      {
    title: "WAR WAR WAR",
    count: "1",
    type: "cover",
