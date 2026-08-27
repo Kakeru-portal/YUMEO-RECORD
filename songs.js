@@ -2385,7 +2385,7 @@ const songData = [
     end: 3918
   },
        {
-    title: "君の知らない物語",
+    title: "君の知らない物語(2018.10.27)",
     count: "4",
     type: "cover",
     date: "2018-10-27",
