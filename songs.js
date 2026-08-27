@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Pretender",
+   count: "1",
+   type: "cover",
+   date: "2019-09-24",
+   unit: "",
+   artist: "Official髭男dism",
+   singer: "夢追翔",
+   video: "DQqMDc5_034"
+ },
+      {
    title: "ファンサ",
    count: "5",
    type: "cover",
