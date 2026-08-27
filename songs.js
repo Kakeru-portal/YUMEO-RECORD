@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "Go my green days",
+   count: "2",
+   type: "original",
+   date: "2019-09-02",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔、緑仙",
+   video: "gKcUbsUFp6I",
+   start: 1373,
+   end: 1435
+ },
+      {
    title: "にじのむこうに",
    count: "2",
    type: "cover",
