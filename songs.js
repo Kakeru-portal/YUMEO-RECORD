@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "歌いながら喋る枠 2",
+   count: "1",
+   type: "original",
+   date: "2019-08-11",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "UWgLcEOJuWI",
+   start: 25,
+   end: 1926
+ },
+      {
    title: "ソラニン(にじロック ver. )",
    count: "5",
    type: "cover",
