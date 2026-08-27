@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "語れ！涙！",
+   count: "1",
+   type: "cover",
+   date: "2019-06-27",
+   unit: "",
+   artist: "SEX MACHINEGUN",
+   singer: "夢追翔",
+   video: "d4tqYD841eM",
+   start: 2689,
+   end: 2698
+ },
+      {
    title: "Yokohama Walker",
    count: "1",
    type: "cover",
