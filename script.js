@@ -885,22 +885,24 @@ if (infoPopupOverlay && infoPopup) {
 // お気に入りボタンを自動追加
 // =========================
 document.querySelectorAll('.song').forEach(song => {
-  const card = song.querySelector('.song-card');
-  if (!card) return;
-  // すでにボタンがある場合は追加しない
-  if (card.querySelector('.favorite-button')) return;
-  const playButton = card.querySelector('.play-button');
-  const favoriteButton = document.createElement('button');
-  favoriteButton.type = 'button';
-  favoriteButton.className = 'favorite-button';
-  favoriteButton.textContent = '♡';
-  favoriteButton.setAttribute('aria-label', 'お気に入り登録');
-  // 再生ボタンがあれば、そのすぐ隣に追加
-  if (playButton) {
-     playButton.insertAdjacentElement('afterend', favoriteButton);
-  } else {
-     card.appendChild(favoriteButton);
-  }
+ const card = song.querySelector('.song-card');
+ if (!card) return;
+ // すでにボタンがある場合は追加しない
+ if (card.querySelector('.favorite-button')) return;
+ const playButton = card.querySelector('.play-button');
+ const favoriteButton = document.createElement('button');
+ favoriteButton.type = 'button';
+ favoriteButton.className = 'favorite-button';
+ favoriteButton.textContent = '♡';
+ favoriteButton.setAttribute('aria-label', 'お気に入り登録');
+ // 再生ボタンがあれば、そのすぐ隣に追加
+ if (playButton) {
+   playButton.insertAdjacentElement('afterend', favoriteButton);
+ } else {
+   card.appendChild(favoriteButton);
+ }
+ // 保存されているお気に入り状態を見た目に反映
+ updateCardFavoriteButton(song);
 });
 // =========================
 // 楽曲の並べ替え
