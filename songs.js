@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ワタリドリ",
+   count: "1",
+   type: "cover",
+   date: "2019-08-27",
+   unit: "",
+   artist: "Alexandros",
+   singer: "夢追翔",
+   video: "kuuOPdJnGUU"
+ },
+      {
    title: "Space Sonic",
    count: "1",
    type: "cover",
