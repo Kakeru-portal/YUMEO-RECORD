@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "PONPONPON",
+   count: "1",
+   type: "cover",
+   date: "2019-10-09",
+   unit: "",
+   artist: "きゃりーぱみゅぱみゅ",
+   singer: "夢追翔",
+   video: "accvoMgXTVU",
+   start: 2891,
+   end: 2901
+ },
+      {
    title: "Pretender",
    count: "1",
    type: "cover",
@@ -43,7 +55,7 @@ const songData = [
    video: "8pvNiT8O0Fc"
  },
       {
-   title: "Go my green days",
+   title: "Go my green days(2019.9.2)",
    count: "2",
    type: "original",
    date: "2019-09-02",
