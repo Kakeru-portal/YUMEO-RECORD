@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "死にたくないから生きている(2019.6.28)",
+   count: "1",
+   type: "original",
+   date: "2019-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vhon1W1jEF8",
+   start: 1940,
+   end: 2210
+ },
+ {
+   title: "弱きに寄り添う(2019.6.28)",
+   count: "1",
+   type: "original",
+   date: "2019-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vhon1W1jEF8",
+   start: 2282,
+   end: 2590
+ },
+ {
+   title: "緑仙RAP (ゆめお Birthday Live ver.)",
+   count: "1",
+   type: "original",
+   date: "2019-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vhon1W1jEF8",
+   start: 2750,
+   end: 2976
+ },
+ {
+   title: "人より上手に(2019.6.28)",
+   count: "1",
+   type: "original",
+   date: "2019-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vhon1W1jEF8",
+   start: 3161,
+   end: 3466
+ },
+      {
    title: "語れ！涙！",
    count: "1",
    type: "cover",
@@ -63,7 +111,7 @@ const songData = [
    end: 2181
  },
       {
-   title: "人より上手に",
+   title: "人より上手に(2019.6.12)",
    count: "1",
    type: "original",
    date: "2019-06-12",
@@ -1761,7 +1809,7 @@ const songData = [
    end: 361
  },
   {
-   title: "弱きに寄り添う",
+   title: "弱きに寄り添う(2018.12.6)",
    count: "1",
    type: "original",
    date: "2018-12-06",
