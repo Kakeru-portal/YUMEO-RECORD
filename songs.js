@@ -52,7 +52,7 @@ const songData = [
    title: "ワタリドリ",
    count: "1",
    type: "cover",
-   date: "2019-08-27",
+   date: "2019-03-27",
    unit: "",
    artist: "Alexandros",
    singer: "夢追翔",
