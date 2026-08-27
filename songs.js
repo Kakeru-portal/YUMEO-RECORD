@@ -3,18 +3,6 @@
 // =========================
 const songData = [
       {
-   title: "あ",
-   count: "1",
-   type: "cover",
-   date: "2019-02-20",
-   unit: "",
-   artist: "夢追翔",
-   singer: "夢追翔",
-   video: "NXZXbJlmcMY",
-   start: 1150,
-   end: 1178
- },
-      {
    title: "READY STEADY GO",
    count: "2",
    type: "cover",
