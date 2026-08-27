@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "SAVIOR OF SONG",
+   count: "2",
+   type: "cover",
+   date: "2019-03-14",
+   unit: "",
+   artist: "ナノ feat.MY FIRST STORY",
+   singer: "夢追翔、ぴろぱる",
+   video: "f_Vws_7YCGo"
+ },
+      {
    title: "エロティカ・セブン",
    count: "1",
    type: "cover",
