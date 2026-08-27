@@ -902,6 +902,10 @@ document.querySelectorAll('.song').forEach(song => {
     card.appendChild(favoriteButton);
  }
 });
+// リロード時にお気に入り状態を見た目に反映
+document.querySelectorAll('.song').forEach(song => {
+ updateCardFavoriteButton(song);
+});
 // =========================
 // 楽曲の並べ替え
 // =========================
