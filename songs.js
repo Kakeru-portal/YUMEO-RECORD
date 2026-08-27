@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "ホリデイ(2019.4.9)",
+   count: "1",
+   type: "cover",
+   date: "2019-04-09",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "4c1mTG5pAT0",
+   start: 2762,
+   end: 2773
+ },
+      {
    title: "息継ぎラップ",
    count: "1",
    type: "original",
