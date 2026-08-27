@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "君の知らない物語(2019.8.19)",
+   count: "1",
+   type: "cover",
+   date: "2019-08-19",
+   unit: "",
+   artist: "supercell",
+   singer: "夢追翔",
+   video: "BLFO9z_2xO4",
+   start: 128,
+   end: 469
+ },
+ {
+   title: "ひまわりの約束",
+   count: "1",
+   type: "cover",
+   date: "2019-08-19",
+   unit: "",
+   artist: "秦基博",
+   singer: "夢追翔",
+   video: "BLFO9z_2xO4",
+   start: 1269,
+   end: 1577
+ },
+ {
+   title: "サムライハート",
+   count: "1",
+   type: "cover",
+   date: "2019-08-19",
+   unit: "",
+   artist: "SPYAIR",
+   singer: "夢追翔",
+   video: "BLFO9z_2xO4",
+   start: 1738,
+   end: 1928
+ },
+ {
+   title: "突然",
+   count: "1",
+   type: "cover",
+   date: "2019-08-19",
+   unit: "",
+   artist: "FIELD OF VIEW",
+   singer: "夢追翔",
+   video: "BLFO9z_2xO4",
+   start: 2436,
+   end: 2720
+ },
+ {
+   title: "secret base 〜君がくれたもの〜",
+   count: "1",
+   type: "cover",
+   date: "2019-08-19",
+   unit: "",
+   artist: "ZONE",
+   singer: "夢追翔",
+   video: "BLFO9z_2xO4",
+   start: 3164,
+   end: 3536
+ },
+      {
    title: "全力少年",
    count: "1",
    type: "cover",
