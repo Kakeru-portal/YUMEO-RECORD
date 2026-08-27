@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Mrs.Pumpkinの滑稽な夢(2019.10.31)",
+   count: "3",
+   type: "cover",
+   date: "2019-10-31",
+   unit: "le jouet",
+   artist: "ハチ",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "XMES2Aj9IQ0"
+ },
+      {
    title: "歌いながら喋る枠 3",
    count: "1",
    type: "original",
@@ -2733,7 +2743,7 @@ const songData = [
     end: 3648
   },
      {
-    title: "Mrs.Pumpkinの滑稽な夢",
+    title: "Mrs.Pumpkinの滑稽な夢(2018.10.25)",
     count: "1",
     type: "cover",
     date: "2018-10-25",
