@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ファンサ",
+   count: "5",
+   type: "cover",
+   date: "2019-09-18",
+   unit: "",
+   artist: "mona (CV : 夏川椎菜)",
+   singer: "夢追翔、赤羽葉子、花畑チャイカ、社築、緑仙",
+   video: "NK1po3z2pto"
+ },
+      {
    title: "メラメラハート",
    count: "4",
    type: "original",
