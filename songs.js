@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "シャルルを噛む",
+   count: "1",
+   type: "cover",
+   date: "2019-07-28",
+   unit: "",
+   artist: "バルーン、ずっと真夜中でいいのに。",
+   singer: "夢追翔",
+   video: "bY-xavJXqSg"
+ },
+      {
    title: "仰げば尊し",
    count: "1",
    type: "cover",
