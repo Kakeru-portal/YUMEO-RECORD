@@ -1396,3 +1396,11 @@ body[data-theme="normal"] #pageShuffleButton.shuffle-active {
 body[data-theme="noble"] #searchButton {
    color: #F2EEE8;
 }
+/* 通常テーマ：大きいシャッフル再生ボタン */
+body:not([data-theme]) #pageShuffleButton {
+   border: 2px solid #AC324B;
+}
+/* 貴族テーマ：検索条件タグの文字色 */
+body[data-theme="noble"] .active-search-tag {
+   color: #F2EEE8;
+}
