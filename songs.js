@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "Get Wild (2019.3.19)",
+   count: "1",
+   type: "cover",
+   date: "2019-03-19",
+   unit: "",
+   artist: "TM NETWORK",
+   singer: "夢追翔",
+   video: "jpQYuf-f1nY",
+   start: 120,
+   end: 142
+ },
+      {
    title: "翼をください(2019.3.17)",
    count: "5",
    type: "cover",
@@ -15,7 +27,7 @@ const songData = [
    end: 349
  },
  {
-   title: "Get Wild",
+   title: "Get Wild(2019.3.17)",
    count: "1",
    type: "cover",
    date: "2019-03-17",
