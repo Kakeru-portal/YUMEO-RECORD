@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Shocking Party",
+   count: "3",
+   type: "cover",
+   date: "2019-09-04",
+   unit: "le jouet",
+   artist: "A-RISE",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "8pvNiT8O0Fc"
+ },
+      {
    title: "Go my green days",
    count: "2",
    type: "original",
