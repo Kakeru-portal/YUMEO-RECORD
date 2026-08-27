@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "緑仙RAP 〜3Dになる君へ〜",
+   count: "1",
+   type: "original",
+   date: "2019-11-22",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "fYf249KSSBY",
+   start: 1325,
+   end: 1476
+ },
+      {
    title: "生きてることが辛いなら",
    count: "1",
    type: "cover",
