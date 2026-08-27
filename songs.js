@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "まちがいさがし",
+   count: "1",
+   type: "cover",
+   date: "2019-08-22",
+   unit: "",
+   artist: "菅田将暉",
+   singer: "夢追翔",
+   video: "wN-O4n3UVZU"
+ },
+      {
    title: "君の知らない物語(2019.8.19)",
    count: "1",
    type: "cover",
