@@ -599,7 +599,7 @@ const songData = [
  {
    title: "Ark(2019.2.16)",
    count: "5",
-   type: "original",
+   type: "cover",
    date: "2019-02-16",
    unit: "",
    artist: "Sound Horizon",
