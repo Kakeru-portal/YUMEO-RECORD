@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "GLAMOROUS SKY (ENGLISH VER.)",
+   count: "1",
+   type: "cover",
+   date: "2019-07-03",
+   unit: "",
+   artist: "HYDE",
+   singer: "夢追翔",
+   video: "lOzBqH2OUWU"
+ },
+      {
    title: "死にたくないから生きている(2019.6.28)",
    count: "1",
    type: "original",
