@@ -219,7 +219,7 @@ const songData = [
    end: 3640
  },
       {
-   title: "朝と夜の物語",
+   title: "朝と夜の物語(2019.2.16)",
    count: "5",
    type: "cover",
    date: "2019-02-16",
@@ -231,7 +231,7 @@ const songData = [
    end: 22680
  },
  {
-   title: "Ark",
+   title: "Ark(2019.2.16)",
    count: "5",
    type: "original",
    date: "2019-02-16",
@@ -255,7 +255,7 @@ const songData = [
    end: 23513
  },
  {
-   title: "紅蓮の弓矢",
+   title: "紅蓮の弓矢(2019.2.16)",
    count: "5",
    type: "cover",
    date: "2019-02-16",
@@ -267,7 +267,7 @@ const songData = [
    end: 23994
  },
  {
-   title: "光と闇の童話",
+   title: "光と闇の童話(2019.2.16)",
    count: "5",
    type: "cover",
    date: "2019-02-16",
