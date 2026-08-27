@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "緑仙RAP",
+   count: "1",
+   type: "original",
+   date: "2019-02-12",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "1BiL4Ot9GmE"
+ },
+      {
    title: "さくら粉雪ばんばん",
    count: "1",
    type: "cover",
