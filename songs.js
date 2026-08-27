@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "HONEY",
+   count: "1",
+   type: "cover",
+   date: "2019-07-31",
+   unit: "",
+   artist: "L’Arc〜en〜Ciel",
+   singer: "夢追翔",
+   video: "WqkZxdYDrs0",
+   start: 133,
+   end: 357
+ },
+ {
+   title: "Killing Me",
+   count: "1",
+   type: "cover",
+   date: "2019-07-31",
+   unit: "",
+   artist: "L’Arc〜en〜Ciel",
+   singer: "夢追翔",
+   video: "WqkZxdYDrs0",
+   start: 883,
+   end: 1124
+ },
+ {
+   title: "New World",
+   count: "1",
+   type: "cover",
+   date: "2019-07-31",
+   unit: "",
+   artist: "L’Arc〜en〜Ciel",
+   singer: "夢追翔",
+   video: "WqkZxdYDrs0",
+   start: 1248,
+   end: 1495
+ },
+ {
+   title: "READY STEADY GO (2019.7.31)",
+   count: "1",
+   type: "cover",
+   date: "2019-07-31",
+   unit: "",
+   artist: "L’Arc〜en〜Ciel",
+   singer: "夢追翔",
+   video: "WqkZxdYDrs0",
+   start: 1587,
+   end: 1813
+ },
+      {
    title: "シャルルを噛む",
    count: "1",
    type: "cover",
@@ -795,7 +843,7 @@ const songData = [
    end: 4159
  },
       {
-   title: "READY STEADY GO",
+   title: "READY STEADY GO(2019.2.17)",
    count: "2",
    type: "cover",
    date: "2019-02-17",
