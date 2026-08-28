@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "DOGLAND",
+   count: "5",
+   type: "cover",
+   date: "2023-04-18",
+   unit: "VACHSS",
+   artist: "PEOPLE 1",
+   singer: "VACHSS (夢追翔、加賀美ハヤト、叶、葛葉、剣持刀也、不破湊)",
+   video: "rG8K7Z5gaTI"
+ },
+      {
    title: "奏(2023.4.18)",
    count: "2",
    type: "cover",
