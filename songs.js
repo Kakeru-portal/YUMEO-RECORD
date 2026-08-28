@@ -3,6 +3,90 @@
 // =========================
 const songData = [
       {
+   title: "高嶺の花子さん(2020.8.6)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "back number",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 31,
+   end: 323
+ },
+ {
+   title: "シルエット",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "KANA-BOON",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 861,
+   end: 1098
+ },
+ {
+   title: "波乗りジョニー(2020.8.6)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "桑田佳祐",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 1479,
+   end: 1748
+ },
+ {
+   title: "丸ノ内サディスティック(2020.8.6)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "椎名林檎",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 1991,
+   end: 2215
+ },
+ {
+   title: "しるし",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "Mr.Children",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 2401,
+   end: 2832
+ },
+ {
+   title: "君はロックを聴かない",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "あいみょん",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 2919,
+   end: 3167
+ },
+ {
+   title: "キセキ(2020.8.6)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-06",
+   unit: "",
+   artist: "GReeeeN",
+   singer: "夢追翔",
+   video: "c32tjax-LBc",
+   start: 3366,
+   end: 3638
+ },
+      {
    title: "Lemon (2020.5.28)",
    count: "1",
    type: "cover",
@@ -1937,7 +2021,7 @@ const songData = [
    end: 493
  },
  {
-   title: "波乗りジョニー",
+   title: "波乗りジョニー(2019.3.11)",
    count: "1",
    type: "cover",
    date: "2019-03-11",
@@ -2639,7 +2723,7 @@ const songData = [
    end: 1038
  },
   {
-   title: "丸ノ内サディスティック",
+   title: "丸ノ内サディスティック(2018.12.29)",
    count: "5",
    type: "cover",
    date: "2018-12-29",
@@ -3175,7 +3259,7 @@ const songData = [
    end: 151
  },
  {
-   title: "キセキ",
+   title: "キセキ(2018.12.8)",
    count: "1",
    type: "cover",
    date: "2018-12-08",
