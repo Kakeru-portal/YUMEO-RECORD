@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "ウィーアー!(2024.12.15)",
+   count: "4",
+   type: "cover",
+   date: "2024-12-15",
+   unit: "",
+   artist: "きただにひろし",
+   singer: "夢追翔、アンジョー、きただにひろし、渋谷ハル",
+   video: "7WAl6pzkwIo",
+   start: 1970,
+   end: 2231
+ },
+      {
    title: "Dear WOMAN",
    count: "5",
    type: "cover",
