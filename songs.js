@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "公然の秘密(2021.5.5)",
+   count: "1",
+   type: "cover",
+   date: "2021-05-05",
+   unit: "",
+   artist: "椎名林檎",
+   singer: "夢追翔",
+   video: "QWXrHF1rHN4"
+ },
+      {
    title: "死にたくないから生きている(2021.4.27)",
    count: "1",
    type: "original",
@@ -1235,7 +1245,7 @@ const songData = [
    end: 414
  },
  {
-   title: "公然の秘密",
+   title: "公然の秘密(2020.4.12)",
    count: "1",
    type: "cover",
    date: "2020-04-12",
