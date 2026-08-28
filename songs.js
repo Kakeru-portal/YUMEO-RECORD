@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ようつべに嫌われている。",
+   count: "1",
+   type: "cover",
+   date: "2020-05-23",
+   unit: "",
+   artist: "カンザキイオリ",
+   singer: "夢追翔",
+   video: "nmJmUHSlNQ8"
+ },
+      {
    title: "プロトディスコ(2020.5.18)",
    count: "1",
    type: "cover",
