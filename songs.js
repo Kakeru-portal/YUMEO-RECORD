@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "脳裏上のクラッカー",
+   count: "1",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "ずっと真夜中でいいのに。",
+   singer: "夢追翔",
+   video: "WQw-_nul4sA",
+   start: 146,
+   end: 414
+ },
+ {
+   title: "公然の秘密",
+   count: "1",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "椎名林檎",
+   singer: "夢追翔",
+   video: "WQw-_nul4sA",
+   start: 463,
+   end: 646
+ },
+ {
+   title: "メトロノーム(2020.4.12)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "WQw-_nul4sA",
+   start: 727,
+   end: 988
+ },
+ {
+   title: "灰色と青(2020.4.12)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "米津玄師(＋菅田将暉)",
+   singer: "夢追翔",
+   video: "WQw-_nul4sA",
+   start: 1021,
+   end: 1351
+ },
+ {
+   title: "スターライト(2020.4.12)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "WQw-_nul4sA",
+   start: 1418,
+   end: 1750
+ },
+      {
    title: "ドリームレス・ドリームス",
    count: "1",
    type: "cover",
@@ -3487,7 +3547,7 @@ const songData = [
    end: 1236
  },
  {
-   title: "メトロノーム",
+   title: "メトロノーム(2018.10.10)",
    count: "1",
    type: "cover",
    date: "2018-10-10",
@@ -3547,7 +3607,7 @@ const songData = [
    end: 2967
  },
  {
-   title: "灰色と青",
+   title: "灰色と青(2018.10.10)",
    count: "1",
    type: "cover",
    date: "2018-10-10",
@@ -3692,7 +3752,7 @@ start: 1713,
 end: 1929
 },
 {
-title: "スターライト",
+title: "スターライト(2018.10.4)",
 count: "1",
 type: "cover",
 date: "2018-10-04",
