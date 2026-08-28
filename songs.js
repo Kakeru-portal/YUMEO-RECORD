@@ -3,6 +3,126 @@
 // =========================
 const songData = [
       {
+   title: "弱きに寄り添う",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 77,
+   end: 385
+ },
+ {
+   title: "僕のあたまから出ていけ",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 425,
+   end: 716
+ },
+ {
+   title: "空に歌えば(2021.6.28)",
+   count: "1",
+   type: "cover",
+   date: "2021-06-28",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 894,
+   end: 1113
+ },
+ {
+   title: "青空を睨む(2021.6.28)",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 1159,
+   end: 1437
+ },
+ {
+   title: "ドライフラワー",
+   count: "1",
+   type: "cover",
+   date: "2021-06-28",
+   unit: "",
+   artist: "優里",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 1639,
+   end: 1925
+ },
+ {
+   title: "大嫌いだ(2021.6.28)",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 1927,
+   end: 2247
+ },
+ {
+   title: "人より上手に(2021.6.28)",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 2310,
+   end: 2615
+ },
+ {
+   title: "青と夏",
+   count: "1",
+   type: "cover",
+   date: "2021-06-28",
+   unit: "",
+   artist: "Mrs. GREEN APPLE",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 2899,
+   end: 3171
+ },
+ {
+   title: "天才ロック(2021.6.28)",
+   count: "1",
+   type: "cover",
+   date: "2021-06-28",
+   unit: "",
+   artist: "カラスヤサボウ",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 3233,
+   end: 3434
+ },
+ {
+   title: "死にたくないから生きている(2021.6.28)",
+   count: "1",
+   type: "original",
+   date: "2021-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "LOndtItIOEE",
+   start: 3648,
+   end: 3918
+ },
+      {
    title: "怪物",
    count: "1",
    type: "cover",
@@ -419,7 +539,7 @@ const songData = [
    end: 7415
  },
       {
-   title: "青空を睨む",
+   title: "青空を睨む(2021.3.31)",
    count: "1",
    type: "original",
    date: "2021-03-31",
@@ -483,7 +603,7 @@ const songData = [
    video: "wOJcsZdzHjw"
  },
       {
-   title: "大嫌いだ",
+   title: "大嫌いだ(2021.2.6)",
    count: "1",
    type: "original",
    date: "2021-02-06",
@@ -1637,7 +1757,7 @@ const songData = [
    video: "7nzeZYlZVFs"
  },
       {
-   title: "天才ロック",
+   title: "天才ロック(2020.3.8)",
    count: "1",
    type: "cover",
    date: "2020-03-08",
