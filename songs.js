@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "死神(2022.1.9)",
+   count: "1",
+   type: "cover",
+   date: "2022-01-09",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "0rZtdRJ_7Eg"
+ },
+      {
    title: "秘密警察",
    count: "2",
    type: "cover",
@@ -101,7 +111,7 @@ const songData = [
    end: 732
  },
  {
-   title: "死神",
+   title: "死神(2021.9.25)",
    count: "1",
    type: "cover",
    date: "2021-09-25",
