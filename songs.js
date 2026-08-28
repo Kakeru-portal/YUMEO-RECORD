@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "Go my green days (2019.11.29)",
+   count: "4",
+   type: "original",
+   date: "2019-11-29",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔、鷹宮リオン、でびでび・でびる、緑仙",
+   video: "UcCluiu7S60",
+   start: 2085,
+   end: 2141
+ },
+      {
    title: "オンリー ロンリー グローリー",
    count: "1",
    type: "cover",
