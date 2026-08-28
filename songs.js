@@ -3,6 +3,126 @@
 // =========================
 const songData = [
       {
+   title: "ラフメイカー(2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 98,
+   end: 321
+ },
+ {
+   title: "サウダージ(2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "ポルノグラフィティ",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 469,
+   end: 732
+ },
+ {
+   title: "死神",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 908,
+   end: 1089
+ },
+ {
+   title: "名前(2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 1113,
+   end: 1435
+ },
+ {
+   title: "夜に駆ける",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "YOASOBI",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 1671,
+   end: 1936
+ },
+ {
+   title: "君はロックを聴かない(2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "あいみょん",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 2043,
+   end: 2290
+ },
+ {
+   title: "奏(2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "スキマスイッチ",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 2413,
+   end: 2715
+ },
+ {
+   title: "sailing day (2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 2794,
+   end: 3037
+ },
+ {
+   title: "ゆめうつつ",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 3200,
+   end: 3473
+ },
+ {
+   title: "Lemon (2021.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-09-25",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "HZPy2ymewL8",
+   start: 3662,
+   end: 3920
+ },
+      {
    title: "LOVEドッきゅん",
    count: "3",
    type: "cover",
@@ -2697,7 +2817,7 @@ const songData = [
    end: 1257
  },
  {
-   title: "奏",
+   title: "奏(2019.8.12)",
    count: "1",
    type: "cover",
    date: "2019-08-12",
@@ -4369,7 +4489,7 @@ const songData = [
    end: 3517
  },
  {
-   title: "サウダージ",
+   title: "サウダージ(2018.12.27)",
    count: "1",
    type: "cover",
    date: "2018-12-27",
