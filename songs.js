@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "やさしくなりたい(2021.11.24)",
+   count: "1",
+   type: "cover",
+   date: "2021-11-24",
+   unit: "",
+   artist: "斉藤和義",
+   singer: "夢追翔",
+   video: "9BXC-d4Qixw",
+   start: 234,
+   end: 264
+ },
+      {
    title: "Viking",
    count: "3",
    type: "original",
@@ -4661,7 +4673,7 @@ const songData = [
    end: 3341
  },
   {
-   title: "やさしくなりたい",
+   title: "やさしくなりたい(2018.12.13)",
    count: "1",
    type: "cover",
    date: "2018-12-13",
