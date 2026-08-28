@@ -3,6 +3,42 @@
 // =========================
 const songData = [
       {
+   title: "奏(2023.4.18)",
+   count: "2",
+   type: "cover",
+   date: "2023-04-18",
+   unit: "",
+   artist: "スキマスイッチ",
+   singer: "夢追翔、不破湊",
+   video: "8cVU9vz7PyM",
+   start: 962,
+   end: 1264
+ },
+ {
+   title: "シニカルナイトプラン",
+   count: "3",
+   type: "cover",
+   date: "2023-04-18",
+   unit: "",
+   artist: "Ayase",
+   singer: "夢追翔、加賀美ハヤト、不破湊",
+   video: "8cVU9vz7PyM",
+   start: 1402,
+   end: 1608
+ },
+ {
+   title: "イケナイ太陽",
+   count: "5",
+   type: "cover",
+   date: "2023-04-18",
+   unit: "VACHSS",
+   artist: "ORANGE RANGE",
+   singer: "VACHSS (夢追翔、加賀美ハヤト、叶、葛葉、剣持刀也、不破湊)",
+   video: "8cVU9vz7PyM",
+   start: 4208,
+   end: 4447
+ },
+      {
    title: "ポケットにファンタジー(2023.4.7)",
    count: "1",
    type: "cover",
