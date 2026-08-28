@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "三文小説(アカペラ)",
+   count: "1",
+   type: "cover",
+   date: "2021-01-20",
+   unit: "",
+   artist: "King Gnu",
+   singer: "夢追翔",
+   video: "tXwJPLUAkBY",
+   start: 481,
+   end: 753
+ },
+ {
+   title: "三文小説(2021.1.20)",
+   count: "1",
+   type: "cover",
+   date: "2021-01-20",
+   unit: "",
+   artist: "King Gnu",
+   singer: "夢追翔",
+   video: "tXwJPLUAkBY",
+   start: 7973,
+   end: 8246
+ },
+      {
    title: "インフェルノ",
    count: "1",
    type: "cover",
