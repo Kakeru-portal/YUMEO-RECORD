@@ -3,6 +3,150 @@
 // =========================
 const songData = [
       {
+   title: "ロングホープ・フィリア(2020.9.3)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "菅田将暉",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 62,
+   end: 303
+ },
+ {
+   title: "僕が死のうと思ったのは(2020.9.3)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 332,
+   end: 732
+ },
+ {
+   title: "ヒーロー",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 751,
+   end: 1043
+ },
+ {
+   title: "ナモナキヒト(2020.9.3)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 1070,
+   end: 1353
+ },
+ {
+   title: "ラブソング",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 1400,
+   end: 1686
+ },
+ {
+   title: "月曜日(2020.9.3)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 1737,
+   end: 2028
+ },
+ {
+   title: "太陽",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 2079,
+   end: 2436
+ },
+ {
+   title: "才悩人応援歌(2020.9.3)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 2470,
+   end: 2689
+ },
+ {
+   title: "ダンデライオン",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 2761,
+   end: 2932
+ },
+ {
+   title: "ハンマーソングと痛みの塔",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 2956,
+   end: 3189
+ },
+ {
+   title: "ランプ",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 3226,
+   end: 3467
+ },
+ {
+   title: "壊れかけのRadio",
+   count: "1",
+   type: "cover",
+   date: "2020-09-03",
+   unit: "",
+   artist: "徳永英明",
+   singer: "夢追翔",
+   video: "EOt6BVlGssM",
+   start: 3514,
+   end: 3758
+ },
+      {
    title: "死にたくないから生きている(2020.8.17)",
    count: "1",
    type: "original",
@@ -675,7 +819,7 @@ const songData = [
    end: 1226
  },
  {
-   title: "ロングホープ・フィリア",
+   title: "ロングホープ・フィリア(2019.12.27)",
    count: "1",
    type: "cover",
    date: "2019-12-27",
@@ -863,7 +1007,7 @@ const songData = [
    end: 1865
  },
  {
-   title: "才悩人応援歌",
+   title: "才悩人応援歌(2019.11.28)",
    count: "1",
    type: "cover",
    date: "2019-11-28",
@@ -959,7 +1103,7 @@ const songData = [
    end: 5026
  },
  {
-   title: "月曜日",
+   title: "月曜日(2019.11.28)",
    count: "1",
    type: "cover",
    date: "2019-11-28",
@@ -4149,7 +4293,7 @@ const songData = [
  end: 3789
 },
    {
- title: "僕が死のうと思ったのは",
+ title: "僕が死のうと思ったのは(2018.10.4)",
  count: "1",
  type: "cover",
  date: "2018-10-04",
@@ -4162,7 +4306,7 @@ const songData = [
 }
    ,
 {
-title: "ナモナキヒト",
+title: "ナモナキヒト(2018.10.4)",
 count: "1",
 type: "cover",
 date: "2018-10-04",
