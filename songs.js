@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "君の瞳に恋してない",
+   count: "1",
+   type: "cover",
+   date: "2022-06-28",
+   unit: "",
+   artist: "UNISON SQUARE GARDEN",
+   singer: "夢追翔",
+   video: "qjy6Rnhkpek",
+   start: 328,
+   end: 581
+ },
+ {
+   title: "命に価値はないのだから(2022.6.28)",
+   count: "1",
+   type: "original",
+   date: "2022-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "qjy6Rnhkpek",
+   start: 943,
+   end: 1236
+ },
+ {
+   title: "おそろいの地獄だね(2022.6.28)",
+   count: "1",
+   type: "original",
+   date: "2022-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "qjy6Rnhkpek",
+   start: 1315,
+   end: 1544
+ },
+ {
+   title: "Stop the Internet (short ver. )",
+   count: "1",
+   type: "original",
+   date: "2022-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "qjy6Rnhkpek",
+   start: 1734,
+   end: 1848
+ },
+      {
    title: "GO!!!(2022.5.29)",
    count: "2",
    type: "cover",
@@ -27,7 +75,7 @@ const songData = [
    end: 3489
  },
       {
-   title: "命に価値はないのだから",
+   title: "命に価値はないのだから(2022.5.17)",
    count: "1",
    type: "original",
    date: "2022-05-17",
@@ -37,7 +85,7 @@ const songData = [
    video: "pKrSW_wEBGI"
  },
       {
-   title: "おそろいの地獄だね",
+   title: "おそろいの地獄だね(2022.3.27)",
    count: "1",
    type: "original",
    date: "2022-03-27",
