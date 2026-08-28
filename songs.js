@@ -3,6 +3,110 @@
 // =========================
 const songData = [
       {
+   title: "鈍色に拍動めく",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "eOQpqmra3fI"
+ },
+      {
+   title: "僕のあたまから出ていけ(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 410,
+   end: 706
+ },
+ {
+   title: "天に唾吐く(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 996,
+   end: 1215
+ },
+ {
+   title: "君の好きな僕(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 1335,
+   end: 1586
+ },
+ {
+   title: "貪欲を患う(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 1703,
+   end: 1906
+ },
+ {
+   title: "ミタサレナイトガール(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 2130,
+   end: 2364
+ },
+ {
+   title: "おそろいの地獄だね(2026.6.28)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 2485,
+   end: 2716
+ },
+ {
+   title: "Andante(Solo ver.)",
+   count: "1",
+   type: "original",
+   date: "2026-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "BKVuhJkpP6Y",
+   start: 2892,
+   end: 3190
+ },
+      {
+   title: "貪欲を患う(2026.5.2)",
+   count: "1",
+   type: "original",
+   date: "2026-05-02",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "-e8Bj9l-G3w"
+ },
+      {
    title: "月光",
    count: "3",
    type: "cover",
@@ -1211,7 +1315,7 @@ const songData = [
    video: "ycEnkeTTG8c"
  },
       {
-   title: "君の好きな僕",
+   title: "君の好きな僕(2022.11.30)",
    count: "1",
    type: "original",
    date: "2022-11-30",
@@ -1221,7 +1325,7 @@ const songData = [
    video: "cxgl0WUfXqw"
  },
       {
-   title: "天に唾吐く",
+   title: "天に唾吐く(2022.11.30)",
    count: "1",
    type: "original",
    date: "2022-11-30",
@@ -1731,7 +1835,7 @@ const songData = [
    video: "SfNbDHmwAFY"
  },
       {
-   title: "ミタサレナイトガール",
+   title: "ミタサレナイトガール(2021.7.19)",
    count: "1",
    type: "original",
    date: "2021-07-19",
