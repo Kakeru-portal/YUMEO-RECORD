@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "RAD DOGS",
+   count: "3",
+   type: "cover",
+   date: "2024-12-21",
+   unit: "黒夢町",
+   artist: "八王子P",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "DiIXHoiX1Vo",
+   start: 300,
+   end: 316
+ },
+      {
    title: "フラジール(2024.12.20)",
    count: "4",
    type: "cover",
