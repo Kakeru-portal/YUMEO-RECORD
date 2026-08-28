@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ダーリン",
+   count: "1",
+   type: "cover",
+   date: "2024-12-25",
+   unit: "",
+   artist: "須田景凪",
+   singer: "夢追翔",
+   video: "UVxACl22COI"
+ },
+      {
    title: "僕のキモチ",
    count: "4",
    type: "cover",
