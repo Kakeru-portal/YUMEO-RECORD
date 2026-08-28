@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "インフェルノ",
+   count: "1",
+   type: "cover",
+   date: "2021-01-18",
+   unit: "",
+   artist: "Mrs. GREEN APPLE",
+   singer: "夢追翔",
+   video: "Ub8AYxYEiuk"
+ },
+      {
    title: "UNION (2020.12.21)",
    count: "1",
    type: "cover",
