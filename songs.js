@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "インスタントヘヴン",
+   count: "2",
+   type: "cover",
+   date: "2021-12-29",
+   unit: "",
+   artist: "ナナヲアカリ",
+   singer: "夢追翔、犬山たまき",
+   video: "Wk-jg3wdbQg"
+ },
+      {
    title: "ゆめうつつ(2021.12.25)",
    count: "1",
    type: "cover",
