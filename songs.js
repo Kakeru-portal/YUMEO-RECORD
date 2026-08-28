@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "光るなら",
+   count: "5",
+   type: "cover",
+   date: "2020-09-20",
+   unit: "",
+   artist: "Goose house",
+   singer: "夢追翔、戌亥とこ、剣持刀也、三枝明那、星川サラ、森中花咲",
+   video: "uJa1eS1utjg"
+ },
+      {
    title: "蝶々結び",
    count: "5",
    type: "cover",
