@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "会心の一撃",
+   count: "5",
+   type: "cover",
+   date: "2026-06-28",
+   unit: "",
+   artist: "YOASOBI",
+   singer: "夢追翔、犬山たまき、神楽めあ、しぐれうい、白波らむね、夜乃くろむ、結城さくな、夕刻ロベル、緑仙",
+   video: "sp8eH_oDC9g"
+ },
+      {
    title: "鈍色に拍動めく",
    count: "1",
    type: "original",
