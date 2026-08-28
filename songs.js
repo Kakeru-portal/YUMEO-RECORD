@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "オーバーライド",
+   count: "3",
+   type: "cover",
+   date: "2024-09-22",
+   unit: "",
+   artist: "吉田夜世",
+   singer: "夢追翔、犬山たまき、玉姫",
+   video: "DaExXLJyezg",
+   start: 1664,
+   end: 1803
+ },
+      {
    title: "オルターエゴ",
    count: "4",
    type: "cover",
