@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "僕のあたまから出ていけ",
+   count: "1",
+   type: "original",
+   date: "2020-12-03",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "oyD227oJmzI"
+ },
+      {
    title: "UNION (2020.11.21)",
    count: "1",
    type: "cover",
