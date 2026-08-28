@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "失われし最終楽章",
+   count: "2",
+   type: "original",
+   date: "2024-07-27",
+   unit: "",
+   artist: "夢追翔 feat. シエル(CV:リゼ・ヘルエスタ)",
+   singer: "アマデウス(CV. 夢追翔)、シエル(CV. リゼ・ヘルエスタ)",
+   video: "mDJU8StHELY"
+ },
+      {
    title: "嗚呼素晴らしき音楽",
    count: "2",
    type: "original",
