@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "ファンサ(2021.8.7)",
+   count: "5",
+   type: "cover",
+   date: "2021-08-07",
+   unit: "",
+   artist: "mona (CV : 夏川椎菜)",
+   singer: "夢追翔、長尾景、フミ、星川サラ、本間ひまわり、山神カルタ、緑仙",
+   video: "y80MRPz1HSo",
+   start: 1319,
+   end: 1566
+ },
+      {
    title: "ヴァンパイア(2021.8.6)",
    count: "1",
    type: "cover",
@@ -2447,7 +2459,7 @@ const songData = [
    video: "DQqMDc5_034"
  },
       {
-   title: "ファンサ",
+   title: "ファンサ(2019.9.18)",
    count: "5",
    type: "cover",
    date: "2019-09-18",
