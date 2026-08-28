@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ラヴィット",
+   count: "1",
+   type: "cover",
+   date: "2022-02-14",
+   unit: "",
+   artist: "ピノキオピー",
+   singer: "夢追翔",
+   video: "B32wlwSi4kY"
+ },
+      {
    title: "死神(2022.1.9)",
    count: "1",
    type: "cover",
