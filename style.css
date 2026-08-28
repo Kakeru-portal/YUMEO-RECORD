@@ -1404,3 +1404,117 @@ body:not([data-theme]) #pageShuffleButton {
 body[data-theme="noble"] .active-search-tag {
    color: #F2EEE8;
 }
+/* =========================
+  情報提供のお願い
+  ========================= */
+#informationRequest {
+   margin: 0 0 20px;
+   border: 1px solid var(--theme-main);
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: var(--theme-white);
+}
+#informationRequestToggle {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 15px 18px;
+   border: none;
+   background-color: var(--theme-white);
+   color: var(--theme-main);
+   font-size: 17px;
+   font-weight: bold;
+   text-align: left;
+   cursor: pointer;
+}
+#informationRequestToggle:hover {
+   background-color: var(--theme-sub);
+   color: var(--theme-white);
+}
+#informationRequestIcon {
+   margin-left: 10px;
+   font-size: 18px;
+   line-height: 1;
+}
+#informationRequestContent {
+   display: none;
+   padding: 5px 18px 18px;
+   border-top: 1px solid var(--theme-main);
+   color: var(--theme-black);
+   font-size: 15px;
+   line-height: 1.7;
+}
+#informationRequestContent.open {
+   display: block;
+}
+#informationRequestContent p {
+   margin: 12px 0;
+}
+#informationRequestContent p:first-child {
+   margin-top: 8px;
+}
+#informationRequestContent a {
+   color: var(--theme-main);
+   font-weight: bold;
+   text-decoration: none;
+}
+#informationRequestContent a:hover {
+   text-decoration: underline;
+}
+/* =========================
+  情報提供のお願い：貴族テーマ
+  ========================= */
+body[data-theme="noble"] #informationRequest {
+   border-color: #564D6A;
+}
+body[data-theme="noble"] #informationRequestToggle {
+   background-color: #1E1E22;
+   color: #F2EEE8;
+}
+body[data-theme="noble"] #informationRequestToggle:hover {
+   background-color: #39383D;
+   color: #F2EEE8;
+}
+body[data-theme="noble"] #informationRequestContent {
+   background-color: #1E1E22;
+   color: #F2EEE8;
+   border-top-color: #564D6A;
+}
+body[data-theme="noble"] #informationRequestContent a {
+   color: #F2EEE8;
+}
+/* =========================
+  情報提供のお願い：タッチ端末
+  ========================= */
+@media (hover: none) {
+   #informationRequestToggle:hover {
+       background-color: var(--theme-white);
+       color: var(--theme-main);
+   }
+   body[data-theme="noble"] #informationRequestToggle:hover {
+       background-color: #1E1E22;
+       color: #F2EEE8;
+   }
+   #informationRequestContent a:hover {
+       text-decoration: none;
+   }
+}
+/* =========================
+  情報提供のお願い：スマートフォン
+  ========================= */
+@media (max-width: 600px) {
+   #informationRequest {
+       margin-bottom: 15px;
+   }
+   #informationRequestToggle {
+       min-height: 50px;
+       padding: 15px;
+       font-size: 16px;
+   }
+   #informationRequestContent {
+       padding: 5px 15px 15px;
+       font-size: 15px;
+   }
+}
