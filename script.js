@@ -854,7 +854,7 @@ function createSongCard(song) {
   class="favorite-button"
   aria-label="お気に入り登録"
 >
-  ${getFavorites().includes(song.title) ? '♥' : '♡'}
+  ♡
 </button>
 </div>
 `;
