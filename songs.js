@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "バレンタイン・キッス",
+   count: "3",
+   type: "cover",
+   date: "2020-02-14",
+   unit: "",
+   artist: "国生さゆり",
+   singer: "夢追翔、加賀美ハヤト、緑仙",
+   video: "ZKpFOoRMtYs"
+ },
+      {
    title: "ロメオ -N.Edit-(2020.2.14)",
    count: "3",
    type: "cover",
