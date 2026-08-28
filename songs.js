@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "かわE",
+   count: "2",
+   type: "cover",
+   date: "2021-07-16",
+   unit: "",
+   artist: "ヤバイTシャツ屋さん",
+   singer: "夢追翔、レヴィ・エリファ",
+   video: "h0Gr7iw_x3A",
+   start: 2102,
+   end: 2309
+ },
+      {
    title: "弱きに寄り添う(2021.6.29)",
    count: "1",
    type: "original",
