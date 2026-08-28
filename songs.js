@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "NO MORE CRY",
+   count: "2",
+   type: "cover",
+   date: "2021-11-24",
+   unit: "",
+   artist: "D-51",
+   singer: "夢追翔、不破湊",
+   video: "3HCCEE7LcE0",
+   start: 147,
+   end: 186
+ },
+      {
    title: "やさしくなりたい(2021.11.24)",
    count: "1",
    type: "cover",
