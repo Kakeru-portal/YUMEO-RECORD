@@ -3,6 +3,42 @@
 // =========================
 const songData = [
       {
+   title: "からくりピエロ",
+   count: "3",
+   type: "cover",
+   date: "2020-01-28",
+   unit: "le jouet",
+   artist: "40mP",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "EQD91A-7Gvs",
+   start: 654,
+   end: 928
+ },
+ {
+   title: "白日(2020.1.28)",
+   count: "3",
+   type: "cover",
+   date: "2020-01-28",
+   unit: "le jouet",
+   artist: "King Gnu",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "EQD91A-7Gvs",
+   start: 1729,
+   end: 2036
+ },
+ {
+   title: "サリシノハラ",
+   count: "3",
+   type: "cover",
+   date: "2020-01-28",
+   unit: "le jouet",
+   artist: "みきとP",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "EQD91A-7Gvs",
+   start: 2117,
+   end: 2380
+ },
+      {
    title: "ピースサイン(2019.12.27)",
    count: "1",
    type: "cover",
