@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "天才ロック",
+   count: "1",
+   type: "cover",
+   date: "2020-03-08",
+   unit: "",
+   artist: "カラスヤサボウ",
+   singer: "夢追翔",
+   video: "3BmGmihELkI"
+ },
+      {
    title: "バレンタイン・キッス",
    count: "3",
    type: "cover",
