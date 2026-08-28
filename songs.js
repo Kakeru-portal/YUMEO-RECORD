@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Viking",
+   count: "3",
+   type: "original",
+   date: "2021-11-02",
+   unit: "le jouet",
+   artist: "le jouet",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "BF_FmInMcgU"
+ },
+      {
    title: "はなればなれの君へ",
    count: "5",
    type: "cover",
