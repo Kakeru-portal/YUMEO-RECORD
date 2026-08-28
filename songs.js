@@ -3,6 +3,82 @@
 // =========================
 const songData = [
       {
+   title: "モニタリング",
+   count: "1",
+   type: "cover",
+   date: "2025-12-25",
+   unit: "",
+   artist: "DECO*27",
+   singer: "夢追翔",
+   video: "fVKCpXCw4ZU"
+ },
+      {
+   title: "FAKE LAND",
+   count: "1",
+   type: "cover",
+   date: "2025-12-02",
+   unit: "",
+   artist: "FAKE TYPE.",
+   singer: "夢追翔",
+   video: "vZRHgmAjats"
+ },
+      {
+   title: "バカサバイバー",
+   count: "4",
+   type: "cover",
+   date: "2025-11-03",
+   unit: "",
+   artist: "ウルフルズ",
+   singer: "夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね",
+   video: "RgVcX3YBrGs",
+   start: 958,
+   end: 1172
+ },
+      {
+   title: "みかんドリーム・シマエナガ",
+   count: "1",
+   type: "original",
+   date: "2025-10-12",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "DJNjunnUKbU",
+   start: 3993,
+   end: 4027
+ },
+      {
+   title: "僕にピアノは弾けないけれど(2025.9.14)",
+   count: "1",
+   type: "original",
+   date: "2025-09-14",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "z794x1lcEgs"
+ },
+      {
+   title: "Arc gose oN",
+   count: "5",
+   type: "cover",
+   date: "2025-09-13",
+   unit: "",
+   artist: "にじさんじ",
+   singer: "夢追翔、オリバー・エバンス、倉持めると、鷹宮リオン、不破湊、星川サラ",
+   video: "yyuW9ebFpTY"
+ },
+      {
+   title: "一旦ステイTONIGHT",
+   count: "5",
+   type: "original",
+   date: "",
+   unit: "",
+   artist: "不破湊",
+   singer: "夢追翔、オリバー・エバンス、倉持めると、鷹宮リオン、不破湊、星川サラ",
+   video: "",
+   start: 2357,
+   end: 2385
+ },
+      {
    title: "僕にピアノは弾けないけれど(2025.9.13)",
    count: "1",
    type: "original",
