@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ドライフラワー(2021.7.21)",
+   count: "1",
+   type: "cover",
+   date: "2021-07-21",
+   unit: "",
+   artist: "優里",
+   singer: "夢追翔",
+   video: "6ggX0xXrGW4"
+ },
+      {
    title: "オリジナリティ欠乏症",
    count: "1",
    type: "original",
@@ -103,7 +113,7 @@ const songData = [
    end: 1437
  },
  {
-   title: "ドライフラワー",
+   title: "ドライフラワー(2021.6.28)",
    count: "1",
    type: "cover",
    date: "2021-06-28",
