@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "オルターエゴ",
+   count: "4",
+   type: "cover",
+   date: "2024-09-06",
+   unit: "",
+   artist: "Misumi",
+   singer: "夢追翔、五十嵐梨花、戌亥とこ、渡会雲雀",
+   video: "f-NTlSrUHFY",
+   start: 1596,
+   end: 1818
+ },
+      {
    title: "Andante",
    count: "5",
    type: "original",
