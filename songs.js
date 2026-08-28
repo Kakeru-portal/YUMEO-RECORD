@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "三嘆スカイダンス",
+   count: "2",
+   type: "original",
+   date: "2023-05-27",
+   unit: "",
+   artist: "レヴィ・エリファ、夢追翔",
+   singer: "夢追翔、レヴィ・エリファ",
+   video: "l3aC5fpRwvE"
+ },
+      {
    title: "ベロブルグの夜",
    count: "1",
    type: "cover",
