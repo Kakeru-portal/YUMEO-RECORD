@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "青空を睨む",
+   count: "1",
+   type: "original",
+   date: "2021-03-31",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "HcmGG9e5d_Y"
+ },
+      {
    title: "About me",
    count: "1",
    type: "cover",
