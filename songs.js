@@ -3,6 +3,90 @@
 // =========================
 const songData = [
       {
+   title: "RAGE OF DUST (2020.10.9)",
+   count: "1",
+   type: "cover",
+   date: "2020-10-09",
+   unit: "",
+   artist: "SPYAIR",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 393,
+   end: 598
+ },
+ {
+   title: "Teenager Forever",
+   count: "1",
+   type: "cover",
+   date: "2020-10-09",
+   unit: "",
+   artist: "King Gnu",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 650,
+   end: 846
+ },
+ {
+   title: "弱きに寄り添う(2020.10.9)",
+   count: "1",
+   type: "original",
+   date: "2020-10-09",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 1805,
+   end: 2113
+ },
+ {
+   title: "ワタリドリ(2020.10.9)",
+   count: "1",
+   type: "cover",
+   date: "2020-10-09",
+   unit: "",
+   artist: "Alexandros",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 2263,
+   end: 2516
+ },
+ {
+   title: "僕の頭から出ていけ(2020.10.9)",
+   count: "1",
+   type: "original",
+   date: "2020-10-09",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 2639,
+   end: 2936
+ },
+ {
+   title: "君の好きなとこ",
+   count: "1",
+   type: "cover",
+   date: "2020-10-09",
+   unit: "",
+   artist: "平井堅",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 3064,
+   end: 3363
+ },
+ {
+   title: "死にたくないから生きている(2020.10.9)",
+   count: "1",
+   type: "original",
+   date: "2020-10-09",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "e_H4lqh_gWo",
+   start: 3444,
+   end: 3715
+ },
+      {
    title: "正義",
    count: "1",
    type: "cover",
@@ -345,7 +429,7 @@ const songData = [
    end: 4461
  },
  {
-   title: "僕の頭から出ていけ",
+   title: "僕の頭から出ていけ(2020.8.17)",
    count: "1",
    type: "original",
    date: "2020-08-17",
@@ -2175,7 +2259,7 @@ const songData = [
    end: 3147
  },
       {
-   title: "ワタリドリ",
+   title: "ワタリドリ(2019.3.27)",
    count: "1",
    type: "cover",
    date: "2019-03-27",
