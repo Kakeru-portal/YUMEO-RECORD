@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Bunny Girl",
+   count: "1",
+   type: "cover",
+   date: "2025-02-14",
+   unit: "",
+   artist: "AKASAKI",
+   singer: "夢追翔",
+   video: "luoayOzOQ60"
+ },
+      {
    title: "ダーリン",
    count: "1",
    type: "cover",
