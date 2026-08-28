@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "寿司でたまらない",
+   count: "4",
+   type: "original",
+   date: "2026-04-01",
+   unit: "紫団",
+   artist: "紫団",
+   singer: "紫団(夢追翔、渚トラウト、星導ショウ、ミラン・ケストレル)",
+   video: "r2SPvwHJfQk"
+ },
+      {
+   title: "イフ",
+   count: "1",
+   type: "cover",
+   date: "2026-03-14",
+   unit: "",
+   artist: "月詠み",
+   singer: "夢追翔",
+   video: "Wm-YapN6Pgk"
+ },
+      {
+   title: "お気に召すまま",
+   count: "1",
+   type: "cover",
+   date: "2026-02-15",
+   unit: "",
+   artist: "Eve",
+   singer: "夢追翔",
+   video: "vI4fMLJRMMA"
+ },
+      {
+   title: "JANE DOE",
+   count: "1",
+   type: "cover",
+   date: "2026-02-03",
+   unit: "",
+   artist: "米津玄師、宇多田ヒカル",
+   singer: "夢追翔",
+   video: "22cJ2CCHEoA"
+ },
+      {
+   title: "イイじゃん",
+   count: "3",
+   type: "cover",
+   date: "2026-01-01",
+   unit: "",
+   artist: "M!LK",
+   singer: "夢追翔、伊波ライ、ジョー・力一",
+   video: "RhqhuWZkGEA"
+ },
+      {
+   title: "IRIS OUT",
+   count: "1",
+   type: "cover",
+   date: "2026-01-01",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "x5DGf9nZpYo"
+ },
+      {
    title: "モニタリング",
    count: "1",
    type: "cover",
