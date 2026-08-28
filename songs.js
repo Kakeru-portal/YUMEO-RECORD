@@ -3,6 +3,28 @@
 // =========================
 const songData = [
       {
+   title: "僕にピアノは弾けないけれど(2025.9.13)",
+   count: "1",
+   type: "original",
+   date: "2025-09-13",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "nIlE-qQBkFg",
+   start: 43,
+   end: 53
+ },
+      {
+   title: "FOCUS",
+   count: "5",
+   type: "cover",
+   date: "2025-09-12",
+   unit: "",
+   artist: "KIRA",
+   singer: "夢追翔、オリバー・エバンス、倉持めると、鷹宮リオン、不破湊、星川サラ",
+   video: "RqkeiuhY96c"
+ },
+      {
    title: "Flyer!",
    count: "3",
    type: "cover",
