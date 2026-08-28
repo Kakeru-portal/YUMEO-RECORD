@@ -979,3 +979,19 @@ document.addEventListener('DOMContentLoaded', () => {
        applyTheme(themeSelect.value);
    });
 });
+// =========================
+// 情報提供のお願い：開閉
+// =========================
+const informationRequestToggle = document.getElementById('informationRequestToggle');
+const informationRequestContent = document.getElementById('informationRequestContent');
+const informationRequestIcon = document.getElementById('informationRequestIcon');
+if (
+   informationRequestToggle &&
+   informationRequestContent &&
+   informationRequestIcon
+) {
+   informationRequestToggle.addEventListener('click', () => {
+       const isOpen = informationRequestContent.classList.toggle('open');
+       informationRequestIcon.textContent = isOpen ? '△' : '▽';
+   });
+}
