@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "フォニイ",
+   count: "1",
+   type: "cover",
+   date: "2022-03-15",
+   unit: "",
+   artist: "ツミキ",
+   singer: "夢追翔",
+   video: "KjhHbAW3Y_E"
+ },
+      {
    title: "ラヴィット",
    count: "1",
    type: "cover",
