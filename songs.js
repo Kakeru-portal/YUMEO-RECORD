@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "嗚呼素晴らしき音楽",
+   count: "2",
+   type: "original",
+   date: "2024-07-27",
+   unit: "",
+   artist: "夢追翔 feat. ジョシュア(CV:弦月藤士郎)",
+   singer: "夢追翔、ジョシュア(CV. 弦月藤士郎)",
+   video: "mzVt5rXHEho"
+ },
+      {
    title: "静謐なる虚飾楽園",
    count: "1",
    type: "original",
