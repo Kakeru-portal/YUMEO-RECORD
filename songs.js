@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "P.F.M.",
+   count: "3",
+   type: "original",
+   date: "2020-03-14",
+   unit: "le jouet",
+   artist: "le jouet",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "7nzeZYlZVFs"
+ },
+      {
    title: "天才ロック",
    count: "1",
    type: "cover",
