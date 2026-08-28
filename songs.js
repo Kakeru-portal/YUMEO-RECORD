@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2020.12.15)",
+   count: "1",
+   type: "original",
+   date: "2020-12-15",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "UOLUwBKgrjA",
+   start: 5283,
+   end: 5316
+ },
+      {
    title: "僕のあたまから出ていけ",
    count: "1",
    type: "original",
@@ -559,7 +571,7 @@ const songData = [
    end: 3585
  },
  {
-   title: "人より上手に",
+   title: "人より上手に(2020.8.17)",
    count: "1",
    type: "original",
    date: "2020-08-17",
