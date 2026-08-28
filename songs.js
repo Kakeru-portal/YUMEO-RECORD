@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "命に価値はないのだから",
+   count: "1",
+   type: "original",
+   date: "2022-05-17",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "pKrSW_wEBGI"
+ },
+      {
    title: "おそろいの地獄だね",
    count: "1",
    type: "original",
