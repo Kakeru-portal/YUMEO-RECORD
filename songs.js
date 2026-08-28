@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ベロブルグの夜",
+   count: "1",
+   type: "cover",
+   date: "2023-05-24",
+   unit: "",
+   artist: "崩壊 : スターレイル",
+   singer: "夢追翔",
+   video: "0cBo-nMcLPw"
+ },
+      {
    title: "青空のラプソディ",
    count: "2",
    type: "cover",
