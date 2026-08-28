@@ -3,6 +3,26 @@
 // =========================
 const songData = [
       {
+   title: "KICK BACK",
+   count: "2",
+   type: "cover",
+   date: "2023-03-02",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔、ぴろぱる",
+   video: "0_SywWgt69c"
+ },
+      {
+   title: "怪獣の花唄",
+   count: "1",
+   type: "cover",
+   date: "2023-02-14",
+   unit: "",
+   artist: "Vaundy",
+   singer: "夢追翔",
+   video: "Jlm5XIEnz3A"
+ },
+      {
    title: "人より上手に(2023.2.4)",
    count: "1",
    type: "original",
