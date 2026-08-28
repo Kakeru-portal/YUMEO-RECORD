@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "仮死化",
+   count: "2",
+   type: "cover",
+   date: "2024-06-12",
+   unit: "ゆめおいまちた",
+   artist: "遼遼",
+   singer: "ゆめおいまちた(夢追翔、町田ちま)",
+   video: "d_0dd3-2LyE"
+ },
+      {
    title: "メメント",
    count: "5",
    type: "original",
