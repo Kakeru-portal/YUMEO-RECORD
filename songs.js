@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "オトノナルホウヘ→",
+   count: "4",
+   type: "cover",
+   date: "2020-04-12",
+   unit: "",
+   artist: "Goose house",
+   singer: "夢追翔、鷹宮リオン、緑仙、レヴィ・エリファ",
+   video: "QLCVD3Rxkpg",
+   start: 1520,
+   end: 1735
+ },
+      {
    title: "脳裏上のクラッカー",
    count: "1",
    type: "cover",
