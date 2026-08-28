@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2023.2.4)",
+   count: "1",
+   type: "original",
+   date: "2023-02-04",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "UPjTgYPel_k",
+   start: 11323,
+   end: 11355
+ },
+      {
    title: "共感性終止",
    count: "1",
    type: "original",
