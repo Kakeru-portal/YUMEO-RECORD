@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2021.5.31)",
+   count: "1",
+   type: "original",
+   date: "2021-05-31",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "28PAq7k5JEg"
+ },
+      {
    title: "ヒプノシスマイク -Division Battle Anthem-＋",
    count: "1",
    type: "cover",
