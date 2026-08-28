@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2021.8.18)",
+   count: "1",
+   type: "original",
+   date: "2021-08-18",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "IpenaeELoGc",
+   start: 4243,
+   end: 4276
+ },
+      {
    title: "青と夏(2021.8.16)",
    count: "1",
    type: "cover",
