@@ -7,9 +7,9 @@ const songData = [
    count: "4",
    type: "cover",
    date: "2024-12-20",
-   unit: "",
+   unit: "共通衣装SPユニット",
    artist: "ぬゆり",
-   singer: "夢追翔、白雪巴、不破湊、町田ちま",
+   singer: "共通衣装SPユニット(夢追翔、白雪巴、不破湊、町田ちま)",
    video: "me8qf3LyHa0",
    start: 374,
    end: 390
