@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "僕のこと",
+   count: "1",
+   type: "cover",
+   date: "2021-06-11",
+   unit: "",
+   artist: "Mrs. GREEN APPLE",
+   singer: "夢追翔",
+   video: "oU-YQucgpwQ"
+ },
+      {
    title: "人より上手に(2021.5.31)",
    count: "1",
    type: "original",
