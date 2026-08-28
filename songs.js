@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "人間じゃないよな",
+   count: "1",
+   type: "original",
+   date: "2022-09-24",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "5poJelFw4Vk"
+ },
+      {
    title: "シャンパンゴールド",
    count: "4",
    type: "cover",
