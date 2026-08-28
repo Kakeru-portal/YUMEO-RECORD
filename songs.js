@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "前説ADvance",
+   count: "1",
+   type: "cover",
+   date: "2024-02-14",
+   unit: "",
+   artist: "大森靖子",
+   singer: "夢追翔",
+   video: "buDf_V8SPxI"
+ },
+      {
    title: "虹の在り処",
    count: "1",
    type: "original",
