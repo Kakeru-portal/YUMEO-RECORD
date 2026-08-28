@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ユアハイネス☆マイプリンセス",
+   count: "4",
+   type: "cover",
+   date: "2020-05-01",
+   unit: "",
+   artist: "ぱんたん",
+   singer: "夢追翔、叶、伏見ガク、緑仙",
+   video: "LdzXm93GnAg"
+ },
+      {
    title: "夜もすがら君想ふ(2020.5.1)",
    count: "1",
    type: "cover",
