@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "大嫌いだ",
+   count: "1",
+   type: "original",
+   date: "2021-02-06",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "lOg1YeQX2w0"
+ },
+      {
    title: "三文小説(2021.1.25)",
    count: "1",
    type: "cover",
