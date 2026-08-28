@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "SHINING LINE*",
+   count: "1",
+   type: "cover",
+   date: "2021-04-25",
+   unit: "",
+   artist: "わか・ふうり・ゆな from STAR☆ANIS",
+   singer: "夢追翔",
+   video: "rhyhE0hgqFg",
+   start: 5260,
+   end: 5317
+ },
+ {
+   title: "カレンダーガール",
+   count: "1",
+   type: "cover",
+   date: "2021-04-25",
+   unit: "",
+   artist: "わか・ふうり・すなお from STAR☆ANIS",
+   singer: "夢追翔",
+   video: "rhyhE0hgqFg",
+   start: 5684,
+   end: 5734
+ },
+ {
+   title: "種のうた",
+   count: "1",
+   type: "cover",
+   date: "2021-04-25",
+   unit: "",
+   artist: "ストロベリー・フラワー",
+   singer: "夢追翔",
+   video: "rhyhE0hgqFg",
+   start: 7860,
+   end: 7953
+ },
+ {
+   title: "死にたくないから生きている(2021.4.25)",
+   count: "1",
+   type: "original",
+   date: "2021-04-25",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "rhyhE0hgqFg",
+   start: 9817,
+   end: 9837
+ },
+      {
    title: "かつて天才だった俺たちへ(2021.4.22)",
    count: "1",
    type: "cover",
