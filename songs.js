@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ロメオ -N.Edit-(2020.2.14)",
+   count: "3",
+   type: "cover",
+   date: "2020-02-14",
+   unit: "",
+   artist: "LIP×LIP(勇次郎・愛蔵 / CV.内山昂輝・島﨑信長)",
+   singer: "夢追翔、加賀美ハヤト、緑仙",
+   video: "V654oSE_yhE"
+ },
+      {
    title: "Sweet Devil",
    count: "3",
    type: "cover",
@@ -191,7 +201,7 @@ const songData = [
    end: 643
  },
  {
-   title: "ロメオ -N.Edit-",
+   title: "ロメオ -N.Edit-(2019.12.18)",
    count: "3",
    type: "cover",
    date: "2019-12-18",
