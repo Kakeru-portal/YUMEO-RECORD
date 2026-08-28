@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Ready Steady",
+   count: "3",
+   type: "cover",
+   date: "2023-09-14",
+   unit: "黒夢町",
+   artist: "Giga",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "BYG4P_AehrA"
+ },
+      {
    title: "Hurrah!!",
    count: "5",
    type: "cover",
