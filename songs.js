@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "ポケットにファンタジー(2023.4.7)",
+   count: "1",
+   type: "cover",
+   date: "2023-04-07",
+   unit: "",
+   artist: "さち＆じゅり",
+   singer: "夢追翔",
+   video: "qsSw5p72_XQ",
+   start: 3677,
+   end: 3689
+ },
+      {
    title: "KICK BACK",
    count: "2",
    type: "cover",
@@ -4543,7 +4555,7 @@ const songData = [
    end: 2181
  },
  {
-   title: "ポケットにファンタジー",
+   title: "ポケットにファンタジー(2019.1.6)",
    count: "5",
    type: "cover",
    date: "2019-01-06",
