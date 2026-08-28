@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ヒプノシスマイク -Division Battle Anthem-＋",
+   count: "1",
+   type: "cover",
+   date: "2021-05-28",
+   unit: "",
+   artist: "ヒプノシスマイク Division All Stars",
+   singer: "夢追翔",
+   video: "6XTQqtPw-QI"
+ },
+      {
    title: "おいしいカレーのつくりかた",
    count: "1",
    type: "cover",
