@@ -207,7 +207,7 @@ const songData = [
    end: 6855
  },
  {
-   title: "ウィーアー!",
+   title: "ウィーアー!(2019.11.28)",
    count: "1",
    type: "cover",
    date: "2019-11-28",
