@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "フラジール(2024.12.20)",
+   count: "4",
+   type: "cover",
+   date: "2024-12-20",
+   unit: "",
+   artist: "ぬゆり",
+   singer: "夢追翔、白雪巴、不破湊、町田ちま",
+   video: "me8qf3LyHa0",
+   start: 374,
+   end: 390
+ },
+ {
+   title: "The Stage Is Mine",
+   count: "1",
+   type: "original",
+   date: "2024-12-20",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "me8qf3LyHa0",
+   start: 495,
+   end: 511
+ },
+      {
    title: "Stargazer",
    count: "5",
    type: "original",
@@ -233,7 +257,7 @@ const songData = [
    end: 1337
  },
  {
-   title: "フラジール",
+   title: "フラジール(2024.4.28)",
    count: "2",
    type: "cover",
    date: "2024-04-28",
