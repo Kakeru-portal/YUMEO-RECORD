@@ -859,10 +859,7 @@ function createSongCard(song) {
 const songList = document.getElementById('songList');
 if (songList) {
    songData.forEach(song => {
-       const songElement = createSongCard(song);
-       songList.appendChild(songElement);
-       // 保存されているお気に入り状態を反映
-       updateCardFavoriteButton(songElement);
+       songList.appendChild(createSongCard(song));
    });
 }
 filterSongs();
