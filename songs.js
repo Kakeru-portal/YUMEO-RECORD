@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ジェヘナ",
+   count: "1",
+   type: "cover",
+   date: "2024-03-15",
+   unit: "",
+   artist: "wotaku",
+   singer: "夢追翔",
+   video: "zEUybWru-sU"
+ },
+      {
    title: "黄昏の賢者",
    count: "1",
    type: "cover",
