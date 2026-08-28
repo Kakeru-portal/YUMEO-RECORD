@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "Hurrah!!",
+   count: "5",
+   type: "cover",
+   date: "2023-09-02",
+   unit: "",
+   artist: "にじさんじ",
+   singer: "夢追翔、ガオン、狂蘭メロコ、サニー・ブリスコー、セフィナ、セラフ・ダズルガーデン、緋八マナ、ミリー・パフェ、Pomu Rainpuff、町田ちま、Maria Marionette、ライラ アルストロエメリア、ルカ・カネシロ、レヴィ・エリファ",
+   video: "13E1WW6D6N8",
+   start: 1443,
+   end: 1698
+ },
+      {
    title: "人より上手に(2023.8.5)",
    count: "1",
    type: "original",
