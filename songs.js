@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Sweet Devil",
+   count: "3",
+   type: "cover",
+   date: "2020-02-01",
+   unit: "",
+   artist: "八王子P",
+   singer: "夢追翔、緑仙、加賀美ハヤト",
+   video: "EkCg_dq_sk4"
+ },
+      {
    title: "ハッピーバースデートゥーユー",
    count: "1",
    type: "cover",
