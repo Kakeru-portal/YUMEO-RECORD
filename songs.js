@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "弱きに寄り添う(2021.6.29)",
+   count: "1",
+   type: "original",
+   date: "2021-06-29",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "GoRaL01l6qA"
+ },
+      {
    title: "弱きに寄り添う",
    count: "1",
    type: "original",
