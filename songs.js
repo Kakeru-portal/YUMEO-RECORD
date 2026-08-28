@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "おそろいの地獄だね",
+   count: "1",
+   type: "original",
+   date: "2022-03-27",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "i9hpTnX5sOM"
+ },
+      {
    title: "フォニイ",
    count: "1",
    type: "cover",
