@@ -312,6 +312,10 @@ function saveFavorites(favorites) {
   favoriteButton.setAttribute('aria-label', 'お気に入り登録');
 }
 }
+   // ページ読み込み時に保存済みのお気に入り状態をカードへ反映
+document.querySelectorAll('.song').forEach(song => {
+   updateCardFavoriteButton(song);
+});
    document.addEventListener('click', event => {
    const button = event.target.closest('.favorite-button');
    if (!button) return;
@@ -846,11 +850,11 @@ function createSongCard(song) {
    ▶ 再生
 </button>
 <button
-   type="button"
-   class="favorite-button"
-   aria-label="お気に入り登録"
+  type="button"
+  class="favorite-button"
+  aria-label="お気に入り登録"
 >
-   ♡
+  ${getFavorites().includes(song.title) ? '♥' : '♡'}
 </button>
 </div>
 `;
@@ -858,12 +862,10 @@ function createSongCard(song) {
 }
 const songList = document.getElementById('songList');
 if (songList) {
-   songData.forEach(song => {
-       const songElement = createSongCard(song);
-       songList.appendChild(songElement);
-       // 保存されているお気に入り状態をカードに反映
-       updateCardFavoriteButton(songElement);
-   });
+  songData.forEach(song => {
+      const songElement = createSongCard(song);
+      songList.appendChild(songElement);
+  });
 }
 filterSongs();
 
