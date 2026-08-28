@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "The Stage Is Mine (2025.6.28)",
+   count: "1",
+   type: "original",
+   date: "2025-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "mGoFZblUOdw"
+ },
+      {
+   title: "ビビデバ",
+   count: "1",
+   type: "cover",
+   date: "2025-05-30",
+   unit: "",
+   artist: "星街すいせい",
+   singer: "夢追翔",
+   video: "lHQTZSibaxM"
+ },
+      {
+   title: "Mr. Showtime",
+   count: "2",
+   type: "cover",
+   date: "2025-05-16",
+   unit: "夢星家",
+   artist: "ワンダーランズ×ショウタイム × 巡音ルカ",
+   singer: "夢星家(夢追翔、星川サラ)",
+   video: "u6pBBFWsxEI"
+ },
+      {
+   title: "10月無口な君を忘れる",
+   count: "2",
+   type: "cover",
+   date: "2025-03-16",
+   unit: "",
+   artist: "あたらよ",
+   singer: "夢追翔、神楽めあ",
+   video: "4BbpFsve1cw"
+ },
+      {
+   title: "ずうっといっしょ！",
+   count: "1",
+   type: "cover",
+   date: "2025-03-14",
+   unit: "",
+   artist: "キタニタツヤ",
+   singer: "夢追翔",
+   video: "kE9wfcvMzOk"
+ },
+      {
+   title: "シンデレラガール",
+   count: "5",
+   type: "cover",
+   date: "2025-02-26",
+   unit: "",
+   artist: "King ＆ Prince",
+   singer: "夢追翔、犬山たまき、オリバー・エバンス、神田笑一、ベルモンド・バンデラス、夕刻ロベル",
+   video: "s5Ag2eaBl3c"
+ },
+      {
    title: "Bunny Girl",
    count: "1",
    type: "cover",
@@ -59,7 +119,7 @@ const songData = [
    end: 390
  },
  {
-   title: "The Stage Is Mine",
+   title: "The Stage Is Mine(2024.12.20)",
    count: "1",
    type: "original",
    date: "2024-12-20",
