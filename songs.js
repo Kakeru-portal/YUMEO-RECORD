@@ -3,6 +3,36 @@
 // =========================
 const songData = [
       {
+   title: "8.31",
+   count: "5",
+   type: "original",
+   date: "2025-07-25",
+   unit: "",
+   artist: "弦月藤士郎",
+   singer: "夢追翔、五十嵐梨花、石神のぞみ、ガオン、綺沙良、倉持めると、弦月藤士郎、栞葉るり、ソ ナギ、渚トラウト、一橋綾人、先斗寧、舞元啓介、町田ちま、Millie Parfait、緑仙、ルイス・キャミー",
+   video: "2PHuxxGkT20"
+ },
+      {
+   title: "RELAY",
+   count: "5",
+   type: "cover",
+   date: "2025-07-25",
+   unit: "",
+   artist: "藤原美慶",
+   singer: "夢追翔、五十嵐梨花、石神のぞみ、ガオン、綺沙良、倉持めると、弦月藤士郎、栞葉るり、ソ ナギ、渚トラウト、一橋綾人、先斗寧、舞元啓介、町田ちま、ミリー・パフェ、緑仙、ルイス・キャミー",
+   video: "hWKtgRnWmn4"
+ },
+      {
+   title: "アンチユー",
+   count: "2",
+   type: "cover",
+   date: "2025-07-19",
+   unit: "ゆめおいまちた",
+   artist: "Chinozo",
+   singer: "ゆめおいまちた(夢追翔、町田ちま)",
+   video: "sUXwjpikUmY"
+ },
+      {
    title: "The Stage Is Mine (2025.6.28)",
    count: "1",
    type: "original",
