@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "アイドル",
+   count: "1",
+   type: "cover",
+   date: "2023-06-28",
+   unit: "",
+   artist: "YOASOBI",
+   singer: "夢追翔",
+   video: "JvNTwbiIx7E"
+ },
+      {
    title: "僕は空気が嫁ない",
    count: "1",
    type: "cover",
