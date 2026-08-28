@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ヴァンパイア(2021.8.6)",
+   count: "1",
+   type: "cover",
+   date: "2021-08-06",
+   unit: "",
+   artist: "DECO*27",
+   singer: "夢追翔",
+   video: "Ztfi-e06KqM"
+ },
+      {
    title: "ドライフラワー(2021.7.21)",
    count: "1",
    type: "cover",
@@ -361,7 +371,7 @@ const songData = [
    end: 1716
  },
  {
-   title: "ヴァンパイア",
+   title: "ヴァンパイア(2021.6.15)",
    count: "1",
    type: "cover",
    date: "2021-06-15",
