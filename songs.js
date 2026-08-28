@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "死にたくないから生きている(2020.8.17)",
+   count: "1",
+   type: "original",
+   date: "2020-08-17",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vyh3ktLW7qA",
+   start: 3000,
+   end: 3270
+ },
+ {
+   title: "空に歌えば(2020.8.17)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-17",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "Vyh3ktLW7qA",
+   start: 3366,
+   end: 3585
+ },
+ {
+   title: "人より上手に",
+   count: "1",
+   type: "original",
+   date: "2020-08-17",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vyh3ktLW7qA",
+   start: 3681,
+   end: 3986
+ },
+ {
+   title: "名前(2020.8.17)",
+   count: "1",
+   type: "cover",
+   date: "2020-08-17",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "Vyh3ktLW7qA",
+   start: 4107,
+   end: 4461
+ },
+ {
+   title: "僕の頭から出ていけ",
+   count: "1",
+   type: "original",
+   date: "2020-08-17",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "Vyh3ktLW7qA",
+   start: 4599,
+   end: 4891
+ },
+      {
    title: "高嶺の花子さん(2020.8.6)",
    count: "1",
    type: "cover",
@@ -923,7 +983,7 @@ const songData = [
    end: 6045
  },
  {
-   title: "空に歌えば",
+   title: "空に歌えば(2019.11.28)",
    count: "1",
    type: "cover",
    date: "2019-11-28",
@@ -4150,7 +4210,7 @@ start: 1278,
 end: 1520
 },
 {
-title: "名前",
+title: "名前(2018.10.4)",
 count: "1",
 type: "cover",
 date: "2018-10-04",
