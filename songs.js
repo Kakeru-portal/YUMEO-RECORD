@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "オトノナルホウヘ→(2023.10.23)",
+   count: "5",
+   type: "cover",
+   date: "2023-10-23",
+   unit: "元SEEDs2期生第3弾組",
+   artist: "Goose house",
+   singer: "元SEEDs2期生第3弾組(夢追翔、黒井しば、成瀬鳴、ベルモンド・バンデラス、矢車りね)",
+   video: "LTfLs3YH8BY"
+ },
+      {
    title: "Ready Steady",
    count: "3",
    type: "cover",
@@ -2523,7 +2533,7 @@ const songData = [
    video: "jW1lMXtazBc"
  },
       {
-   title: "オトノナルホウヘ→",
+   title: "オトノナルホウヘ→(2020.4.12)",
    count: "4",
    type: "cover",
    date: "2020-04-12",
