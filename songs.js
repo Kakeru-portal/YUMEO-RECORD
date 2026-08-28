@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "虹の在り処",
+   count: "1",
+   type: "original",
+   date: "2023-12-23",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "bbsrmNlp_lY"
+ },
+      {
    title: "人より上手に(2023.12.5)",
    count: "1",
    type: "original",
