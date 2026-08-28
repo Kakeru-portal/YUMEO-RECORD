@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "青と夏(2021.8.16)",
+   count: "1",
+   type: "cover",
+   date: "2021-08-16",
+   unit: "",
+   artist: "Mrs. GREEN APPLE",
+   singer: "夢追翔",
+   video: "SeOGuORv0Qw"
+ },
+      {
    title: "ファンサ(2021.8.7)",
    count: "5",
    type: "cover",
@@ -171,7 +181,7 @@ const songData = [
    end: 2615
  },
  {
-   title: "青と夏",
+   title: "青と夏(2021.6.28)",
    count: "1",
    type: "cover",
    date: "2021-06-28",
