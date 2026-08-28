@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "シャンパンゴールド",
+   count: "4",
+   type: "cover",
+   date: "2022-09-22",
+   unit: "",
+   artist: "伊弉冉一二三(木島隆一)",
+   singer: "夢追翔、犬山たまき、神田笑一、ベルモンド・バンデラス",
+   video: "cTusR-ffRjs",
+   start: 2613,
+   end: 2856
+ },
+      {
    title: "gift",
    count: "1",
    type: "cover",
