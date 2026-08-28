@@ -3,6 +3,28 @@
 // =========================
 const songData = [
       {
+   title: "Flyer!",
+   count: "3",
+   type: "cover",
+   date: "2025-08-22",
+   unit: "黒夢町",
+   artist: "Chinozo",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "-9cPZpbz-HI"
+ },
+      {
+   title: "虹",
+   count: "4",
+   type: "cover",
+   date: "2025-08-08",
+   unit: "",
+   artist: "Aqua Timez",
+   singer: "夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね",
+   video: "7wJJFIFzvvM",
+   start: 2772,
+   end: 3105
+ },
+      {
    title: "8.31",
    count: "5",
    type: "original",
