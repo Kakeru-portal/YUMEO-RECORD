@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "キミシダイ列車",
+   count: "1",
+   type: "cover",
+   date: "2022-08-21",
+   unit: "",
+   artist: "ONE OK ROCK",
+   singer: "夢追翔",
+   video: "CGNh_ylIESc",
+   start: 2360,
+   end: 2597
+ },
+      {
    title: "人より上手に(2022.8.15)",
    count: "1",
    type: "original",
