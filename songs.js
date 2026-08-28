@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "夜もすがら君想ふ",
+   count: "1",
+   type: "cover",
+   date: "2019-12-18",
+   unit: "",
+   artist: "TOKOTOKO(西沢さんP)",
+   singer: "夢追翔",
+   video: "FBItnhsI9do",
+   start: 400,
+   end: 643
+ },
+ {
+   title: "ロメオ -N.Edit-",
+   count: "3",
+   type: "cover",
+   date: "2019-12-18",
+   unit: "",
+   artist: "LIP×LIP(勇次郎・愛蔵 / CV.内山昂輝・島﨑信長)",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "FBItnhsI9do",
+   start: 1784,
+   end: 1974
+ },
+ {
+   title: "Pretender (2019.12.18)",
+   count: "3",
+   type: "cover",
+   date: "2019-12-18",
+   unit: "",
+   artist: "Official髭男dism",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "FBItnhsI9do",
+   start: 2147,
+   end: 2424
+ },
+ {
+   title: "Fire◎Flower",
+   count: "3",
+   type: "cover",
+   date: "2019-12-18",
+   unit: "",
+   artist: "halyosy",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "FBItnhsI9do",
+   start: 2756,
+   end: 3019
+ },
+      {
    title: "Vital-バイタル-",
    count: "5",
    type: "original",
@@ -357,7 +405,7 @@ const songData = [
    end: 2901
  },
       {
-   title: "Pretender",
+   title: "Pretender(2019.9.24)",
    count: "1",
    type: "cover",
    date: "2019-09-24",
