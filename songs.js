@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "正義",
+   count: "1",
+   type: "cover",
+   date: "2020-09-28",
+   unit: "",
+   artist: "ずっと真夜中でいいのに。",
+   singer: "夢追翔",
+   video: "yEzdVDU4zC8"
+ },
+      {
    title: "残酷な天使のテーゼ",
    count: "1",
    type: "cover",
