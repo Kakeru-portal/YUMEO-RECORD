@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "I LOVE…",
+   count: "1",
+   type: "cover",
+   date: "2021-02-14",
+   unit: "",
+   artist: "Official髭男dism",
+   singer: "夢追翔",
+   video: "wOJcsZdzHjw"
+ },
+      {
    title: "大嫌いだ",
    count: "1",
    type: "original",
