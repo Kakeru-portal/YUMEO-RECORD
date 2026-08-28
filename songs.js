@@ -3,6 +3,88 @@
 // =========================
 const songData = [
       {
+   title: "月光",
+   count: "3",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "黒夢町",
+   artist: "キタニタツヤ × はるまきごはん",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "sVJxFLPkrTY",
+   start: 270,
+   end: 507
+ },
+ {
+   title: "AI♡SCREAM!",
+   count: "3",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "黒夢町",
+   artist: "AiScReam",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "sVJxFLPkrTY",
+   start: 511,
+   end: 768
+ },
+ {
+   title: "3年目の浮気",
+   count: "2",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "",
+   artist: "ヒロシ＆キーボー",
+   singer: "夢追翔、黒井しば",
+   video: "sVJxFLPkrTY",
+   start: 1387,
+   end: 1601
+ },
+ {
+   title: "花になって",
+   count: "2",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "",
+   artist: "緑黄色社会",
+   singer: "夢追翔、町田ちま",
+   video: "sVJxFLPkrTY",
+   start: 1643,
+   end: 1842
+ },
+ {
+   title: "AmBitious!!!",
+   count: "3",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "黒夢町",
+   artist: "BAE",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "sVJxFLPkrTY",
+   start: 2804,
+   end: 3018
+ },
+ {
+   title: "三原色",
+   count: "3",
+   type: "cover",
+   date: "2026-04-26",
+   unit: "黒夢町",
+   artist: "YOASOBI",
+   singer: "黒夢町(夢追翔、黒井しば、町田ちま)",
+   video: "sVJxFLPkrTY",
+   start: 3740,
+   end: 3960
+ },
+      {
+   title: "Same Blue",
+   count: "1",
+   type: "cover",
+   date: "2026-04-14",
+   unit: "",
+   artist: "Official髭男dism",
+   singer: "夢追翔",
+   video: "wFNDEU-S5ho"
+ },
+      {
    title: "寿司でたまらない",
    count: "4",
    type: "original",
