@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ミックスナッツ",
+   count: "2",
+   type: "cover",
+   date: "2022-11-16",
+   unit: "夢星家",
+   artist: "Official髭男dism",
+   singer: "夢星家(夢追翔、星川サラ)",
+   video: "b0MG2vWEg2M"
+ },
+      {
    title: "人間じゃないよな",
    count: "1",
    type: "original",
