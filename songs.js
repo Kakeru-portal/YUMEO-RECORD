@@ -587,7 +587,7 @@ const songData = [
    end: 772
  },
       {
-   title: "白日",
+   title: "白日(2019.8.31)",
    count: "1",
    type: "cover",
    date: "2019-08-31",
