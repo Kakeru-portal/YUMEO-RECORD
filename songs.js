@@ -3,6 +3,138 @@
 // =========================
 const songData = [
       {
+   title: "ラフメイカー(2020.4.25)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "BUMP OF CHICKEN",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 19299,
+   end: 19498
+ },
+ {
+   title: "Flowerwall",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 19509,
+   end: 19768
+ },
+ {
+   title: "サリシノハラ(2020.4.25)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "みきとP",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 19800,
+   end: 20026
+ },
+ {
+   title: "SAKURAドロップス",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "宇多田ヒカル",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20074,
+   end: 20103
+ },
+ {
+   title: "unravel",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "TK from 凛として時雨",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20176,
+   end: 20212
+ },
+ {
+   title: "abnormalize",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "凛として時雨",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20215,
+   end: 20296
+ },
+ {
+   title: "MASTER OF MUSIC",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "The Cat’s Whiskers",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20352,
+   end: 18877
+ },
+ {
+   title: "BAD BOYZ -悪漢奴等 Underground-",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "悪漢奴等",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20526,
+   end: 20683
+ },
+ {
+   title: "夜もすがら君想ふ(2020.4.25)",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "TOKOTOKO(西沢さんP)",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 20760,
+   end: 21433
+ },
+ {
+   title: "惑星ループ",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "ナユタン星人",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 21433,
+   end: 21494
+ },
+ {
+   title: "サボテンと蜃気楼",
+   count: "1",
+   type: "cover",
+   date: "2020-04-25",
+   unit: "",
+   artist: "若干P",
+   singer: "夢追翔",
+   video: "_5XX4eBAxGE",
+   start: 21535,
+   end: 21819
+ },
+      {
    title: "スマイル・エンゲージ",
    count: "3",
    type: "cover",
@@ -95,7 +227,7 @@ const songData = [
    video: "YiPvzpzdf5Y"
  },
       {
-   title: "Playtime Magic",
+   title: "Playtime Magic(2020.3.18)",
    count: "3",
    type: "original",
    date: "2020-03-18",
@@ -191,7 +323,7 @@ const songData = [
    end: 2036
  },
  {
-   title: "サリシノハラ",
+   title: "サリシノハラ(2020.1.28)",
    count: "3",
    type: "cover",
    date: "2020-01-28",
@@ -321,7 +453,7 @@ const songData = [
    video: "A5o8--ih8Ks"
  },
       {
-   title: "夜もすがら君想ふ",
+   title: "夜もすがら君想ふ(2019.12.18)",
    count: "1",
    type: "cover",
    date: "2019-12-18",
@@ -3593,7 +3725,7 @@ const songData = [
    end: 1913
  },
  {
-   title: "Flowerwall",
+   title: "Flowerwall(2018.10.10)",
    count: "1",
    type: "cover",
    date: "2018-10-10",
