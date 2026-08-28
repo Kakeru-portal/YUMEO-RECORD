@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "GO!!!(2022.5.29)",
+   count: "2",
+   type: "cover",
+   date: "2022-05-29",
+   unit: "",
+   artist: "FLOW",
+   singer: "夢追翔、神田笑一",
+   video: "B13LC6ay6Y4",
+   start: 460,
+   end: 696
+ },
+ {
+   title: "Virtual to LIVE",
+   count: "5",
+   type: "cover",
+   date: "2022-05-29",
+   unit: "",
+   artist: "にじさんじ",
+   singer: "夢追翔、神田笑一、郡道美玲、フミ、星川サラ",
+   video: "B13LC6ay6Y4",
+   start: 3224,
+   end: 3489
+ },
+      {
    title: "命に価値はないのだから",
    count: "1",
    type: "original",
@@ -4813,7 +4837,7 @@ const songData = [
    end: 1384
  },
  {
-   title: "GO!!!",
+   title: "GO!!!(2018.12.12)",
    count: "3",
    type: "cover",
    date: "2018-12-12",
