@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "LOVEドッきゅん",
+   count: "3",
+   type: "cover",
+   date: "2021-09-22",
+   unit: "",
+   artist: "CLUB PRINCE",
+   singer: "夢追翔、犬山たまき、神田笑一",
+   video: "JAIomDWKETw",
+   start: 2340,
+   end: 2641
+ },
+      {
    title: "アイネクライネ(2021.8.27)",
    count: "2",
    type: "cover",
