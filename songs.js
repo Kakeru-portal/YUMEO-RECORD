@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "INUYAMA TAMAKI Crysis",
+   count: "1",
+   type: "original",
+   date: "2021-06-16",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "CEGExNFHGTY"
+ },
+      {
    title: "Cry Baby",
    count: "1",
    type: "cover",
