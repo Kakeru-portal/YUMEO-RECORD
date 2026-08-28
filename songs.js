@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "残酷な天使のテーゼ",
+   count: "1",
+   type: "cover",
+   date: "2020-09-27",
+   unit: "",
+   artist: "高橋洋子",
+   singer: "夢追翔",
+   video: "FHpyhubosy8",
+   start: 23,
+   end: 270
+ },
+ {
+   title: "abnormalize (2020.9.27)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-27",
+   unit: "",
+   artist: "凛として時雨",
+   singer: "夢追翔",
+   video: "FHpyhubosy8",
+   start: 335,
+   end: 555
+ },
+ {
+   title: "オリオンをなぞる",
+   count: "1",
+   type: "cover",
+   date: "2020-09-27",
+   unit: "",
+   artist: "UNISON SQUARE GARDEN",
+   singer: "夢追翔",
+   video: "FHpyhubosy8",
+   start: 620,
+   end: 884
+ },
+ {
+   title: "ミュージック・アワー(2020.9.27)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-27",
+   unit: "",
+   artist: "ポルノグラフィティ",
+   singer: "夢追翔",
+   video: "FHpyhubosy8",
+   start: 986,
+   end: 1259
+ },
+ {
+   title: "創聖のアクエリオン(2020.9.27)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-27",
+   unit: "",
+   artist: "AKINO",
+   singer: "夢追翔",
+   video: "FHpyhubosy8",
+   start: 1339,
+   end: 1621
+ },
+      {
    title: "たしかなこと",
    count: "1",
    type: "cover",
@@ -579,7 +639,7 @@ const songData = [
    end: 20212
  },
  {
-   title: "abnormalize",
+   title: "abnormalize(2020.4.25)",
    count: "1",
    type: "cover",
    date: "2020-04-25",
@@ -1927,7 +1987,7 @@ const songData = [
    video: "1u9ESQRXTMo"
  },
       {
-   title: "創聖のアクエリオン",
+   title: "創聖のアクエリオン(2019.5.28)",
    count: "1",
    type: "cover",
    date: "2019-05-28",
@@ -3187,7 +3247,7 @@ const songData = [
    end: 1810
  },
  {
-   title: "ミュージック・アワー",
+   title: "ミュージック・アワー(2018.12.27)",
    count: "1",
    type: "cover",
    date: "2018-12-27",
