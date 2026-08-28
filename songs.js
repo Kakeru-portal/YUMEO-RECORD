@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Stop the Internet",
+   count: "1",
+   type: "original",
+   date: "2022-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "_Q4ZAP5bdy8"
+ },
+      {
    title: "君の瞳に恋してない",
    count: "1",
    type: "cover",
