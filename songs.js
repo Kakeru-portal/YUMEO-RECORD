@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2022.8.15)",
+   count: "1",
+   type: "original",
+   date: "2022-08-15",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "znd3PcVOE9E",
+   start: 7679,
+   end: 7698
+ },
+      {
    title: "オリジナリティ欠乏症(2022.6.28)",
    count: "1",
    type: "original",
@@ -415,7 +427,7 @@ const songData = [
    video: "6ggX0xXrGW4"
  },
       {
-   title: "オリジナリティ欠乏症",
+   title: "オリジナリティ欠乏症(2021.7.19)",
    count: "1",
    type: "original",
    date: "2021-07-19",
