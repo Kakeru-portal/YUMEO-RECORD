@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "怪物",
+   count: "1",
+   type: "cover",
+   date: "2021-06-23",
+   unit: "",
+   artist: "YOASOBI",
+   singer: "夢追翔",
+   video: "u6dxIDLpQsg"
+ },
+      {
    title: "INUYAMA TAMAKI Crysis",
    count: "1",
    type: "original",
