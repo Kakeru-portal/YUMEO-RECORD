@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "静謐なる虚飾楽園",
+   count: "1",
+   type: "original",
+   date: "2024-07-26",
+   unit: "",
+   artist: "夢追翔 feat. アマデウス(CV:夢追翔)",
+   singer: "アマデウス(CV. 夢追翔)",
+   video: "bMzv4umZ0J4"
+ },
+      {
    title: "アテンションノート",
    count: "2",
    type: "original",
