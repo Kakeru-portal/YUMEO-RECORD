@@ -3,6 +3,30 @@
 // =========================
 const songData = [
       {
+   title: "かつて天才だった俺たちへ(アカペラ)",
+   count: "1",
+   type: "cover",
+   date: "2021-04-10",
+   unit: "",
+   artist: "Creepy Nuts",
+   singer: "夢追翔",
+   video: "IVeYHGM6FeY",
+   start: 487,
+   end: 686
+ },
+ {
+   title: "かつて天才だった俺たちへ(2021.4.10)",
+   count: "1",
+   type: "cover",
+   date: "2021-04-10",
+   unit: "",
+   artist: "Creepy Nuts",
+   singer: "夢追翔",
+   video: "IVeYHGM6FeY",
+   start: 7203,
+   end: 7415
+ },
+      {
    title: "青空を睨む",
    count: "1",
    type: "original",
