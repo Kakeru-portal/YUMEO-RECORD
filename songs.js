@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "ないものねだり",
+   count: "2",
+   type: "cover",
+   date: "2020-09-12",
+   unit: "",
+   artist: "KANA-BOON",
+   singer: "夢追翔、レヴィ・エリファ",
+   video: "vMHDHV7f_yU"
+ },
+      {
    title: "ロングホープ・フィリア(2020.9.3)",
    count: "1",
    type: "cover",
