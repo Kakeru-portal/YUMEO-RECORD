@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "Nighthawks",
+   count: "1",
+   type: "cover",
+   date: "2024-06-28",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "OPEhAcpk158",
+   start: 177,
+   end: 436
+ },
+ {
+   title: "自虐家のアリー",
+   count: "1",
+   type: "cover",
+   date: "2024-06-28",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "OPEhAcpk158",
+   start: 797,
+   end: 1122
+ },
+ {
+   title: "あいつら全員同窓会",
+   count: "1",
+   type: "cover",
+   date: "2024-06-28",
+   unit: "",
+   artist: "ずっと真夜中でいいのに。",
+   singer: "夢追翔",
+   video: "OPEhAcpk158",
+   start: 1391,
+   end: 1644
+ },
+ {
+   title: "ギラギラ(2024.6.28)",
+   count: "1",
+   type: "cover",
+   date: "2024-06-28",
+   unit: "",
+   artist: "Ado",
+   singer: "夢追翔",
+   video: "OPEhAcpk158",
+   start: 1978,
+   end: 2256
+ },
+ {
+   title: "さよーならまたいつか！",
+   count: "1",
+   type: "cover",
+   date: "2024-06-28",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔",
+   video: "OPEhAcpk158",
+   start: 2877,
+   end: 3077
+ },
+      {
    title: "仮死化",
    count: "2",
    type: "cover",
@@ -1355,7 +1415,7 @@ const songData = [
    end: 914
  },
  {
-   title: "ギラギラ",
+   title: "ギラギラ(2021.6.15)",
    count: "1",
    type: "cover",
    date: "2021-06-15",
