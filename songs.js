@@ -3,6 +3,66 @@
 // =========================
 const songData = [
       {
+   title: "フィクサー",
+   count: "1",
+   type: "cover",
+   date: "2020-10-23",
+   unit: "",
+   artist: "ぬゆり",
+   singer: "夢追翔",
+   video: "hRDL9xrH4-E",
+   start: 30,
+   end: 277
+ },
+ {
+   title: "コバルトメモリーズ",
+   count: "1",
+   type: "cover",
+   date: "2020-10-23",
+   unit: "",
+   artist: "はるまきごはん",
+   singer: "夢追翔",
+   video: "hRDL9xrH4-E",
+   start: 474,
+   end: 739
+ },
+ {
+   title: "妄想感傷代償連盟",
+   count: "1",
+   type: "cover",
+   date: "2020-10-23",
+   unit: "",
+   artist: "DECO*27",
+   singer: "夢追翔",
+   video: "hRDL9xrH4-E",
+   start: 861,
+   end: 1134
+ },
+ {
+   title: "from Y to Y",
+   count: "1",
+   type: "cover",
+   date: "2020-10-23",
+   unit: "",
+   artist: "ジミーサムP",
+   singer: "夢追翔",
+   video: "hRDL9xrH4-E",
+   start: 1291,
+   end: 1622
+ },
+ {
+   title: "惑星ループ(2020.10.23)",
+   count: "1",
+   type: "cover",
+   date: "2020-10-23",
+   unit: "",
+   artist: "ナユタン星人",
+   singer: "夢追翔",
+   video: "hRDL9xrH4-E",
+   start: 1782,
+   end: 1976
+ },
+      {
    title: "RAGE OF DUST (2020.10.9)",
    count: "1",
    type: "cover",
@@ -781,7 +841,7 @@ const songData = [
    end: 21433
  },
  {
-   title: "惑星ループ",
+   title: "惑星ループ(2020.4.25)",
    count: "1",
    type: "cover",
    date: "2020-04-25",
