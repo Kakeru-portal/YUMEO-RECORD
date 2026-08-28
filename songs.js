@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "トンデモワンダーズ",
+   count: "5",
+   type: "cover",
+   date: "2024-04-19",
+   unit: "",
+   artist: "ワンダーランズ×ショウタイム × KAITO",
+   singer: "夢追翔、犬山たまき、神楽めあ、星川サラ、夕刻ロベル",
+   video: "n2vXxszKdDY"
+ },
+      {
    title: "ジェヘナ",
    count: "1",
    type: "cover",
