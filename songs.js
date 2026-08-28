@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "アイネクライネ(2021.8.27)",
+   count: "2",
+   type: "cover",
+   date: "2021-08-27",
+   unit: "",
+   artist: "米津玄師",
+   singer: "夢追翔、町田ちま",
+   video: "_ptGJpzO0sM"
+ },
+      {
    title: "人より上手に(2021.8.18)",
    count: "1",
    type: "original",
