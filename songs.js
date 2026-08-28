@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "アテンションノート",
+   count: "2",
+   type: "original",
+   date: "2024-07-12",
+   unit: "",
+   artist: "夢追翔 feat. カサノバ(CV:シェリン・バーガンディ)",
+   singer: "夢追翔、カサノバ(CV. シェリン・バーガンディ)",
+   video: "cD4a6ealn28"
+ },
+      {
    title: "Nighthawks",
    count: "1",
    type: "cover",
