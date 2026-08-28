@@ -13,7 +13,7 @@ const songData = [
    video: "GoRaL01l6qA"
  },
       {
-   title: "弱きに寄り添う",
+   title: "弱きに寄り添う(2021.6.28)",
    count: "1",
    type: "original",
    date: "2021-06-28",
@@ -25,7 +25,7 @@ const songData = [
    end: 385
  },
  {
-   title: "僕のあたまから出ていけ",
+   title: "僕のあたまから出ていけ(2021.6.28)",
    count: "1",
    type: "original",
    date: "2021-06-28",
@@ -699,7 +699,7 @@ const songData = [
    end: 5316
  },
       {
-   title: "僕のあたまから出ていけ",
+   title: "僕のあたまから出ていけ(2020.12.3)",
    count: "1",
    type: "original",
    date: "2020-12-03",
