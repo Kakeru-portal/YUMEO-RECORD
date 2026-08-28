@@ -3,6 +3,54 @@
 // =========================
 const songData = [
       {
+   title: "たしかなこと",
+   count: "1",
+   type: "cover",
+   date: "2020-09-25",
+   unit: "",
+   artist: "小田和正",
+   singer: "夢追翔",
+   video: "jvYNuFS0-Yc",
+   start: 1440,
+   end: 1735
+ },
+ {
+   title: "雪の華(2020.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-25",
+   unit: "",
+   artist: "中島美嘉",
+   singer: "夢追翔",
+   video: "jvYNuFS0-Yc",
+   start: 1851,
+   end: 2173
+ },
+ {
+   title: "変わらないもの",
+   count: "1",
+   type: "cover",
+   date: "2020-09-25",
+   unit: "",
+   artist: "奥華子",
+   singer: "夢追翔",
+   video: "jvYNuFS0-Yc",
+   start: 2306,
+   end: 2558
+ },
+ {
+   title: "恋(2020.9.25)",
+   count: "1",
+   type: "cover",
+   date: "2020-09-25",
+   unit: "",
+   artist: "星野源",
+   singer: "夢追翔",
+   video: "jvYNuFS0-Yc",
+   start: 2666,
+   end: 2927
+ },
+      {
    title: "光るなら",
    count: "5",
    type: "cover",
@@ -3507,7 +3555,7 @@ const songData = [
    end: 182
  },
  {
-   title: "恋",
+   title: "恋(2018.12.8)",
    count: "1",
    type: "cover",
    date: "2018-12-08",
