@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "死にたくないから生きている(2021.4.27)",
+   count: "1",
+   type: "original",
+   date: "2021-04-27",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "1ANsos282MU"
+ },
+      {
    title: "SHINING LINE*",
    count: "1",
    type: "cover",
