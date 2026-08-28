@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Alice in N.Y.",
+   count: "3",
+   type: "cover",
+   date: "2019-12-24",
+   unit: "le jouet",
+   artist: "ひとしずく×やま△",
+   singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
+   video: "A5o8--ih8Ks"
+ },
+      {
    title: "夜もすがら君想ふ",
    count: "1",
    type: "cover",
@@ -19,7 +29,7 @@ const songData = [
    count: "3",
    type: "cover",
    date: "2019-12-18",
-   unit: "",
+   unit: "le jouet",
    artist: "LIP×LIP(勇次郎・愛蔵 / CV.内山昂輝・島﨑信長)",
    singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
    video: "FBItnhsI9do",
@@ -31,7 +41,7 @@ const songData = [
    count: "3",
    type: "cover",
    date: "2019-12-18",
-   unit: "",
+   unit: "le jouet",
    artist: "Official髭男dism",
    singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
    video: "FBItnhsI9do",
@@ -43,7 +53,7 @@ const songData = [
    count: "3",
    type: "cover",
    date: "2019-12-18",
-   unit: "",
+   unit: "le jouet",
    artist: "halyosy",
    singer: "le jouet (夢追翔、加賀美ハヤト、緑仙)",
    video: "FBItnhsI9do",
