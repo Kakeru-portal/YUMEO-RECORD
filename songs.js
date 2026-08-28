@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Stargazer",
+   count: "5",
+   type: "original",
+   date: "2024-12-15",
+   unit: "",
+   artist: "ALL V-ARTISTS",
+   singer: "ALL V-ARTISTS(夢追翔、朝ノ瑠璃、天音かなた、大神ミオ、渋谷ハル、周防パトラ、樋口楓、V.W.P、緋月ゆい、富士葵、桃鈴ねね、MonsterZ MATE、雪花ラミィ、YuNi)",
+   video: "s_08ST1sH5c"
+ },
+      {
    title: "青のすみか",
    count: "1",
    type: "cover",
