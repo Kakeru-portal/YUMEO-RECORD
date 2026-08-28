@@ -18,7 +18,7 @@ const songData = [
    type: "original",
    date: "2020-03-18",
    unit: "",
-   artist: "夢追翔、加賀美ハヤト、緑仙",
+   artist: "加賀美ハヤト / 夢追翔 / 緑仙",
    singer: "夢追翔、加賀美ハヤト、緑仙",
    video: "ERp3QIg9KhA"
  },
