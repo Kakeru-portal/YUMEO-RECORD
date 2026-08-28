@@ -3,6 +3,56 @@
 // =========================
 const songData = [
       {
+   title: "共感性終止",
+   count: "1",
+   type: "original",
+   date: "2022-11-30",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "IwEcL6ONuFg"
+ },
+      {
+   title: "どうせ生きるなら",
+   count: "1",
+   type: "original",
+   date: "2022-11-30",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "TaEGkBfStxw"
+ },
+      {
+   title: "音楽なんざクソくらえ",
+   count: "1",
+   type: "original",
+   date: "2022-11-30",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "ycEnkeTTG8c"
+ },
+      {
+   title: "君の好きな僕",
+   count: "1",
+   type: "original",
+   date: "2022-11-30",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "cxgl0WUfXqw"
+ },
+      {
+   title: "天に唾吐く",
+   count: "1",
+   type: "original",
+   date: "2022-11-30",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "liZOI5p7HcA"
+ },
+      {
    title: "ミックスナッツ",
    count: "2",
    type: "cover",
