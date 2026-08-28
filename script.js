@@ -312,42 +312,44 @@ function saveFavorites(favorites) {
   favoriteButton.setAttribute('aria-label', 'お気に入り登録');
 }
 }
-   document.querySelectorAll('.favorite-button').forEach(button => {
-   button.addEventListener('click', event => {
-       event.stopPropagation();
-       const song = button.closest('.song');
-       if (!song) return;
-       const title = song.querySelector('h3').textContent.trim();
-       const favorites = getFavorites();
-       if (favorites.includes(title)) {
-           const updatedFavorites = favorites.filter(item => item !== title);
-           saveFavorites(updatedFavorites);
-           // お気に入りタブを開いている場合は、その場で曲を非表示
-           if (favoriteSongsTab?.classList.contains('active')) {
-               song.style.display = 'none';
-               const visibleSongs = Array.from(
-                   document.querySelectorAll('.song')
-               ).filter(song => song.style.display !== 'none');
-               const resultCount = document.getElementById('searchResultCount');
-               if (resultCount) {
-                   resultCount.textContent = `お気に入り ${visibleSongs.length}曲`;
-               }
-               const favoriteEmptyMessage =
-                   document.getElementById('favoriteEmptyMessage');
-               if (favoriteEmptyMessage) {
-                   favoriteEmptyMessage.style.display =
-                       visibleSongs.length === 0 ? 'block' : 'none';
-               }
+   document.addEventListener('click', event => {
+   const button = event.target.closest('.favorite-button');
+   if (!button) return;
+   event.stopPropagation();
+   const song = button.closest('.song');
+   if (!song) return;
+   const title = song.querySelector('h3').textContent.trim();
+   const favorites = getFavorites();
+   if (favorites.includes(title)) {
+       const updatedFavorites = favorites.filter(item => item !== title);
+       saveFavorites(updatedFavorites);
+       // お気に入りタブを開いている場合は、その場で曲を非表示
+       if (favoriteSongsTab?.classList.contains('active')) {
+           song.style.display = 'none';
+           const visibleSongs = Array.from(
+               document.querySelectorAll('.song')
+           ).filter(song => song.style.display !== 'none');
+           const resultCount =
+               document.getElementById('searchResultCount');
+           if (resultCount) {
+               resultCount.textContent =
+                   `お気に入り ${visibleSongs.length}曲`;
            }
-       } else {
-           favorites.push(title);
-           saveFavorites(favorites);
+           const favoriteEmptyMessage =
+               document.getElementById('favoriteEmptyMessage');
+           if (favoriteEmptyMessage) {
+               favoriteEmptyMessage.style.display =
+                   visibleSongs.length === 0 ? 'block' : 'none';
+           }
        }
-       updateCardFavoriteButton(song);
-       if (currentSong === song) {
-           updateFavoriteButton(song);
-       }
-   });
+   } else {
+       favorites.push(title);
+       saveFavorites(favorites);
+   }
+   updateCardFavoriteButton(song);
+   if (currentSong === song) {
+       updateFavoriteButton(song);
+   }
 });
    function updateFavoriteButton(song) {
   if (!popupFavorite || !song) return;
@@ -817,14 +819,14 @@ playSong(randomSong);
 }
 });
 function createSongCard(song) {
-const songElement = document.createElement('div');
-songElement.className = 'song';
-songElement.dataset.count = song.count;
-songElement.dataset.type = song.type;
-songElement.dataset.date = song.date;
-songElement.dataset.unit = song.unit;
-const year = song.date ? song.date.substring(0, 4) : '';
-songElement.innerHTML = `
+   const songElement = document.createElement('div');
+   songElement.className = 'song';
+   songElement.dataset.count = song.count;
+   songElement.dataset.type = song.type;
+   songElement.dataset.date = song.date;
+   songElement.dataset.unit = song.unit;
+   const year = song.date ? song.date.substring(0, 4) : '';
+   songElement.innerHTML = `
 <div class="song-card">
 <h3>${song.title}</h3>
 <div class="song-tags">
@@ -834,24 +836,34 @@ songElement.innerHTML = `
 <p>原曲：${song.artist}</p>
 <p>歌唱：${song.singer}</p>
 <button
-      type="button"
-      class="play-button"
-      data-title="${song.title}"
-      data-video="${song.video}"
-      data-start="${song.start || ''}"
-      data-end="${song.end || ''}"
+   type="button"
+   class="play-button"
+   data-title="${song.title}"
+   data-video="${song.video}"
+   data-start="${song.start || ''}"
+   data-end="${song.end || ''}"
 >
-      ▶ 再生
+   ▶ 再生
+</button>
+<button
+   type="button"
+   class="favorite-button"
+   aria-label="お気に入り登録"
+>
+   ♡
 </button>
 </div>
 `;
-return songElement;
+   return songElement;
 }
 const songList = document.getElementById('songList');
 if (songList) {
- songData.forEach(song => {
-   songList.appendChild(createSongCard(song));
- });
+   songData.forEach(song => {
+       const songElement = createSongCard(song);
+       songList.appendChild(songElement);
+       // 保存されているお気に入り状態を反映
+       updateCardFavoriteButton(songElement);
+   });
 }
 filterSongs();
 
@@ -881,27 +893,6 @@ if (infoPopupOverlay && infoPopup) {
      infoPopup.classList.remove('active');
   });
 }
-// =========================
-// お気に入りボタンを自動追加
-// =========================
-document.querySelectorAll('.song').forEach(song => {
- const card = song.querySelector('.song-card');
- if (!card) return;
- // すでにボタンがある場合は追加しない
- if (card.querySelector('.favorite-button')) return;
- const playButton = card.querySelector('.play-button');
- const favoriteButton = document.createElement('button');
- favoriteButton.type = 'button';
- favoriteButton.className = 'favorite-button';
- favoriteButton.textContent = '♡';
- favoriteButton.setAttribute('aria-label', 'お気に入り登録');
- // 再生ボタンがあれば、そのすぐ隣に追加
- if (playButton) {
-    playButton.insertAdjacentElement('afterend', favoriteButton);
- } else {
-    card.appendChild(favoriteButton);
- }
-});
 // =========================
 // 楽曲の並べ替え
 // =========================
