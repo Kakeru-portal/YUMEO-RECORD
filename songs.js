@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "オリジナリティ欠乏症(2022.6.28)",
+   count: "1",
+   type: "original",
+   date: "2022-06-28",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "UmIA_rIYP7Y"
+ },
+      {
    title: "Stop the Internet",
    count: "1",
    type: "original",
