@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "春を告げる(2021.2.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-02-25",
+   unit: "",
+   artist: "yama",
+   singer: "夢追翔",
+   video: "SUCfY1XgN9I"
+ },
+      {
    title: "春を告げる(アカペラ)",
    count: "1",
    type: "cover",
