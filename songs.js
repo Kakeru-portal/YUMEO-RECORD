@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "青のすみか",
+   count: "1",
+   type: "cover",
+   date: "2024-12-15",
+   unit: "",
+   artist: "キタニタツヤ",
+   singer: "夢追翔",
+   video: "Bt5dtULDvkc"
+ },
+      {
    title: "ウィーアー!(2024.12.15)",
    count: "4",
    type: "cover",
