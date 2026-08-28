@@ -3,6 +3,42 @@
 // =========================
 const songData = [
       {
+   title: "白い恋人達(2019.12.25)",
+   count: "1",
+   type: "cover",
+   date: "2019-12-25",
+   unit: "",
+   artist: "桑田佳祐",
+   singer: "夢追翔",
+   video: "nqunaqX4sOY",
+   start: 608,
+   end: 882
+ },
+ {
+   title: "クリスマス",
+   count: "1",
+   type: "cover",
+   date: "2019-12-25",
+   unit: "",
+   artist: "amazarashi",
+   singer: "夢追翔",
+   video: "nqunaqX4sOY",
+   start: 991,
+   end: 1092
+ },
+ {
+   title: "クリスマスソング",
+   count: "1",
+   type: "cover",
+   date: "2019-12-25",
+   unit: "",
+   artist: "back number",
+   singer: "夢追翔",
+   video: "nqunaqX4sOY",
+   start: 1267,
+   end: 1437
+ },
+      {
    title: "Alice in N.Y.",
    count: "3",
    type: "cover",
@@ -1361,7 +1397,7 @@ const songData = [
    end: 915
  },
  {
-   title: "白い恋人達",
+   title: "白い恋人達(2019.3.11)",
    count: "1",
    type: "cover",
    date: "2019-03-11",
