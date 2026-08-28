@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "三文小説(2021.1.25)",
+   count: "1",
+   type: "cover",
+   date: "2021-01-25",
+   unit: "",
+   artist: "King Gnu",
+   singer: "夢追翔",
+   video: "GpDuosdcYnE"
+ },
+      {
    title: "三文小説(アカペラ)",
    count: "1",
    type: "cover",
