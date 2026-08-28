@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "プロトディスコ(2020.5.18)",
+   count: "1",
+   type: "cover",
+   date: "2020-05-18",
+   unit: "",
+   artist: "ぬゆり",
+   singer: "夢追翔",
+   video: "Sw6Ca9EkfpU"
+ },
+      {
    title: "ただ君に晴れ(take 1)",
    count: "1",
    type: "cover",
@@ -2891,7 +2901,7 @@ const songData = [
    end: 477
  },
  {
-   title: "プロトディスコ",
+   title: "プロトディスコ(2018.12.19)",
    count: "1",
    type: "cover",
    date: "2018-12-19",
