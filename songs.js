@@ -3,6 +3,36 @@
 // =========================
 const songData = [
       {
+   title: "オリジナリティ欠乏症",
+   count: "1",
+   type: "original",
+   date: "2021-07-19",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "7oyG6Yt1V4E"
+ },
+      {
+   title: "カケル",
+   count: "1",
+   type: "original",
+   date: "2021-07-19",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "SfNbDHmwAFY"
+ },
+      {
+   title: "ミタサレナイトガール",
+   count: "1",
+   type: "original",
+   date: "2021-07-19",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "K3htSTHMnfs"
+ },
+      {
    title: "かわE",
    count: "2",
    type: "cover",
