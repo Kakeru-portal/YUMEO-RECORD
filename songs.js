@@ -3,6 +3,18 @@
 // =========================
 const songData = [
       {
+   title: "人より上手に(2023.11.23)",
+   count: "1",
+   type: "original",
+   date: "2023-11-23",
+   unit: "",
+   artist: "夢追翔",
+   singer: "夢追翔",
+   video: "dQPJSb3yGcY",
+   start: 5710,
+   end: 5725
+ },
+      {
    title: "オトノナルホウヘ→(2023.10.23)",
    count: "5",
    type: "cover",
