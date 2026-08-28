@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "たぶん",
+   count: "1",
+   type: "cover",
+   date: "2020-12-16",
+   unit: "",
+   artist: "YOASOBI",
+   singer: "夢追翔",
+   video: "UN_luor-1rY"
+ },
+      {
    title: "人より上手に(2020.12.15)",
    count: "1",
    type: "original",
