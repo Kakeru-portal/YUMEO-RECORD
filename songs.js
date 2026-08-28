@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "暴徒",
+   count: "1",
+   type: "cover",
+   date: "2024-05-30",
+   unit: "",
+   artist: "Eve",
+   singer: "夢追翔",
+   video: "mGSWRw2IWhY"
+ },
+      {
    title: "にっこり^^調査隊のテーマ",
    count: "4",
    type: "cover",
