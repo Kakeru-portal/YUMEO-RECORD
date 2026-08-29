@@ -1518,3 +1518,19 @@ body[data-theme="noble"] #informationRequestContent a {
        font-size: 15px;
    }
 }
+/* =========================
+  通常テーマ：曲一覧タブの赤い枠
+  ========================= */
+body:not([data-theme]),
+body[data-theme="normal"] {
+}
+body:not([data-theme]) #songTabs button,
+body[data-theme="normal"] #songTabs button {
+   border: 1px solid #AC324B;
+}
+/* =========================
+  貴族テーマ：曲一覧タブの紫色の枠
+  ========================= */
+body[data-theme="noble"] #songTabs button {
+   border: 1px solid #564D6A;
+}
