@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "Beyond the way",
+   count: "5",
+   type: "cover",
+   date: "2025-09-13",
+   unit: "",
+   artist: "Giga",
+   singer: "夢追翔、オリバー・エバンス、倉持めると、鷹宮リオン、不破湊、星川サラ",
+   video: "x87qUVmty1k"
+ },
+      {
    title: "会心の一撃",
    count: "5",
    type: "cover",
