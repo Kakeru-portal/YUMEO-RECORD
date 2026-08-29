@@ -1534,3 +1534,6 @@ body[data-theme="normal"] #songTabs button {
 body[data-theme="noble"] #songTabs button {
    border: 1px solid #564D6A;
 }
+#popupOriginalArtist {
+   margin-top: 8px;
+}
