@@ -611,8 +611,8 @@ if (popupSeekBar) {
    popupSongTitle.textContent = title;
 const songDate = song.dataset.date || '';
 const songYear = songDate ? songDate.substring(0, 4) + '年' : '';
-const originalArtist = song.querySelector('p:nth-of-type(2)')?.textContent.trim() || '';
-const singer = song.querySelector('p:nth-of-type(3)')?.textContent.trim() || '';
+const originalArtist = song.querySelector('p:nth-of-type(1)')?.textContent.trim() || '';
+const singer = song.querySelector('p:nth-of-type(2)')?.textContent.trim() || '';
 popupSongYear.textContent = songYear;
 popupOriginalArtist.textContent = originalArtist;
 popupSinger.textContent = singer;
