@@ -336,11 +336,11 @@ const songData = [
    title: "一旦ステイTONIGHT",
    count: "5",
    type: "original",
-   date: "",
+   date: "2025-09-13",
    unit: "",
    artist: "不破湊",
    singer: "夢追翔、オリバー・エバンス、倉持めると、鷹宮リオン、不破湊、星川サラ",
-   video: "",
+   video: "kv2iRLO6xWw",
    start: 2357,
    end: 2385
  },
