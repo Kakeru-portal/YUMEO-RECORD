@@ -6397,7 +6397,7 @@ const songData = [
    end: 111
  },
  {
-   title: "箒星",
+   title: "箒星(2018.12.8)",
    count: "1",
    type: "cover",
    date: "2018-12-08",
