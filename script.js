@@ -170,12 +170,12 @@ if (backToSearchButton) {
                searchToggleIcon.textContent = '−';
            }
        }
-       if (searchToggle) {
-           searchToggle.scrollIntoView({
-               behavior: 'smooth',
-               block: 'start'
-           });
-       }
+       if (searchArea) {
+   searchArea.scrollIntoView({
+       behavior: 'smooth',
+       block: 'start'
+   });
+}
    });
 }
    const searchToggle = document.getElementById('searchToggle');
