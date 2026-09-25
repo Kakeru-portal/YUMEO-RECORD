@@ -9,7 +9,7 @@ const songData = [
    date: "2026-09-25",
    unit: "実は同期なんです",
    artist: "緑黄色社会",
-   singer: "夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね",
+   singer: "実は同期なんです(夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね)",
    video: "3jSaOsIlvCM"
  },
       {
@@ -19,7 +19,7 @@ const songData = [
    date: "2026-09-25",
    unit: "実は同期なんです",
    artist: "nobodyknows+",
-   singer: "夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね",
+   singer: "実は同期なんです(夢追翔、黒井しば、ベルモンド・バンデラス、矢車りね)",
    video: "8KJwN1vmNEo"
  },
       {
