@@ -3,6 +3,16 @@
 // =========================
 const songData = [
       {
+   title: "セレナーデ",
+   count: "1",
+   type: "cover",
+   date: "2026-09-26",
+   unit: "",
+   artist: "なとり",
+   singer: "夢追翔",
+   video: "VROcHjAJ_yE"
+ },
+      {
    title: "Party!!",
    count: "4",
    type: "cover",
