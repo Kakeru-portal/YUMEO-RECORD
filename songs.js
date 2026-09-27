@@ -243,9 +243,9 @@ const songData = [
    count: "4",
    type: "original",
    date: "2026-04-01",
-   unit: "紫団",
-   artist: "紫団",
-   singer: "紫団(夢追翔、渚トラウト、星導ショウ、ミラン・ケストレル)",
+   unit: "紫男",
+   artist: "紫男",
+   singer: "紫男(夢追翔、渚トラウト、星導ショウ、ミラン・ケストレル)",
    video: "r2SPvwHJfQk"
  },
       {
