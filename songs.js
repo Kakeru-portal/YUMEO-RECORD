@@ -2,6 +2,16 @@
 // 楽曲データ
 // =========================
 const songData = [
+        {
+    title: "ファイアダンス",
+    count: "4",
+    type: "cover",
+    date: "2026-10-18",
+    unit: "",
+    artist: "Vivid BAD SQUAD",
+    singer: "夢追翔、ときのそら、春希、町田ちま",
+    video: "kZlHh0uCdtg"
+  },
       {
    title: "セレナーデ",
    count: "1",
