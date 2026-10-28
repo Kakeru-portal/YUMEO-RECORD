@@ -2,6 +2,30 @@
 // 楽曲データ
 // =========================
 const songData = [
+          {
+    title: "栞",
+    count: "2",
+    type: "cover",
+    date: "2026-07-14",
+    unit: "",
+    artist: "クリープハイプ",
+    singer: "夢追翔、皇れお",
+    video: "R8CP0-t2tHE",
+    start: 3624,
+    end: 3888
+  },
+  {
+    title: "青と夏",
+    count: "2",
+    type: "cover",
+    date: "2026-07-14",
+    unit: "",
+    artist: "Mrs. GREEN APPLE",
+    singer: "夢追翔、皇れお",
+    video: "R8CP0-t2tHE",
+    start: 3049,
+    end: 3331
+  },
         {
     title: "ファイアダンス",
     count: "4",
